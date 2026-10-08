@@ -1,0 +1,5 @@
+Bản chất vai trò của Schema : 
+
++ Mỗi chức năng API,đều nhận vào Input: Request và trả về Output Response.
++ Người ta muốn quản lý (các trường dữ liệu (header,body)) của Request mà Backend nhận vào và kết quả Response trả về FE (để hiển thị)
++ File Schema định nghĩa lại request, response theo từng chức năng  

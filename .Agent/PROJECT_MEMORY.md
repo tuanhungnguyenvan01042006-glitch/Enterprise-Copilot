@@ -1,0 +1,26 @@
+# Project Memory
+
+- Product: Enterprise Copilot, a single-department internal web application.
+- Phase 1 scope: runnable foundation, PostgreSQL schema/migrations, idempotent identity seed, and minimal real login.
+- Stack: React + TypeScript + Vite on the frontend; FastAPI + SQLAlchemy 2.x + Alembic on the backend; PostgreSQL 17.
+- Backend database access uses synchronous SQLAlchemy with `psycopg` and one Session per request.
+- Authentication foundation uses opaque server-side sessions stored in `auth_sessions` and an HttpOnly cookie. JWTs are not used.
+- Database schema is owned by Alembic. Application startup never creates or drops tables.
+- Seed command: `python -m app.scripts.seed` from `backend/`.
+- Initial Alembic revision: `0001_initial_schema`.
+- Demo account emails: `admin@example.test`, `manager@example.test`, and `employee01@example.test` through `employee06@example.test`.
+- Sensitive configuration is supplied through environment variables; `.env` is local-only and ignored by git.
+- Phase 1 intentionally does not implement dashboards, tasks, notes, documents, announcements, admin console, or later-phase business APIs.
+- Compose publishes only `web` on port 8080; `api` and `db` are internal services with named `postgres_data` and `uploads_data` volumes.
+- Phase 2 auth dependencies live in `backend/app/core/auth.py`; protected business routes must use the ready-principal or role-specific dependency so forced-password-change users receive `PASSWORD_CHANGE_REQUIRED` before data access.
+- Authenticated mutations use a per-session CSRF token from `GET /api/v1/auth/csrf`, the `X-CSRF-Token` header, and an exact allowed Origin. Login is the only unauthenticated mutation and is exempt.
+- Password changes revoke every session for the user. Later Admin lock, role-change, and password-reset services must reuse the shared session-revocation helper.
+- Login throttling is intentionally single-process for the local MVP: 5 failed attempts/minute/account and 20/minute/IP.
+- Frontend account transitions clear the TanStack Query cache and the in-memory CSRF token to prevent account-switch data leakage.
+- Phase 2 establishes all specified routes and role-aware shells, but later-phase business screens remain explicit empty placeholders with no mock data.
+- Phase 3 workspace APIs live in `backend/app/api/routes/workspace.py`; task/note reads are ownership-scoped in SQL, and mutations use the existing CSRF dependency.
+- Phase 3 frontend workspace is `frontend/src/features/workspace/WorkspacePage.tsx`; it fetches each tab through TanStack Query and never stores business data in localStorage.
+- Phase 5 document APIs live in `backend/app/api/routes/documents.py`; readable-document predicates are applied in SQL before list/count/detail/download operations.
+- Each Document stores metadata for one current private file. Storage keys are server-generated under `UPLOAD_DIR`, partitioned by scope: `COMPANY/{document_id}/{file_token}.ext` or `DEPARTMENT/{department_id}/{document_id}/{file_token}.ext`. Uploads are staged, hashed, moved, committed, and cleaned on failure. `python -m app.scripts.cleanup_orphan_files` is dry-run by default; use `--apply` to remove reviewed orphans.
+- File replacement locks the document row and uses `expected_revision`; historical file versions are not retained.
+- `python-multipart` is required by FastAPI multipart document creation/version upload and is pinned in `backend/requirements.txt`.

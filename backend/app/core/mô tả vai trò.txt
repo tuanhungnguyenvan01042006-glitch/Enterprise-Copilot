@@ -1,0 +1,23 @@
+Folder core là nơi chứa những phần “nền tảng” của hệ thống, tức là các thứ mà mọi module đều cần nhưng không thuộc riêng từng business feature/ module nào 
+
+Các file trong core thường chứa:
+
++ cấu hình ứng dụng
++ môi trường và biến môi trường
++ auth/session rules
++ error handling
++ security config
++ custom middleware hoặc utilities chung
++ các helper dùng xuyên suốt project
+Vì vậy, core không phải là chức năng nghiệp vụ như task, announcement hay document. 
+Nó là phần hỗ trợ để các module khác hoạt động ổn định.
+
+
++ Có thể nhớ đơn giản : là nơi chứa các Shared Infrastructure mà các module khác đều dùng chung 
+
+
+1. Config 
+đọc biến môi trường
+lưu trữ cấu hình của ứng dụng
+validate dữ liệu cấu hình
+cung cấp các giá trị dùng chung cho toàn bộ backend

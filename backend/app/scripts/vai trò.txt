@@ -1,0 +1,24 @@
+Vai trò chung của thư mục scripts
+Thư mục scripts chứa các file chạy một lần, dùng để thực hiện tác vụ hỗ trợ hệ thống, không phải chức năng nền của app.
+
+Trong project này, file quan trọng là:  seed.py
+Nó có vai trò:
+
+tạo dữ liệu ban đầu cho database
+khởi tạo account mẫu
+tạo department mẫu
+chuẩn bị dữ liệu để app có thể chạy được ngay
+Cụ thể file seed.py
+File này thực hiện việc “seed data”:
+
+tạo department OPERATIONS
+tạo tài khoản admin
+tạo manager
+tạo 6 employee mẫu
+hash password trước khi lưu
+insert vào database
+Nói đơn giản:
+
+Script này giúp app khởi tạo dữ liệu mặc định khi mới setup hoặc khi cần reset môi trường.
+
+* NCH là khởi tạo dữ liệu ban đầu trong DB, mục đích là để test 

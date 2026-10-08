@@ -1,0 +1,21 @@
+Thư mục migrations lưu lịch sử thay đổi cấu trúc database do Alembic quản lý. 
+Nó giúp đưa database từ schema(bảng) cũ lên schema(bảng) mới một cách có kiểm soát, 
+thay vì phải tự sửa bảng thủ công.
+
++ Tóm lại là quản lý các phiên bản Database ( từng bảng lẻ Model )
+
+Trong project của bạn:
++ migrations/env.py: cấu hình Alembic, kết nối đến database
+và nạp metadata từ SQLAlchemy models để so sánh schema.
++ migrations/versions/: chứa từng migration theo thứ tự. 
+Ví dụ 0001_initial_schema.py tạo các bảng ban đầu; các file sau đó như
+0002_simplify_document_scope.py thay đổi cấu trúc documents.
+alembic.ini: cấu hình chung cho Alembic, gồm vị trí migration và một số thiết lập khác.
+Mỗi file migration thường có hai hàm:
+
+upgrade(): áp dụng thay đổi, chẳng hạn tạo bảng, thêm cột hoặc index.
+downgrade(): hoàn tác thay đổi đó khi cần quay về phiên bản trước.
+
+* Alembic là gì 
+Alembic là công cụ quản lý migration cho database trong Python,thường dùng cùng SQLAlchemy.
+Nó lưu các thay đổi schema thành những bước có thứ tự để bạn có thể tạo hoặc nâng cấp database nhất quán giữa môi trường phát triển, kiểm thử và production.

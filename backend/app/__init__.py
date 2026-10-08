@@ -1,0 +1,2 @@
+"""Enterprise Copilot backend application."""
+

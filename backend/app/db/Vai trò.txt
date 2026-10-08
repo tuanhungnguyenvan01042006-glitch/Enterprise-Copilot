@@ -1,0 +1,18 @@
+Thư mục db chủ yếu chứa logic kết nối và quản lý database.
+
+Nói ngắn gọn:
+
+db là nơi “mở cửa / vận hành / quản lý kết nối database”.
+
+
+* DB Session là gì : 
+Trong SQLAlchemy, “session” là một đối tượng trung gian giữa code Python và database.
+
+Nó giống như:
+
+một “phiên làm việc” với database : insert, delete,select,...
+và chỉ khi bạn commit thì các thay đổi mới thật sự ghi xuống DB  
+
++ Mỗi 1 request (có thể gồm nhiều querry )sẽ sử dụng 1 Session 
+riêng để giao tiếp với DB 
+

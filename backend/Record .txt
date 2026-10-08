@@ -1,0 +1,38 @@
+#### THẮC MẮC #### 
+
+#### Record thời gian làm ####
+1. Cbi dataset 
+- git clone tài liệu về  : Chọn theo thư mục liên quan Company Knowledge --> 235 file markdown
+- Nhưng ko phải file nào cũng liên quan --> cần lọc ra nhx file thật sự liên quan đến CK 
+--> tránh phải embed, lưu trữ, tìm kiếm trong ko gian có quá nhiều tài liệu rác 
+
+* NOTE : hiện tại, chỉ lấy khoảng 77 document cho Company Knowledge, đây là số lượng nhỏ 
++ Nếu số lượng Doc nhỏ : Thì bài toán sẽ trở nên quá dễ ( do quá ít tài liệu cùng 1 chủ đề, nên việc tìm kiếm Document phù hợp là rất dễ)
+               Ngoài ra, nếu số lượng Docs quá nhỏ, thì cũng sẽ ko phát huy được kiến trúc RAG phức tạp 
+
+* Vấn đề : tài liệu gốc ko có trường category (cần phải thêm vào để sau filter theo metadata)
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Chưa hiểu ###
++ Chưa hiểu vai trò của Migration (Alembic), Migration Database
+
+### BUG ### : 
+
++ Admin đang ko được sử dụng chức năng liên quan đến upload document lên, hoặc đọc documents
++ Chưa có chức năng xóa tài liệu 
++ Nghiêm trọng : KO có chức danh nào hiện có thể tài liệu liên quan đến Company (nên để cho admin )
++ chức năng tạo Staff của Admin, ko có phần set Department Id và rất nhiều trường khác của Staff; trong hệ thống hiện tại cũng chưa rõ ràng về Department 
+
+### Ý tưởng thêm :
++ Có thể thêm trường subject cho từng document : dựa trên thư mục lưu nó , để sau có thể filter theo metadata 
