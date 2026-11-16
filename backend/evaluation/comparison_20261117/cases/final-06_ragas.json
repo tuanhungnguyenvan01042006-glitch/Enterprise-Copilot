@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-06",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "14dfc317-d2bd-53c4-991f-c0b4daec0158"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1754,
+    "output_tokens": 127,
+    "cost_usd_estimate": 0.0009048000000000001
+  },
+  "candidate": {
+    "user_input": "Are software subscriptions reimbursable for GitLab team members, or is there a specific process they must follow to purchase them?",
+    "reference": "No software subscriptions are reimbursable. Team members who want to purchase software subscriptions must go through the Procurement process.",
+    "reference_contexts": [
+      "### Software\n\n- No software subscriptions are reimbursable.\n- Team Members that would like to purchase software will need to go through the Procurement process.\n- Please follow the Guidance from the [Individual Use Software Handbook Page](/handbook/finance/procurement/individual-use-software/)."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "No software subscriptions are reimbursable.",
+      "Team Members that would like to purchase software will need to go through the Procurement process."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 659,
+    "output_tokens": 73,
+    "cost_usd_estimate": 0.001902
+  }
+}

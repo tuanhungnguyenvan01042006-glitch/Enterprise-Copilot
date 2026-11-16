@@ -1,0 +1,277 @@
+{
+  "final-07": {
+    "user_input": "What document and attachment format are required when I submit an expense without a receipt?",
+    "reference": "Complete a Missing Receipt Affidavit and attach it to the expense as a PDF when submitting it.",
+    "reason": "Remove a dangling here reference and directly answer the missing-receipt procedure.",
+    "keyphrases": [
+      "Missing Receipt Affidavit",
+      "required attachment format"
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the requirement to attach the Missing Receipt Affidavit as a PDF when a receipt is missing.",
+    "contributions": [
+      "Provides the source-grounded policy facts used in the reference answer, evidence 1."
+    ]
+  },
+  "final-11": {
+    "user_input": "How can I request business use of external storage on a company-managed device, and how is encryption handled?",
+    "reference": "External storage is blocked by default. If there is a business need, an exception request may be opened; Corporate Security will coordinate with the requester to choose a suitable encryption-enabled device and configure encryption and password protection.",
+    "reason": "Replace an unresolved here pointer with the explicit source-grounded process, without guaranteeing approval.",
+    "keyphrases": [
+      "Business-need exception process",
+      "external storage on company devices",
+      "encryption"
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the exception request process and encryption coordination for external storage devices on company-managed devices.",
+    "contributions": [
+      "Provides the source-grounded policy facts used in the reference answer, evidence 1."
+    ]
+  },
+  "final-21": {
+    "user_input": "Under the Growth and Development Fund, when can the two parts of a 50% split reimbursement be paid, and which expenses are excluded?",
+    "reference": "When applicable, 50% of the approved opportunity cost can be reimbursed after payment and the remaining 50% upon completion. The split option does not apply to travel, hotel or meal expenses.",
+    "reason": "Name the benefit so the question is self-contained, preserving the when-applicable qualification.",
+    "keyphrases": [
+      "50 percent split disbursement",
+      "excluded travel, hotel and meal costs"
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the timing for the 50% split disbursement and the excluded expense categories.",
+    "contributions": [
+      "Provides the source-grounded policy facts used in the reference answer, evidence 1."
+    ]
+  },
+  "final-22": {
+    "user_input": "Under the G&D Fund, what makes an academic course eligible for reimbursement, what evidence is required, and which ancillary fees are excluded?",
+    "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+    "reason": "Name the funding program to avoid treating this as a general academic policy question.",
+    "keyphrases": [
+      "Academic-course eligibility",
+      "evidence required for reimbursement",
+      "excluded ancillary fees"
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement.",
+    "contributions": [
+      "Provides the source-grounded policy facts used in the reference answer, evidence 1."
+    ]
+  },
+  "final-31": {
+    "user_input": "When do Modern Health session benefits reset, and do unused sessions roll over?",
+    "reference": "Modern Health benefits reset annually on March 20. Unused sessions do not roll over.",
+    "reason": "Name Modern Health so the annual-reset question is unambiguous.",
+    "keyphrases": [
+      "Annual session reset date",
+      "unused-session rollover"
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the annual reset date and the policy on unused sessions.",
+    "contributions": [
+      "Provides the source-grounded policy facts used in the reference answer, evidence 1."
+    ]
+  },
+  "final-36": {
+    "user_input": "How do cabin-upgrade rules differ between domestic and international flights, including the international business-class exception?",
+    "reference": "For domestic and international flights over five hours of consecutive flight time, the next class above standard economy is authorized only if it is below business class; the policy specifies that each segment must be 5+ hours. For international flights exceeding eight hours of consecutive flight time, business class is permitted for frequent travelers, defined as three or more international trips per quarter on 8+ hour continuous flights with a minimum of six flight segments of 8+ hours each. That business-class permission applies when meeting customers, attending a speaking engagement, or representing GitLab at a conference.",
+    "reason": "Turn planning instructions into a natural comparison and restore all frequency, segment-duration and trip-purpose qualifiers.",
+    "keyphrases": [
+      "Domestic Flights",
+      "International Flights",
+      "business class"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 defines domestic flight upgrade rules; Context 1 defines international flight upgrade rules and the business class exception conditions.",
+    "contributions": [
+      "States the domestic upgrade permission and its flight-duration and cabin restrictions.",
+      "States international upgrade permissions and the frequency, duration and purpose conditions for business class."
+    ]
+  },
+  "final-37": {
+    "user_input": "What standard nightly lodging amount restriction applies to Airbnb, and what booking and reimbursement conditions must I follow?",
+    "reference": "Airbnb uses the same amount restrictions as hotel expenses: the standard hotel amount is up to $300 USD, or local equivalent, inclusive of tax per night. Airbnb is permitted if it is cheaper than a hotel stay for the trip and must be booked on the Airbnb platform. Submit a manual Navan expense under Lodging and attach the receipt or invoice.",
+    "reason": "State the standard amount including tax and local currency and restore booking platform, expense category and receipt requirements.",
+    "keyphrases": [
+      "Airbnb",
+      "Hotels",
+      "Lodging"
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 provides the hotel nightly reimbursement cap and conditions, while Context 1 explains Airbnb booking conditions and reimbursement process referencing the same amount restrictions as hotels.",
+    "contributions": [
+      "Supplies the standard nightly hotel amount, inclusive of tax, inherited by Airbnb.",
+      "Connects Airbnb to hotel amount restrictions and supplies its cheaper-than-hotel, booking and expense submission requirements."
+    ]
+  },
+  "final-38": {
+    "user_input": "For a US team member, how do the reimbursement limits for business-travel internet and monthly home internet differ?",
+    "reference": "Business-travel internet is reimbursable up to $50 USD, or local equivalent, per day. Standard home internet has a $100 monthly limit; claims above that amount are not reimbursed, and costs should be expensed monthly for current charges only.",
+    "reason": "Replace imperative planning text with a question and distinguish daily allowances from actual monthly submission frequency.",
+    "keyphrases": [
+      "Internet - Travelling",
+      "Internet"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 provides the daily reimbursement limit for travel internet, while Context 1 provides the monthly reimbursement limit for standard home internet, allowing a comparison without mixing daily and monthly caps.",
+    "contributions": [
+      "Supplies the business-travel internet daily limit.",
+      "Supplies the standard home internet limit and monthly current-charge submission rule."
+    ]
+  },
+  "final-39": {
+    "user_input": "If I use four coworking day passes in total during one calendar month while on business travel away from home, what daily limit and approval rule apply, and can I claim parking?",
+    "reference": "The daily limit is $100, and up to five one-off days in a calendar month do not require Manager or Finance approval. One-off days during business travel are exempt from the primary-residence location restriction, but parking is not reimbursable; only rent for the space is reimbursable.",
+    "reason": "Supply a source-grounded case after repeated generation schema failures; combine the daily-pass rule with inherited location and expense exclusions.",
+    "keyphrases": [
+      "Co-Working Space",
+      "Daily Office Pass"
+    ],
+    "reasoning_type": "bridge",
+    "connection": "The daily pass rule supplies the limit and approval rule; the inherited monthly rule supplies the location exception and parking exclusion.",
+    "contributions": [
+      "Supplies the business-travel location exception and exclusion of parking from reimbursable coworking costs.",
+      "Supplies the $100 daily limit and no-Manager-or-Finance-approval rule for up to five one-off days per calendar month."
+    ]
+  },
+  "final-40": {
+    "user_input": "Which budget funds meals during workshop travel, and what daily meal and tip limits apply?",
+    "reference": "Meals related to workshop travel must be expensed separately from the G&D claim and funded from the requester's department Travel & Expense budget. Business-travel meals are reimbursable up to $120 USD, or local equivalent, per day. Tips up to 20% are acceptable and must be included within that daily limit.",
+    "reason": "Replace imperative text and an answer hint with a natural question; make clear that tips are inside the daily cap.",
+    "keyphrases": [
+      "Travel expenses",
+      "Meals",
+      "Tips"
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 identifies the correct budget source and prohibition on charging meals to G&D, while Context 1 specifies the daily meal reimbursement cap including tips.",
+    "contributions": [
+      "Identifies workshop travel meals as separate from G&D and funded by the departmental travel budget.",
+      "Supplies the business-travel meal limit and the tip percentage and inclusion rule."
+    ]
+  },
+  "final-41": {
+    "user_input": "How do reimbursement rules for rental-car fuel differ from mileage-based reimbursement for business travel?",
+    "reference": "For rental cars, team members can claim gas expenses, with a $300 daily fuel limit, but cannot claim mileage. Mileage-based reimbursement is calculated by Navan from the start and end locations and follows local law.",
+    "reason": "Remove an unsupported personal-vehicle characterization and turn the instruction into a focused comparison.",
+    "keyphrases": [
+      "Car Rental",
+      "Mileage"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 specifies the claim rules for rental cars, while Context 1 specifies mileage reimbursement rules for personal vehicles, allowing a direct comparison.",
+    "contributions": [
+      "States that rental-car gas can be claimed but mileage cannot.",
+      "States how mileage is calculated and reimbursed according to local law."
+    ]
+  },
+  "final-42": {
+    "user_input": "How do eligibility and completion evidence differ for academic courses versus shorter non-academic courses under the G&D Fund?",
+    "reference": "Academic courses relevant to GitLab career-development goals must be from an accredited college or university and result in a grade equivalent to B or higher; reimbursement requires a final grade report or transcript. Tuition and enrollment are covered, while additional books, travel and supplies fees are excluded from that category. Relevant shorter non-academic courses, certifications and licenses may be reimbursed, with a final grade report or satisfactory certificate of completion required.",
+    "reason": "Restore relevance and eligibility qualifiers and distinguish the completion evidence and academic-category exclusions.",
+    "keyphrases": [
+      "Academic study",
+      "Professional development"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Both contexts specify eligibility and completion evidence requirements for different types of courses reimbursed through the G&D Fund, allowing a direct comparison.",
+    "contributions": [
+      "Supplies academic eligibility, grade/transcript evidence and ancillary fee exclusions.",
+      "Supplies non-academic relevance and grade-report or completion-certificate requirements."
+    ]
+  },
+  "final-43": {
+    "user_input": "If I remain eligible and leave $4,000 of my G&D budget unspent this year, what maximum amount is available next calendar year?",
+    "reference": "Up to $10,000 is available for eligible growth experiences next calendar year. The unspent $4,000 does not roll over or increase that annual maximum.",
+    "reason": "Answer the amount requested; the raw answer mentioned no rollover without supplying the annual allowance.",
+    "keyphrases": [
+      "Growth and Development",
+      "calendar year",
+      "roll over"
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 provides the annual cap of $10,000 for G&D allowance, while Context 1 clarifies that unspent budget does not roll over, so next year's allowance is independent of this year's unspent amount.",
+    "contributions": [
+      "Supplies the $10,000 per-calendar-year maximum for eligible experiences.",
+      "States that unspent budgets do not roll over, so unused funds do not augment the next annual maximum."
+    ]
+  },
+  "final-45": {
+    "user_input": "For a non-US team member, how do reporting and evidence requirements differ for three versus seven consecutive sick days?",
+    "reference": "For three consecutive sick days, notify your manager, enter Out Sick in Workday, and your time automatically updates in Time Off by Deel; a sick note is not needed unless statutory reporting rules require it. Seven days falls under leave of absence: submit a Compass ticket to the Absence Management Team and enter Out Sick in Workday, which that team may edit or replace with a Leave Type. Provide supporting evidence according to local requirements, checking the employment contract or country policy for the documentation needed.",
+    "reason": "Turn imperative text into a question, preserve the six-days-or-longer threshold by using the seven-day scenario, and restore reporting and local-rule details.",
+    "keyphrases": [
+      "Sick Absences",
+      "Out Sick",
+      "Compass"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 explains the process for 1-5 day sick absences including manager notification and Workday entry without evidence unless local law requires it. Context 1 explains the process for absences exceeding 6 days including Compass ticket notification, Workday entry possibly edited by Absence Management, and evidence requirements per local law.",
+    "contributions": [
+      "Supplies manager notification, Workday/Deel and the statutory sick-note exception for a short sick absence.",
+      "Supplies non-US leave-of-absence reporting, Workday handling and locally required supporting evidence for a seven-day absence."
+    ]
+  },
+  "final-46": {
+    "user_input": "For a non-US team member, how do reporting and documentation steps differ for three versus seven consecutive days of caregiver sick leave?",
+    "reference": "For three days, notify your manager and enter Caregiver Sick Time in Workday, which automatically updates in Time Off by Deel; no documentation is needed for an absence of less than five days unless statutory rules require it. Seven days is a leave of absence: notify the Absence Management Team via Compass and enter Caregiver Sick Time in Workday, which that team may edit or replace with a Leave Type. Provide evidence required locally to support caregiver leave and submit it to the Absence Management Team through the Compass ticket.",
+    "reason": "Restore missing manager, Workday and documentation-submission actions and remove a threshold hint from the question.",
+    "keyphrases": [
+      "Caregiver Sick Time",
+      "Workday",
+      "Compass"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 defines documentation rules for absences under 5 days; Context 1 defines rules for absences 6+ days, together clarifying differences for 3 vs 7 day absences.",
+    "contributions": [
+      "Supplies short-absence manager notification, Workday/Deel and the less-than-five-day documentation exception.",
+      "Supplies non-US extended caregiver leave reporting and evidence submission through Compass."
+    ]
+  },
+  "final-47": {
+    "user_input": "When do medical, dental and vision benefits end for departing US-based versus Canada-based team members?",
+    "reference": "US-based team members' medical, dental, and vision benefits end on the last day of the month of departure, while Canada-based team members' benefits end on their last day of work.",
+    "reason": "Replace a copied planning instruction with a natural comparison question.",
+    "keyphrases": [
+      "USA",
+      "Canada",
+      "benefits"
+    ],
+    "reasoning_type": "comparison",
+    "connection": "The first context specifies the end date for US-based team members' medical, dental, and vision benefits, while the second context specifies the end date for Canada-based team members' benefits, allowing a direct comparison.",
+    "contributions": [
+      "Supplies the US medical, dental and vision end date.",
+      "Supplies the Canada end date for benefits."
+    ]
+  },
+  "final-48": {
+    "user_input": "Is my domestic partner's 22-year-old child eligible for Modern Health, and what separate coaching and therapy allocation can they receive?",
+    "reference": "The child is eligible because Modern Health includes a partner's children up to age 27. As an adult family member aged 18 or over, they get their own full access with six coaching and six therapy sessions.",
+    "reason": "Name Modern Health and explicitly connect relationship/age eligibility to the adult-family session allocation.",
+    "keyphrases": [
+      "Eligibility",
+      "Family Member Access"
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 establishes eligibility for domestic partner's children up to age 27, and Context 1 specifies the coaching and therapy allocation for adult family members aged 18 and over.",
+    "contributions": [
+      "Supplies eligible partner-child relationship and age limit.",
+      "Supplies adult-family access and six coaching plus six therapy sessions."
+    ]
+  },
+  "final-50": {
+    "user_input": "Who should occupy the Accountable role in a RACI mapping for a mentorship session at GitLab?",
+    "reference": "The mentee should occupy the Accountable role: the mentee should be the DRI for each mentorship session, and GitLab maps the project or workstream DRI to the Accountable role in RACI.",
+    "reason": "Remove intermediate-fact hints from the question and explicitly identify the mentee in the answer.",
+    "keyphrases": [
+      "mentee",
+      "DRI",
+      "Accountable"
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 identifies the mentee as the DRI for the mentorship session, and Context 1 explains that the DRI for a project or workstream occupies the Accountable role in RACI mapping, linking the mentee session DRI to the Accountable role.",
+    "contributions": [
+      "Identifies the mentee as the recommended DRI for each mentorship session.",
+      "Maps GitLab DRI to the Accountable role in RACI."
+    ]
+  }
+}

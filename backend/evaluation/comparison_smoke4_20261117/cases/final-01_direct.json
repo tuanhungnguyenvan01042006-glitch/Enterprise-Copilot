@@ -1,0 +1,47 @@
+{
+  "plan_id": "final-01",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "5df2232f-e75d-5033-bb89-d1b624e00ba1"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Manager approval exception for expense claims older than 90 days",
+      "expense claims over 90 days",
+      "Manager approval"
+    ],
+    "user_input": "What is the condition under which expense claims older than 90 days can be reimbursed?",
+    "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+        "contribution": "This quote directly states the condition for reimbursement of expense claims older than 90 days."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the manager approval requirement for expense claims older than 90 days."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1688,
+    "output_tokens": 153,
+    "cost_usd_estimate": 0.0004592
+  },
+  "judge": {
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1015,
+    "output_tokens": 36,
+    "cost_usd_estimate": 0.0023179999999999997
+  }
+}

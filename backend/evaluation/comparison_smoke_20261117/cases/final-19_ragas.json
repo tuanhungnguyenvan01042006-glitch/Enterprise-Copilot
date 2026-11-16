@@ -1,0 +1,22 @@
+{
+  "plan_id": "final-19",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "0c48e867-12bf-5df2-a084-c6d4d91d4008"
+  ],
+  "candidate": {
+    "user_input": "What are the full eligibility criteria for a GitLab employee to use the Growth and Development Fund?",
+    "reference": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+    "reference_contexts": [
+      "## Eligibility\n\nTo use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 2,
+    "input_tokens": 1397,
+    "output_tokens": 92,
+    "cost_usd_estimate": 0.000706
+  }
+}

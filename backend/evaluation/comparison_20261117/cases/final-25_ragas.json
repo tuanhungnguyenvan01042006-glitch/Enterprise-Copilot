@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-25",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "5231c81a-9875-50d5-a9a2-ce6f42145a40"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1951,
+    "output_tokens": 142,
+    "cost_usd_estimate": 0.0010076
+  },
+  "candidate": {
+    "user_input": "What is the minimum notice I must give my manager before taking planned PTO according to the PTO Protocols?",
+    "reference": "You must provide at least twice as many business days' notice as your planned time off, for example, 6 business days' notice for 3 days off, and discuss your planned time off with your manager first.",
+    "reference_contexts": [
+      "### PTO Protocols (Planning and Coordination)\n\n- Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).\n- Coordinate with your team and stakeholders, especially during popular holiday periods.\n- Managers will evaluate PTO requests against team deliverables and business needs.\n  - If a manager needs to request changes to your PTO plans, they will do so within 48 hours and specify which goal or result may be impacted.\n  - If no compromise can be reached, escalate to your manager's manager.\n- Some departments have specific windows when team presence is critical - check your department handbook page if applicable."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Discuss planned time off with your manager first.",
+      "Provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off)."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 778,
+    "output_tokens": 92,
+    "cost_usd_estimate": 0.002292
+  }
+}

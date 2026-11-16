@@ -1,0 +1,133 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "Caregiver Sick Absences 1-5 Consecutive Days",
+        "Caregiver Sick Absences 6+ Consecutive Days",
+        "documentation threshold"
+      ],
+      "user_input": "How do the reporting and documentation requirements differ for non-US caregiver sick absences of three consecutive days versus seven consecutive days, considering the less-than-five-day documentation threshold?",
+      "reference": "For caregiver sick absences less than 5 consecutive days, no documentation is needed unless statutory requirements say otherwise. For absences 6 or more days, considered a leave of absence, non-US employees must notify the Absence Management Team via Compass ticket and provide evidence supporting the leave, which varies by location.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)",
+          "contribution": "Establishes no documentation needed for absences under 5 days unless law requires it."
+        },
+        {
+          "context_index": 1,
+          "quote": "Caregiver sick absences that are 6 days or longer are considered a leave of absence. ... All other Locations: Follow the instructions below. 1. Notify the Absence Management Team by submitting a Compass ticket. ... 3. Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).",
+          "contribution": "Details that absences 6+ days require notification and documentation submission to Absence Management for non-US locations."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 defines documentation rules for absences under 5 days; Context 1 defines rules for absences 6+ days, together clarifying differences for 3 vs 7 day absences."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "Caregiver Sick Absences 1-5 Consecutive Days",
+        "Caregiver Sick Absences 6+ Consecutive Days",
+        "documentation threshold"
+      ],
+      "user_input": "How do the reporting and documentation requirements differ for non-US caregiver sick absences of three consecutive days versus seven consecutive days, considering the less-than-five-day documentation threshold?",
+      "reference": "For caregiver sick absences less than 5 consecutive days, no documentation is needed unless statutory requirements say otherwise. For absences 6 or more days, considered a leave of absence, non-US employees must notify the Absence Management Team via Compass ticket and provide evidence supporting the leave, which varies by location.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)",
+          "contribution": "Establishes no documentation needed for absences under 5 days unless law requires it."
+        },
+        {
+          "context_index": 1,
+          "quote": "### For Caregiver Sick Absences 6+ Consecutive Days\n\n### For Caregiver Sick Absences 6+ Consecutive Days\n\nCaregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n1. Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket).",
+          "contribution": "Details that absences 6+ days require notification and documentation submission to Absence Management for non-US locations."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 defines documentation rules for absences under 5 days; Context 1 defines rules for absences 6+ days, together clarifying differences for 3 vs 7 day absences."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Caregiver Sick Absences 1-5 Consecutive Days",
+        "Caregiver Sick Absences 6+ Consecutive Days",
+        "documentation threshold"
+      ],
+      "user_input": "How do the reporting and documentation requirements differ for non-US caregiver sick absences of three consecutive days versus seven consecutive days, considering the less-than-five-day documentation threshold?",
+      "reference": "For caregiver sick absences less than 5 consecutive days, no documentation is needed unless statutory requirements say otherwise. For absences 6 or more days, considered a leave of absence, non-US employees must notify the Absence Management Team via Compass ticket and provide evidence supporting the leave, which varies by location.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)",
+          "contribution": "Establishes no documentation needed for absences under 5 days unless law requires it."
+        },
+        {
+          "context_index": 1,
+          "quote": "### For Caregiver Sick Absences 6+ Consecutive Days\n\n### For Caregiver Sick Absences 6+ Consecutive Days\n\nCaregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n1. Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket).",
+          "contribution": "Details that absences 6+ days require notification and documentation submission to Absence Management for non-US locations."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 defines documentation rules for absences under 5 days; Context 1 defines rules for absences 6+ days, together clarifying differences for 3 vs 7 day absences.",
+      "id": "final-46",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare reporting and documentation for non-US caregiver sick absence of three versus seven consecutive days; preserve the less-than-five-day documentation threshold.",
+      "reference_contexts": [
+        "### For Caregiver Sick Absences 1-5 Consecutive Days\n\n### For Caregiver Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n1. Your caregiver sick time will automatically update in Time Off by Deel\n1. If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)",
+        "### For Caregiver Sick Absences 6+ Consecutive Days\n\n### For Caregiver Sick Absences 6+ Consecutive Days\n\nCaregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n1. Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket)."
+      ],
+      "reference_context_ids": [
+        "73e65c08-69af-5919-90e2-f374d954ebf2",
+        "16961fda-fc9c-5650-bbdc-55e7a9121f1c"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "73e65c08-69af-5919-90e2-f374d954ebf2",
+          "chunk_index": 23,
+          "block_type": "text",
+          "token_count": 107,
+          "section_path": "Caregiver Sick Time > For Caregiver Sick Absences 1-5 Consecutive Days",
+          "source_start": 17809,
+          "source_end": 18270,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        },
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "16961fda-fc9c-5650-bbdc-55e7a9121f1c",
+          "chunk_index": 24,
+          "block_type": "text",
+          "token_count": 266,
+          "section_path": "Caregiver Sick Time > For Caregiver Sick Absences 6+ Consecutive Days",
+          "source_start": 18272,
+          "source_end": 19477,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

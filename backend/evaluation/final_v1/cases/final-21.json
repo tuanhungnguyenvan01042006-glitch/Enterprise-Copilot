@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "50 percent split disbursement timing",
+        "excluded travel, hotel and meal costs"
+      ],
+      "user_input": "What is the timing for the 50 percent split disbursement and what costs are excluded from this option?",
+      "reference": "The 50 percent split disbursement allows for 50% of the approved opportunity cost to be reimbursed after payment, with the remaining 50% reimbursed upon completion. However, this option does not apply to travel, hotel, or meal expenses.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses.",
+          "contribution": "Details the timing for the 50 percent split disbursement and specifies excluded costs."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides specific details about the timing of the 50 percent split disbursement and the costs that are excluded from this option."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "50 percent split disbursement timing",
+        "excluded travel, hotel and meal costs"
+      ],
+      "user_input": "What is the timing for the 50 percent split disbursement and what costs are excluded from this option?",
+      "reference": "The 50 percent split disbursement allows for 50% of the approved opportunity cost to be reimbursed after payment, with the remaining 50% reimbursed upon completion. However, this option does not apply to travel, hotel, or meal expenses.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses.",
+          "contribution": "Details the timing for the 50 percent split disbursement and specifies excluded costs."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides specific details about the timing of the 50 percent split disbursement and the costs that are excluded from this option.",
+      "id": "final-21",
+      "question_type": "single_hop",
+      "planned_focus": "50 percent split disbursement timing and excluded travel, hotel and meal costs.",
+      "reference_contexts": [
+        "#### 50% upfront reimbursement\n\nAll requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses."
+      ],
+      "reference_context_ids": [
+        "1c4b27a9-518c-56a2-a7d5-b0bd703fd0b8"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "1c4b27a9-518c-56a2-a7d5-b0bd703fd0b8",
+          "chunk_index": 9,
+          "block_type": "text",
+          "token_count": 65,
+          "section_path": "Process > Step 5 - Submit for reimbursement in Navan > 50% upfront reimbursement",
+          "source_start": 4386,
+          "source_end": 4675,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

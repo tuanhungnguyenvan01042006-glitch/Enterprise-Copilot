@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-26",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "f0c8d9d0-f2a4-527c-8349-7dc4180f405a"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1967,
+    "output_tokens": 154,
+    "cost_usd_estimate": 0.0010332
+  },
+  "candidate": {
+    "user_input": "What are the requirements for providing a sick note during a sick absence of 1-5 consecutive days?",
+    "reference": "If your absence is less than 6 consecutive days, you do not need to provide a sick note unless your statutory reporting requirements state otherwise.",
+    "reference_contexts": [
+      "### For Sick Absences 1-5 Consecutive Days\n\n### For Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)"
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Absence is less than 6 consecutive days (i.e., 1-5 days)",
+      "No sick note required unless statutory reporting requirements state otherwise"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 761,
+    "output_tokens": 79,
+    "cost_usd_estimate": 0.002154
+  }
+}

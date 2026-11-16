@@ -1,0 +1,73 @@
+{
+  "plan_id": "final-36",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+    "8399e9de-37b8-57a2-b8aa-ac010b7908b7"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "permitted cabin upgrades",
+      "domestic flights",
+      "international flights",
+      "business class exception",
+      "consecutive flight time",
+      "trip purpose"
+    ],
+    "user_input": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers.",
+    "reference": "Domestic flights over 5 hours consecutive flight time allow booking the next class up from standard economy below business class. International flights over 5 hours consecutive flight time allow the same upgrade. For international flights exceeding 8 hours consecutive flight time, frequent travelers (3+ trips per quarter) may book business class when traveling for customer meetings, speaking engagements, or representing GitLab at conferences.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+        "contribution": "Defines domestic flight upgrade policy for flights over 5 hours consecutive flight time."
+      },
+      {
+        "context_index": 1,
+        "quote": "For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n- Flights exceeding 8 hours of consecutive flight time - For those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference",
+        "contribution": "Defines international flight upgrade policy including business class exception for frequent travelers on long flights with specific trip purposes."
+      }
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 defines domestic flight upgrade rules; Context 1 defines international flight upgrade rules and business class exceptions, enabling a direct comparison."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1261,
+    "output_tokens": 418,
+    "cost_usd_estimate": 0.000866
+  },
+  "judge": {
+    "source_conditions": [
+      "Domestic flights: duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours)",
+      "Domestic flights: permitted to book next class up from standard economy, below business class",
+      "International flights: duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours)",
+      "International flights: permitted to book next class up from standard economy, below business class",
+      "International flights: business class permitted for flights exceeding 8 hours of consecutive flight time",
+      "International flights: business class permitted only for frequent travelers (3+ trips per quarter internationally on flights of 8+ hours, minimum 6 flight segments with 8+ hours per segment)",
+      "International flights: business class permitted only when traveling for meeting with customers, speaking engagement, or representing GitLab at a conference"
+    ],
+    "missing_conditions": [
+      "International business class exception: minimum 6 flight segments with 8+ hours per segment is required in addition to 3+ trips per quarter; this is omitted in the answer."
+    ],
+    "question_issues": [
+      "Question includes an instruction intended for the generator."
+    ],
+    "grounded": false,
+    "complete": false,
+    "clear": false,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the requirement that frequent international travelers must have a minimum of 6 flight segments with 8+ hours per segment to qualify for business class. This is a critical qualifying threshold for the exception and its omission makes the answer incomplete and not fully grounded."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 894,
+    "output_tokens": 301,
+    "cost_usd_estimate": 0.004196
+  }
+}

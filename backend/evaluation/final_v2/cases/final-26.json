@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Sick-note requirements",
+        "three-consecutive-day sick absence",
+        "statutory exception"
+      ],
+      "user_input": "What are the sick-note requirements for a sick absence lasting three consecutive days, and how does the statutory exception apply?",
+      "reference": "If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+          "contribution": "This sentence directly states the sick-note requirement for absences under 6 days and mentions the statutory exception."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the sick-note requirement for absences less than 6 days and the statutory exception, which includes a three-day absence."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Sick-note requirements",
+        "three-consecutive-day sick absence",
+        "statutory exception"
+      ],
+      "user_input": "What are the sick-note requirements for a sick absence lasting three consecutive days, and how does the statutory exception apply?",
+      "reference": "If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+          "contribution": "This sentence directly states the sick-note requirement for absences under 6 days and mentions the statutory exception."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the sick-note requirement for absences less than 6 days and the statutory exception, which includes a three-day absence.",
+      "id": "final-26",
+      "question_type": "single_hop",
+      "planned_focus": "Sick-note requirements for a three-consecutive-day sick absence, preserving statutory exception.",
+      "reference_contexts": [
+        "### For Sick Absences 1-5 Consecutive Days\n\n### For Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)"
+      ],
+      "reference_context_ids": [
+        "f0c8d9d0-f2a4-527c-8349-7dc4180f405a"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "f0c8d9d0-f2a4-527c-8349-7dc4180f405a",
+          "chunk_index": 15,
+          "block_type": "text",
+          "token_count": 147,
+          "section_path": "Sick Time > For Sick Absences 1-5 Consecutive Days",
+          "source_start": 10887,
+          "source_end": 11540,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "started_at_utc": "2026-11-11T10:02:21.081005+00:00",
+  "finished_at_utc": "2026-11-11T10:02:50.180233+00:00",
+  "openai_model": "gpt-4o-mini",
+  "openai_successful_requests": 24,
+  "openai_input_tokens": 13683,
+  "openai_output_tokens": 1710,
+  "openai_cost_usd_callback_estimate": 0.00307845,
+  "voyage_model": "voyage-4",
+  "voyage_usage": {
+    "requests": 3,
+    "input_tokens": 270,
+    "missing_usage": 0
+  }
+}

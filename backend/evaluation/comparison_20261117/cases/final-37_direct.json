@@ -1,0 +1,77 @@
+{
+  "plan_id": "final-37",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "544f0cc9-a879-5010-88eb-cab5c851f149",
+    "b5195be5-55e4-5dbf-8983-f60cb66feb4c"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "hotel amount restriction",
+      "cheaper-than-hotel condition",
+      "Airbnb booking/reimbursement route"
+    ],
+    "user_input": "What is the nightly amount restriction for Airbnb bookings compared to hotels, and what conditions must be met for Airbnb bookings and reimbursements?",
+    "reference": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms, with a 7 day booking lead time. Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip. To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense. Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms, with a 7 day booking lead time.",
+        "contribution": "Provides the hotel nightly amount restriction."
+      },
+      {
+        "context_index": 1,
+        "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip. To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense. Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice.",
+        "contribution": "Explains the cheaper-than-hotel condition for Airbnb and the booking/reimbursement process."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 defines the hotel nightly amount restriction, and Context 1 states Airbnb bookings must be cheaper than hotels and follow the same amount restrictions and reimbursement process."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1675,
+    "output_tokens": 343,
+    "cost_usd_estimate": 0.0012188000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Hotel stays reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms, with a 7 day booking lead time.",
+      "Hotel bookings outside Navan require approval by Manager and AP Admin.",
+      "Dynamic Policy may allow for higher amounts based on fair market price, but over 20% of Dynamic Policy flagged for review.",
+      "Airbnb bookings: must be booked on the AIRBNB platform.",
+      "Airbnb: Same restrictions in amount applies as the hotel expense.",
+      "Airbnb: Booking permitted if it is cheaper than a hotel stay for your trip.",
+      "Airbnb: Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice."
+    ],
+    "missing_conditions": [
+      "Hotel $300/night cap is for standard rooms and includes tax; answer omits 'standard rooms' and 'includes tax'.",
+      "Hotel $300/night cap requires a 7 day booking lead time; answer includes this.",
+      "Hotel bookings outside Navan require approval by Manager and AP Admin; answer omits this.",
+      "Dynamic Policy may allow for higher amounts, but over 20% of Dynamic Policy flagged for review; answer omits this nuance.",
+      "Airbnb: must be cheaper than hotel stay; answer includes this.",
+      "Airbnb: must be booked on AIRBNB platform; answer includes this.",
+      "Airbnb: manual expense in Navan with receipt/invoice; answer includes this."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "Answer omits that the $300/night hotel cap is for standard rooms and includes tax.",
+      "Answer omits that hotel bookings outside Navan require approval by Manager and AP Admin.",
+      "Answer omits the Dynamic Policy exception and review process for amounts over 20% of the Dynamic Policy.",
+      "Otherwise, the answer covers the main conditions for Airbnb booking and reimbursement."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1327,
+    "output_tokens": 398,
+    "cost_usd_estimate": 0.005838
+  }
+}

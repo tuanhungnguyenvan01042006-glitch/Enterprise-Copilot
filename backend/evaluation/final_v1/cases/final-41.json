@@ -1,0 +1,63 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "rental cars",
+        "personal vehicles",
+        "claim"
+      ],
+      "user_input": "Can you compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel?",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car. Mileage is reimbursed based on the distance driven in personal vehicles, according to local law.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "Details the reimbursement policy for rental cars."
+        },
+        {
+          "context_index": 1,
+          "quote": "Mileage is reimbursed according to local law, e.g. US rate per mile, rate per km in the Netherlands, or rate in Belgium.",
+          "contribution": "Details the reimbursement policy for personal vehicles."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context explains the rules for rental cars, while the second context outlines the rules for personal vehicles."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "fuel",
+        "mileage"
+      ],
+      "user_input": "Can you compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel?",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car. Mileage is reimbursed according to local law, e.g. US rate per mile, rate per km in the Netherlands, or rate in Belgium.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "This states that for rental cars, gas expenses can be claimed but not mileage."
+        },
+        {
+          "context_index": 1,
+          "quote": "Mileage is reimbursed according to local law, e.g. US rate per mile, rate per km in the Netherlands, or rate in Belgium.",
+          "contribution": "This indicates that for personal vehicles, mileage can be claimed based on local law."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context explains the rules for rental cars, while the second context details the rules for personal vehicles."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['fuel', 'mileage', 'rent...s', 'personal vehicles'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 4,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['fuel', 'mileage', 'rent...s', 'personal vehicles'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  }
+]

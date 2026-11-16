@@ -1,0 +1,90 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Annual session reset date",
+        "unused-session rollover"
+      ],
+      "user_input": "What is the annual session reset date and what happens to unused sessions?",
+      "reference": "The annual session reset date is March 20, and unused sessions do not roll over.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Benefits reset annually on March 20",
+          "contribution": "states the reset date"
+        },
+        {
+          "context_index": 0,
+          "quote": "Unused sessions do not roll over",
+          "contribution": "explains the rollover policy"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the reset date and the policy on unused sessions."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Annual session reset date",
+        "unused-session rollover"
+      ],
+      "user_input": "What is the annual session reset date and what happens to unused sessions?",
+      "reference": "The annual session reset date is March 20, and unused sessions do not roll over.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Benefits reset annually on March 20",
+          "contribution": "states the reset date"
+        },
+        {
+          "context_index": 0,
+          "quote": "Unused sessions do not roll over",
+          "contribution": "explains the rollover policy"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the reset date and the policy on unused sessions.",
+      "id": "final-31",
+      "question_type": "single_hop",
+      "planned_focus": "Annual session reset date and unused-session rollover.",
+      "reference_contexts": [
+        "## Important Details\n\n### Benefit Reset & Usage\n\n- Benefits reset annually on March 20\n- Unused sessions do not roll over\n- Sessions can be shared with family members (each counts toward your total)\n- 24-hour cancellation policy applies\n- Remember: GitLab PTO policy and non-linear workday structure support you in making time for mental health appointments"
+      ],
+      "reference_context_ids": [
+        "dacd98da-2565-59fe-9279-ca545a45c318"
+      ],
+      "reference_document_ids": [
+        "597c3d99-9bf0-53b7-bf38-ede42e5f4065"
+      ],
+      "sources": [
+        {
+          "document_id": "597c3d99-9bf0-53b7-bf38-ede42e5f4065",
+          "chunk_id": "dacd98da-2565-59fe-9279-ca545a45c318",
+          "chunk_index": 6,
+          "block_type": "text",
+          "token_count": 75,
+          "section_path": "Important Details > Benefit Reset & Usage",
+          "source_start": 3557,
+          "source_end": 3914,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Modern Health",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

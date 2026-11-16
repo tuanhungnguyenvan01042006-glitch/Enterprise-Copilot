@@ -1,0 +1,52 @@
+{
+  "plan_id": "final-29",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e62b2f22-4f8d-5fcb-8a51-af451b5da31f"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1733,
+    "output_tokens": 131,
+    "cost_usd_estimate": 0.0009028
+  },
+  "candidate": {
+    "user_input": "What steps should I take if my bereavement leave needs to be extended beyond 25 calendar days?",
+    "reference": "If your bereavement leave exceeds 25 calendar days, you should reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+    "reference_contexts": [
+      "### Leave Extensions\n\n### Leave Extensions\n\nIf your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Bereavement leave exceeds 25 calendar days",
+      "Employee must reach out to manager",
+      "Employee must reach out to People Business Partner",
+      "Employee must reach out to Absence Management Team at leaves@gitlab.com",
+      "Purpose: for an extension"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 665,
+    "output_tokens": 96,
+    "cost_usd_estimate": 0.002098
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "group business-travel meal bill"
+      ],
+      "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+      "reference": "The most senior Team Member present should pay the bill and submit for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 27,
+          "quote": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+          "contribution": "This specifies who is responsible for submitting the bill when separate billing is not possible."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the responsibility for submitting the bill when separate billing is impracticable."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "group business-travel meal bill"
+      ],
+      "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+      "reference": "The most senior Team Member present should pay the bill and submit for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 27,
+          "quote": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+          "contribution": "This specifies who is responsible for submitting the bill when separate billing is impracticable."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly answers the question by stating the responsibility of the most senior Team Member present."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "group business-travel meal bill"
+      ],
+      "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+      "reference": "The most senior Team Member present should pay the bill and submit for reimbursement when separate billing is impracticable due to group size.",
+      "evidence": [
+        {
+          "context_index": 27,
+          "quote": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+          "contribution": "This specifies who is responsible for submitting the bill when separate billing is not possible."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly answers the question about who submits the bill."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "group business-travel meal bill"
+      ],
+      "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+      "reference": "The most senior Team Member present should pay the bill and submit for reimbursement when separate billing is impracticable due to group size.",
+      "evidence": [
+        {
+          "context_index": 27,
+          "quote": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+          "contribution": "This specifies who is responsible for submitting the bill."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the responsibility for submitting the bill when separate billing is impracticable."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

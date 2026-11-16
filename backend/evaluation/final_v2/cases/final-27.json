@@ -1,0 +1,86 @@
+[
+  {
+    "attempt": 1,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['Bereavement eligibility... 'manager coordination'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Bereavement eligibility",
+        "loss of a pet",
+        "manager coordination"
+      ],
+      "user_input": "What is GitLab's policy on bereavement leave eligibility for the loss of a pet, and how should the duration and coordination with managers be handled?",
+      "reference": "There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently. We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets. As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+          "contribution": "This quote explains the eligibility for bereavement leave including pets, the flexible duration, and the need for manager coordination."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the policy on bereavement leave eligibility for pets, the flexible duration, and the requirement to coordinate with managers."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Bereavement eligibility",
+        "loss of a pet",
+        "manager coordination"
+      ],
+      "user_input": "What is GitLab's policy on bereavement leave eligibility for the loss of a pet, and how should the duration and coordination with managers be handled?",
+      "reference": "There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently. We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets. As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+          "contribution": "This quote explains the eligibility for bereavement leave including pets, the flexible duration, and the need for manager coordination."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the policy on bereavement leave eligibility for pets, the flexible duration, and the requirement to coordinate with managers.",
+      "id": "final-27",
+      "question_type": "single_hop",
+      "planned_focus": "Bereavement eligibility for loss of a pet; flexible duration and manager coordination.",
+      "reference_contexts": [
+        "### Key Principles\n\n- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.\n- **Confidentiality**: Details shared about a loss will be treated with strict confidentiality and respect."
+      ],
+      "reference_context_ids": [
+        "ca14fec7-6b79-51fb-b151-be9bdea65bc3"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "ca14fec7-6b79-51fb-b151-be9bdea65bc3",
+          "chunk_index": 28,
+          "block_type": "text",
+          "token_count": 137,
+          "section_path": "Bereavement > Key Principles",
+          "source_start": 21432,
+          "source_end": 22109,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

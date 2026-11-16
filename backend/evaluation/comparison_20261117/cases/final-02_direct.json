@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-02",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "81cde5d2-312c-5c76-b550-6077be4c8fce"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Fuel versus mileage reimbursement when renting a car"
+    ],
+    "user_input": "What is the policy on claiming fuel versus mileage reimbursement when renting a car?",
+    "reference": "Team Members can claim gas expenses but not mileage, when renting a car.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+        "contribution": "This quote directly states the reimbursement policy for fuel and mileage when renting a car."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the reimbursement rule for fuel and mileage when renting a car."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1125,
+    "output_tokens": 125,
+    "cost_usd_estimate": 0.0006500000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Team Members can claim gas expenses when renting a car.",
+      "Team Members cannot claim mileage when renting a car."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 695,
+    "output_tokens": 69,
+    "cost_usd_estimate": 0.0019420000000000001
+  }
+}

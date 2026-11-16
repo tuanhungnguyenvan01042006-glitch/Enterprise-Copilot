@@ -35,6 +35,10 @@ class Settings(BaseSettings):
     allowed_origins: str = "http://localhost:8080,http://localhost:5173"
     upload_dir: Path = Path("./storage/uploads")
     max_upload_bytes: int = Field(default=10 * 1024 * 1024, gt=0)
+    qdrant_url: str = "http://localhost:6333"
+    qdrant_collection: str = "rag_documents"
+    openai_api_key: str = ""
+    openai_generation_model: str = "gpt-4o-mini"
     seed_admin_email: str = "admin@example.com"
     seed_admin_password: str | None = None      # Pydamic sẽ giúp ánh xạ biến môi trường vào từng trường, ngoài ra nó cx thực hiện validate kiểu dữ liệu, nếu không đúng kiểu dữ liệu, thì sẽ raise ValidationError
     seed_manager_password: str | None = None

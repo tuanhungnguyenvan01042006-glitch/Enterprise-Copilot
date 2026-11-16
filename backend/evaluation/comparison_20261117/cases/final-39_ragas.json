@@ -1,0 +1,54 @@
+{
+  "plan_id": "final-39",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "17aa7554-c9ad-5af3-9a32-0c304d8abf25",
+    "85f8f149-d254-5b8e-b502-c8373b72c74d"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 2010,
+    "output_tokens": 196,
+    "cost_usd_estimate": 0.0011176000000000003
+  },
+  "candidate": {
+    "user_input": "For four coworking day passes during business travel away from my primary residence, what is the daily reimbursement limit, do I need Manager or Finance approval, and is parking reimbursable?",
+    "reference": "For up to 5 one-off coworking days in a calendar month related to business travel, the daily reimbursement limit is $100.00 and Manager or Finance approval is not required. Parking and other additional expenses such as travel to and from the coworking space are not reimbursable. The monthly coworking rules apply, including that the space must be a professionally managed facility and only the rent for the space is reimbursable.",
+    "reference_contexts": [
+      "#### Co-Working Space - Monthly\n\n- Coworking space is reimbursable for monthly space and one-off days during business travel. Pre-Approval is needed prior to submitting claims.\n- $700.00 Limit per month.\n- The space should be located within a commutable distance (+-50km) of the Team Member's primary residence in their country of employment, with exception to One-off days (day passes) if the Team Member is traveling for business. This is for tax reasons.\n- Co-working spaces must be professionally managed facilities whose primary business purpose is providing shared workspace services. Leasing of apartments, private properties, or facilities where co-working is offered as a secondary or ancillary service (such as gyms, country clubs, golf clubs, hotels, cafes, or recreational venues) is prohibited. Only dedicated co-working providers whose core business model centers on workspace rental are acceptable.\n- Coworking space is not reimbursable while on personal travel.\n- If more than 5 days are booked in the month, then Manager and Finance approval (via submitting a request under the `Expenses -> General Expenses` page of [Compass](/handbook/eta/corporate-it/compass/compass-guide/)) is required and needs to be obtained prior to submission of expenses.\n- Copy of approved email must be submitted with first month submission.\n- No contracts are allowed to be under the GitLab name and it must be under the Team Members name.\n- The co-working space must be submitted monthly in the month it pertains to with full receipts to be provided.\n- GitLab will not cover security deposits or advance payments for co-working space.\n- Travel to and from the co-working space, parking, meals, beverages, access cards, insurance and other additional expenses in a co-working facility are not reimbursable. Only the rent for the space is reimbursable.\n- If co-working space is used together with a combination of working from home, we will allow the reimbursement of the internet cost for where you spend most of your time. i.e. if you expense a co-working space for a full month then internet for home cannot be expensed. If you expense co-work for a few days in a month then home internet can be expensed in full.",
+      "#### Co-Working Space - Daily Office Pass\n\n- Up to 5 One-off Days in a calendar month related to co-working space do not require Manager or Finance approval.\n- $100.00 Limit per day\n- All other Applicable Rules are the same as monthly above."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Up to 5 one-off coworking days in a calendar month do not require Manager or Finance approval.",
+      "$100.00 limit per day for daily office pass.",
+      "All other applicable rules from monthly policy apply to daily passes.",
+      "Coworking space is reimbursable for one-off days during business travel away from primary residence (exception to commutable distance rule).",
+      "Parking, travel to and from the coworking space, meals, beverages, access cards, insurance, and other additional expenses are not reimbursable; only the rent for the space is reimbursable."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1237,
+    "output_tokens": 162,
+    "cost_usd_estimate": 0.00377
+  }
+}

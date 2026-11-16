@@ -1,0 +1,48 @@
+{
+  "plan_id": "final-11",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "498c72df-0ca5-5de3-a24f-fc46becdaaf7"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1995,
+    "output_tokens": 133,
+    "cost_usd_estimate": 0.0010108
+  },
+  "candidate": {
+    "user_input": "Under the Data Classification Standard, what must an employee do before transmitting Red Data from an approved Red data source to other systems?",
+    "reference": "Employees must obtain approval from the Privacy and Security teams before transmitting Red Data from an approved Red data source to any other systems or solutions.",
+    "reference_contexts": [
+      "### Use of External Media on Company Assets\n\nThe use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is not allowed and is blocked by default. An exception request may be opened [here](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=usb_exception) if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.\n\nAs a reminder, Red Data may not be transmitted from an approved Red data source to any other systems or solutions without first obtaining approval from the Privacy and Security teams. Please refer to GitLab's [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/) for further details."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Red Data may not be transmitted from an approved Red data source to any other systems or solutions without first obtaining approval from the Privacy and Security teams."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 787,
+    "output_tokens": 77,
+    "cost_usd_estimate": 0.00219
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "plan_id": "final-04",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "a641249f-3a44-5834-b634-579923ffa485"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "group business-travel meal bill",
+      "separate billing",
+      "most senior Team Member"
+    ],
+    "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+    "reference": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Each Team Member must submit their own receipts for reimbursement, so ensure to separate billing when going to meals with groups of Team Members. If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+        "contribution": "This explains who submits the bill when separate billing is impracticable."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states who should submit the bill when separate billing is impracticable due to group size."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1205,
+    "output_tokens": 193,
+    "cost_usd_estimate": 0.0007908000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Each Team Member must submit their own receipts for reimbursement.",
+      "Ensure to separate billing when going to meals with groups of Team Members.",
+      "If separate billing is not practicable due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 792,
+    "output_tokens": 102,
+    "cost_usd_estimate": 0.0024000000000000002
+  }
+}

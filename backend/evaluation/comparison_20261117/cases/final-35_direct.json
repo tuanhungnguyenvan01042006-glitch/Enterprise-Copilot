@@ -1,0 +1,54 @@
+{
+  "plan_id": "final-35",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "a3b5d8cb-68a7-505b-bace-d40e1de7adbd"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Confidentiality requirements",
+      "customer-identifying details",
+      "GitLab issues"
+    ],
+    "user_input": "What are the confidentiality requirements for including customer-identifying details in GitLab issues?",
+    "reference": "Customer information is generally not public due to confidentiality obligations and the problematic use of such information by our competitors. If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential. When we discuss a customer by name or describe a customer in terms that could make them identifiable, this should only occur in private projects or by linking to the SFDC account in an internal GitLab issue.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Customer information is generally not public due to confidentiality obligations and the problematic use of such information by our competitors. If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential. When we discuss a customer by name or describe a customer in terms that could make them identifiable, this should only occur in private projects or by linking to the SFDC account in an internal GitLab issue.",
+        "contribution": "This quote explains the confidentiality requirements for customer-identifying details in GitLab issues."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the confidentiality requirements for customer-identifying details in GitLab issues."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1667,
+    "output_tokens": 304,
+    "cost_usd_estimate": 0.0011532
+  },
+  "judge": {
+    "source_conditions": [
+      "Customer information is generally not public due to confidentiality obligations and competitor risk.",
+      "If an issue contains any specific information about a customer (including company name, employee names, or number of users), the issue should be made confidential.",
+      "Discussing a customer by name or in identifiable terms should only occur in private projects or by linking to the SFDC account in an internal GitLab issue."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1324,
+    "output_tokens": 123,
+    "cost_usd_estimate": 0.0036320000000000002
+  }
+}

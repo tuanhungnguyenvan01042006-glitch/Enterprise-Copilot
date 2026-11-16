@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Fuel versus mileage reimbursement",
+        "renting a car",
+        "gas expenses"
+      ],
+      "user_input": "When renting a car, can I claim mileage reimbursement or fuel expenses?",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "This sentence directly states the reimbursement policy for fuel and mileage when renting a car."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the reimbursement rule for fuel and mileage when renting a car."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Fuel versus mileage reimbursement",
+        "renting a car",
+        "gas expenses"
+      ],
+      "user_input": "When renting a car, can I claim mileage reimbursement or fuel expenses?",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "This sentence directly states the reimbursement policy for fuel and mileage when renting a car."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the reimbursement rule for fuel and mileage when renting a car.",
+      "id": "final-02",
+      "question_type": "single_hop",
+      "planned_focus": "Fuel versus mileage reimbursement when renting a car.",
+      "reference_contexts": [
+        "### Car Rental\n\n- Rental Cars are reimbursable and should be booked through Navan, up to the intermediate car class, with a 7 day booking lead time.\n- Please note that anything booked outside of Navan will flag as \"Out of Policy\", and will need to be reviewed by your manager and the AP team.\n- Navan Confirmation should be attached to the claim along with the Car Rental Receipt.\n- Team Members can claim gas expenses but not mileage, when renting a car.\n- Fuel at $300 limit per day."
+      ],
+      "reference_context_ids": [
+        "81cde5d2-312c-5c76-b550-6077be4c8fce"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "81cde5d2-312c-5c76-b550-6077be4c8fce",
+          "chunk_index": 19,
+          "block_type": "text",
+          "token_count": 111,
+          "section_path": "4. PROCEDURES > Car Rental",
+          "source_start": 16241,
+          "source_end": 16726,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

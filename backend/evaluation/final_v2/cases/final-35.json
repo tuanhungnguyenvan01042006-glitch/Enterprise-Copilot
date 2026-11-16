@@ -1,0 +1,102 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "Confidentiality requirements",
+        "customer-identifying details",
+        "GitLab issues"
+      ],
+      "user_input": "What are the confidentiality requirements for including customer-identifying details in GitLab issues?",
+      "reference": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+          "contribution": "This quote directly states the confidentiality requirement for customer-identifying details in GitLab issues."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the confidentiality requirement for customer-identifying details in GitLab issues, directly answering the question."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "Confidentiality requirements",
+        "customer-identifying details",
+        "GitLab issues"
+      ],
+      "user_input": "What are the confidentiality requirements for including customer-identifying details in GitLab issues?",
+      "reference": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+          "contribution": "This quote directly states the confidentiality requirement for customer-identifying details in GitLab issues."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the confidentiality requirement for customer-identifying details in GitLab issues, directly answering the question."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Confidentiality requirements",
+        "customer-identifying details",
+        "GitLab issues"
+      ],
+      "user_input": "What are the confidentiality requirements for including customer-identifying details in GitLab issues?",
+      "reference": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+          "contribution": "This quote directly states the confidentiality requirement for customer-identifying details in GitLab issues."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the confidentiality requirement for customer-identifying details in GitLab issues, directly answering the question.",
+      "id": "final-35",
+      "question_type": "single_hop",
+      "planned_focus": "Confidentiality requirements for customer-identifying details in GitLab issues.",
+      "reference_contexts": [
+        "### Limited access\n\nThe items below are not shared with all team members. Limited access is a more severe restriction than [internal](#internal).\n\n1. Deals with external parties like contracts and [approving and paying invoices](/handbook/finance/accounting/#procure-to-pay).\n1. Content that would violate confidentiality for a GitLab team-member, customer, or user.\n1. Customer information is generally not public due to confidentiality obligations and the problematic use of such information by our competitors. If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential. When we discuss a customer by name or describe a customer in terms that could make them identifiable, this should only occur in private projects or by linking to the SFDC account in an internal GitLab issue.\n1. Plans for reorganizations. Reorganizations may cause disruption and reorganization plans tend to change a lot before being finalized. We will keep relevant team members informed whenever possible.\n1. Planned pricing changes. Much like reorganizations, plans around pricing changes are subject to modifications before being finalized. Thus, pricing changes are limited access while in development. Applicable team members will be consulted before any pricing changes are rolled out.\n1. Certain discussions that relate to company policy or process changes. Some organizational policies are sensitive in nature and require thoughtful consideration before any communications are made. Relevant team members and leaders will be informed whenever possible.\n1. Legal discussions are restricted to the purpose of Attorney-Client Privilege and some may be limited access instead of internal.\n1. Some information is kept confidential by the People Group to protect the privacy, safety, and security of team members and applicants, including: job applications, background check reports, reference checks, compensation, terminations details, demographic information (age and date of birth, family or marital status, national identification such as passport details or tax ID, required accommodations), and home address. Whistleblower identity is likewise confidential. Performance improvement plans, disciplinary actions, and individual feedback are restricted, as they may contain negative feedback and [negative feedback is 1-1](/handbook/values/#collaboration) between you and your manager. However, People Group policies and processes are public (for example, [Job Description Library](/handbook/hiring/job-description-library/), along with limited information that team members choose to share on the [Team](/handbook/company/team/) page.\n1. Acquisition offers by or of GitLab.\n1. Compensation Changes: GitLab will communicate and train team members on the output of iterations to the Total Rewards offerings (Compensation, Equity, Benefits), but team members will not have visibility into the inputs and decision making of compensation changes.\n1. Security Incident Investigation: In order to avoid exposing team members to MNPI, the Security Incident Response Team (SIRT) will restrict access to only those necessary to assess the materiality of incidents. Once an incident is determined to not have MNPI the access may be changed to [internal](/handbook/communication/confidentiality-levels/#internal)."
+      ],
+      "reference_context_ids": [
+        "a3b5d8cb-68a7-505b-bace-d40e1de7adbd"
+      ],
+      "reference_document_ids": [
+        "6852f26f-1da0-5160-a770-05a573e1797d"
+      ],
+      "sources": [
+        {
+          "document_id": "6852f26f-1da0-5160-a770-05a573e1797d",
+          "chunk_id": "a3b5d8cb-68a7-505b-bace-d40e1de7adbd",
+          "chunk_index": 4,
+          "block_type": "text",
+          "token_count": 640,
+          "section_path": "Not public > Limited access",
+          "source_start": 6338,
+          "source_end": 9758,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Confidentiality levels",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

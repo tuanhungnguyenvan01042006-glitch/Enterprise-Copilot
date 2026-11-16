@@ -1,0 +1,143 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Compass transition",
+        "GitLab-issue G&D request"
+      ],
+      "user_input": "Does an already-in-progress GitLab-issue G&D request need to be resubmitted due to the Compass transition?",
+      "reference": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+          "contribution": "This directly addresses the question about resubmission of in-progress requests."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence confirms that existing GitLab issue-based requests do not need to be resubmitted during the Compass transition."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Compass transition",
+        "GitLab-issue G&D request"
+      ],
+      "user_input": "Does an already-in-progress GitLab-issue G&D request need to be resubmitted due to the Compass transition?",
+      "reference": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+          "contribution": "This directly addresses the question about whether an already-in-progress GitLab-issue G&D request must be resubmitted."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clearly states that existing GitLab issue-based requests can continue without resubmission."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Compass transition",
+        "GitLab-issue G&D request"
+      ],
+      "user_input": "Does an already-in-progress GitLab-issue G&D request need to be resubmitted due to the Compass transition?",
+      "reference": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+          "contribution": "This directly addresses the question about whether an already-in-progress GitLab-issue G&D request must be resubmitted."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence confirms that existing GitLab issue-based requests do not need to be resubmitted."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Compass transition",
+        "GitLab-issue G&D request"
+      ],
+      "user_input": "Does an already-in-progress GitLab-issue G&D request need to be resubmitted due to the Compass transition?",
+      "reference": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.",
+          "contribution": "This directly addresses the question about resubmission of in-progress requests."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence confirms that existing GitLab issue-based requests do not need to be resubmitted during the Compass transition."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Compass transition",
+        "GitLab-issue G&D request"
+      ],
+      "user_input": "Does an already-in-progress GitLab-issue G&D request need to be resubmitted due to the Compass transition?",
+      "reference": "If you already have a GitLab issue open and it is in progress or moving through approval, you do not need to resubmit it.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.",
+          "contribution": "This directly addresses the question about resubmission of in-progress requests."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence confirms that existing GitLab issue-based requests do not need to be resubmitted during the Compass transition.",
+      "id": "final-18",
+      "question_type": "single_hop",
+      "planned_focus": "Compass transition: whether an already-in-progress GitLab-issue G&D request must be resubmitted.",
+      "reference_contexts": [
+        "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.\n\nWe've recently updated the G&D process, and are moving away from using issues for G&D submissions, all requests going forward should be submitted via Compass.\n\nHere's a quick summary of the changes:\n\n- All new G&D requests must be submitted through Compass.\n- If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.\n- The fund, budget, eligible uses, and core reimbursement rules are not changing. Reimbursement still goes through Navan.\n- Compass gives team members clearer tracking and gives leaders better visibility into how G&D funds are being used across their teams.\n- Easier tracking means easier to know how much money you have left!\n\nProcessing requests via Compass allows for better tracking of requests, a clearer structure for submissions, and significantly improves the administration of the Fund.\n\nIf you already have a G&D GitLab issue open and it is already in progress or moving through approval, there is no need to resubmit it. Existing GitLab issue-based requests can continue through completion under the prior process.\n\nReach out to the Talent Development team if you require any assistance with submitting your request."
+      ],
+      "reference_context_ids": [
+        "aa8fb337-0101-57dc-b7bb-b80463769054"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "aa8fb337-0101-57dc-b7bb-b80463769054",
+          "chunk_index": 0,
+          "block_type": "text",
+          "token_count": 304,
+          "section_path": "",
+          "source_start": 0,
+          "source_end": 1570,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

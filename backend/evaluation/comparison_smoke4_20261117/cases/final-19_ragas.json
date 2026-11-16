@@ -1,0 +1,43 @@
+{
+  "plan_id": "final-19",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "0c48e867-12bf-5df2-a084-c6d4d91d4008"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1700,
+    "output_tokens": 126,
+    "cost_usd_estimate": 0.0008816
+  },
+  "candidate": {
+    "user_input": "What is the requirement related to performance expectations for a full-time GitLab employee to be eligible for the Growth and Development Fund?",
+    "reference": "Applicants must meet performance expectations in their role to be eligible for the Growth and Development Fund.",
+    "reference_contexts": [
+      "## Eligibility\n\nTo use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 376,
+    "output_tokens": 35,
+    "cost_usd_estimate": 0.0010320000000000001
+  }
+}

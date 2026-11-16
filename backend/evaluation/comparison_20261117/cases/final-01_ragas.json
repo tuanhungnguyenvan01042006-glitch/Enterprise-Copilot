@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-01",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "5df2232f-e75d-5033-bb89-d1b624e00ba1"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 2994,
+    "output_tokens": 165,
+    "cost_usd_estimate": 0.0014616
+  },
+  "candidate": {
+    "user_input": "What is the maximum monthly limit to be reimbursed for a regular team member, and what happens if this limit is exceeded?",
+    "reference": "The maximum monthly limit to be reimbursed is $10K USD (or local currency equivalent) for regular team members. Once this limit is reached, all additional expense items require approval by the A/P team in Navan.",
+    "reference_contexts": [
+      "- Team members should submit receipts for every business expense. For Non-US Team Members, receipts are required for all expenses. US Team Members are required to only submit receipts for any expenses over $50 USD.  Receipts must contain vendor name, date of purchase, listing of what was purchased, and contains a full breakout of the subtotal and tax amounts. Snapshot from phone/computer screen of Applications, Card/Bank Statements are not an acceptable form of receipt.\n- Team Members are not allowed to expense items on behalf of their managers.\n- Expenses for gifts and entertainment must be incurred and reimbursed in accordance with GitLab's [Gifts & Entertainment Policy](/handbook/legal/policies/gifts-contributions/#gifts-and-entertainment-policy) and [Antibribery Policy](/handbook/legal/anti-corruption-policy/).\n- Expense claims for a single item up to $5,000 can be expensed via Navan. >$5,000 needs to go through the procurement process in Zip.\n- Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.\n- Navan Description box: Expense items must have a description filled out. This box is showing as optional but we require this to be filled in. This helps to correctly record the transaction and assist any reporting purposes downstream.\n  - When filling in the description box , we ask for you to enter details of the expense so anyone looking at the line on a report can tell immediately (without the need of looking at the receipt) what the expense relates to and why it is claimed.\n  - Please fill in the description box with details like : Items Purchased/Claimed, Period service relates to, Trip Details this claim relates to, Reason for trip, Clients Name, etc. If left blank, the expense will be bounced back to the team member to complete this portion.\n- The maximum monthly limit to be reimbursed is $10K USD (or local currency equivalent). Once this limit has been reached, all expense items will need to be approved by the A/P team in Navan.  This limit may be increased for Team Members whose positions require more spend (eg. Field Marketing), but the increase request needs to be submitted via an issue for approval by the VP or higher in the Accounting Organization. Due to the nature of their roles, E-Group members have a maximum monthly limit to be reimbursed of $20K USD before additional approvals are required.\n- Expenditures related to client entertainment or marketing must be necessary, prudent, and job-related.\n- Expenses that span longer than a month must be submitted on a monthly basis (eg. Although you paid for a year upfront for the internet, you must divide the total by 12 months and submit the cost monthly).\n- Personal credits and gift cards: GitLab will reimburse only the actual out-of-pocket amount paid by the employee. If personal credits, gift cards, rewards points, or other discounts are applied to a business purchase, reimbursement will be limited to the net amount charged to the employee's personal payment method.\nExample: An employee purchases a $100 monitor and applies a $50 gift card. GitLab will reimburse $50 (the amount actually paid), not the pre-discount price of $100."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Maximum monthly reimbursement limit is $10K USD (or local currency equivalent) for regular team members.",
+      "Once the $10K limit is reached, all expense items require approval by the A/P team in Navan.",
+      "This limit may be increased for Team Members whose positions require more spend, but the increase request needs to be submitted via an issue for approval by the VP or higher in the Accounting Organization.",
+      "E-Group members have a different limit ($20K USD) before additional approvals are required."
+    ],
+    "missing_conditions": [
+      "The answer does not mention that the $10K limit may be increased for team members whose positions require more spend, with approval by the VP or higher in the Accounting Organization."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the exception that the $10K limit may be increased for certain team members with VP or higher approval. This is a relevant condition for the maximum monthly limit and its exceptions."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1299,
+    "output_tokens": 222,
+    "cost_usd_estimate": 0.004374
+  }
+}

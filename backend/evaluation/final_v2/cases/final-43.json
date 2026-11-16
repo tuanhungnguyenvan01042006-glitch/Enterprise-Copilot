@@ -1,0 +1,133 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "G&D allowance",
+        "unspent budget",
+        "budget rollover"
+      ],
+      "user_input": "If an employee has $4000 unspent from their G&D allowance this year, how much G&D allowance will they have available next calendar year?",
+      "reference": "Unspent G&D budgets do not roll over from one year to the next.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.",
+          "contribution": "Provides the annual cap for G&D allowance."
+        },
+        {
+          "context_index": 1,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "States that unspent budget does not carry over to next year."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the annual cap of $10,000 for G&D allowance, while Context 1 clarifies that unspent budget does not roll over, so next year's allowance is independent of this year's unspent amount."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "G&D allowance",
+        "unspent budget",
+        "budget rollover"
+      ],
+      "user_input": "If an employee has $4000 unspent from their G&D allowance this year, how much G&D allowance will they have available next calendar year?",
+      "reference": "Unspent G&D budgets do not roll over from one year to the next.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.",
+          "contribution": "Provides the annual cap for G&D allowance."
+        },
+        {
+          "context_index": 1,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "States that unspent budget does not carry over to next year."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the annual cap of $10,000 for G&D allowance, while Context 1 clarifies that unspent budget does not roll over, so next year's allowance is independent of this year's unspent amount."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "G&D allowance",
+        "unspent budget",
+        "budget rollover"
+      ],
+      "user_input": "If an employee has $4000 unspent from their G&D allowance this year, how much G&D allowance will they have available next calendar year?",
+      "reference": "Unspent G&D budgets do not roll over from one year to the next.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.",
+          "contribution": "Provides the annual cap for G&D allowance."
+        },
+        {
+          "context_index": 1,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "States that unspent budget does not carry over to next year."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the annual cap of $10,000 for G&D allowance, while Context 1 clarifies that unspent budget does not roll over, so next year's allowance is independent of this year's unspent amount.",
+      "id": "final-43",
+      "question_type": "multi_hop",
+      "planned_focus": "Determine next calendar year G&D allowance for an otherwise eligible employee with $4000 unspent this year, combining annual cap and no rollover; ask without giving the cap or rollover rule.",
+      "reference_contexts": [
+        "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.\n\nWe've recently updated the G&D process, and are moving away from using issues for G&D submissions, all requests going forward should be submitted via Compass.\n\nHere's a quick summary of the changes:\n\n- All new G&D requests must be submitted through Compass.\n- If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.\n- The fund, budget, eligible uses, and core reimbursement rules are not changing. Reimbursement still goes through Navan.\n- Compass gives team members clearer tracking and gives leaders better visibility into how G&D funds are being used across their teams.\n- Easier tracking means easier to know how much money you have left!\n\nProcessing requests via Compass allows for better tracking of requests, a clearer structure for submissions, and significantly improves the administration of the Fund.\n\nIf you already have a G&D GitLab issue open and it is already in progress or moving through approval, there is no need to resubmit it. Existing GitLab issue-based requests can continue through completion under the prior process.\n\nReach out to the Talent Development team if you require any assistance with submitting your request.",
+        "### Does budget rollover?\n\nNo. Unspent G&D budgets do not roll over from one year to the next."
+      ],
+      "reference_context_ids": [
+        "aa8fb337-0101-57dc-b7bb-b80463769054",
+        "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "aa8fb337-0101-57dc-b7bb-b80463769054",
+          "chunk_index": 0,
+          "block_type": "text",
+          "token_count": 304,
+          "section_path": "",
+          "source_start": 0,
+          "source_end": 1570,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        },
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb",
+          "chunk_index": 29,
+          "block_type": "text",
+          "token_count": 24,
+          "section_path": "FAQ > Does budget rollover?",
+          "source_start": 11189,
+          "source_end": 11283,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

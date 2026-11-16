@@ -1,0 +1,153 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Airbnb booking",
+        "hotel amount",
+        "cheaper-than-hotel condition"
+      ],
+      "user_input": "What is the nightly amount restriction for Airbnb bookings based on the hotel cap and the condition that Airbnb must be cheaper than a hotel?",
+      "reference": "The nightly amount restriction for Airbnb bookings is the same as the hotel expense, which is up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms, provided that the Airbnb booking is cheaper than a hotel stay for your trip.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "This establishes the hotel amount restriction."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "This specifies the condition for Airbnb bookings."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The hotel amount restriction is $300 USD per night, and Airbnb bookings must be cheaper than hotel stays."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate does not clearly state that the Airbnb nightly amount restriction is the same as the hotel cap, which is necessary for clarity. The answer should explicitly connect the hotel cap to the Airbnb condition, emphasizing that the Airbnb booking must not only be cheaper but also adhere to the same nightly limit.",
+        "The candidate's reference does not fully address the requirement for the Airbnb booking to be cheaper than a hotel stay in relation to the nightly amount restriction, as it lacks a direct statement linking the two conditions together in a cohesive manner."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate does not clearly state that the Airbnb nightly amount restriction is the same as the hotel cap, which is necessary for clarity. The answer should explicitly connect the hotel cap to the Airbnb condition, emphasizing that the Airbnb booking must not only be cheaper but also adhere to the same nightly limit.; The candidate's reference does not fully address the requirement for the Airbnb booking to be cheaper than a hotel stay in relation to the nightly amount restriction, as it lacks a direct statement linking the two conditions together in a cohesive manner."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Airbnb nightly amount restriction",
+        "hotel cap",
+        "cheaper-than-hotel condition"
+      ],
+      "user_input": "What is the Airbnb nightly amount restriction in relation to the hotel cap and the condition that it must be cheaper than a hotel stay?",
+      "reference": "The Airbnb nightly amount restriction is the same as the hotel cap, which is $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms. Additionally, booking through Airbnb is permitted only if it is cheaper than a hotel stay for your trip.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "States the hotel cap for reimbursement."
+        },
+        {
+          "context_index": 1,
+          "quote": "Same restrictions in amount applies as the hotel expense.",
+          "contribution": "Indicates that the Airbnb nightly amount restriction is the same as the hotel cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "Specifies the condition for booking through Airbnb."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The hotel cap establishes the maximum allowable nightly amount for both hotels and Airbnb, while the cheaper-than-hotel condition specifies that Airbnb bookings must be less expensive than hotel stays."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's answer does not clearly state that the Airbnb nightly amount restriction is the same as the hotel cap, which is $300 USD, and it does not explicitly connect this to the cheaper-than-hotel condition in a way that shows how both contexts are necessary for the answer.",
+        "The question is somewhat ambiguous as it could be interpreted to ask for a specific nightly amount rather than the relationship between the Airbnb restriction and the hotel cap.",
+        "The reference does not fully clarify how the cheaper-than-hotel condition interacts with the hotel cap in terms of the Airbnb nightly amount restriction."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate's answer does not clearly state that the Airbnb nightly amount restriction is the same as the hotel cap, which is $300 USD, and it does not explicitly connect this to the cheaper-than-hotel condition in a way that shows how both contexts are necessary for the answer.; The question is somewhat ambiguous as it could be interpreted to ask for a specific nightly amount rather than the relationship between the Airbnb restriction and the hotel cap.; The reference does not fully clarify how the cheaper-than-hotel condition interacts with the hotel cap in terms of the Airbnb nightly amount restriction."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Airbnb nightly amount restriction",
+        "hotel cap",
+        "cheaper-than-hotel condition"
+      ],
+      "user_input": "What is the Airbnb nightly amount restriction in relation to the hotel cap and the condition that it must be cheaper than a hotel stay?",
+      "reference": "The Airbnb nightly amount restriction is the same as the hotel cap of $300 USD, and booking through Airbnb is permitted only if it is cheaper than a hotel stay for your trip.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "This establishes the hotel cap for reimbursement."
+        },
+        {
+          "context_index": 1,
+          "quote": "To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense.",
+          "contribution": "This indicates that the Airbnb nightly amount restriction is the same as the hotel cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "This specifies the condition under which Airbnb bookings are allowed."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The hotel cap establishes the maximum allowable amount for both hotels and Airbnb, while the cheaper-than-hotel condition specifies when Airbnb can be used."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's answer does not clearly state that the Airbnb nightly amount restriction is contingent upon the hotel cap and the cheaper-than-hotel condition. While it mentions both aspects, it lacks clarity in how they interact. The answer could be misinterpreted as stating that the Airbnb restriction is simply equal to the hotel cap without emphasizing the condition that it must be cheaper than a hotel stay. Additionally, the candidate's answer does not explicitly mention that the Airbnb booking is only permitted if it meets the cheaper-than-hotel condition, which is a critical part of the question."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate's answer does not clearly state that the Airbnb nightly amount restriction is contingent upon the hotel cap and the cheaper-than-hotel condition. While it mentions both aspects, it lacks clarity in how they interact. The answer could be misinterpreted as stating that the Airbnb restriction is simply equal to the hotel cap without emphasizing the condition that it must be cheaper than a hotel stay. Additionally, the candidate's answer does not explicitly mention that the Airbnb booking is only permitted if it meets the cheaper-than-hotel condition, which is a critical part of the question."
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Airbnb nightly amount restriction",
+        "hotel cap",
+        "cheaper-than-hotel condition"
+      ],
+      "user_input": "What is the Airbnb nightly amount restriction based on the hotel cap and the cheaper-than-hotel condition?",
+      "reference": "The Airbnb nightly amount restriction is contingent upon the hotel cap of $300 USD per night, but booking through Airbnb is only permitted if it is cheaper than a hotel stay for your trip.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "This establishes the hotel cap for reimbursement."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "This specifies the condition under which Airbnb bookings are allowed."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The hotel cap sets the maximum reimbursement limit for lodging, while the cheaper-than-hotel condition determines when Airbnb can be used."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's answer does not explicitly state the Airbnb nightly amount restriction, only mentioning that it is contingent upon the hotel cap. It lacks clarity on how the cheaper-than-hotel condition affects the Airbnb nightly amount restriction.",
+        "The answer does not fully address the question as it does not provide a specific nightly amount for Airbnb, which is necessary to fully answer the user's query.",
+        "The connection made in the reasoning type is not sufficiently supported by the evidence provided, as it does not clarify how the hotel cap translates into a specific Airbnb nightly amount restriction."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate's answer does not explicitly state the Airbnb nightly amount restriction, only mentioning that it is contingent upon the hotel cap. It lacks clarity on how the cheaper-than-hotel condition affects the Airbnb nightly amount restriction.; The answer does not fully address the question as it does not provide a specific nightly amount for Airbnb, which is necessary to fully answer the user's query.; The connection made in the reasoning type is not sufficiently supported by the evidence provided, as it does not clarify how the hotel cap translates into a specific Airbnb nightly amount restriction."
+  }
+]

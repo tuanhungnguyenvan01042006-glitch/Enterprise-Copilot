@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Proof-of-loss requirements",
+        "local-law exception",
+        "bereavement leave"
+      ],
+      "user_input": "What are the proof-of-loss documentation requirements for bereavement leave at GitLab, and how does local law affect these requirements?",
+      "reference": "At GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law).",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "**No Documentation Required:**\nAt GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law).",
+          "contribution": "This quote directly states the proof-of-loss documentation policy and the local-law exception for bereavement leave."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the proof-of-loss documentation policy and the local-law exception for bereavement leave at GitLab, directly answering the question."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Proof-of-loss requirements",
+        "local-law exception",
+        "bereavement leave"
+      ],
+      "user_input": "What are the proof-of-loss documentation requirements for bereavement leave at GitLab, and how does local law affect these requirements?",
+      "reference": "At GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law).",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "**No Documentation Required:**\nAt GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law).",
+          "contribution": "This quote directly states the proof-of-loss documentation policy and the local-law exception for bereavement leave."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the proof-of-loss documentation policy and the local-law exception for bereavement leave at GitLab, directly answering the question.",
+      "id": "final-28",
+      "question_type": "single_hop",
+      "planned_focus": "Proof-of-loss requirements and local-law exception for bereavement.",
+      "reference_contexts": [
+        "### Request Process\n\n### Request Process\n\nWe realize that advance notice may not always be possible in these circumstances. You should notify your manager as soon as you're able and enter dates in Workday when you can.\n\n1. **Notify Your Manager**: Inform your manager about your need for bereavement leave as soon as possible. You only need to share details you're comfortable discussing. You can also work directly with the Absence Management team if you prefer (email leaves@gitlab.com).\n1. **Document in Workday**: Enter your bereavement leave request through the Workday app or Slack integration:\n      - Select the day(s) you need > Click \"Time-Off\" > Click \"Bereavement\" > *Optional*: add a comment > Click \"Submit\"\n      - Review your country's reporting requirements to ensure compliance with local regulations\n1. **Create a Coverage Plan**: Arrange appropriate coverage for your responsibilities, set expectations around communication during your absence, and plan for your return to work.\n\n**No Documentation Required:**\nAt GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law). This approach builds trust and supports team members during vulnerable times."
+      ],
+      "reference_context_ids": [
+        "64bc697c-be58-5fed-a3b2-480ba8fa2e64"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "64bc697c-be58-5fed-a3b2-480ba8fa2e64",
+          "chunk_index": 29,
+          "block_type": "text",
+          "token_count": 257,
+          "section_path": "Bereavement > Request Process",
+          "source_start": 22111,
+          "source_end": 23376,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

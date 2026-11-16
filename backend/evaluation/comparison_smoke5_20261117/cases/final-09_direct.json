@@ -1,0 +1,46 @@
+{
+  "plan_id": "final-09",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "7e60e325-bd1a-5c09-8d70-832d5a625df5"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Forwarding confidential work emails to personal addresses",
+      "automated forwarding"
+    ],
+    "user_input": "What are the rules regarding forwarding confidential work emails to personal email addresses and automated forwarding of emails from a team member account?",
+    "reference": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+        "contribution": "This quote explicitly states the prohibitions on forwarding confidential emails and automated forwarding."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the prohibitions on forwarding confidential emails to personal addresses and automated forwarding, directly answering the question."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1225,
+    "output_tokens": 172,
+    "cost_usd_estimate": 0.00045799999999999997
+  },
+  "judge": {
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 734,
+    "output_tokens": 35,
+    "cost_usd_estimate": 0.001748
+  }
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "Domestic Flights",
+        "International Flights",
+        "business class exception"
+      ],
+      "user_input": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers.",
+      "reference": "Domestic flights over 5 hours allow booking the next class up from standard economy below business class; international flights over 5 hours allow the same, but international flights over 8 hours with frequent travel and specific trip purposes permit business class.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights upgrade rule"
+        },
+        {
+          "context_index": 1,
+          "quote": "For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n\nFor those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference",
+          "contribution": "International flights upgrade rules and business class exception"
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 defines domestic flight upgrade rules; Context 1 defines international flight upgrade rules and the business class exception conditions."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "Domestic Flights",
+        "International Flights",
+        "business class exception"
+      ],
+      "user_input": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers.",
+      "reference": "Domestic flights over 5 hours allow booking the next class up from standard economy below business class; international flights over 5 hours allow the same, but international flights over 8 hours with frequent travel and specific trip purposes permit business class.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights upgrade rule"
+        },
+        {
+          "context_index": 1,
+          "quote": "#### International Flights\n\n- **Flights greater than 5 hours of consecutive flight time** - For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n- **Flights exceeding 8 hours of consecutive flight time** - For those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference",
+          "contribution": "International flights upgrade rules and business class exception"
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 defines domestic flight upgrade rules; Context 1 defines international flight upgrade rules and the business class exception conditions."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Domestic Flights",
+        "International Flights",
+        "business class exception"
+      ],
+      "user_input": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers.",
+      "reference": "Domestic flights over 5 hours allow booking the next class up from standard economy below business class; international flights over 5 hours allow the same, but international flights over 8 hours with frequent travel and specific trip purposes permit business class.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights upgrade rule"
+        },
+        {
+          "context_index": 1,
+          "quote": "#### International Flights\n\n- **Flights greater than 5 hours of consecutive flight time** - For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n- **Flights exceeding 8 hours of consecutive flight time** - For those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference",
+          "contribution": "International flights upgrade rules and business class exception"
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 defines domestic flight upgrade rules; Context 1 defines international flight upgrade rules and the business class exception conditions.",
+      "id": "final-36",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers.",
+      "reference_contexts": [
+        "#### Domestic Flights\n\n- **Flights over 5 hours of consecutive flight time** - For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+        "#### International Flights\n\n- **Flights greater than 5 hours of consecutive flight time** - For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n- **Flights exceeding 8 hours of consecutive flight time** - For those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference"
+      ],
+      "reference_context_ids": [
+        "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+        "8399e9de-37b8-57a2-b8aa-ac010b7908b7"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+          "chunk_index": 13,
+          "block_type": "text",
+          "token_count": 66,
+          "section_path": "4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Domestic Flights",
+          "source_start": 13532,
+          "source_end": 13843,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        },
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "8399e9de-37b8-57a2-b8aa-ac010b7908b7",
+          "chunk_index": 14,
+          "block_type": "text",
+          "token_count": 154,
+          "section_path": "4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > International Flights",
+          "source_start": 13845,
+          "source_end": 14590,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

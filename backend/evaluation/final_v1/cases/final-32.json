@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "indicate availability as a mentor",
+        "mentor status"
+      ],
+      "user_input": "How can I indicate my availability as a mentor on the team page?",
+      "reference": "To indicate your mentorship availability on the GitLab team page, set the `mentor` status to `true`.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`.",
+          "contribution": "This explains how to indicate availability as a mentor."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly explains the action required to indicate mentorship availability."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "indicate availability as a mentor",
+        "mentor status"
+      ],
+      "user_input": "How can I indicate my availability as a mentor on the team page?",
+      "reference": "To indicate your mentorship availability on the GitLab team page, set the `mentor` status to `true`.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`.",
+          "contribution": "This explains how to indicate availability as a mentor."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly explains the action required to indicate mentorship availability.",
+      "id": "final-32",
+      "question_type": "single_hop",
+      "planned_focus": "How to indicate availability as a mentor on the team page.",
+      "reference_contexts": [
+        "## Become a mentor\n\n1. Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`. [Example MR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/75890)"
+      ],
+      "reference_context_ids": [
+        "e541250f-f51a-556b-9632-2b0fbd19a13f"
+      ],
+      "reference_document_ids": [
+        "4bb3fc75-d6ae-511a-981f-d98df33744c1"
+      ],
+      "sources": [
+        {
+          "document_id": "4bb3fc75-d6ae-511a-981f-d98df33744c1",
+          "chunk_id": "e541250f-f51a-556b-9632-2b0fbd19a13f",
+          "chunk_index": 10,
+          "block_type": "text",
+          "token_count": 75,
+          "section_path": "Become a mentor",
+          "source_start": 6206,
+          "source_end": 6496,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Mentoring at GitLab",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

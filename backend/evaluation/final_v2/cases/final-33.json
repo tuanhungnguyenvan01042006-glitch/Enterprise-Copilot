@@ -1,0 +1,120 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "mentorship end",
+        "stay connected with mentor"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what options exist for staying connected with a mentor?",
+      "reference": "Mentorships end or change over time. It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work. Thank each other for dedicating time for the mentorship.\nMentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+          "contribution": "Mentorship may end if goals are accomplished but may also continue with a meeting cadence to stay connected."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states conditions for ending mentorship and options for continuing connection."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote=\"It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work. Thank each other for dedicating time for the mentorship.\\nMentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.\". Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 2,
+    "candidate_raw": {
+      "keyphrases": [
+        "mentorship end",
+        "stay connected with mentor"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what options exist for staying connected with a mentor?",
+      "reference": "It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+          "contribution": "Mentorship may end if goals are accomplished but may also continue with a meeting cadence to stay connected."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states conditions for ending mentorship and options for continuing connection."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "mentorship end",
+        "stay connected with mentor"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what options exist for staying connected with a mentor?",
+      "reference": "It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "## Ending your mentorship\n\nMentorships end or change over time. Review these guidelines for how to end your mentorship with grace and some suggested actions to take as your mentorship ends.\n\n1. It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work. Thank each other for dedicating time for the mentorship.\n1. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.\n1. Share your mentorship results with your manager or your direct reports. Take time in your 1:1s to share why and how the mentorship helped you reach your goals, either professionally or personally. This is also a great time to connect your mentorship with the accomplishment of your OKRs, if it helped you achieve results.\n1. Add your mentorship to your resume or to your LinkedIn profile. For mentors, this might look like a separate entry to demonstrate leadership. For mentees, you might mention the mentorship in relation to the goals you achieved.\n1. Write a blog or LinkedIn post with a shout out to your mentor/mentee, highlighting what you learned and what surprised you.",
+          "contribution": "Mentorship may end if goals are accomplished but may also continue with a meeting cadence to stay connected."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states conditions for ending mentorship and options for continuing connection."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "mentorship end",
+        "stay connected with mentor"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what options exist for staying connected with a mentor?",
+      "reference": "It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "## Ending your mentorship\n\nMentorships end or change over time. Review these guidelines for how to end your mentorship with grace and some suggested actions to take as your mentorship ends.\n\n1. It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work. Thank each other for dedicating time for the mentorship.\n1. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.\n1. Share your mentorship results with your manager or your direct reports. Take time in your 1:1s to share why and how the mentorship helped you reach your goals, either professionally or personally. This is also a great time to connect your mentorship with the accomplishment of your OKRs, if it helped you achieve results.\n1. Add your mentorship to your resume or to your LinkedIn profile. For mentors, this might look like a separate entry to demonstrate leadership. For mentees, you might mention the mentorship in relation to the goals you achieved.\n1. Write a blog or LinkedIn post with a shout out to your mentor/mentee, highlighting what you learned and what surprised you.",
+          "contribution": "Mentorship may end if goals are accomplished but may also continue with a meeting cadence to stay connected."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states conditions for ending mentorship and options for continuing connection.",
+      "id": "final-33",
+      "question_type": "single_hop",
+      "planned_focus": "Whether mentorship must end after goals are accomplished and options for staying connected.",
+      "reference_contexts": [
+        "## Ending your mentorship\n\nMentorships end or change over time. Review these guidelines for how to end your mentorship with grace and some suggested actions to take as your mentorship ends.\n\n1. It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work. Thank each other for dedicating time for the mentorship.\n1. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.\n1. Share your mentorship results with your manager or your direct reports. Take time in your 1:1s to share why and how the mentorship helped you reach your goals, either professionally or personally. This is also a great time to connect your mentorship with the accomplishment of your OKRs, if it helped you achieve results.\n1. Add your mentorship to your resume or to your LinkedIn profile. For mentors, this might look like a separate entry to demonstrate leadership. For mentees, you might mention the mentorship in relation to the goals you achieved.\n1. Write a blog or LinkedIn post with a shout out to your mentor/mentee, highlighting what you learned and what surprised you."
+      ],
+      "reference_context_ids": [
+        "27ea6ecd-ce6d-5ff7-b77c-52a375c72bd4"
+      ],
+      "reference_document_ids": [
+        "4bb3fc75-d6ae-511a-981f-d98df33744c1"
+      ],
+      "sources": [
+        {
+          "document_id": "4bb3fc75-d6ae-511a-981f-d98df33744c1",
+          "chunk_id": "27ea6ecd-ce6d-5ff7-b77c-52a375c72bd4",
+          "chunk_index": 31,
+          "block_type": "text",
+          "token_count": 305,
+          "section_path": "Ending your mentorship",
+          "source_start": 13212,
+          "source_end": 14608,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Mentoring at GitLab",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

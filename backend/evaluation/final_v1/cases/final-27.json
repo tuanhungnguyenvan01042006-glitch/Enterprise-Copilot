@@ -1,0 +1,102 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Bereavement eligibility for loss of a pet",
+        "flexible duration",
+        "manager coordination"
+      ],
+      "user_input": "What are the requirements for taking bereavement leave for the loss of a pet?",
+      "reference": "Employees are eligible for bereavement leave for the loss of a pet, and there is no set limit on the number of days. Team members should coordinate with their manager about their needs and coverage plans.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.",
+          "contribution": "Eligibility for bereavement leave includes loss of pets."
+        },
+        {
+          "context_index": 0,
+          "quote": "There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.",
+          "contribution": "Flexible duration of bereavement leave."
+        },
+        {
+          "context_index": 0,
+          "quote": "team members should coordinate with their manager about their needs and coverage plans.",
+          "contribution": "Requirement for manager coordination."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context provides information on bereavement eligibility for loss of a pet, the flexible duration of leave, and the need for manager coordination."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Bereavement eligibility for loss of a pet",
+        "flexible duration",
+        "manager coordination"
+      ],
+      "user_input": "What are the requirements for taking bereavement leave for the loss of a pet?",
+      "reference": "Employees are eligible for bereavement leave for the loss of a pet, and there is no set limit on the number of days. Team members should coordinate with their manager about their needs and coverage plans.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.",
+          "contribution": "Eligibility for bereavement leave includes loss of pets."
+        },
+        {
+          "context_index": 0,
+          "quote": "There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.",
+          "contribution": "Flexible duration of bereavement leave."
+        },
+        {
+          "context_index": 0,
+          "quote": "team members should coordinate with their manager about their needs and coverage plans.",
+          "contribution": "Requirement for manager coordination."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context provides information on bereavement eligibility for loss of a pet, the flexible duration of leave, and the need for manager coordination.",
+      "id": "final-27",
+      "question_type": "single_hop",
+      "planned_focus": "Bereavement eligibility for loss of a pet; flexible duration and manager coordination.",
+      "reference_contexts": [
+        "### Key Principles\n\n- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.\n- **Confidentiality**: Details shared about a loss will be treated with strict confidentiality and respect."
+      ],
+      "reference_context_ids": [
+        "ca14fec7-6b79-51fb-b151-be9bdea65bc3"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "ca14fec7-6b79-51fb-b151-be9bdea65bc3",
+          "chunk_index": 28,
+          "block_type": "text",
+          "token_count": 137,
+          "section_path": "Bereavement > Key Principles",
+          "source_start": 21432,
+          "source_end": 22109,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

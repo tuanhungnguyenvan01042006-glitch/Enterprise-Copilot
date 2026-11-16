@@ -1,0 +1,92 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "lost device",
+        "credentials",
+        "GitLab-sensitive data"
+      ],
+      "user_input": "What immediate action should I take if I lose a device containing credentials or GitLab-sensitive data?",
+      "reference": "If a team member loses a device that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "they should send an email to `panic@gitlab.com` right away.",
+          "contribution": "This specifies the immediate action to take."
+        },
+        {
+          "context_index": 0,
+          "quote": "GitLab provides a `panic@gitlab.com` email address and a [lost or stolen procedure](/handbook/security#reporting-an-incident) for team members to use in situations that require an immediate security response.",
+          "contribution": "This establishes the context for the action."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the immediate action required for a lost device containing sensitive data."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "lost device",
+        "credentials",
+        "GitLab-sensitive data"
+      ],
+      "user_input": "What immediate action should I take if I lose a device containing credentials or GitLab-sensitive data?",
+      "reference": "If a team member loses a device that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "they should send an email to `panic@gitlab.com` right away.",
+          "contribution": "This specifies the immediate action to take."
+        },
+        {
+          "context_index": 0,
+          "quote": "GitLab provides a `panic@gitlab.com` email address and a [lost or stolen procedure](/handbook/security#reporting-an-incident) for team members to use in situations that require an immediate security response.",
+          "contribution": "This establishes the context for the action."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the immediate action required for a lost device containing sensitive data.",
+      "id": "final-12",
+      "question_type": "single_hop",
+      "planned_focus": "Immediate action for a lost device containing credentials or GitLab-sensitive data.",
+      "reference_contexts": [
+        "### Lost or Stolen Procedures\n\nGitLab provides a `panic@gitlab.com` email address and a [lost or stolen procedure](/handbook/security#reporting-an-incident) for team members to use in situations that require an immediate security response. Should a team member lose a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away. When the production and security teams receive an email sent to this address it will be handled immediately. Using this address provides an excellent way to limit the damage caused by a loss of one of these devices.\n\nGitLab reserves the right to request documentation of the theft and/or a related police report in the case of a stolen laptop."
+      ],
+      "reference_context_ids": [
+        "22af0f11-8853-5ace-82bc-b67beaa25963"
+      ],
+      "reference_document_ids": [
+        "e5917802-99a3-5bc2-b599-1c51702ef7d8"
+      ],
+      "sources": [
+        {
+          "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+          "chunk_id": "22af0f11-8853-5ace-82bc-b67beaa25963",
+          "chunk_index": 20,
+          "block_type": "text",
+          "token_count": 171,
+          "section_path": "Procedure > Lost or Stolen Procedures",
+          "source_start": 19279,
+          "source_end": 20088,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Internal Acceptable Use Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "plan_id": "final-10",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "db424adb-4371-50c2-beab-bede35cf863f"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "passcode-enabled",
+      "recommended patching",
+      "personal mobile phones",
+      "accessing GitLab-managed data"
+    ],
+    "user_input": "What are the requirements for passcodes and patching on personal phones used to access GitLab-managed data?",
+    "reference": "All personal mobile computing devices used to access GitLab-managed data, including but not limited to email and GitLab.com, must be passcode-enabled. Mobile computing best practices dictate that these devices should be running the latest version of the operating system available, and all new patches applied.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "All personal mobile computing devices used to access GitLab-managed data, including but not limited to email and GitLab.com, must be passcode-enabled. Mobile computing best practices dictate that these devices should be running the latest version of the operating system available, and all new patches applied.",
+        "contribution": "This quote states the passcode requirement and recommended patching for personal phones accessing GitLab-managed data."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the passcode requirement and recommended patching for personal phones accessing GitLab-managed data."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1122,
+    "output_tokens": 232,
+    "cost_usd_estimate": 0.0008200000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "All personal mobile computing devices used to access GitLab-managed data must be passcode-enabled.",
+      "Devices include but are not limited to those accessing email and GitLab.com.",
+      "Mobile computing best practices dictate devices should be running the latest OS version available.",
+      "All new patches should be applied."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 739,
+    "output_tokens": 103,
+    "cost_usd_estimate": 0.002302
+  }
+}

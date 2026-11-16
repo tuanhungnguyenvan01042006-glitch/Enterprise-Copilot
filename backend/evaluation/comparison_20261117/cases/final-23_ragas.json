@@ -1,0 +1,52 @@
+{
+  "plan_id": "final-23",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "350a96f6-e44f-526a-967e-bb8dd7c7ad33"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1783,
+    "output_tokens": 164,
+    "cost_usd_estimate": 0.0009756000000000001
+  },
+  "candidate": {
+    "user_input": "Under the Recoupment policy, what is required if a team member voluntarily leaves GitLab before completing twelve consecutive months of active employment after receiving academic study reimbursement?",
+    "reference": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab. This policy applies only to academic study reimbursements.",
+    "reference_contexts": [
+      "## Recoupment policy\n\nIf a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab.\n\nThis policy applies to academic study reimbursements only. Team members should review this requirement before submitting requests that fall under this category."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Team member voluntarily terminates employment",
+      "Before completing twelve consecutive months of active employment",
+      "Academic study or tuition expenses of $1,000 USD and over",
+      "Must be refunded to GitLab",
+      "Policy applies to academic study reimbursements only"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 705,
+    "output_tokens": 94,
+    "cost_usd_estimate": 0.002162
+  }
+}

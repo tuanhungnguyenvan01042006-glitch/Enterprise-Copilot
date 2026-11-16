@@ -1,0 +1,50 @@
+{
+  "plan_id": "final-20",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "b0c45505-5adc-5855-899c-82ac2dd27213"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Recommended lead time for a Compass G&D request"
+    ],
+    "user_input": "What is the recommended lead time for submitting a Growth & Development Fund request in Compass?",
+    "reference": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+        "contribution": "This quote directly states the recommended lead time for submitting a Compass G&D request."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the recommended lead time for submitting a Compass G&D request, which answers the question directly."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1126,
+    "output_tokens": 146,
+    "cost_usd_estimate": 0.0006839999999999999
+  },
+  "judge": {
+    "source_conditions": [
+      "Request should be submitted at least 30 days in advance of the beginning of the experience when possible."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 704,
+    "output_tokens": 68,
+    "cost_usd_estimate": 0.0019520000000000002
+  }
+}

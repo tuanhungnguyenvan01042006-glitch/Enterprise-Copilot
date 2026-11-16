@@ -1,0 +1,57 @@
+{
+  "plan_id": "final-06",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "14dfc317-d2bd-53c4-991f-c0b4daec0158"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "software subscriptions",
+      "reimbursable",
+      "procurement process"
+    ],
+    "user_input": "What is the policy on reimbursement for software subscriptions and how should team members purchase software?",
+    "reference": "No software subscriptions are reimbursable. Team Members that would like to purchase software will need to go through the Procurement process.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "- No software subscriptions are reimbursable.\n- Team Members that would like to purchase software will need to go through the Procurement process.",
+        "contribution": "This states the reimbursement policy and procurement requirement for software."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the reimbursement rule and procurement requirement for software subscriptions."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1071,
+    "output_tokens": 146,
+    "cost_usd_estimate": 0.000662
+  },
+  "judge": {
+    "source_conditions": [
+      "No software subscriptions are reimbursable.",
+      "Team Members that would like to purchase software will need to go through the Procurement process."
+    ],
+    "missing_conditions": [
+      "Please follow the Guidance from the Individual Use Software Handbook Page."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the instruction to follow the Guidance from the Individual Use Software Handbook Page, which is a stated condition in the source for purchasing software. This makes the answer incomplete and not fully grounded."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 653,
+    "output_tokens": 126,
+    "cost_usd_estimate": 0.002314
+  }
+}

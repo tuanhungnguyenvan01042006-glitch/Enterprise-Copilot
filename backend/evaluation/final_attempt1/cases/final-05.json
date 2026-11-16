@@ -1,0 +1,101 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Netherlands team members claim home internet costs",
+        "address or amount changes"
+      ],
+      "user_input": "How do Netherlands team members claim home internet costs and what should they do if their address or the amount changes?",
+      "reference": "Netherlands team members must fill in and sign the Regeling Internet Thuis form and send it to the HRSavvy team at payroll@savvy-group.eu. If their address or the amount changes, they should send a new form to the HRSavvy team along with the invoice/letter for processing.",
+      "evidence": [
+        {
+          "context_index": 65,
+          "quote": "If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis] form and send it to the HRSavvy team at payroll@savvy-group.eu. If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+          "contribution": "This explains the process for claiming home internet costs and what to do if there are changes."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly outlines the process for claiming internet costs and the steps to take if there are changes."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Netherlands team members claim home internet costs",
+        "address or amount changes"
+      ],
+      "user_input": "How do Netherlands team members claim home internet costs, and what should they do if their address or the amount changes?",
+      "reference": "Netherlands team members must fill in and sign the Regeling Internet Thuis form and send it to the HRSavvy team. If their address or the amount changes, they should send a new form along with the invoice/letter for processing.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis] form and send it to the HRSavvy team at payroll@savvy-group.eu.",
+          "contribution": "Describes the initial claiming process for internet costs."
+        },
+        {
+          "context_index": 0,
+          "quote": "If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+          "contribution": "Details the action required if address or amount changes."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides specific instructions for claiming internet costs and the procedure for changes."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Netherlands team members claim home internet costs",
+        "address or amount changes"
+      ],
+      "user_input": "How do Netherlands team members claim home internet costs, and what should they do if their address or the amount changes?",
+      "reference": "Netherlands team members must fill in and sign the Regeling Internet Thuis form and send it to the HRSavvy team. If their address or the amount changes, they should send a new form along with the invoice/letter for processing.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis] form and send it to the HRSavvy team at payroll@savvy-group.eu.",
+          "contribution": "Describes the initial claiming process for internet costs."
+        },
+        {
+          "context_index": 0,
+          "quote": "If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+          "contribution": "Details the action required if address or amount changes."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides specific instructions for claiming internet costs and the procedure for changes."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Netherlands team members claim home internet costs",
+        "address or amount changes"
+      ],
+      "user_input": "How do Netherlands team members claim home internet costs, and what should they do if their address or the amount changes?",
+      "reference": "Netherlands team members must fill in and sign the Regeling Internet Thuis form and send it to the HRSavvy team. If their address or the amount changes, they should send a new form along with the invoice/letter for processing.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis] form and send it to the HRSavvy team at payroll@savvy-group.eu.",
+          "contribution": "Describes the initial claiming process for internet costs."
+        },
+        {
+          "context_index": 0,
+          "quote": "If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+          "contribution": "Details the procedure for changes in address or amount."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides specific instructions for claiming internet costs and the process for updating information."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

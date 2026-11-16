@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-17",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e8a3e4dd-caf5-5a12-8bce-006cebe45682"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1858,
+    "output_tokens": 135,
+    "cost_usd_estimate": 0.0009592000000000001
+  },
+  "candidate": {
+    "user_input": "Who is responsible for assigning an Onboarding Buddy to a new team member at GitLab?",
+    "reference": "The new team member's manager is responsible for assigning an Onboarding Buddy, as outlined in the onboarding issue and as the very first 'Before Starting at GitLab' manager task.",
+    "reference_contexts": [
+      "## How Can I Become An Onboarding Buddy?\n\nBuddy assignation is the new team member's manager's responsibility as outlined in the [onboarding issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) as the very first `Before Starting at GitLab` manager task. If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Buddy assignation is the new team member's manager's responsibility.",
+      "This is outlined in the onboarding issue as the very first 'Before Starting at GitLab' manager task."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 719,
+    "output_tokens": 82,
+    "cost_usd_estimate": 0.002094
+  }
+}

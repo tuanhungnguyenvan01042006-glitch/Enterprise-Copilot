@@ -1,0 +1,225 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Responsibility for closing onboarding issues",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "The Senior People Operations Specialist completes a monthly audit of all open onboarding issues to ensure that the new team member, manager and People Operations team tasks are completed. If any tasks are still outstanding, the People Operations Specialist will ping the relevant members on the issue requesting action or checking whether the issue can be closed. It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Responsibility for closing onboarding issues",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 5,
+    "candidate": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 6,
+    "candidate": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 7,
+    "candidate_raw": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "### Compliance\n\nThe Senior People Operations Specialist completes a monthly audit of all open onboarding issues to ensure that the new team member, manager and People Operations team tasks are completed. More importantly, there are certain tasks which need to be completed in line with our company compliance (security, payroll, etc).\n\nIf any tasks are still outstanding, the People Operations Specialist will ping the relevant members on the issue requesting action on the items or checking whether the issue can be closed.\n\n*It remains the responsibility of the People Operations Specialist to close the issue and remain compliant.*\n\nThe employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "People Operations Specialist responsibility",
+        "automatic 60-day closure"
+      ],
+      "user_input": "Who is responsible for closing onboarding issues and what happens to issues that remain open after 60 days?",
+      "reference": "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant. The employment bot will automatically close any onboarding issues still open after 60 days.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "### Compliance\n\nThe Senior People Operations Specialist completes a monthly audit of all open onboarding issues to ensure that the new team member, manager and People Operations team tasks are completed. More importantly, there are certain tasks which need to be completed in line with our company compliance (security, payroll, etc).\n\nIf any tasks are still outstanding, the People Operations Specialist will ping the relevant members on the issue requesting action on the items or checking whether the issue can be closed.\n\n*It remains the responsibility of the People Operations Specialist to close the issue and remain compliant.*\n\nThe employment bot will automatically close any onboarding issues still open after 60 days.",
+          "contribution": "This quote directly states who is responsible for closing onboarding issues and the automatic closure after 60 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the responsibility and the automatic closure rule.",
+      "id": "final-14",
+      "question_type": "single_hop",
+      "planned_focus": "Responsibility for closing onboarding issues and automatic 60-day closure.",
+      "reference_contexts": [
+        "### Compliance\n\nThe Senior People Operations Specialist completes a monthly audit of all open onboarding issues to ensure that the new team member, manager and People Operations team tasks are completed. More importantly, there are certain tasks which need to be completed in line with our company compliance (security, payroll, etc).\n\nIf any tasks are still outstanding, the People Operations Specialist will ping the relevant members on the issue requesting action on the items or checking whether the issue can be closed.\n\n*It remains the responsibility of the People Operations Specialist to close the issue and remain compliant.*\n\nThe employment bot will automatically close any onboarding issues still open after 60 days."
+      ],
+      "reference_context_ids": [
+        "55d1767d-2a5f-541f-a9ce-9bfac979e3c2"
+      ],
+      "reference_document_ids": [
+        "569a518d-4d3b-5741-971c-3a60d26044ef"
+      ],
+      "sources": [
+        {
+          "document_id": "569a518d-4d3b-5741-971c-3a60d26044ef",
+          "chunk_id": "55d1767d-2a5f-541f-a9ce-9bfac979e3c2",
+          "chunk_index": 6,
+          "block_type": "text",
+          "token_count": 129,
+          "section_path": "Managers of New Team Members > Compliance",
+          "source_start": 6291,
+          "source_end": 7018,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Onboarding",
+          "category": "REFERENCE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

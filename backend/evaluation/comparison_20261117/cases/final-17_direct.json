@@ -1,0 +1,54 @@
+{
+  "plan_id": "final-17",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e8a3e4dd-caf5-5a12-8bce-006cebe45682"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "volunteer as an onboarding buddy",
+      "who assigns buddies"
+    ],
+    "user_input": "How can I volunteer to be an onboarding buddy and who is responsible for assigning buddies?",
+    "reference": "Buddy assignation is the new team member's manager's responsibility as outlined in the onboarding issue. If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Buddy assignation is the new team member's manager's responsibility as outlined in the [onboarding issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) as the very first `Before Starting at GitLab` manager task. If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager.",
+        "contribution": "explains how to volunteer and who assigns buddies"
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context directly states the process for volunteering and who assigns onboarding buddies."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1125,
+    "output_tokens": 239,
+    "cost_usd_estimate": 0.0008324000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Buddy assignation is the new team member's manager's responsibility.",
+      "This is outlined in the onboarding issue as the first 'Before Starting at GitLab' manager task.",
+      "To volunteer, you must have been at GitLab 3+ months.",
+      "You must express your interest to your manager."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 732,
+    "output_tokens": 105,
+    "cost_usd_estimate": 0.002304
+  }
+}

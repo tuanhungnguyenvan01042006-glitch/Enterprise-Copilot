@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-15",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e694ad19-6e12-5b9a-9852-d1faf9688895"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1844,
+    "output_tokens": 129,
+    "cost_usd_estimate": 0.0009440000000000001
+  },
+  "candidate": {
+    "user_input": "When completing an onboarding issue, how should I handle tasks that do not apply to me?",
+    "reference": "When completing an onboarding issue, you should still check off all tasks, including those that do not apply to you, to indicate either that you have completed the task or that you have checked and confirmed it is not applicable to you.",
+    "reference_contexts": [
+      "### Completing Onboarding Issue\n\nFirst of all, what is an issue? You can learn more about what an issue is [here](https://docs.gitlab.com/ee/user/project/issues/).\n\nTo ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following:\n\n- I have completed this task\n- I have checked and this task is not applicable to me"
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "All tasks in the onboarding issue must be checked off, regardless of applicability.",
+      "Checking the box means either the task is completed or confirmed not applicable."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 721,
+    "output_tokens": 77,
+    "cost_usd_estimate": 0.002058
+  }
+}

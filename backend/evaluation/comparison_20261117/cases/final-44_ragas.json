@@ -1,0 +1,59 @@
+{
+  "plan_id": "final-44",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "0c48e867-12bf-5df2-a084-c6d4d91d4008",
+    "b67e486b-fbc5-5bb9-b9e8-3a069eeccca5"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1654,
+    "output_tokens": 104,
+    "cost_usd_estimate": 0.000828
+  },
+  "candidate": {
+    "user_input": "What is the seniority level required to access coaching through the G&D Fund at GitLab?",
+    "reference": "Coaching through the G&D Fund is available to team members at the Manager level and above.",
+    "reference_contexts": [
+      "### Coaching\n\nGitLab is currently contracted with SoundingBoard Coaching and we have a direct relationship with the vendor.\n\nCoaching through the G&D Fund is available to team members at the Manager level and above.\n\nIf you are seeking coaching, we strongly encourage you to use SoundingBoard Coaching. Because GitLab has a direct relationship with SoundingBoard, you will not need to put the cost on your personal credit card. The charge can be routed directly to the appropriate cost center.\n\nIf you would prefer to use a different coaching vendor, please note that in your request so the team can review it as part of the approval process.\n\nCoaching requests should still follow the current eligibility requirements and any program-specific guidance documented on this page.",
+      "## Eligibility\n\nTo use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Applicants must be full-time GitLab employees.",
+      "Applicants must meet performance expectations in their role.",
+      "Applicants must not be on leave status.",
+      "Coaching through the G&D Fund is available to team members at the Manager level and above."
+    ],
+    "missing_conditions": [
+      "Applicants must be full-time GitLab employees.",
+      "Applicants must meet performance expectations in their role.",
+      "Applicants must not be on leave status."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": false,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer only states the seniority requirement (Manager level and above) but omits the general eligibility conditions: being a full-time employee, meeting performance expectations, and not being on leave. These are required for coaching eligibility as well, per the sources. The answer does not fully address the combined eligibility as requested."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 807,
+    "output_tokens": 183,
+    "cost_usd_estimate": 0.003078
+  }
+}

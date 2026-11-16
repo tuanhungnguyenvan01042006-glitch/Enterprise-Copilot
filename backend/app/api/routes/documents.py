@@ -6,19 +6,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, File, Form, Query, Request, UploadFile, status
+from fastapi import APIRouter, BackgroundTasks, Depends, File, Form, Query, Request, UploadFile, status
 from fastapi.responses import FileResponse, PlainTextResponse
 from pydantic import ValidationError
 from sqlalchemy import func, or_, select
 from sqlalchemy.orm import Session
 
-from app.core.auth import Principal, require_staff, validate_csrf
+from app.core.auth import Principal, require_ready_principal, validate_csrf
 from app.core.config import get_settings
 from app.core.errors import api_error
 from app.db.session import get_db
 from app.models.audit_log import AuditLog
 from app.models.document import Document
 from app.models.user import User
+from app.RAG.pipeline import index_uploaded_document
 from app.schemas.document import (
     DocumentFileResponse,
     DocumentListResponse,
@@ -152,7 +153,7 @@ def _validate_metadata(metadata: DocumentMetadata, principal: Principal) -> Docu
     if principal.user.account_type != "ADMIN":
         if data.knowledge_scope != "DEPARTMENT" or data.department_id != principal.user.department_id:
             raise api_error(status.HTTP_403_FORBIDDEN, "FORBIDDEN", "Quản lý chỉ được quản lý tài liệu phòng ban của mình.")
-    return data
+    return data 
 
 
 def _validate_upload(upload: UploadFile) -> str:
@@ -203,13 +204,15 @@ def _finalize(
     extension: str,
 ) -> tuple[str, Path]:
     if knowledge_scope == "COMPANY":
-        key = f"COMPANY/{document_id}/{file_token}{extension}"
+        key = f"COMPANY/{document_id}/{file_token}{extension}"   
     else:
         key = f"DEPARTMENT/{department_id}/{document_id}/{file_token}{extension}"
-    final_path = _safe_path(key)
+    final_path = _safe_path(key)   
     final_path.parent.mkdir(parents=True, exist_ok=True)
     staged.replace(final_path)
     return key, final_path
+
+
 
 
 def _parse_metadata(raw: str) -> DocumentMetadata:
@@ -221,7 +224,7 @@ def _parse_metadata(raw: str) -> DocumentMetadata:
 
 @router.get("", response_model=DocumentListResponse)
 def list_documents(
-    principal: Annotated[Principal, Depends(require_staff)],
+    principal: Annotated[Principal, Depends(require_ready_principal)],
     db: Annotated[Session, Depends(get_db)],
     q: str | None = Query(default=None, max_length=200),
     category: str | None = Query(default=None),
@@ -247,6 +250,7 @@ def list_documents(
 
 @router.post("", response_model=DocumentResponse, status_code=status.HTTP_201_CREATED)
 def create_document(
+    background_tasks: BackgroundTasks,
     request: Request,
     principal: Annotated[Principal, Depends(validate_csrf)],
     db: Annotated[Session, Depends(get_db)],
@@ -257,10 +261,13 @@ def create_document(
     parsed = _validate_metadata(_parse_metadata(metadata), principal)
     extension = _validate_upload(file)
     staged, size, checksum = _stage_upload(file, extension)
-    final_path: Path | None = None
+    # hàm này trả về Staged : địa chỉ lưu file tạm 
+    final_path: Path | None = None        # khai báo biến final_path
     original_filename = Path(file.filename or f"document{extension}").name[:255]
+    # lấy ra tên file, từ file.filename
     mime_type = file.content_type or ("application/pdf" if extension == ".pdf" else "text/plain")
     document = Document(
+        # ko hề có Document_id 
         knowledge_scope=parsed.knowledge_scope,
         department_id=parsed.department_id,
         title=parsed.title,
@@ -270,7 +277,8 @@ def create_document(
         created_by=principal.user.id,
         updated_by=principal.user.id,
         original_filename=original_filename,
-        storage_key=f"pending/{uuid.uuid4()}",
+        storage_key=f"pending/{uuid.uuid4()}",  # storage key : là địa chỉ storage (địa chỉ lưu file trên backend), ở đây nó tạm thời gắn với với 1 khóa tạm 
+        # bởi hiện tại file chx đc đẩy lên chính thức địa chỉ Cuối cùng, khi chạy hàm finalize() thành công, trả về storage key, thì mới sửa lại thành địa chỉ thực
         mime_type=mime_type,
         size_bytes=size,
         checksum_sha256=checksum,
@@ -281,12 +289,26 @@ def create_document(
     try:
         db.add(document)
         db.flush()
+        # hàm flush gọi SQLAIchemy tạo Document_id... :Đặc biệt , Document_id chỉ được tạo sau khi đã add xong Document đó vào table
         key, final_path = _finalize(staged, document.id, uuid.uuid4(), document.knowledge_scope, document.department_id, extension)
+        # hàm finalize() chép nội dung file sang địa chỉ đích, ngoài ra nó trả về storage key (Company/...), và Path : trỏ tới địa chỉ thực của file
         document.storage_key = key
+        # 1 điêm khá lạ là, đối với đối tượng Document vừa mới add vào Database 
         _audit(db, request, principal, "DOCUMENT_CREATED", document.id, {"filename": original_filename})
         db.commit()
         committed = True
         db.refresh(document)
+        if final_path is not None:
+            background_tasks.add_task(        # Background tasks là thư viện hỗ trợ chạy hàm bất đồng biến (assync) trong fastAPI
+                index_uploaded_document,
+                final_path,
+                document_id=document.id,
+                knowledge_scope=document.knowledge_scope,
+                department_id=document.department_id,
+                title=document.title,
+                category=document.category,
+                storage_key=document.storage_key,
+            )
         return _response(db, principal, document)
     except Exception:
         staged.unlink(missing_ok=True)
@@ -297,10 +319,11 @@ def create_document(
 
 
 @router.get("/{document_id}", response_model=DocumentResponse)
-def get_document(document_id: uuid.UUID, principal: Annotated[Principal, Depends(require_staff)], db: Annotated[Session, Depends(get_db)]) -> DocumentResponse:
+def get_document(document_id: uuid.UUID, principal: Annotated[Principal, Depends(require_ready_principal)], db: Annotated[Session, Depends(get_db)]) -> DocumentResponse:
     return _response(db, principal, _get_readable(db, principal, document_id))
 
 
+# Hàm cập nhật metadatas : Giúp Admin có thể cập nhật Metadata theo ý muốn
 @router.patch("/{document_id}", response_model=DocumentResponse)
 def update_document(
     document_id: uuid.UUID,
@@ -309,21 +332,26 @@ def update_document(
     principal: Annotated[Principal, Depends(validate_csrf)],
     db: Annotated[Session, Depends(get_db)],
 ) -> DocumentResponse:
-    _require_manager_or_admin(principal)
+    _require_manager_or_admin(principal)   # Đòi hỏi quyền Manager,Admin
     document = db.scalar(select(Document).where(Document.id == document_id).with_for_update())
-    if document is None or not _can_manage(principal, document):
+    # Lấy ra tài liệu cần cập nhật(select), và dùng with_for_update để khóa tài liệu, tránh việc cập nhật đồng thời 
+
+    if document is None or not _can_manage(principal, document): # Can manage là hàm kiểm tra quyền : admin quản lý tài liệu company, manager qly tài liệu department
         raise api_error(status.HTTP_404_NOT_FOUND, "RESOURCE_NOT_FOUND", "Không tìm thấy tài liệu.")
     if document.revision != payload.expected_revision:
         raise api_error(status.HTTP_409_CONFLICT, "REVISION_CONFLICT", "Tài liệu đã được cập nhật. Vui lòng tải lại.")
     changes = payload.model_fields_set - {"expected_revision"}
+    # Changes là những trường cần cập nhật 
     if not changes:
         raise api_error(status.HTTP_422_UNPROCESSABLE_ENTITY, "VALIDATION_ERROR", "Cần có ít nhất một trường cần cập nhật.")
     values = payload.model_dump(exclude={"expected_revision"}, exclude_unset=True)
+    # lấy ra giá trị các trường cần cập nhật 
     previous_scope = document.knowledge_scope
     candidate_scope = values.get("knowledge_scope", document.knowledge_scope)
     candidate_department = values.get("department_id", document.department_id)
     if candidate_scope == "COMPANY" and "department_id" not in values:
         candidate_department = None
+    # tạo ra candidate (thông tin cập nhật),và validate nó trước khi add vào DB 
     candidate = _validate_metadata(
         DocumentMetadata(
             title=values.get("title", document.title),
@@ -336,7 +364,7 @@ def update_document(
         principal,
     )
     for field in ("title", "description", "category", "knowledge_scope", "language", "department_id"):
-        setattr(document, field, getattr(candidate, field))
+        setattr(document, field, getattr(candidate, field))   # Đây chính là hàm cập nhật giá trị trong DB 
     document.updated_by = principal.user.id
     document.updated_at = datetime.now(timezone.utc)
     document.revision += 1
@@ -347,18 +375,20 @@ def update_document(
     db.refresh(document)
     return _response(db, principal, document)
 
-
+# Hàm thay file của 1 Document có sẵn 
 @router.post("/{document_id}/file", response_model=DocumentResponse)
 def upload_file(
     document_id: uuid.UUID,
+    background_tasks: BackgroundTasks,
     request: Request,
     principal: Annotated[Principal, Depends(validate_csrf)],
     db: Annotated[Session, Depends(get_db)],
     expected_revision: Annotated[int, Form()],
     file: Annotated[UploadFile, File()],
+    # Nhận vào file mới , ngoài ra chỉ cần nhận vào thêm Document ID và Revision
 ) -> DocumentResponse:
     extension = _validate_upload(file)
-    staged, size, checksum = _stage_upload(file, extension)
+    staged, size, checksum = _stage_upload(file, extension) # Lưu file ở địa chỉ tạm 
     final_path: Path | None = None
     old_storage_key: str | None = None
     original_filename = Path(file.filename or f"document{extension}").name[:255]
@@ -398,11 +428,23 @@ def upload_file(
             _safe_path(old_storage_key).unlink(missing_ok=True)
         except OSError:
             pass
+    if final_path is not None:
+        background_tasks.add_task(
+            index_uploaded_document,
+            final_path,
+            document_id=document.id,
+            knowledge_scope=document.knowledge_scope,
+            department_id=document.department_id,
+            title=document.title,
+            category=document.category,
+            storage_key=document.storage_key,
+        )
     return _response(db, principal, document)
+# Hàm này sẽ cần gọi hàm logic xử lý khi thay file ở Qdrant 
 
 
 @router.get("/{document_id}/file/download")
-def download_file(document_id: uuid.UUID, principal: Annotated[Principal, Depends(require_staff)], db: Annotated[Session, Depends(get_db)]) -> FileResponse:
+def download_file(document_id: uuid.UUID, principal: Annotated[Principal, Depends(require_ready_principal)], db: Annotated[Session, Depends(get_db)]) -> FileResponse:
     document = _get_readable(db, principal, document_id)
     path = _safe_path(document.storage_key)
     if not path.is_file():
@@ -411,7 +453,7 @@ def download_file(document_id: uuid.UUID, principal: Annotated[Principal, Depend
 
 
 @router.get("/{document_id}/file/preview")
-def preview_file(document_id: uuid.UUID, principal: Annotated[Principal, Depends(require_staff)], db: Annotated[Session, Depends(get_db)]) -> PlainTextResponse:
+def preview_file(document_id: uuid.UUID, principal: Annotated[Principal, Depends(require_ready_principal)], db: Annotated[Session, Depends(get_db)]) -> PlainTextResponse:
     document = _get_readable(db, principal, document_id)
     if Path(document.original_filename).suffix.lower() not in {".md", ".txt"}:
         raise api_error(status.HTTP_415_UNSUPPORTED_MEDIA_TYPE, "PREVIEW_UNSUPPORTED", "Chỉ hỗ trợ preview MD/TXT.")

@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "group business-travel meal bill",
+        "senior Team Member"
+      ],
+      "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+      "reference": "The most senior Team Member present should pay the bill and submit for reimbursement when separate billing is impracticable due to group size.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+          "contribution": "Identifies who submits the bill when separate billing is impracticable."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies that the most senior Team Member present is responsible for submitting the bill when separate billing is not practicable."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "group business-travel meal bill",
+        "senior Team Member"
+      ],
+      "user_input": "Who submits a group business-travel meal bill when separate billing is impracticable?",
+      "reference": "The most senior Team Member present should pay the bill and submit for reimbursement when separate billing is impracticable due to group size.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.",
+          "contribution": "Identifies who submits the bill when separate billing is impracticable."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies that the most senior Team Member present is responsible for submitting the bill when separate billing is not practicable.",
+      "id": "final-04",
+      "question_type": "single_hop",
+      "planned_focus": "Who submits a group business-travel meal bill when separate billing is impracticable.",
+      "reference_contexts": [
+        "### Meals: Company Provided while Traveling\n\n- Meals while traveling on Company business  are reimbursable, up to $120 USD (or local equivalent currency) per day.\n- Each Team Member must submit their own receipts for reimbursement, so ensure to separate billing when going to meals with groups of Team Members. If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.\n- To be used for team activities and food/beverages associated with travel on Company business. Refer to our Travel Handbook Page.\n- Tips are acceptable up to 20% and should be detailed accordingly in the description box. This should be included in the final price to stay within the Policy limits. For US team members, cash tips under $50 do not need a receipt.\n- Please also add a description for the trip/reason for travel."
+      ],
+      "reference_context_ids": [
+        "a641249f-3a44-5834-b634-579923ffa485"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "a641249f-3a44-5834-b634-579923ffa485",
+          "chunk_index": 27,
+          "block_type": "text",
+          "token_count": 186,
+          "section_path": "4. PROCEDURES > Meals: Company Provided while Traveling",
+          "source_start": 22595,
+          "source_end": 23479,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

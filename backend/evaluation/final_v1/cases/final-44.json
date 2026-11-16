@@ -1,0 +1,36 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "G&D Fund",
+        "coaching eligibility"
+      ],
+      "user_input": "Who is eligible for coaching through the G&D Fund, combining general fund employment/performance/leave eligibility with the coaching seniority restriction? Do not state eligibility rules in the question.",
+      "reference": "Coaching through the G&D Fund is available to team members at the Manager level and above, who are full-time GitLab employees meeting performance expectations and not on leave status.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+          "contribution": "general fund employment/performance/leave eligibility"
+        },
+        {
+          "context_index": 1,
+          "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above.",
+          "contribution": "coaching seniority restriction"
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The eligibility for coaching through the G&D Fund combines the general employment/performance/leave criteria from context 0 with the seniority restriction from context 1."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question is ambiguous as it asks for eligibility without stating the rules, which could lead to confusion about what is being asked.",
+        "The candidate's reference does not clearly delineate the combination of eligibility criteria from both contexts, making it less clear how the two contexts interact to form a complete answer."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The question is ambiguous as it asks for eligibility without stating the rules, which could lead to confusion about what is being asked.; The candidate's reference does not clearly delineate the combination of eligibility criteria from both contexts, making it less clear how the two contexts interact to form a complete answer."
+  }
+]

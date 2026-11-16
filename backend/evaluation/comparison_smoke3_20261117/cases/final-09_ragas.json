@@ -1,0 +1,43 @@
+{
+  "plan_id": "final-09",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "7e60e325-bd1a-5c09-8d70-832d5a625df5"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 2064,
+    "output_tokens": 156,
+    "cost_usd_estimate": 0.0010752000000000001
+  },
+  "candidate": {
+    "user_input": "According to the Team Member Social Media Policy, what restrictions apply to making comments on behalf of GitLab when using social media?",
+    "reference": "When using social media tools, you must not make comments on behalf of GitLab without proper authorization, and you must not disclose the company's confidential or proprietary information about the business, suppliers, or customers.",
+    "reference_contexts": [
+      "#### Unacceptable Email and Communications Activities\n\nForwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.\n\n> Note: GitLab may retrieve messages from archives and servers without prior notice if GitLab has sufficient reason to do so. If deemed necessary, this investigation will be conducted with the knowledge and approval of the Security, People Business Partners, and Legal Departments.\n\nIn addition to following the [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/), when utilizing social media think about the effects of statements that you make. Keep in mind that these transmissions are permanent and easily transferable, and can affect our company's reputation and relationships with Team Members and customers. When using social media tools like blogs, Facebook, Twitter or wikis, ensure that you do not make comments on behalf of GitLab without proper authorization. Also, you must not disclose our company's confidential or proprietary information about our business, our suppliers, or our customers."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 578,
+    "output_tokens": 35,
+    "cost_usd_estimate": 0.001436
+  }
+}

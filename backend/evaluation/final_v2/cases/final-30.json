@@ -1,0 +1,168 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Modern Health registration",
+        "wellbeing assessment",
+        "matching process"
+      ],
+      "user_input": "How does a team member register for Modern Health and get matched with appropriate resources?",
+      "reference": "To register for Modern Health, a team member must download the app or visit the website, register with their GitLab email and name as in the system, then take the wellbeing assessment to get matched with appropriate resources.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources",
+          "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context directly explains the registration steps and matching process for Modern Health."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\\n2. Register with your GitLab email using your name as it appears in our system\\n3. Take the wellbeing assessment to get matched with appropriate resources'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Modern Health registration",
+        "wellbeing assessment",
+        "matching process"
+      ],
+      "user_input": "How does a team member register for Modern Health and get matched with appropriate resources?",
+      "reference": "A team member registers for Modern Health by downloading the app or visiting the website, registering with their GitLab email and name as it appears in the system, then taking the wellbeing assessment to get matched with appropriate resources.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources",
+          "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context directly explains the registration steps and matching process for Modern Health."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\\n2. Register with your GitLab email using your name as it appears in our system\\n3. Take the wellbeing assessment to get matched with appropriate resources'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Modern Health registration",
+        "wellbeing assessment",
+        "matching process"
+      ],
+      "user_input": "How does a team member register for Modern Health and get matched with appropriate resources?",
+      "reference": "A team member registers for Modern Health by downloading the app or visiting the website, registering with their GitLab email and name as it appears in the system, then taking the wellbeing assessment to get matched with appropriate resources.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources",
+          "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context directly explains the registration steps and matching process for Modern Health."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\\n2. Register with your GitLab email using your name as it appears in our system\\n3. Take the wellbeing assessment to get matched with appropriate resources'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 4,
+    "candidate_raw": {
+      "keyphrases": [
+        "Modern Health registration",
+        "wellbeing assessment",
+        "matching process"
+      ],
+      "user_input": "How does a team member register for Modern Health and get matched with appropriate resources?",
+      "reference": "A team member registers for Modern Health by downloading the app or visiting the website, registering with their GitLab email and name as it appears in the system, then taking the wellbeing assessment to get matched with appropriate resources.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources",
+          "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context directly explains the registration steps and matching process for Modern Health."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "Modern Health registration",
+        "wellbeing assessment",
+        "matching process"
+      ],
+      "user_input": "How does a team member register for Modern Health and get matched with appropriate resources?",
+      "reference": "A team member registers for Modern Health by downloading the app or visiting the website, registering with their GitLab email and name as it appears in the system, then taking the wellbeing assessment to get matched with appropriate resources.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "## How to Get Started\n\n### Registration Process\n\n1. Download the app from [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.modernhealth.modernhealth) or [App Store (iOS)](https://apps.apple.com/us/app/modern-health/id1445843859?ls=1), or visit [my.joinmodernhealth.com](https://my.joinmodernhealth.com)\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources\n4. Connect with a coach or therapist based on your assessment results",
+          "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context directly explains the registration steps and matching process for Modern Health."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Modern Health registration",
+        "wellbeing assessment",
+        "matching process"
+      ],
+      "user_input": "How does a team member register for Modern Health and get matched with appropriate resources?",
+      "reference": "A team member registers for Modern Health by downloading the app or visiting the website, registering with their GitLab email and name as it appears in the system, then taking the wellbeing assessment to get matched with appropriate resources.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "## How to Get Started\n\n### Registration Process\n\n1. Download the app from [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.modernhealth.modernhealth) or [App Store (iOS)](https://apps.apple.com/us/app/modern-health/id1445843859?ls=1), or visit [my.joinmodernhealth.com](https://my.joinmodernhealth.com)\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources\n4. Connect with a coach or therapist based on your assessment results",
+          "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context directly explains the registration steps and matching process for Modern Health.",
+      "id": "final-30",
+      "question_type": "single_hop",
+      "planned_focus": "How a team member registers for Modern Health and gets matched.",
+      "reference_contexts": [
+        "## How to Get Started\n\n### Registration Process\n\n1. Download the app from [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.modernhealth.modernhealth) or [App Store (iOS)](https://apps.apple.com/us/app/modern-health/id1445843859?ls=1), or visit [my.joinmodernhealth.com](https://my.joinmodernhealth.com)\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources\n4. Connect with a coach or therapist based on your assessment results"
+      ],
+      "reference_context_ids": [
+        "ca74d569-898f-5343-8671-a5f538c8b4d5"
+      ],
+      "reference_document_ids": [
+        "597c3d99-9bf0-53b7-bf38-ede42e5f4065"
+      ],
+      "sources": [
+        {
+          "document_id": "597c3d99-9bf0-53b7-bf38-ede42e5f4065",
+          "chunk_id": "ca74d569-898f-5343-8671-a5f538c8b4d5",
+          "chunk_index": 3,
+          "block_type": "text",
+          "token_count": 136,
+          "section_path": "How to Get Started > Registration Process",
+          "source_start": 1605,
+          "source_end": 2162,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Modern Health",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

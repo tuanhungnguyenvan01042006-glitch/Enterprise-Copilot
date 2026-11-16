@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-46",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "73e65c08-69af-5919-90e2-f374d954ebf2",
+    "16961fda-fc9c-5650-bbdc-55e7a9121f1c"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1812,
+    "output_tokens": 156,
+    "cost_usd_estimate": 0.0009744
+  },
+  "candidate": {
+    "user_input": "For a non-US caregiver sick absence lasting seven consecutive days, what steps must an employee take to report and document the absence?",
+    "reference": "For caregiver sick absences of 6 or more consecutive days outside the USA, employees must notify the Absence Management Team by submitting a Compass ticket, enter the time away in Workday using the \"Caregiver Sick Time\" label, and provide supporting documentation as required by local regulations by submitting it to the Absence Management team via Compass ticket. Documentation requirements vary by location.",
+    "reference_contexts": [
+      "### For Caregiver Sick Absences 6+ Consecutive Days\n\n### For Caregiver Sick Absences 6+ Consecutive Days\n\nCaregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n1. Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket).",
+      "### For Caregiver Sick Absences 1-5 Consecutive Days\n\n### For Caregiver Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n1. Your caregiver sick time will automatically update in Time Off by Deel\n1. If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)"
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "For absences of 6+ consecutive days (non-US): Notify Absence Management Team via Compass ticket",
+      "Enter time away in Workday using 'Caregiver Sick Time' label",
+      "Absence Management team may edit/replace entries as needed",
+      "Eligibility for leave of absence requires providing evidence per local requirements (e.g., medical certificate, doctor's note, fit note)",
+      "Documentation must be submitted to Absence Management team via Compass ticket",
+      "Documentation requirements vary by location"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1046,
+    "output_tokens": 141,
+    "cost_usd_estimate": 0.0032199999999999998
+  }
+}

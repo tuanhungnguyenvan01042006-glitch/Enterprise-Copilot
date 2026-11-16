@@ -1,0 +1,60 @@
+{
+  "plan_id": "final-44",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "0c48e867-12bf-5df2-a084-c6d4d91d4008",
+    "b67e486b-fbc5-5bb9-b9e8-3a069eeccca5"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Growth and Development Fund eligibility",
+      "coaching seniority restriction"
+    ],
+    "user_input": "Who is eligible for coaching through the Growth and Development Fund considering both the general eligibility criteria and the coaching seniority restriction?",
+    "reference": "Applicants must be full-time GitLab employees who meet performance expectations and are not on leave status to use the Growth and Development Fund. Coaching through the G&D Fund is available to team members at the Manager level and above.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+        "contribution": "Provides general eligibility criteria for the Growth and Development Fund."
+      },
+      {
+        "context_index": 1,
+        "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above.",
+        "contribution": "Specifies the seniority restriction for coaching eligibility through the G&D Fund."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 provides the general eligibility requirements for the Growth and Development Fund, while Context 1 adds the specific seniority restriction for coaching eligibility through the fund."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1240,
+    "output_tokens": 235,
+    "cost_usd_estimate": 0.0008719999999999999
+  },
+  "judge": {
+    "source_conditions": [
+      "Applicants must be full-time GitLab employees.",
+      "Applicants must meet performance expectations in their role.",
+      "Applicants must not be on leave status.",
+      "Coaching through the G&D Fund is available to team members at the Manager level and above."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 837,
+    "output_tokens": 93,
+    "cost_usd_estimate": 0.002418
+  }
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "metadata": {
+      "document_id": "580d0cb3-fad5-5f9e-bdc1-32e2ffedd4ec",
+      "chunk_id": "5ad5f844-c76e-5c15-acb8-e90c7fc84e6b",
+      "chunk_index": 1,
+      "block_type": "text",
+      "token_count": 253,
+      "section_path": "Purpose > Who's Involved",
+      "source_start": 649,
+      "source_end": 1788,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Ask Me Anything",
+      "category": "SOP"
+    },
+    "text": "### Who's Involved\n\nAMA meetings typically include the whole company, and are usually initiated by a leader, team member, or a group of leaders.\n\nThey can be initiated by anyone who wants to schedule an AMA, but are typically initiated by one of the following:\n\n- [GitLab E-Group Member](/handbook/company/team/?department=executive)\n- Director + Leaders\n- [Board Member](/handbook/board-meetings/#board-of-directors)\n- [GitLab TMRG group](/handbook/company/culture/inclusion/tmrg-tmag/)\n\nAMAs do not need to have a host, but there should be a person or people available to answer questions related to the AMA topic.\n\nOccasionally an AMA might be held for a smaller audience. It is encouraged for all AMAs to be open to the full company whenever possible. Occasionally an AMA may not make sense to be sent to the whole company. In those instances, it is still encouraged to add the calendar invitation to the GitLab Team Meetings Calendar as sometimes team members may want to join a call that may not be directly applicable to them. Whenever creating an AMA for a smaller group, be sure to invite the team directly in the calendar invite."
+  },
+  {
+    "metadata": {
+      "document_id": "580d0cb3-fad5-5f9e-bdc1-32e2ffedd4ec",
+      "chunk_id": "7f394015-87a3-5419-9e2c-5053e5d144a6",
+      "chunk_index": 2,
+      "block_type": "text",
+      "token_count": 340,
+      "section_path": "Purpose > AMA Kick off (best practices when starting an AMA)",
+      "source_start": 1790,
+      "source_end": 3477,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Ask Me Anything",
+      "category": "SOP"
+    },
+    "text": "### AMA Kick off (best practices when starting an AMA)\n\nThis guidance is primarily for the person or people who will be answering questions at a given AMA.\n\nAdding context to the AMA agenda and using the first 1-2 minutes of an AMA to ensure the audience understands how the time will be used has shown to lead to more engaging AMAs.\n\nEnsure the following items are added to the AMA agenda and follow these steps to set your AMA up for success:\n\n- The person or people responsible for answering questions should be listed in the AMA agenda and start the AMA by introducing themselves and their roles at GitLab.\n- If a brief explanation about *why* this AMA is being hosted may help the audience understand the purpose for the session, add a first agenda item that adds context and verbalize that point after introducing yourself.\n  - If multiple people will be responding to questions, identify one person to speak about *why* this AMA is being hosted by adding their name to the agenda item.\n- Information about how and where questions can be asked by the audience should be captured in the AMA agenda.\n  - For most AMAs, questions will be asked in an agenda doc, if this is the case please share that questions can also be asked in the Zoom chat if the agenda doc cannot be accessed.\n  - If sli.do or another platform is being used to ask questions, this should be noted.\n- If there is additional context the audience should be aware of to fully participate in the AMA or any documents that provide additional information that the audience should know about, it's a good practice to highlight these things up front by adding them as agenda items.\n- After that, onto the first question!"
+  },
+  {
+    "metadata": {
+      "document_id": "580d0cb3-fad5-5f9e-bdc1-32e2ffedd4ec",
+      "chunk_id": "dca31955-08d8-5573-bf4b-c8f20b3978d7",
+      "chunk_index": 3,
+      "block_type": "text",
+      "token_count": 192,
+      "section_path": "Purpose > Agenda document recommendations",
+      "source_start": 3479,
+      "source_end": 4528,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Ask Me Anything",
+      "category": "SOP"
+    },
+    "text": "### Agenda document recommendations\n\nA lot of team members attend AMAs which can lead to the agenda document becoming overloaded. Since this can mean that notes can't be taken for the discussion, it's recommended that team members add their questions to the document and then close the document unless they're actively taking notes.\n\nTeam members who require the written notes in order to participate and/or retain information are encouraged to remain in the document.\n\nIf the Google document becomes overloaded, people should add their questions to the zoom chat so that a notetaker or moderator of the AMA with access to the document can copy their questions into the agenda.\n\nFor team members who are watching the AMA but don't have questions, consider opening the agenda document to gain any initial context but then closing the document in advance of any discussion.\n\nThe intention of this is to make sure we're enabling asynchronous communication by allowing team members not in attendance to read a complete record of the AMA at a later time."
+  },
+  {
+    "metadata": {
+      "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+      "chunk_id": "8db8450f-8b9f-5ae0-91db-cdede0202f12",
+      "chunk_index": 8,
+      "block_type": "text",
+      "token_count": 171,
+      "section_path": "Procedure > Freeware, Browser Extensions, Add-ons, and Plugins",
+      "source_start": 6587,
+      "source_end": 7468,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "GitLab Internal Acceptable Use Policy",
+      "category": "POLICY"
+    },
+    "text": "### Freeware, Browser Extensions, Add-ons, and Plugins\n\nIndividual Use Software (freeware, add-ons and plugins) is permitted, with the exception of unauthorized Google Workspace Integrations and Chrome Extensions. Individual Use Software is subject to retroactive removal at any time by IT, Legal and Security when it is deemed unsafe or insecure.\n\nAuthorized Google Workspace Integrations and other approved Individual Use Software can be found on the [Pre-Approved Individual-Use Software](https://internal.gitlab.com/handbook/finance/procurement/pre-approved-individual-use-software/) list and are permitted for use subject to any \"Notes and Restrictions\" for each respective Pre-Approved software offering.\n\nTo request approval for new Individual Use Software, please follow the [Individual Use Software](/handbook/finance/procurement/individual-use-software/) request process."
+  },
+  {
+    "metadata": {
+      "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+      "chunk_id": "d2576792-4d94-55eb-82db-047ab2ee646c",
+      "chunk_index": 13,
+      "block_type": "text",
+      "token_count": 195,
+      "section_path": "Procedure > Return of GitLab-Owned Assets",
+      "source_start": 13043,
+      "source_end": 13961,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "GitLab Internal Acceptable Use Policy",
+      "category": "POLICY"
+    },
+    "text": "### Return of GitLab-Owned Assets\n\nAll GitLab-owned computing resources must be [returned](/handbook/people-group/offboarding/#returning-property-to-gitlab) upon separation from the company.  Notwithstanding anything contrary in the [Laptop Buy Back Policy](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks) or the [Offboarding Tasks](/handbook/people-group/offboarding/#managing-the-offboarding-tasks), Team Members must return any GitLab-Owned Assets -- irrespective of their valuation -- if they are specifically requested to do so either during their tenure with GitLab or upon offboarding. In cases of investigation, misconduct, termination for cause or any violation of [GitLab's Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx), a team member has no right to retain GitLab-owned computing equipment."
+  },
+  {
+    "metadata": {
+      "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+      "chunk_id": "22af0f11-8853-5ace-82bc-b67beaa25963",
+      "chunk_index": 20,
+      "block_type": "text",
+      "token_count": 171,
+      "section_path": "Procedure > Lost or Stolen Procedures",
+      "source_start": 19279,
+      "source_end": 20088,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "GitLab Internal Acceptable Use Policy",
+      "category": "POLICY"
+    },
+    "text": "### Lost or Stolen Procedures\n\nGitLab provides a `panic@gitlab.com` email address and a [lost or stolen procedure](/handbook/security#reporting-an-incident) for team members to use in situations that require an immediate security response. Should a team member lose a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away. When the production and security teams receive an email sent to this address it will be handled immediately. Using this address provides an excellent way to limit the damage caused by a loss of one of these devices.\n\nGitLab reserves the right to request documentation of the theft and/or a related police report in the case of a stolen laptop."
+  },
+  {
+    "metadata": {
+      "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+      "chunk_id": "ffd2f262-45f8-592c-8bc4-a5fbb01c38d8",
+      "chunk_index": 6,
+      "block_type": "text",
+      "token_count": 258,
+      "section_path": "3. General Guidelines > 3.1 Out of Policy Transactions",
+      "source_start": 9116,
+      "source_end": 10358,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Global Travel and Expense Policy",
+      "category": "POLICY"
+    },
+    "text": "### 3.1 Out of Policy Transactions\n\n- Expenses flagged as \"Out of Policy\" in Navan may mean that the expense requires additional review due to requiring certain attachments (e.g., an approved issue) and approvals. Upon review, if more clarification is needed for a certain expense, the AP team will contact the team member via Navan to ask for justification of the transaction before approving or rejecting the expense.\n- Any exception to the policy is granted or denied at the discretion of the AP Admins. If the Admins determine that additional input is required, they will escalate the request to the team member's manager to make a final decision. Exception approvals can be granted within the Navan tool or via a Compass ticket.\n- There will be occasions where if you have claimed an item and it needs to be reimbursed back to GitLab, you will need to follow the repayment process in Navan for submission of the funds.\n- If you have any questions regarding a rejected expense due to being out of policy, submit a request under the `Expenses -> General Expenses` tile  [Compass](/handbook/eta/corporate-it/compass/compass-guide/), ensuring that you tag your Manager , and adding any other additional documentation so this can be reviewed."
+  },
+  {
+    "metadata": {
+      "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+      "chunk_id": "86ecfb95-5e47-5ed0-8ed9-eb874e819e78",
+      "chunk_index": 11,
+      "block_type": "text",
+      "token_count": 143,
+      "section_path": "4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Advance Purchase",
+      "source_start": 12752,
+      "source_end": 13407,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Global Travel and Expense Policy",
+      "category": "POLICY"
+    },
+    "text": "#### Advance Purchase\n\n- Team Members should make air reservations as early as possible, in order to take advantage of discounted fares. Travelers will ideally book:\n  - Domestic: At least 14 days in advance\n  - International: At least 21 days in advance\n\nThe airfare policy in Navan is set up as a \"Dynamic Policy\" which calculates a fair market price for every search based on travel dates and destinations. Any purchases that are over 20% of the Dynamic Policy will be flagged for further review by your manager. Also note that anything booked outside of Navan will flag as \"Out of Policy\", and will need to be reviewed by your manager and the AP team."
+  },
+  {
+    "metadata": {
+      "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+      "chunk_id": "a641249f-3a44-5834-b634-579923ffa485",
+      "chunk_index": 27,
+      "block_type": "text",
+      "token_count": 186,
+      "section_path": "4. PROCEDURES > Meals: Company Provided while Traveling",
+      "source_start": 22595,
+      "source_end": 23479,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Global Travel and Expense Policy",
+      "category": "POLICY"
+    },
+    "text": "### Meals: Company Provided while Traveling\n\n- Meals while traveling on Company business  are reimbursable, up to $120 USD (or local equivalent currency) per day.\n- Each Team Member must submit their own receipts for reimbursement, so ensure to separate billing when going to meals with groups of Team Members. If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.\n- To be used for team activities and food/beverages associated with travel on Company business. Refer to our Travel Handbook Page.\n- Tips are acceptable up to 20% and should be detailed accordingly in the description box. This should be included in the final price to stay within the Policy limits. For US team members, cash tips under $50 do not need a receipt.\n- Please also add a description for the trip/reason for travel."
+  },
+  {
+    "metadata": {
+      "document_id": "66fdf28a-3bd4-5d24-b568-a39bdc398aad",
+      "chunk_id": "49f3a891-03e9-5347-90a8-d774f32d1495",
+      "chunk_index": 7,
+      "block_type": "text",
+      "token_count": 319,
+      "section_path": "How to manage onboarding new hires remotely > Technical requirements for all-remote onboarding",
+      "source_start": 4619,
+      "source_end": 6214,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "The complete guide to remote onboarding for new-hires",
+      "category": "GUIDE"
+    },
+    "text": "### Technical requirements for all-remote onboarding\n\nWhile tools are an important part of any role, new hires need to feel empowered to use them. Organizations can help build technical confidence by setting up early wins with action items the new hire can complete as they move through their training. Organizational onboarding provides the access to information through handbooks/documentation, and technical onboarding is about using that knowledge to work through the tools.\n\nAt GitLab, we practice [dogfooding](/handbook/values/#dogfooding). Our entire company uses GitLab to collaborate on the handbook and we also create issues and merge requests in our product. For all new GitLab hires, we have created an [onboarding issue template](https://gitlab.com/gitlab-com/people-group/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) that has tasks to complete each day. We believe in using the tools we create. This allows new hires to become familiar with GitLab in a way that feels meaningful (e.g. in learning GitLab, they are also accomplishing necessary onboarding tasks). This also provides a continual set of new users to test GitLab with fresh eyes. These individuals are ideally positioned to point out missing features or areas for improvement as we iterate on the product.\n\nFor technical onboarding, give new hires access to the tools they'll be using in their roles and, most importantly, encourage them to use the tools as early as possible. Using tools, even for very small tasks, builds confidence and helps new employees to feel productive and empowered."
+  },
+  {
+    "metadata": {
+      "document_id": "66fdf28a-3bd4-5d24-b568-a39bdc398aad",
+      "chunk_id": "3e513551-df52-5819-a6c2-705124b4380d",
+      "chunk_index": 8,
+      "block_type": "text",
+      "token_count": 276,
+      "section_path": "Common remote onboarding challenges",
+      "source_start": 6216,
+      "source_end": 7481,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "The complete guide to remote onboarding for new-hires",
+      "category": "GUIDE"
+    },
+    "text": "## Common remote onboarding challenges\n\nOne of the biggest challenges that new team members may encounter when onboarding remotely is not knowing who to ask for help with technical issues or \"newbie questions.\" Assigning an [onboarding buddy](onboarding/#social-requirements-for-all-remote-onboarding) is an essential step so that team members always have a friendly face they can talk to.\n\nOnboarding remotely can also bring technical issues: everything from delayed equipment delivery, to trouble with account creation, to the need to rapidly acquire new technical skills. It's very important to ensure that your IT team has adequate resources to be able to support new team members during their first days and weeks on the job.\n\nCrucially, when there are issues with onboarding, new team members may not feel comfortable raising them. Close the loop by asking for regular feedback on the onboarding experience, and be sure to act on that feedback.\n\n**Additional resources:**\n\n1. [All-remote management](/handbook/company/culture/all-remote/)\n1. [Tools that enable remote teams](/handbook/company/culture/all-remote/)\n1. [3 things I learned in my first month at GitLab](https://about.gitlab.com/blog/2016/11/02/three-things-i-learned-in-my-first-month-at-gitlab/)"
+  },
+  {
+    "metadata": {
+      "document_id": "66fdf28a-3bd4-5d24-b568-a39bdc398aad",
+      "chunk_id": "49dcb39d-3d2b-5b93-ab7a-bc939b51010f",
+      "chunk_index": 18,
+      "block_type": "text",
+      "token_count": 117,
+      "section_path": "High-touch and low-touch flexibility",
+      "source_start": 19051,
+      "source_end": 19668,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "The complete guide to remote onboarding for new-hires",
+      "category": "GUIDE"
+    },
+    "text": "## High-touch and low-touch flexibility\n\nThe beauty of an all-remote setting is that onboarding can be as high-touch or low-touch as a new hire wishes. Those who prefer visual learning can engage in a series of video calls and screen share sessions to walk through each element of their onboarding issue. Those who prefer more self-learning can benefit from thorough documentation and readily-available resources for self-guided learning.\n\nThat flexibility is unique to the all-remote environment, as those who prefer a self-guided experience are typically forced into a very social onboarding at colocated companies."
+  },
+  {
+    "metadata": {
+      "document_id": "8edbadea-fc1c-5c7b-993a-251bfe42c687",
+      "chunk_id": "bfc8b23f-4179-50f2-b122-a3a2df453e9a",
+      "chunk_index": 9,
+      "block_type": "text",
+      "token_count": 212,
+      "section_path": "Emergency Leave > How to Request",
+      "source_start": 10992,
+      "source_end": 11993,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Leave Types",
+      "category": "POLICY"
+    },
+    "text": "### How to Request\n\nWe realize that advance notice may not always be possible in these circumstances. You should notify your manager as soon as you're able and enter dates in Workday when you can.\n\n1. Notify Your Manager: Inform your manager about your need for emergency leave as soon as possible. You only need to share details you're comfortable discussing. You can also work directly with the Absence Management team if you prefer (email leaves@gitlab.com).\n\n- More information about [Communicating Unplanned Time Away found here](/handbook/people-group/time-off-and-absence/time-away-philosophy/#communicating-unplanned-time-away)!\n\n1. Document in Workday: Enter your emergency leave request through the Workday app or Slack integration:\n\n- Select the day(s) you need > Click \"Leaves\" > Click \"Emergency Leave\" > *Optional*: add a comment > Click \"Submit\"\n- The Absence Management team will receive notification and contact you within 48 hours to confirm dates and provide additional information."
+  },
+  {
+    "metadata": {
+      "document_id": "8edbadea-fc1c-5c7b-993a-251bfe42c687",
+      "chunk_id": "802460f2-8c0f-506d-9176-c7c745720ae4",
+      "chunk_index": 6,
+      "block_type": "text",
+      "token_count": 317,
+      "section_path": "GitLab Parental Leave > Returning to Work at 50% Capacity",
+      "source_start": 8714,
+      "source_end": 10189,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Leave Types",
+      "category": "POLICY"
+    },
+    "text": "### Returning to Work at 50% Capacity\n\nReturning to work after parental leave can be challenging as you balance new family responsibilities while reintegrating into a workplace that has evolved during your absence.\n\nTo support this transition, GitLab offers team members the option to return at 50% capacity. This program is not tracked in Workday and does not require the Absence Management team’s review or approval. To utilize this benefit:\n\n- Discuss with your manager before starting leave or a few weeks prior to returning\n- Work together to determine a schedule that works for both you and your team\n- The standard guideline is two to four weeks at reduced capacity, though this can be adjusted based on individual needs\n- The 50% figure is flexible, and doesn’t always have to equate to working hours. Some options to consider would be:\n  - Adjusting the workload so you’re slowly ramping back up to a full plate - this won’t look the same for everyone - some team members may prefer to ramp up more quickly\n  - Adjust the working days/hours so instead of working 5-8hrs days it could be 4-10hrs, or you work really early in the morning/late in the evening\n  - Slowly increase the number of working days each week (i.e. 2 days the first week, 3 days the second, etc.)\n\nThis transition period gives you space to adjust to your new normal without the pressure of a full workload, allowing time to resolve any unexpected childcare challenges or other family adjustments."
+  },
+  {
+    "metadata": {
+      "document_id": "8edbadea-fc1c-5c7b-993a-251bfe42c687",
+      "chunk_id": "82c77c3a-996b-55ce-944f-bcadea1e3531",
+      "chunk_index": 12,
+      "block_type": "text",
+      "token_count": 243,
+      "section_path": "Military Leave > For leaves greater than 31 days",
+      "source_start": 13075,
+      "source_end": 14258,
+      "knowledge_scope": "COMPANY",
+      "department_id": null,
+      "title": "Leave Types",
+      "category": "POLICY"
+    },
+    "text": "### For leaves greater than 31 days\n\n- Team members reporting for active duty of more than 31 days may be eligible for up to 6 months of unpaid leave. Eligibility for the full 6 months will be determined by the team members’ statutory entitlement in their country as well as the needs of the business. If the leave is needed for more than 6 months, the team member will be offboarded (unless contrary to statutory requirements), but is eligible for reinstatement if able to return within the required timeframe.\n- Team members may elect to retain health care coverage benefits for up to 2 years, or to the end of their military service; whichever comes first, but team members will be responsible for making arrangements to pay the full cost of their benefits.\n  - If arrangements are not made or team members do not elect to retain their health care coverage, benefits will end as of the 31st day of military leave.\n  - Team members are eligible for immediate reinstatement of benefits upon their return to work, with no waiting period applied.\n- Team members will continue to vest stock while on unpaid military leave for up to 6 months (unless contrary to statutory requirements)."
+  }
+]

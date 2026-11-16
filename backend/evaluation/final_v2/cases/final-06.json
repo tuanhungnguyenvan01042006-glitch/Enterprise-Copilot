@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "software subscriptions",
+        "reimbursable",
+        "procurement process"
+      ],
+      "user_input": "What is the policy on reimbursement for software subscriptions and what process should team members follow to purchase software?",
+      "reference": "No software subscriptions are reimbursable. Team Members that would like to purchase software will need to go through the Procurement process.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- No software subscriptions are reimbursable.\n- Team Members that would like to purchase software will need to go through the Procurement process.",
+          "contribution": "This quote directly states the reimbursement policy and the required procurement process for software."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the reimbursement rule and the procurement requirement for software purchases."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "software subscriptions",
+        "reimbursable",
+        "procurement process"
+      ],
+      "user_input": "What is the policy on reimbursement for software subscriptions and what process should team members follow to purchase software?",
+      "reference": "No software subscriptions are reimbursable. Team Members that would like to purchase software will need to go through the Procurement process.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- No software subscriptions are reimbursable.\n- Team Members that would like to purchase software will need to go through the Procurement process.",
+          "contribution": "This quote directly states the reimbursement policy and the required procurement process for software."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the reimbursement rule and the procurement requirement for software purchases.",
+      "id": "final-06",
+      "question_type": "single_hop",
+      "planned_focus": "Software subscription reimbursement and procurement route.",
+      "reference_contexts": [
+        "### Software\n\n- No software subscriptions are reimbursable.\n- Team Members that would like to purchase software will need to go through the Procurement process.\n- Please follow the Guidance from the [Individual Use Software Handbook Page](/handbook/finance/procurement/individual-use-software/)."
+      ],
+      "reference_context_ids": [
+        "14dfc317-d2bd-53c4-991f-c0b4daec0158"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "14dfc317-d2bd-53c4-991f-c0b4daec0158",
+          "chunk_index": 83,
+          "block_type": "text",
+          "token_count": 60,
+          "section_path": "Approved Office Supplies List > Software",
+          "source_start": 48633,
+          "source_end": 48928,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

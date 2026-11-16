@@ -56,7 +56,7 @@ def seed() -> None:
         ]
         accounts.extend(
             {
-                "email": f"employee{number:02d}@gmail.test",
+                "email": f"employee{number:02d}@gmail.com",
                 "password": employee_password,
                 "full_name": f"Operations Employee {number:02d}",
                 "employee_code": f"E{number:03d}",
@@ -73,6 +73,15 @@ def seed() -> None:
             user = db.scalar(select(User).where(User.email == account["email"]))
             if user is not None:
                 continue
+            if account["employee_code"] is not None:
+                existing = db.scalar(select(User).where(User.employee_code == account["employee_code"]))
+                if existing is not None:
+                    print(
+                        f"Skipping seed account {account['email']}: employee code "
+                        f"{account['employee_code']} already belongs to an existing account.",
+                        file=sys.stderr,
+                    )
+                    continue
             db.add(
                 User(
                     email=account["email"],

@@ -1,0 +1,60 @@
+{
+  "plan_id": "final-50",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "03b0d45f-1d80-58cf-8fc7-125dc25f196a",
+    "3c7ef074-a8f7-59f6-a333-2bd8918bfd62"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "RACI mapping",
+      "Accountable role",
+      "mentorship session"
+    ],
+    "user_input": "In a RACI mapping, who should occupy the Accountable role for a mentorship session, linking mentee session DRI to GitLab DRI/RACI mapping?",
+    "reference": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+    "evidence": [
+      {
+        "context_index": 1,
+        "quote": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+        "contribution": "This explains how the DRI relates to the Accountable role in GitLab's RACI mapping."
+      },
+      {
+        "context_index": 0,
+        "quote": "The mentee should be the DRI for each session and use the agenda to set meeting goals and ask questions.",
+        "contribution": "This states the mentee is the DRI for each mentorship session."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 identifies the mentee as the DRI for mentorship sessions; Context 1 explains that the DRI occupies the Accountable role in GitLab's RACI mapping, linking the mentee session DRI to the Accountable role."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1715,
+    "output_tokens": 291,
+    "cost_usd_estimate": 0.0011516
+  },
+  "judge": {
+    "source_conditions": [
+      "GitLab's DRI (Directly Responsible Individual) for a project or workstream occupies the Accountable (A) role in the RACI model.",
+      "There should be only one person accountable for each task, and it is often the same as the DRI.",
+      "In mentorship sessions, the mentee is the DRI for each session."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1324,
+    "output_tokens": 116,
+    "cost_usd_estimate": 0.003576
+  }
+}

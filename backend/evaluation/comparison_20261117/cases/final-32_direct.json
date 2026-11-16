@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-32",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e541250f-f51a-556b-9632-2b0fbd19a13f"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "indicate mentorship availability",
+      "mentor status",
+      "team page"
+    ],
+    "user_input": "How do I indicate my availability as a mentor on the GitLab team page?",
+    "reference": "Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`.",
+        "contribution": "Explains how to indicate mentorship availability on the team page."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context directly explains how to indicate mentorship availability on the team page by setting the mentor status to true."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1087,
+    "output_tokens": 181,
+    "cost_usd_estimate": 0.0007244
+  },
+  "judge": {
+    "source_conditions": [
+      "You must set the `mentor` status to `true` on the GitLab team page to indicate mentorship availability.",
+      "When you set the `mentor` status to `true`, a line will appear on the team page that reads `Available as a mentor`."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 684,
+    "output_tokens": 100,
+    "cost_usd_estimate": 0.0021680000000000002
+  }
+}

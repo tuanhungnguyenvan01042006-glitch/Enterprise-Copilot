@@ -1,0 +1,98 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Checking off onboarding tasks that do not apply"
+      ],
+      "user_input": "Can I check off onboarding tasks that do not apply to me?",
+      "reference": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following: I have completed this task or I have checked and this task is not applicable to me",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following: I have completed this task or I have checked and this task is not applicable to me",
+          "contribution": "This explains the rule about checking off tasks that do not apply"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the rule about checking off tasks that do not apply, directly answering the question."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following: I have completed this task or I have checked and this task is not applicable to me'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Checking off onboarding tasks that do not apply"
+      ],
+      "user_input": "Am I required to check off onboarding tasks that do not apply to me?",
+      "reference": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not.",
+          "contribution": "This explains the requirement to check off all onboarding tasks regardless of applicability."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the requirement to check off all tasks, applicable or not, directly answering the question."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Checking off onboarding tasks that do not apply"
+      ],
+      "user_input": "Am I required to check off onboarding tasks that do not apply to me?",
+      "reference": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not.",
+          "contribution": "This explains the requirement to check off all onboarding tasks regardless of applicability."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the requirement to check off all tasks, applicable or not, directly answering the question.",
+      "id": "final-15",
+      "question_type": "single_hop",
+      "planned_focus": "Checking off onboarding tasks that do not apply.",
+      "reference_contexts": [
+        "### Completing Onboarding Issue\n\nFirst of all, what is an issue? You can learn more about what an issue is [here](https://docs.gitlab.com/ee/user/project/issues/).\n\nTo ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following:\n\n- I have completed this task\n- I have checked and this task is not applicable to me"
+      ],
+      "reference_context_ids": [
+        "e694ad19-6e12-5b9a-9852-d1faf9688895"
+      ],
+      "reference_document_ids": [
+        "569a518d-4d3b-5741-971c-3a60d26044ef"
+      ],
+      "sources": [
+        {
+          "document_id": "569a518d-4d3b-5741-971c-3a60d26044ef",
+          "chunk_id": "e694ad19-6e12-5b9a-9852-d1faf9688895",
+          "chunk_index": 7,
+          "block_type": "text",
+          "token_count": 104,
+          "section_path": "Managers of New Team Members > Completing Onboarding Issue",
+          "source_start": 7020,
+          "source_end": 7494,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Onboarding",
+          "category": "REFERENCE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "plan_id": "final-26",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "f0c8d9d0-f2a4-527c-8349-7dc4180f405a"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Sick-note requirements",
+      "three-consecutive-day sick absence",
+      "statutory exception"
+    ],
+    "user_input": "What are the sick-note requirements for a three-consecutive-day sick absence, and how does the statutory exception apply?",
+    "reference": "If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+        "contribution": "This quote directly states the sick-note requirement for absences under 6 days and mentions the statutory exception."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the sick-note requirement for absences less than 6 days and the statutory exception."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1172,
+    "output_tokens": 183,
+    "cost_usd_estimate": 0.0007616000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Absence is less than 6 consecutive days: no sick note required unless statutory reporting requirements state otherwise"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 765,
+    "output_tokens": 69,
+    "cost_usd_estimate": 0.002082
+  }
+}

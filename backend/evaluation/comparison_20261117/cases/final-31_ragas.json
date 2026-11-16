@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-31",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "dacd98da-2565-59fe-9279-ca545a45c318"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1788,
+    "output_tokens": 122,
+    "cost_usd_estimate": 0.0009104000000000001
+  },
+  "candidate": {
+    "user_input": "According to the GitLab PTO policy, what happens to unused PTO sessions after the annual reset on March 20?",
+    "reference": "Unused PTO sessions do not roll over after the annual reset on March 20.",
+    "reference_contexts": [
+      "## Important Details\n\n### Benefit Reset & Usage\n\n- Benefits reset annually on March 20\n- Unused sessions do not roll over\n- Sessions can be shared with family members (each counts toward your total)\n- 24-hour cancellation policy applies\n- Remember: GitLab PTO policy and non-linear workday structure support you in making time for mental health appointments"
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Benefits reset annually on March 20",
+      "Unused sessions do not roll over"
+    ],
+    "missing_conditions": [],
+    "question_issues": [
+      "The question refers to 'PTO sessions' but the context refers to 'sessions' in the context of a benefit, not specifically PTO. There is a potential ambiguity if 'PTO sessions' is not the same as the sessions described in the context."
+    ],
+    "grounded": true,
+    "complete": true,
+    "clear": false,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The question is not fully clear because it refers to 'PTO sessions' while the context refers to 'sessions' related to a benefit, possibly mental health sessions, not PTO."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 666,
+    "output_tokens": 151,
+    "cost_usd_estimate": 0.00254
+  }
+}

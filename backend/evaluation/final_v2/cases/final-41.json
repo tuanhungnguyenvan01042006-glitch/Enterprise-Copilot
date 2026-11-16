@@ -1,0 +1,130 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "fuel expenses for rental cars",
+        "mileage reimbursement for personal vehicles"
+      ],
+      "user_input": "Compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel.",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car. Mileage is reimbursed according to local law for personal vehicles.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "This states that for rental cars, only gas expenses can be claimed, not mileage."
+        },
+        {
+          "context_index": 1,
+          "quote": "Mileage is reimbursed according to local law, e.g. US rate per mile, rate per km in the Netherlands, or rate in Belgium.",
+          "contribution": "This explains that mileage reimbursement applies to personal vehicles based on local law."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 specifies the claim rules for rental cars, while Context 1 specifies mileage reimbursement rules for personal vehicles, allowing a direct comparison."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "fuel expenses for rental cars",
+        "mileage reimbursement for personal vehicles"
+      ],
+      "user_input": "Compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel.",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car. Mileage is reimbursed according to local law for personal vehicles.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "This states that for rental cars, only gas expenses can be claimed, not mileage."
+        },
+        {
+          "context_index": 1,
+          "quote": "### Mileage\n\n- Based on Mileage driven and calculated by Navan. Team Members are prompted by Navan to enter their start and end locations.\n- Mileage is reimbursed according to local law, e.g.  US rate per mile, rate per km in the Netherlands, or rate in Belgium. Refer to \"How Mileage Rates are Based\" section below.\n- Should Show Start and End point of trip in Navan.\n- Please include a reason for the trip in the description box.\n- Team Members cannot claim both mileage and Electric Vehicle charging fees.",
+          "contribution": "This explains that mileage reimbursement applies to personal vehicles based on local law."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 specifies the claim rules for rental cars, while Context 1 specifies mileage reimbursement rules for personal vehicles, allowing a direct comparison."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "fuel expenses for rental cars",
+        "mileage reimbursement for personal vehicles"
+      ],
+      "user_input": "Compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel.",
+      "reference": "Team Members can claim gas expenses but not mileage, when renting a car. Mileage is reimbursed according to local law for personal vehicles.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members can claim gas expenses but not mileage, when renting a car.",
+          "contribution": "This states that for rental cars, only gas expenses can be claimed, not mileage."
+        },
+        {
+          "context_index": 1,
+          "quote": "### Mileage\n\n- Based on Mileage driven and calculated by Navan. Team Members are prompted by Navan to enter their start and end locations.\n- Mileage is reimbursed according to local law, e.g.  US rate per mile, rate per km in the Netherlands, or rate in Belgium. Refer to \"How Mileage Rates are Based\" section below.\n- Should Show Start and End point of trip in Navan.\n- Please include a reason for the trip in the description box.\n- Team Members cannot claim both mileage and Electric Vehicle charging fees.",
+          "contribution": "This explains that mileage reimbursement applies to personal vehicles based on local law."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 specifies the claim rules for rental cars, while Context 1 specifies mileage reimbursement rules for personal vehicles, allowing a direct comparison.",
+      "id": "final-41",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel.",
+      "reference_contexts": [
+        "### Car Rental\n\n- Rental Cars are reimbursable and should be booked through Navan, up to the intermediate car class, with a 7 day booking lead time.\n- Please note that anything booked outside of Navan will flag as \"Out of Policy\", and will need to be reviewed by your manager and the AP team.\n- Navan Confirmation should be attached to the claim along with the Car Rental Receipt.\n- Team Members can claim gas expenses but not mileage, when renting a car.\n- Fuel at $300 limit per day.",
+        "### Mileage\n\n- Based on Mileage driven and calculated by Navan. Team Members are prompted by Navan to enter their start and end locations.\n- Mileage is reimbursed according to local law, e.g.  US rate per mile, rate per km in the Netherlands, or rate in Belgium. Refer to \"How Mileage Rates are Based\" section below.\n- Should Show Start and End point of trip in Navan.\n- Please include a reason for the trip in the description box.\n- Team Members cannot claim both mileage and Electric Vehicle charging fees."
+      ],
+      "reference_context_ids": [
+        "81cde5d2-312c-5c76-b550-6077be4c8fce",
+        "b9489555-a69f-5abd-b9ae-f22a333a6171"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "81cde5d2-312c-5c76-b550-6077be4c8fce",
+          "chunk_index": 19,
+          "block_type": "text",
+          "token_count": 111,
+          "section_path": "4. PROCEDURES > Car Rental",
+          "source_start": 16241,
+          "source_end": 16726,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        },
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "b9489555-a69f-5abd-b9ae-f22a333a6171",
+          "chunk_index": 31,
+          "block_type": "text",
+          "token_count": 115,
+          "section_path": "4. PROCEDURES > Mileage",
+          "source_start": 24376,
+          "source_end": 24884,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

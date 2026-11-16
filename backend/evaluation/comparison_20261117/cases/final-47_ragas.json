@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-47",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "18017fef-b96d-5c66-8a3f-564f21b9aea5",
+    "35334b86-b438-5787-b501-afae2118d655"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1874,
+    "output_tokens": 122,
+    "cost_usd_estimate": 0.0009448000000000002
+  },
+  "candidate": {
+    "user_input": "When do medical, dental, and vision benefits end for US-based team members compared to Canada-based team members upon departure?",
+    "reference": "For Canada-based team members, medical, dental, and vision benefits cease on the last day of work. For US-based team members, these benefits end on the last day of the month of their departure.",
+    "reference_contexts": [
+      "## Canada\n\nIf you are a Canada-based team member, your benefits will cease on your last day of work.  There may be options to convert elements of your benefit plan to individual coverage, without medical questions. Please see the [Canada Benefits Handbook](/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/) page for more information.",
+      "## USA\n\nIf you are a US-based team member, your medical, dental, and vision benefits will cease on last day of the month of your departure, all other benefits will cease on your last day. You are eligible for [Consolidated Omnibus Budget Reconciliation Act (\"COBRA\")](https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-coverage.pdf), the COBRA administrator has been notified and will send out the paperwork to your home address on file. You will have 60 days from the time you receive the COBRA packet to enroll either through the mail or online, your COBRA coverage date will be backdated to the first day you are without cover. More information on timelines and contact information for our COBRA administrator can be found in the [COBRA section](/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#cobra-continuation-coverage).\n\nYou may also be eligible under the Patient Protection and Affordable Care Act (\"PPACA\") for subsidized health care options via the marketplace. If you are interested it is important that you sign up with the market place well before the 15th of the month to have coverage for the following month.\n\nUnder the Health Insurance Portability and Accountability Act of 1996 (HIPAA), if you need a certificate of credible coverage please download it from your current carrier's online portal or request it from the Compensation & Benefits team by emailing `total-rewards@ gitlab.com`. If you move, please email `people_operations@ gitlab.com` so that we can keep your address up to date in Workday."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "US-based team members: medical, dental, and vision benefits cease on last day of the month of departure.",
+      "Canada-based team members: benefits cease on last day of work."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1072,
+    "output_tokens": 83,
+    "cost_usd_estimate": 0.002808
+  }
+}

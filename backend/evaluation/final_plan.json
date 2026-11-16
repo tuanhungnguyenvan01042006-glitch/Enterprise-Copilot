@@ -1,0 +1,612 @@
+[
+  {
+    "id": "final-01",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        4
+      ]
+    ],
+    "focus": "Manager approval exception for expense claims older than 90 days."
+  },
+  {
+    "id": "final-02",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        19
+      ]
+    ],
+    "focus": "Fuel versus mileage reimbursement when renting a car."
+  },
+  {
+    "id": "final-03",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        22
+      ]
+    ],
+    "focus": "When a Navan hotel stay does or does not require an expense report; business incidentals."
+  },
+  {
+    "id": "final-04",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        27
+      ]
+    ],
+    "focus": "Who submits a group business-travel meal bill when separate billing is impracticable."
+  },
+  {
+    "id": "final-05",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        65
+      ]
+    ],
+    "focus": "How Netherlands team members claim home internet costs; address or amount changes."
+  },
+  {
+    "id": "final-06",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        83
+      ]
+    ],
+    "focus": "Software subscription reimbursement and procurement route."
+  },
+  {
+    "id": "final-07",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        92
+      ]
+    ],
+    "focus": "Missing receipt affidavit and required attachment format."
+  },
+  {
+    "id": "final-08",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Internal Acceptable Use Policy",
+        8
+      ]
+    ],
+    "focus": "Permitted pre-approved individual-use software and its Notes and Restrictions."
+  },
+  {
+    "id": "final-09",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Internal Acceptable Use Policy",
+        12
+      ]
+    ],
+    "focus": "Forwarding confidential work emails to personal addresses and automated forwarding."
+  },
+  {
+    "id": "final-10",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Internal Acceptable Use Policy",
+        15
+      ]
+    ],
+    "focus": "Passcodes and recommended patching for personal phones accessing GitLab-managed data."
+  },
+  {
+    "id": "final-11",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Internal Acceptable Use Policy",
+        18
+      ]
+    ],
+    "focus": "Business-need exception process for external storage on company devices and encryption."
+  },
+  {
+    "id": "final-12",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Internal Acceptable Use Policy",
+        20
+      ]
+    ],
+    "focus": "Immediate action for a lost device containing credentials or GitLab-sensitive data."
+  },
+  {
+    "id": "final-13",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Onboarding",
+        0
+      ]
+    ],
+    "focus": "Recommended initial onboarding duration and when team-specific training starts; recommendation not mandate."
+  },
+  {
+    "id": "final-14",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Onboarding",
+        6
+      ]
+    ],
+    "focus": "Responsibility for closing onboarding issues and automatic 60-day closure."
+  },
+  {
+    "id": "final-15",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Onboarding",
+        7
+      ]
+    ],
+    "focus": "Checking off onboarding tasks that do not apply."
+  },
+  {
+    "id": "final-16",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Onboarding",
+        11
+      ]
+    ],
+    "focus": "Which team handles temporary service-provider onboarding rather than People."
+  },
+  {
+    "id": "final-17",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "GitLab Onboarding Buddies",
+        4
+      ]
+    ],
+    "focus": "How to volunteer as an onboarding buddy and who assigns buddies."
+  },
+  {
+    "id": "final-18",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        0
+      ]
+    ],
+    "focus": "Compass transition: whether an already-in-progress GitLab-issue G&D request must be resubmitted."
+  },
+  {
+    "id": "final-19",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        1
+      ]
+    ],
+    "focus": "Full eligibility criteria for the G&D Fund."
+  },
+  {
+    "id": "final-20",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        4
+      ]
+    ],
+    "focus": "Recommended lead time for a Compass G&D request, preserving when possible."
+  },
+  {
+    "id": "final-21",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        9
+      ]
+    ],
+    "focus": "50 percent split disbursement timing and excluded travel, hotel and meal costs."
+  },
+  {
+    "id": "final-22",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        13
+      ]
+    ],
+    "focus": "Academic-course eligibility and evidence required for reimbursement; excluded ancillary fees."
+  },
+  {
+    "id": "final-23",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        25
+      ]
+    ],
+    "focus": "Exact conditions and scope of G&D academic reimbursement recoupment."
+  },
+  {
+    "id": "final-24",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        29
+      ]
+    ],
+    "focus": "Whether unused annual G&D budget rolls over."
+  },
+  {
+    "id": "final-25",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        3
+      ]
+    ],
+    "focus": "Notice expected for three days of planned PTO, and discussing with manager first."
+  },
+  {
+    "id": "final-26",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        15
+      ]
+    ],
+    "focus": "Sick-note requirements for a three-consecutive-day sick absence, preserving statutory exception."
+  },
+  {
+    "id": "final-27",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        28
+      ]
+    ],
+    "focus": "Bereavement eligibility for loss of a pet; flexible duration and manager coordination."
+  },
+  {
+    "id": "final-28",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        29
+      ]
+    ],
+    "focus": "Proof-of-loss requirements and local-law exception for bereavement."
+  },
+  {
+    "id": "final-29",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        31
+      ]
+    ],
+    "focus": "Who to contact for bereavement exceeding 25 calendar days."
+  },
+  {
+    "id": "final-30",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Modern Health",
+        3
+      ]
+    ],
+    "focus": "How a team member registers for Modern Health and gets matched."
+  },
+  {
+    "id": "final-31",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Modern Health",
+        6
+      ]
+    ],
+    "focus": "Annual session reset date and unused-session rollover."
+  },
+  {
+    "id": "final-32",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Mentoring at GitLab",
+        10
+      ]
+    ],
+    "focus": "How to indicate availability as a mentor on the team page."
+  },
+  {
+    "id": "final-33",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Mentoring at GitLab",
+        31
+      ]
+    ],
+    "focus": "Whether mentorship must end after goals are accomplished and options for staying connected."
+  },
+  {
+    "id": "final-34",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Directly Responsible Individuals (DRI)",
+        1
+      ]
+    ],
+    "focus": "Whether DRI autonomy removes the requirement to consult relevant stakeholders."
+  },
+  {
+    "id": "final-35",
+    "question_type": "single_hop",
+    "sources": [
+      [
+        "Confidentiality levels",
+        4
+      ]
+    ],
+    "focus": "Confidentiality requirements for customer-identifying details in GitLab issues."
+  },
+  {
+    "id": "final-36",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        13
+      ],
+      [
+        "Global Travel and Expense Policy",
+        14
+      ]
+    ],
+    "focus": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers."
+  },
+  {
+    "id": "final-37",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        22
+      ],
+      [
+        "Global Travel and Expense Policy",
+        24
+      ]
+    ],
+    "focus": "Determine Airbnb nightly amount restriction from the hotel cap, cheaper-than-hotel condition, and Airbnb booking/reimbursement route. Both hotel amount and Airbnb conditions are needed."
+  },
+  {
+    "id": "final-38",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        40
+      ],
+      [
+        "Global Travel and Expense Policy",
+        65
+      ]
+    ],
+    "focus": "Compare reimbursement limits and claim frequency for business-travel internet versus standard monthly home internet for a US team member; do not mix daily and monthly caps."
+  },
+  {
+    "id": "final-39",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        50
+      ],
+      [
+        "Global Travel and Expense Policy",
+        52
+      ]
+    ],
+    "focus": "For four coworking day passes during business travel away from primary residence, determine the daily cap, manager/Finance approval requirement, and whether parking is reimbursable; apply inherited monthly rules and travel-location exception."
+  },
+  {
+    "id": "final-40",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        8
+      ],
+      [
+        "Global Travel and Expense Policy",
+        27
+      ]
+    ],
+    "focus": "For meals while traveling to a workshop, determine which budget funds them and the daily meal cap including tips; do not charge meals to G&D."
+  },
+  {
+    "id": "final-41",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Global Travel and Expense Policy",
+        19
+      ],
+      [
+        "Global Travel and Expense Policy",
+        31
+      ]
+    ],
+    "focus": "Compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel."
+  },
+  {
+    "id": "final-42",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        13
+      ],
+      [
+        "Growth and Development Fund",
+        14
+      ]
+    ],
+    "focus": "Compare the eligibility/completion evidence for academic courses versus shorter non-academic professional-development courses reimbursed through G&D."
+  },
+  {
+    "id": "final-43",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        0
+      ],
+      [
+        "Growth and Development Fund",
+        29
+      ]
+    ],
+    "focus": "Determine next calendar year G&D allowance for an otherwise eligible employee with $4000 unspent this year, combining annual cap and no rollover; ask without giving the cap or rollover rule."
+  },
+  {
+    "id": "final-44",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Growth and Development Fund",
+        1
+      ],
+      [
+        "Growth and Development Fund",
+        19
+      ]
+    ],
+    "focus": "Who is eligible for coaching through the G&D Fund, combining general fund employment/performance/leave eligibility with the coaching seniority restriction? Do not state eligibility rules in the question."
+  },
+  {
+    "id": "final-45",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        15
+      ],
+      [
+        "Time Off Types",
+        16
+      ]
+    ],
+    "focus": "Compare required actions for a non-US team member taking three versus seven consecutive sick days; distinguish manager notification, Workday, Compass and evidence requirements with local-law caveats."
+  },
+  {
+    "id": "final-46",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Time Off Types",
+        23
+      ],
+      [
+        "Time Off Types",
+        24
+      ]
+    ],
+    "focus": "Compare reporting and documentation for non-US caregiver sick absence of three versus seven consecutive days; preserve the less-than-five-day documentation threshold."
+  },
+  {
+    "id": "final-47",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "GitLab Offboarding FAQ",
+        23
+      ],
+      [
+        "GitLab Offboarding FAQ",
+        27
+      ]
+    ],
+    "focus": "Compare when medical, dental and vision benefits end on departure for US versus Canada-based team members; do not extrapolate beyond these benefits."
+  },
+  {
+    "id": "final-48",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Modern Health",
+        1
+      ],
+      [
+        "Modern Health",
+        4
+      ]
+    ],
+    "focus": "Determine whether a team member domestic partner child aged 22 is eligible and what separate coaching/therapy allocation they receive, combining eligible relationship/age and adult-family allocation."
+  },
+  {
+    "id": "final-49",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "GitLab Onboarding",
+        0
+      ],
+      [
+        "GitLab Onboarding Buddies",
+        5
+      ]
+    ],
+    "focus": "Identify the recommended helper when a new hire is stuck on onboarding tasks and explain ideal timezone and availability criteria for selecting that helper. Do not name the helper role in the question."
+  },
+  {
+    "id": "final-50",
+    "question_type": "multi_hop",
+    "sources": [
+      [
+        "Mentoring at GitLab",
+        27
+      ],
+      [
+        "Directly Responsible Individuals (DRI)",
+        5
+      ]
+    ],
+    "focus": "In a RACI mapping, who should occupy the Accountable role for a mentorship session, linking mentee session DRI to GitLab DRI/RACI mapping? Do not reveal DRI or mentee role in the question."
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "plan_id": "final-46",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "73e65c08-69af-5919-90e2-f374d954ebf2",
+    "16961fda-fc9c-5650-bbdc-55e7a9121f1c"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "non-US caregiver sick absence",
+      "3 consecutive days",
+      "7 consecutive days",
+      "documentation threshold"
+    ],
+    "user_input": "How do the reporting and documentation requirements differ for non-US caregiver sick absences of three consecutive days versus seven consecutive days, and how does the less-than-five-day documentation threshold apply?",
+    "reference": "For caregiver sick absences less than 5 consecutive days, no documentation is needed unless statutory requirements state otherwise; for absences 6 or more days, documentation is required according to local rules.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)",
+        "contribution": "Explains documentation exemption for absences under 5 days."
+      },
+      {
+        "context_index": 1,
+        "quote": "Caregiver sick absences that are 6 days or longer are considered a leave of absence. ... Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).",
+        "contribution": "Explains documentation requirement for absences 6 or more days and local variation."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 defines documentation rules for absences under 5 days; Context 1 defines rules for absences 6 or more days and local documentation requirements, together clarifying differences for 3 vs 7 days."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1417,
+    "output_tokens": 325,
+    "cost_usd_estimate": 0.0010868000000000002
+  },
+  "judge": {
+    "source_conditions": [
+      "For absences less than 5 consecutive days: notify manager, enter time in Workday, no documentation required unless statutory reporting requires it.",
+      "For absences 6 or more consecutive days (non-US): notify Absence Management Team via Compass ticket, enter time in Workday, documentation required per local requirements, submit documentation to Absence Management Team."
+    ],
+    "missing_conditions": [
+      "For absences of 6 or more days, must notify Absence Management Team by submitting a Compass ticket (not just manager).",
+      "For absences of 6 or more days, documentation must be submitted to the Absence Management Team (Compass ticket), not just 'according to local rules'.",
+      "For absences of 6 or more days, Absence Management Team may need to edit or replace Workday entries."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "Answer omits the requirement to notify the Absence Management Team via Compass ticket for 6+ day absences.",
+      "Answer omits that documentation for 6+ day absences must be submitted to the Absence Management Team via Compass ticket.",
+      "Answer omits that the Absence Management Team may need to edit or replace Workday entries for 6+ day absences."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1021,
+    "output_tokens": 277,
+    "cost_usd_estimate": 0.004258
+  }
+}

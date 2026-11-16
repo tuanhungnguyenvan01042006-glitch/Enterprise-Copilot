@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['reimbursement limits', ... monthly home internet'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "reimbursement limits",
+        "business-travel internet",
+        "monthly home internet"
+      ],
+      "user_input": "What are the reimbursement limits and claim frequency for business-travel internet compared to standard monthly home internet for a US team member?",
+      "reference": "The reimbursement limit for internet while traveling is up to $50 USD per day, while the reimbursement limit for monthly home internet is set at $100, with claims above this amount not being reimbursed.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.",
+          "contribution": "This states the reimbursement limit for business-travel internet."
+        },
+        {
+          "context_index": 1,
+          "quote": "- Policy is set at $100 - claims above this amount will not be reimbursed.",
+          "contribution": "This states the reimbursement limit for monthly home internet."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context provides the reimbursement limit for business-travel internet, while the second context provides the limit for monthly home internet."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question asks for claim frequency, but the reference only provides reimbursement limits without addressing claim frequency for either type of internet.",
+        "The candidate's answer does not mention claim frequency, which is part of the question.",
+        "The contexts do not provide any information about the frequency of claims for either business-travel internet or monthly home internet, making the question partially unanswerable."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The question asks for claim frequency, but the reference only provides reimbursement limits without addressing claim frequency for either type of internet.; The candidate's answer does not mention claim frequency, which is part of the question.; The contexts do not provide any information about the frequency of claims for either business-travel internet or monthly home internet, making the question partially unanswerable."
+  },
+  {
+    "attempt": 3,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['reimbursement limits', ... monthly home internet'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "reimbursement limits",
+        "business-travel internet",
+        "monthly home internet"
+      ],
+      "user_input": "What are the reimbursement limits and claim frequency for business-travel internet compared to standard monthly home internet for a US team member?",
+      "reference": "The reimbursement limit for internet while traveling is up to $50 USD per day, while the limit for monthly home internet is set at $100, with claims above this amount not being reimbursed.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.",
+          "contribution": "This states the reimbursement limit for business-travel internet."
+        },
+        {
+          "context_index": 1,
+          "quote": "Policy is set at $100 - claims above this amount will not be reimbursed.",
+          "contribution": "This specifies the reimbursement limit for monthly home internet."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context provides the reimbursement limit for business-travel internet, while the second context outlines the limit for monthly home internet."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question asks for claim frequency, but the reference only provides reimbursement limits without addressing claim frequency for either type of internet.",
+        "The candidate's answer does not mention claim frequency, which is part of the question.",
+        "The contexts do not provide information on how often claims can be made for either business-travel internet or monthly home internet, making the answer incomplete."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The question asks for claim frequency, but the reference only provides reimbursement limits without addressing claim frequency for either type of internet.; The candidate's answer does not mention claim frequency, which is part of the question.; The contexts do not provide information on how often claims can be made for either business-travel internet or monthly home internet, making the answer incomplete."
+  }
+]

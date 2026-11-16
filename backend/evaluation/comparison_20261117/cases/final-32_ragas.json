@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-32",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e541250f-f51a-556b-9632-2b0fbd19a13f"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1780,
+    "output_tokens": 134,
+    "cost_usd_estimate": 0.0009264000000000001
+  },
+  "candidate": {
+    "user_input": "How can I indicate my availability as a mentor on the GitLab team page?",
+    "reference": "You can indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`, which will display a line that reads `Available as a mentor` on the team page.",
+    "reference_contexts": [
+      "## Become a mentor\n\n1. Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`. [Example MR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/75890)"
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Indicate mentorship availability on the GitLab team page by setting the `mentor` status to `true`.",
+      "This will appear on the team page with a line that reads `Available as a mentor`."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 684,
+    "output_tokens": 89,
+    "cost_usd_estimate": 0.0020800000000000003
+  }
+}

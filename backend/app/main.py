@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from app.api.routes import admin, announcements, auth, dashboard, department, documents, health, profile, workspace
+from app.api.routes import chat, admin, announcements, auth, dashboard, department, documents, health, profile, workspace
 from app.core.config import get_settings
 from app.core.errors import http_exception_handler, validation_exception_handler
 
@@ -44,6 +44,7 @@ app.add_middleware(
 )
 app.add_exception_handler(StarletteHTTPException, http_exception_handler)
 app.add_exception_handler(RequestValidationError, validation_exception_handler)
+app.include_router(chat.router, prefix="/api/v1")
 app.include_router(health.router, prefix="/api/v1")
 app.include_router(auth.router, prefix="/api/v1")
 app.include_router(profile.router, prefix="/api/v1")

@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "unused annual G&D budget",
+        "budget rollover"
+      ],
+      "user_input": "Does the unused annual G&D budget roll over to the next year?",
+      "reference": "No. Unspent G&D budgets do not roll over from one year to the next.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "Directly states the policy on budget rollover."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states that unspent G&D budgets do not roll over, directly answering the question."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "unused annual G&D budget",
+        "budget rollover"
+      ],
+      "user_input": "Does the unused annual G&D budget roll over to the next year?",
+      "reference": "No. Unspent G&D budgets do not roll over from one year to the next.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "Directly states the policy on budget rollover."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states that unspent G&D budgets do not roll over, directly answering the question.",
+      "id": "final-24",
+      "question_type": "single_hop",
+      "planned_focus": "Whether unused annual G&D budget rolls over.",
+      "reference_contexts": [
+        "### Does budget rollover?\n\nNo. Unspent G&D budgets do not roll over from one year to the next."
+      ],
+      "reference_context_ids": [
+        "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb",
+          "chunk_index": 29,
+          "block_type": "text",
+          "token_count": 24,
+          "section_path": "FAQ > Does budget rollover?",
+          "source_start": 11189,
+          "source_end": 11283,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Netherlands team members claim home internet costs",
+        "address changes",
+        "amount changes"
+      ],
+      "user_input": "How do Netherlands team members claim home internet costs if their address or the amount changes?",
+      "reference": "Netherlands team members must send a new form to the HRSavvy team, along with the invoice/letter for processing, if their address or the amount changes.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+          "contribution": "This specifies the action required for address or amount changes."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the requirement for Netherlands team members regarding changes in address or amount."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Netherlands team members claim home internet costs",
+        "address changes",
+        "amount changes"
+      ],
+      "user_input": "How do Netherlands team members claim home internet costs if their address or the amount changes?",
+      "reference": "Netherlands team members must send a new form to the HRSavvy team, along with the invoice/letter for processing, if their address or the amount changes.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+          "contribution": "This specifies the action required for address or amount changes."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the requirement for Netherlands team members regarding changes in address or amount.",
+      "id": "final-05",
+      "question_type": "single_hop",
+      "planned_focus": "How Netherlands team members claim home internet costs; address or amount changes.",
+      "reference_contexts": [
+        "### Internet\n\n- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges.\n- Please expense internet costs monthly, reflecting current charges only (even if you pay by a different cadence).\n- For Team Members in the Netherlands:\n  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected.\n  - If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.\n- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use.\n- Policy is set at $100 - claims above this amount will not be reimbursed. The limit has been reviewed and set to cover standard costs across all markets; individual exceptions are no longer assessed at the claim stage.\n- Itemized Receipt required.\n- If an itemized bill is not available, costs will only be reimbursed for the element relating to Internet Access, i.e. if you pay for tv, internet and phone, the invoice should be divided by 3/# of services and we will pay this value only.\n- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc.\n- If co-working space is used together with a combination of working from home, we will allow the reimbursement of the internet cost for where you spend most of your time. i.e. if you expense a co-working space for a full month then internet for home cannot be expensed. If you expense co-work for a few days in a month then home internet can be expensed in full.\n- Team members for GitLab GmbH (Germany) should refer to this [page](/handbook/finance/payroll/) for their country's specific guidelines of this expense."
+      ],
+      "reference_context_ids": [
+        "dae4f1d2-1bac-5317-966d-3168164fa2cf"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "dae4f1d2-1bac-5317-966d-3168164fa2cf",
+          "chunk_index": 65,
+          "block_type": "text",
+          "token_count": 504,
+          "section_path": "Approved WFH Equipment List > Internet",
+          "source_start": 40954,
+          "source_end": 43132,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

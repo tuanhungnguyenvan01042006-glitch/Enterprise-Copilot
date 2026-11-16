@@ -1,0 +1,133 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "domestic partner child aged 22",
+        "eligible family members",
+        "adult family members allocation"
+      ],
+      "user_input": "Is a domestic partner's child aged 22 eligible for benefits, and what coaching and therapy sessions allocation do they receive as an adult family member?",
+      "reference": "A domestic partner's child up to age 27 is eligible, and adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Eligible family members including:\n  - Spouse or legal/domestic partner\n  - Children up to age 27\n  - Partner's children up to age 27",
+          "contribution": "Defines eligibility for domestic partner's children up to age 27."
+        },
+        {
+          "context_index": 1,
+          "quote": "Adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions",
+          "contribution": "Specifies coaching and therapy allocation for adult family members."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 establishes eligibility for domestic partner's children up to age 27, and Context 1 specifies the coaching and therapy allocation for adult family members aged 18 and over."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "domestic partner child aged 22",
+        "eligible family members",
+        "adult family members allocation"
+      ],
+      "user_input": "Is a domestic partner's child aged 22 eligible for benefits, and what coaching and therapy sessions allocation do they receive as an adult family member?",
+      "reference": "A domestic partner's child up to age 27 is eligible, and adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Eligible family members including:\n  - Spouse or legal/domestic partner\n  - Children up to age 27\n  - Partner's children up to age 27",
+          "contribution": "Defines eligibility for domestic partner's children up to age 27."
+        },
+        {
+          "context_index": 1,
+          "quote": "Adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions",
+          "contribution": "Specifies coaching and therapy allocation for adult family members."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 establishes eligibility for domestic partner's children up to age 27, and Context 1 specifies the coaching and therapy allocation for adult family members aged 18 and over."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "domestic partner child aged 22",
+        "eligible family members",
+        "adult family members allocation"
+      ],
+      "user_input": "Is a domestic partner's child aged 22 eligible for benefits, and what coaching and therapy sessions allocation do they receive as an adult family member?",
+      "reference": "A domestic partner's child up to age 27 is eligible, and adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Eligible family members including:\n  - Spouse or legal/domestic partner\n  - Children up to age 27\n  - Partner's children up to age 27",
+          "contribution": "Defines eligibility for domestic partner's children up to age 27."
+        },
+        {
+          "context_index": 1,
+          "quote": "Adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions",
+          "contribution": "Specifies coaching and therapy allocation for adult family members."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 establishes eligibility for domestic partner's children up to age 27, and Context 1 specifies the coaching and therapy allocation for adult family members aged 18 and over.",
+      "id": "final-48",
+      "question_type": "multi_hop",
+      "planned_focus": "Determine whether a team member domestic partner child aged 22 is eligible and what separate coaching/therapy allocation they receive, combining eligible relationship/age and adult-family allocation.",
+      "reference_contexts": [
+        "## Eligibility\n\n- All GitLab team members from day one\n- Eligible family members including:\n  - Spouse or legal/domestic partner\n  - Children up to age 27\n  - Partner's children up to age 27",
+        "### Family Member Access\n\n- Adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions - [invite them here](https://support.modernhealth.com/hc/en-us/articles/360045577552-How-do-I-invite-my-dependents-)\n- Minor family members can access therapy services (with parent/guardian coordination) - [invitation instructions here](https://support.modernhealth.com/hc/en-us/articles/5386344007451-How-do-I-invite-my-minor-dependents-)\n- Need help registering? Contact help@joinmodernhealth.com"
+      ],
+      "reference_context_ids": [
+        "8a1e3d10-e143-54c7-ac25-f64df89bdb70",
+        "93e34685-fd0d-5aea-875f-ae9af6dfb64a"
+      ],
+      "reference_document_ids": [
+        "597c3d99-9bf0-53b7-bf38-ede42e5f4065"
+      ],
+      "sources": [
+        {
+          "document_id": "597c3d99-9bf0-53b7-bf38-ede42e5f4065",
+          "chunk_id": "8a1e3d10-e143-54c7-ac25-f64df89bdb70",
+          "chunk_index": 1,
+          "block_type": "text",
+          "token_count": 52,
+          "section_path": "Eligibility",
+          "source_start": 733,
+          "source_end": 923,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Modern Health",
+          "category": "GUIDE"
+        },
+        {
+          "document_id": "597c3d99-9bf0-53b7-bf38-ede42e5f4065",
+          "chunk_id": "93e34685-fd0d-5aea-875f-ae9af6dfb64a",
+          "chunk_index": 4,
+          "block_type": "text",
+          "token_count": 142,
+          "section_path": "How to Get Started > Family Member Access",
+          "source_start": 2164,
+          "source_end": 2682,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Modern Health",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

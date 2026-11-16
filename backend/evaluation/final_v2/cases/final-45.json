@@ -1,0 +1,145 @@
+[
+  {
+    "attempt": 1,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 8 [type=too_long, input_value=['non-US team member', '3...s', 'local-law caveats'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 2,
+    "feedback": "2 validation errors for Candidate\nevidence.0.contribution\n  Field required [type=missing, input_value={'context_index': 0, 'quo...ments state otherwise)'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nevidence.1.contribution\n  Field required [type=missing, input_value={'context_index': 1, 'quo...ntation may be needed.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing"
+  },
+  {
+    "attempt": 3,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 7 [type=too_long, input_value=['Sick Absences 1-5 Conse...', 'local requirements'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 4,
+    "candidate_raw": {
+      "keyphrases": [
+        "Sick Absences 1-5 Consecutive Days",
+        "Sick Absences that Exceed 6+ Consecutive Days",
+        "local requirements"
+      ],
+      "user_input": "Compare required actions for a non-US team member taking three versus seven consecutive sick days; distinguish manager notification, Workday, Compass and evidence requirements with local-law caveats.",
+      "reference": "For sick absences 1-5 consecutive days, notify your manager of your absence without disclosing medical information, enter the time away in Workday labeled \"Out Sick,\" and no sick note is needed unless local law requires it. For sick absences exceeding 6 consecutive days, notify the Absence Management Team via a Compass ticket, enter time away in Workday labeled \"Out Sick\" (which may be edited by Absence Management), and provide evidence supporting the need for sick leave as required by local law, such as a medical certificate or doctor's note.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+          "contribution": "Describes notification, Workday entry, and sick note requirements for 1-5 day absences."
+        },
+        {
+          "context_index": 1,
+          "quote": "1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Sick Time Policy, review [statutory benefits](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Out Sick\".\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf.\n1. Eligibility for GitLab’s Sick Time policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Sick Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.). Please review your employment contract or your country’s Sick Time policy to determine what documentation may be needed.",
+          "contribution": "Describes notification, Workday entry, Compass ticket, and evidence requirements for absences exceeding 6 days, with local law caveats."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 explains the process for 1-5 day sick absences including manager notification and Workday entry without evidence unless local law requires it. Context 1 explains the process for absences exceeding 6 days including Compass ticket notification, Workday entry possibly edited by Absence Management, and evidence requirements per local law."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "Sick Absences 1-5 Consecutive Days",
+        "Sick Absences that Exceed 6+ Consecutive Days",
+        "local requirements"
+      ],
+      "user_input": "Compare required actions for a non-US team member taking three versus seven consecutive sick days; distinguish manager notification, Workday, Compass and evidence requirements with local-law caveats.",
+      "reference": "For sick absences 1-5 consecutive days, notify your manager of your absence without disclosing medical information, enter the time away in Workday labeled \"Out Sick,\" and no sick note is needed unless local law requires it. For sick absences exceeding 6 consecutive days, notify the Absence Management Team via a Compass ticket, enter time away in Workday labeled \"Out Sick\" (which may be edited by Absence Management), and provide evidence supporting the need for sick leave as required by local law, such as a medical certificate or doctor's note.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+          "contribution": "Describes notification, Workday entry, and sick note requirements for 1-5 day absences."
+        },
+        {
+          "context_index": 1,
+          "quote": "1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Sick Time Policy, review [statutory benefits](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Out Sick\".\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf.\n1. Eligibility for GitLab’s Sick Time policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Sick Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.). Please review your employment contract or your country’s Sick Time policy to determine what documentation may be needed.",
+          "contribution": "Describes notification, Workday entry, Compass ticket, and evidence requirements for absences exceeding 6 days, with local law caveats."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 explains the process for 1-5 day sick absences including manager notification and Workday entry without evidence unless local law requires it. Context 1 explains the process for absences exceeding 6 days including Compass ticket notification, Workday entry possibly edited by Absence Management, and evidence requirements per local law."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Sick Absences 1-5 Consecutive Days",
+        "Sick Absences that Exceed 6+ Consecutive Days",
+        "local requirements"
+      ],
+      "user_input": "Compare required actions for a non-US team member taking three versus seven consecutive sick days; distinguish manager notification, Workday, Compass and evidence requirements with local-law caveats.",
+      "reference": "For sick absences 1-5 consecutive days, notify your manager of your absence without disclosing medical information, enter the time away in Workday labeled \"Out Sick,\" and no sick note is needed unless local law requires it. For sick absences exceeding 6 consecutive days, notify the Absence Management Team via a Compass ticket, enter time away in Workday labeled \"Out Sick\" (which may be edited by Absence Management), and provide evidence supporting the need for sick leave as required by local law, such as a medical certificate or doctor's note.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+          "contribution": "Describes notification, Workday entry, and sick note requirements for 1-5 day absences."
+        },
+        {
+          "context_index": 1,
+          "quote": "1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Sick Time Policy, review [statutory benefits](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Out Sick\".\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf.\n1. Eligibility for GitLab’s Sick Time policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Sick Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.). Please review your employment contract or your country’s Sick Time policy to determine what documentation may be needed.",
+          "contribution": "Describes notification, Workday entry, Compass ticket, and evidence requirements for absences exceeding 6 days, with local law caveats."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 explains the process for 1-5 day sick absences including manager notification and Workday entry without evidence unless local law requires it. Context 1 explains the process for absences exceeding 6 days including Compass ticket notification, Workday entry possibly edited by Absence Management, and evidence requirements per local law.",
+      "id": "final-45",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare required actions for a non-US team member taking three versus seven consecutive sick days; distinguish manager notification, Workday, Compass and evidence requirements with local-law caveats.",
+      "reference_contexts": [
+        "### For Sick Absences 1-5 Consecutive Days\n\n### For Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+        "### For Sick Absences that Exceed 6+ Consecutive Days\n\n### For Sick Absences that Exceed 6+ Consecutive Days\n\nSick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta). Once your request is submitted, it takes 2-5 business days to build your personalized leave plan. You will receive a notification when it is ready.\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Sick Time Policy, review [statutory benefits](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Out Sick\".\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf.\n1. Eligibility for GitLab’s Sick Time policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Sick Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.). Please review your employment contract or your country’s Sick Time policy to determine what documentation may be needed."
+      ],
+      "reference_context_ids": [
+        "f0c8d9d0-f2a4-527c-8349-7dc4180f405a",
+        "d91c921e-3032-58d4-8fb6-f2f9bc3f2b7b"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "f0c8d9d0-f2a4-527c-8349-7dc4180f405a",
+          "chunk_index": 15,
+          "block_type": "text",
+          "token_count": 147,
+          "section_path": "Sick Time > For Sick Absences 1-5 Consecutive Days",
+          "source_start": 10887,
+          "source_end": 11540,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        },
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "d91c921e-3032-58d4-8fb6-f2f9bc3f2b7b",
+          "chunk_index": 16,
+          "block_type": "text",
+          "token_count": 306,
+          "section_path": "Sick Time > For Sick Absences that Exceed 6+ Consecutive Days",
+          "source_start": 11542,
+          "source_end": 12947,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

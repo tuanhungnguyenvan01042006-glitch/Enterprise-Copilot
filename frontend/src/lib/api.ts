@@ -288,3 +288,13 @@ export function getAuditLogs(filters: { action?: string; result?: string } = {})
   const params = new URLSearchParams(); Object.entries(filters).forEach(([key, value]) => value && params.set(key, value));
   return request<{ items: AuditLog[]; page: number; page_size: number; total: number }>(`/admin/audit-logs${params.toString() ? `?${params.toString()}` : ""}`);
 }
+
+export type ChatSource = { number: number; document_id: string | null; title: string | null; section_path: string | string[] | null };
+export type ChatMessage = { id: string; role: "user" | "assistant"; content: string; sources: ChatSource[]; created_at: string };
+export type ChatConversation = { id: string; title: string; created_at: string; updated_at: string };
+export type ChatDetail = ChatConversation & { messages: ChatMessage[] };
+export function getChatConversations() { return request<ChatConversation[]>("/chat/conversations"); }
+export function createChatConversation() { return csrfRequest<ChatConversation>("/chat/conversations", { method: "POST" }); }
+export function getChatConversation(id: string) { return request<ChatDetail>(`/chat/conversations/${id}`); }
+export function deleteChatConversation(id: string) { return csrfRequest<void>(`/chat/conversations/${id}`, { method: "DELETE" }); }
+export function sendChatMessage(id: string, content: string) { return csrfRequest<{ user_message: ChatMessage; assistant_message: ChatMessage }>(`/chat/conversations/${id}/messages`, { method: "POST", body: JSON.stringify({ content }) }); }

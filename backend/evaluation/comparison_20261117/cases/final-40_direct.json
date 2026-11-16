@@ -1,0 +1,67 @@
+{
+  "plan_id": "final-40",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "0ad36f5c-5a0c-5d24-9492-edd927b91285",
+    "a641249f-3a44-5834-b634-579923ffa485"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "meals while traveling to a workshop",
+      "budget funds meals",
+      "daily meal cap including tips",
+      "do not charge meals to G&D"
+    ],
+    "user_input": "For meals while traveling to a workshop, determine which budget funds them and the daily meal cap including tips; do not charge meals to G&D.",
+    "reference": "Travel, lodging, and meals related to conferences or workshops must be expensed separately from the G&D claim and should follow GitLab's Travel and Expense policy. These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation. Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day. Tips are acceptable up to 20% and should be detailed accordingly in the description box. This should be included in the final price to stay within the Policy limits.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Travel, lodging, and meals related to conferences or workshops must be expensed separately from the G&D claim and should follow GitLab's Travel and Expense policy.\n\nThese expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+        "contribution": "This explains which budget funds meals related to workshops and that meals should not be charged to G&D."
+      },
+      {
+        "context_index": 1,
+        "quote": "Meals while traveling on Company business  are reimbursable, up to $120 USD (or local equivalent currency) per day.\n\nTips are acceptable up to 20% and should be detailed accordingly in the description box. This should be included in the final price to stay within the Policy limits.",
+        "contribution": "This states the daily meal cap including tips for meals while traveling."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 identifies the correct budget source and prohibition on charging meals to G&D, while Context 1 specifies the daily meal cap and tip policy for meals while traveling."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1290,
+    "output_tokens": 398,
+    "cost_usd_estimate": 0.0011528000000000003
+  },
+  "judge": {
+    "source_conditions": [
+      "Travel, lodging, and meals related to conferences or workshops must be expensed separately from the G&D claim.",
+      "These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+      "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day.",
+      "Tips are acceptable up to 20% and should be detailed accordingly in the description box.",
+      "Tips should be included in the final price to stay within the Policy limits."
+    ],
+    "missing_conditions": [
+      "None; all relevant conditions are included."
+    ],
+    "question_issues": [
+      "Question includes an instruction intended for the generator."
+    ],
+    "grounded": true,
+    "complete": false,
+    "clear": false,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 960,
+    "output_tokens": 158,
+    "cost_usd_estimate": 0.003184
+  }
+}

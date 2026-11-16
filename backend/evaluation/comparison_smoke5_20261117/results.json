@@ -1,0 +1,480 @@
+{
+  "summary": {
+    "ragas": {
+      "all": {
+        "planned": 4,
+        "generated": 4,
+        "reviewed": 4,
+        "accepted": 2,
+        "criteria_pass_counts": {
+          "grounded": 4,
+          "complete": 3,
+          "clear": 4,
+          "useful": 4,
+          "matches_focus": 2,
+          "all_contexts_necessary": 4
+        },
+        "generation_errors": 0,
+        "judge_errors": 0
+      },
+      "single_hop": {
+        "planned": 3,
+        "generated": 3,
+        "reviewed": 3,
+        "accepted": 1,
+        "criteria_pass_counts": {
+          "grounded": 3,
+          "complete": 2,
+          "clear": 3,
+          "useful": 3,
+          "matches_focus": 1,
+          "all_contexts_necessary": 3
+        },
+        "generation_errors": 0,
+        "judge_errors": 0
+      },
+      "multi_hop": {
+        "planned": 1,
+        "generated": 1,
+        "reviewed": 1,
+        "accepted": 1,
+        "criteria_pass_counts": {
+          "grounded": 1,
+          "complete": 1,
+          "clear": 1,
+          "useful": 1,
+          "matches_focus": 1,
+          "all_contexts_necessary": 1
+        },
+        "generation_errors": 0,
+        "judge_errors": 0
+      }
+    },
+    "direct": {
+      "all": {
+        "planned": 4,
+        "generated": 4,
+        "reviewed": 4,
+        "accepted": 4,
+        "criteria_pass_counts": {
+          "grounded": 4,
+          "complete": 4,
+          "clear": 4,
+          "useful": 4,
+          "matches_focus": 4,
+          "all_contexts_necessary": 4
+        },
+        "generation_errors": 0,
+        "judge_errors": 0
+      },
+      "single_hop": {
+        "planned": 3,
+        "generated": 3,
+        "reviewed": 3,
+        "accepted": 3,
+        "criteria_pass_counts": {
+          "grounded": 3,
+          "complete": 3,
+          "clear": 3,
+          "useful": 3,
+          "matches_focus": 3,
+          "all_contexts_necessary": 3
+        },
+        "generation_errors": 0,
+        "judge_errors": 0
+      },
+      "multi_hop": {
+        "planned": 1,
+        "generated": 1,
+        "reviewed": 1,
+        "accepted": 1,
+        "criteria_pass_counts": {
+          "grounded": 1,
+          "complete": 1,
+          "clear": 1,
+          "useful": 1,
+          "matches_focus": 1,
+          "all_contexts_necessary": 1
+        },
+        "generation_errors": 0,
+        "judge_errors": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "plan_id": "final-01",
+      "method": "ragas",
+      "question_type": "single_hop",
+      "source_ids": [
+        "5df2232f-e75d-5033-bb89-d1b624e00ba1"
+      ],
+      "worker_usage": {
+        "successful_requests": 3,
+        "input_tokens": 2992,
+        "output_tokens": 186,
+        "cost_usd_estimate": 0.0014944000000000001
+      },
+      "candidate": {
+        "user_input": "What are the receipt submission requirements for US and Non-US team members when claiming business expenses?",
+        "reference": "Non-US Team Members must submit receipts for all business expenses, while US Team Members are required to submit receipts only for expenses over $50 USD. Receipts must include the vendor name, date of purchase, a listing of what was purchased, and a full breakout of subtotal and tax amounts. Snapshots of applications or card/bank statements are not acceptable as receipts.",
+        "reference_contexts": [
+          "- Team members should submit receipts for every business expense. For Non-US Team Members, receipts are required for all expenses. US Team Members are required to only submit receipts for any expenses over $50 USD.  Receipts must contain vendor name, date of purchase, listing of what was purchased, and contains a full breakout of the subtotal and tax amounts. Snapshot from phone/computer screen of Applications, Card/Bank Statements are not an acceptable form of receipt.\n- Team Members are not allowed to expense items on behalf of their managers.\n- Expenses for gifts and entertainment must be incurred and reimbursed in accordance with GitLab's [Gifts & Entertainment Policy](/handbook/legal/policies/gifts-contributions/#gifts-and-entertainment-policy) and [Antibribery Policy](/handbook/legal/anti-corruption-policy/).\n- Expense claims for a single item up to $5,000 can be expensed via Navan. >$5,000 needs to go through the procurement process in Zip.\n- Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.\n- Navan Description box: Expense items must have a description filled out. This box is showing as optional but we require this to be filled in. This helps to correctly record the transaction and assist any reporting purposes downstream.\n  - When filling in the description box , we ask for you to enter details of the expense so anyone looking at the line on a report can tell immediately (without the need of looking at the receipt) what the expense relates to and why it is claimed.\n  - Please fill in the description box with details like : Items Purchased/Claimed, Period service relates to, Trip Details this claim relates to, Reason for trip, Clients Name, etc. If left blank, the expense will be bounced back to the team member to complete this portion.\n- The maximum monthly limit to be reimbursed is $10K USD (or local currency equivalent). Once this limit has been reached, all expense items will need to be approved by the A/P team in Navan.  This limit may be increased for Team Members whose positions require more spend (eg. Field Marketing), but the increase request needs to be submitted via an issue for approval by the VP or higher in the Accounting Organization. Due to the nature of their roles, E-Group members have a maximum monthly limit to be reimbursed of $20K USD before additional approvals are required.\n- Expenditures related to client entertainment or marketing must be necessary, prudent, and job-related.\n- Expenses that span longer than a month must be submitted on a monthly basis (eg. Although you paid for a year upfront for the internet, you must divide the total by 12 months and submit the cost monthly).\n- Personal credits and gift cards: GitLab will reimburse only the actual out-of-pocket amount paid by the employee. If personal credits, gift cards, rewards points, or other discounts are applied to a business purchase, reimbursement will be limited to the net amount charged to the employee's personal payment method.\nExample: An employee purchases a $100 monitor and applies a $50 gift card. GitLab will reimburse $50 (the amount actually paid), not the pre-discount price of $100."
+        ],
+        "synthesizer_name": "single_hop_specific_query_synthesizer"
+      },
+      "usage": {
+        "successful_requests": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd_estimate": 0.0
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": false,
+        "all_contexts_necessary": true,
+        "issues": [
+          "The answer correctly and completely addresses the receipt submission requirements for US and Non-US team members, including all required receipt details and unacceptable forms. However, the question asks about manager approval exceptions for expense claims older than 90 days, not about receipt requirements. Therefore, the answer does not match the focus of the information need."
+        ]
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 1236,
+        "output_tokens": 100,
+        "cost_usd_estimate": 0.003272
+      }
+    },
+    {
+      "plan_id": "final-01",
+      "method": "direct",
+      "question_type": "single_hop",
+      "source_ids": [
+        "5df2232f-e75d-5033-bb89-d1b624e00ba1"
+      ],
+      "candidate": {
+        "keyphrases": [
+          "Manager approval exception for expense claims older than 90 days",
+          "expense claims over 90 days",
+          "Manager approval"
+        ],
+        "user_input": "What is the condition under which expense claims older than 90 days can be reimbursed?",
+        "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+        "evidence": [
+          {
+            "context_index": 0,
+            "quote": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+            "contribution": "This quote directly states the condition for reimbursement of expense claims older than 90 days."
+          }
+        ],
+        "reasoning_type": "single_hop",
+        "connection": "The quote explicitly states the manager approval requirement for expense claims older than 90 days."
+      },
+      "usage": {
+        "successful_requests": 1,
+        "input_tokens": 1688,
+        "output_tokens": 153,
+        "cost_usd_estimate": 0.0004592
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": true,
+        "all_contexts_necessary": true,
+        "issues": []
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 1183,
+        "output_tokens": 35,
+        "cost_usd_estimate": 0.002646
+      }
+    },
+    {
+      "plan_id": "final-09",
+      "method": "ragas",
+      "question_type": "single_hop",
+      "source_ids": [
+        "7e60e325-bd1a-5c09-8d70-832d5a625df5"
+      ],
+      "worker_usage": {
+        "successful_requests": 3,
+        "input_tokens": 2065,
+        "output_tokens": 130,
+        "cost_usd_estimate": 0.0010340000000000002
+      },
+      "candidate": {
+        "user_input": "Are team members allowed to set up automated forwarding of their GitLab work emails to their personal email accounts?",
+        "reference": "No, automated forwarding of emails from a team member account to personal email addresses is prohibited.",
+        "reference_contexts": [
+          "#### Unacceptable Email and Communications Activities\n\nForwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.\n\n> Note: GitLab may retrieve messages from archives and servers without prior notice if GitLab has sufficient reason to do so. If deemed necessary, this investigation will be conducted with the knowledge and approval of the Security, People Business Partners, and Legal Departments.\n\nIn addition to following the [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/), when utilizing social media think about the effects of statements that you make. Keep in mind that these transmissions are permanent and easily transferable, and can affect our company's reputation and relationships with Team Members and customers. When using social media tools like blogs, Facebook, Twitter or wikis, ensure that you do not make comments on behalf of GitLab without proper authorization. Also, you must not disclose our company's confidential or proprietary information about our business, our suppliers, or our customers."
+        ],
+        "synthesizer_name": "single_hop_specific_query_synthesizer"
+      },
+      "usage": {
+        "successful_requests": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd_estimate": 0.0
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": true,
+        "all_contexts_necessary": true,
+        "issues": []
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 720,
+        "output_tokens": 35,
+        "cost_usd_estimate": 0.00172
+      }
+    },
+    {
+      "plan_id": "final-09",
+      "method": "direct",
+      "question_type": "single_hop",
+      "source_ids": [
+        "7e60e325-bd1a-5c09-8d70-832d5a625df5"
+      ],
+      "candidate": {
+        "keyphrases": [
+          "Forwarding confidential work emails to personal addresses",
+          "automated forwarding"
+        ],
+        "user_input": "What are the rules regarding forwarding confidential work emails to personal email addresses and automated forwarding of emails from a team member account?",
+        "reference": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+        "evidence": [
+          {
+            "context_index": 0,
+            "quote": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+            "contribution": "This quote explicitly states the prohibitions on forwarding confidential emails and automated forwarding."
+          }
+        ],
+        "reasoning_type": "single_hop",
+        "connection": "The context explicitly states the prohibitions on forwarding confidential emails to personal addresses and automated forwarding, directly answering the question."
+      },
+      "usage": {
+        "successful_requests": 1,
+        "input_tokens": 1225,
+        "output_tokens": 172,
+        "cost_usd_estimate": 0.00045799999999999997
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": true,
+        "all_contexts_necessary": true,
+        "issues": []
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 734,
+        "output_tokens": 35,
+        "cost_usd_estimate": 0.001748
+      }
+    },
+    {
+      "plan_id": "final-19",
+      "method": "ragas",
+      "question_type": "single_hop",
+      "source_ids": [
+        "0c48e867-12bf-5df2-a084-c6d4d91d4008"
+      ],
+      "worker_usage": {
+        "successful_requests": 3,
+        "input_tokens": 1700,
+        "output_tokens": 126,
+        "cost_usd_estimate": 0.0008816
+      },
+      "candidate": {
+        "user_input": "What is the requirement related to performance expectations for a full-time GitLab employee to be eligible for the Growth and Development Fund?",
+        "reference": "Applicants must meet performance expectations in their role to be eligible for the Growth and Development Fund.",
+        "reference_contexts": [
+          "## Eligibility\n\nTo use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status."
+        ],
+        "synthesizer_name": "single_hop_specific_query_synthesizer"
+      },
+      "usage": {
+        "successful_requests": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd_estimate": 0.0
+      },
+      "judge": {
+        "grounded": true,
+        "complete": false,
+        "clear": true,
+        "useful": true,
+        "matches_focus": false,
+        "all_contexts_necessary": true,
+        "issues": [
+          "The answer omits other eligibility criteria such as being a full-time GitLab employee and not being on leave status. It only addresses the performance expectation requirement, not the full set of criteria requested by the information need."
+        ]
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 544,
+        "output_tokens": 79,
+        "cost_usd_estimate": 0.0017200000000000002
+      }
+    },
+    {
+      "plan_id": "final-19",
+      "method": "direct",
+      "question_type": "single_hop",
+      "source_ids": [
+        "0c48e867-12bf-5df2-a084-c6d4d91d4008"
+      ],
+      "candidate": {
+        "keyphrases": [
+          "Full eligibility criteria for the G&D Fund",
+          "Growth and Development Fund eligibility",
+          "applicant requirements for G&D Fund"
+        ],
+        "user_input": "What are the full eligibility criteria for an employee to use the Growth and Development Fund?",
+        "reference": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+        "evidence": [
+          {
+            "context_index": 0,
+            "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+            "contribution": "Defines full eligibility criteria for the G&D Fund"
+          }
+        ],
+        "reasoning_type": "single_hop",
+        "connection": "The context explicitly states the full eligibility criteria for the Growth and Development Fund."
+      },
+      "usage": {
+        "successful_requests": 1,
+        "input_tokens": 1045,
+        "output_tokens": 163,
+        "cost_usd_estimate": 0.0006788
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": true,
+        "all_contexts_necessary": true,
+        "issues": []
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 548,
+        "output_tokens": 35,
+        "cost_usd_estimate": 0.0013760000000000003
+      }
+    },
+    {
+      "plan_id": "final-36",
+      "method": "ragas",
+      "question_type": "multi_hop",
+      "source_ids": [
+        "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+        "8399e9de-37b8-57a2-b8aa-ac010b7908b7"
+      ],
+      "worker_usage": {
+        "successful_requests": 2,
+        "input_tokens": 1660,
+        "output_tokens": 187,
+        "cost_usd_estimate": 0.0006175999999999999
+      },
+      "candidate": {
+        "user_input": "What cabin upgrade options are permitted for domestic flights over 5 hours compared to international flights over 5 hours, and under what conditions is business class allowed for international flights exceeding 8 hours?",
+        "reference": "For domestic flights over 5 hours of consecutive flight time, team members may book the next class up from standard economy as long as it is below business class. For international flights over 5 hours, the same rule applies. However, for international flights exceeding 8 hours of consecutive flight time, frequent travelers (3 or more trips per quarter) may book business class only when traveling for customer meetings, speaking engagements, or representing GitLab at a conference.",
+        "reference_contexts": [
+          "#### Domestic Flights\n\n- **Flights over 5 hours of consecutive flight time** - For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "#### International Flights\n\n- **Flights greater than 5 hours of consecutive flight time** - For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n- **Flights exceeding 8 hours of consecutive flight time** - For those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference"
+        ],
+        "synthesizer_name": "multi_hop_specific_query_synthesizer"
+      },
+      "usage": {
+        "successful_requests": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd_estimate": 0.0
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": true,
+        "all_contexts_necessary": true,
+        "issues": []
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 835,
+        "output_tokens": 35,
+        "cost_usd_estimate": 0.0019500000000000001
+      }
+    },
+    {
+      "plan_id": "final-36",
+      "method": "direct",
+      "question_type": "multi_hop",
+      "source_ids": [
+        "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+        "8399e9de-37b8-57a2-b8aa-ac010b7908b7"
+      ],
+      "candidate": {
+        "keyphrases": [
+          "permitted cabin upgrades",
+          "domestic flights",
+          "international flights",
+          "business class exception",
+          "consecutive flight time",
+          "trip purpose"
+        ],
+        "user_input": "Compare permitted cabin upgrades for domestic versus international flights, including conditions for the international business-class exception. Preserve continuous-flight duration and trip-purpose qualifiers.",
+        "reference": "Domestic flights over 5 hours consecutive flight time allow booking the next class up from standard economy below business class. International flights over 5 hours consecutive flight time allow the same upgrade. For international flights exceeding 8 hours consecutive flight time, frequent travelers (3+ trips per quarter, minimum 6 segments) may book business class when traveling for customer meetings, speaking engagements, or representing GitLab at conferences.",
+        "evidence": [
+          {
+            "context_index": 0,
+            "quote": "For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+            "contribution": "Defines domestic flight upgrade policy for flights over 5 hours consecutive flight time."
+          },
+          {
+            "context_index": 1,
+            "quote": "For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n\nFor those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference",
+            "contribution": "Defines international flight upgrade policy for flights over 5 hours and business class exception for frequent travelers on flights over 8 hours with specific trip purposes."
+          }
+        ],
+        "reasoning_type": "comparison",
+        "connection": "Context 0 defines domestic flight upgrade rules; Context 1 defines international flight upgrade rules and business class exceptions for frequent travelers with specific trip purposes."
+      },
+      "usage": {
+        "successful_requests": 1,
+        "input_tokens": 1261,
+        "output_tokens": 424,
+        "cost_usd_estimate": 0.0008756
+      },
+      "judge": {
+        "grounded": true,
+        "complete": true,
+        "clear": true,
+        "useful": true,
+        "matches_focus": true,
+        "all_contexts_necessary": true,
+        "issues": []
+      },
+      "judge_usage": {
+        "successful_requests": 1,
+        "input_tokens": 815,
+        "output_tokens": 35,
+        "cost_usd_estimate": 0.00191
+      }
+    }
+  ]
+}

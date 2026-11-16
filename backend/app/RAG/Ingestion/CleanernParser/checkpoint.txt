@@ -1,0 +1,78 @@
+* Kết quả sau khi hoàn thành pipeline clean n parse lần 1 : 
+Kết luận: `cleaner.py` đã thực hiện được phần Clean cơ bản, nhưng chưa đủ chất lượng để đưa toàn bộ file vào Chunking/Embedding.
+
+Mình đã chạy bằng Python 3.12 với `Document` thật:
+
+- 32/32 unit test pass.
+- 163/163 file Markdown chạy không lỗi runtime.
+- Không còn shortcode raw ngoài code.
+- Mermaid/code trong các file đại diện được giữ nguyên.
+- Table, link và nội dung `details` cơ bản vẫn còn.
+
+Tuy nhiên còn các vấn đề cần xử lý:
+
+1. `details` bị lặp heading
+
+Trong [`time-off-types.md`](<C:/Users/tuanh/Downloads/Personal Project  new/.external/gitlab-handbook/content/handbook/people-group/time-off-and-absence/time-off-types.md>), có 18 trường hợp:
+
+```markdown
+### Request Process
+
+### Request Process
+```
+
+Nguyên nhân: cleaner vừa chuyển `summary` thành heading, vừa giữ heading trùng trong body. Điều này làm chunking bị nhiễu.
+
+* Vậy, đối với Shortcode Details nói chung, ta nên loại bỏ chứ ko nên làm label ? 
++ Đây có phải 1 lỗi phổ biến, mà mọi file sử dụng detail đều bị không, nếu có thì nó sẽ ảnh hưởng đến chunking thế nào ? 
+2. HTML chưa được làm sạch hoàn toàn
+
+Trong [`gitlab-for-remote.md`](<C:/Users/tuanh/Downloads/Personal Project  new/.external/gitlab-handbook/content/handbook/company/culture/all-remote/gitlab-for-remote.md>), output vẫn còn các thẻ như:
+
+```html
+</div>
+<input ...>
+<label ...>
+</form>
+```
+
+Đây là lỗi thực sự cần sửa trước khi embedding.
+
+3. Ảnh Markdown chưa được xử lý theo roadmap
+
+Sau cleaning vẫn còn 118 Markdown image trong 41 file, dạng:
+
+```markdown
+![Description](/images/example.png)
+```
+
+Alt text có ích thì nên giữ, nhưng URL/syntax ảnh trang trí hiện vẫn đi vào `page_content`.
+
+4. Nội dung động vẫn tạo placeholder
+
+46/163 file còn:
+
+```text
+[Embedded or dynamic content unavailable in source]
+```
+
+Ví dụ:
+
+- `company/cadence.md`
+- `company/kpis.md`
+- `company/culture/all-remote/remote-work-report.md`
+
+Các file này chưa nên embedding vì nội dung chính chưa đầy đủ.
+
+Các file hiện đạt tương đối tốt:
+
+- `communication/confidentiality-levels.md`
+- `people-group/acceptable-use-policy.md`
+- `ltd-benefits-uk.md`
+- `bv-benefits-netherlands.md`
+
+Nhưng `time-off-types.md`, `gitlab-for-remote.md` và các file có placeholder chưa đạt.
+
+Vì vậy, trạng thái hiện tại là:
+
+> Có thể dùng `cleaner.py` để kiểm tra output, nhưng chưa nên chạy Chunking/Embedding hàng loạt. Cần sửa lỗi lặp heading, raw HTML còn sót, và xử lý/đánh dấu các file có ảnh hoặc nội dung động trước.

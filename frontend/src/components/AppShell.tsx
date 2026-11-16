@@ -9,6 +9,7 @@ const staffLinks = [
   { to: "/app/dashboard", label: "Tổng quan" },
   { to: "/app/workspace", label: "Không gian cá nhân" },
   { to: "/app/knowledge", label: "Kho kiến thức" },
+  { to: "/app/chatbot", label: "Chatbot" },
 ];
 
 const adminLinks = [

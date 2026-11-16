@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-08",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "8db8450f-8b9f-5ae0-91db-cdede0202f12"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1995,
+    "output_tokens": 139,
+    "cost_usd_estimate": 0.0010204
+  },
+  "candidate": {
+    "user_input": "What conditions apply to the use of Authorized Google Workspace Integrations at GitLab?",
+    "reference": "Authorized Google Workspace Integrations are permitted for use only if they are listed on the Pre-Approved Individual-Use Software list and are subject to any \"Notes and Restrictions\" specified for each software offering.",
+    "reference_contexts": [
+      "### Freeware, Browser Extensions, Add-ons, and Plugins\n\nIndividual Use Software (freeware, add-ons and plugins) is permitted, with the exception of unauthorized Google Workspace Integrations and Chrome Extensions. Individual Use Software is subject to retroactive removal at any time by IT, Legal and Security when it is deemed unsafe or insecure.\n\nAuthorized Google Workspace Integrations and other approved Individual Use Software can be found on the [Pre-Approved Individual-Use Software](https://internal.gitlab.com/handbook/finance/procurement/pre-approved-individual-use-software/) list and are permitted for use subject to any \"Notes and Restrictions\" for each respective Pre-Approved software offering.\n\nTo request approval for new Individual Use Software, please follow the [Individual Use Software](/handbook/finance/procurement/individual-use-software/) request process."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Authorized Google Workspace Integrations must be listed on the Pre-Approved Individual-Use Software list to be permitted.",
+      "Use is subject to any 'Notes and Restrictions' specified for each respective Pre-Approved software offering."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 787,
+    "output_tokens": 90,
+    "cost_usd_estimate": 0.002294
+  }
+}

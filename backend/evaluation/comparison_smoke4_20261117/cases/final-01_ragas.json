@@ -1,0 +1,43 @@
+{
+  "plan_id": "final-01",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "5df2232f-e75d-5033-bb89-d1b624e00ba1"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 2992,
+    "output_tokens": 186,
+    "cost_usd_estimate": 0.0014944000000000001
+  },
+  "candidate": {
+    "user_input": "What are the receipt submission requirements for US and Non-US team members when claiming business expenses?",
+    "reference": "Non-US Team Members must submit receipts for all business expenses, while US Team Members are required to submit receipts only for expenses over $50 USD. Receipts must include the vendor name, date of purchase, a listing of what was purchased, and a full breakout of subtotal and tax amounts. Snapshots of applications or card/bank statements are not acceptable as receipts.",
+    "reference_contexts": [
+      "- Team members should submit receipts for every business expense. For Non-US Team Members, receipts are required for all expenses. US Team Members are required to only submit receipts for any expenses over $50 USD.  Receipts must contain vendor name, date of purchase, listing of what was purchased, and contains a full breakout of the subtotal and tax amounts. Snapshot from phone/computer screen of Applications, Card/Bank Statements are not an acceptable form of receipt.\n- Team Members are not allowed to expense items on behalf of their managers.\n- Expenses for gifts and entertainment must be incurred and reimbursed in accordance with GitLab's [Gifts & Entertainment Policy](/handbook/legal/policies/gifts-contributions/#gifts-and-entertainment-policy) and [Antibribery Policy](/handbook/legal/anti-corruption-policy/).\n- Expense claims for a single item up to $5,000 can be expensed via Navan. >$5,000 needs to go through the procurement process in Zip.\n- Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.\n- Navan Description box: Expense items must have a description filled out. This box is showing as optional but we require this to be filled in. This helps to correctly record the transaction and assist any reporting purposes downstream.\n  - When filling in the description box , we ask for you to enter details of the expense so anyone looking at the line on a report can tell immediately (without the need of looking at the receipt) what the expense relates to and why it is claimed.\n  - Please fill in the description box with details like : Items Purchased/Claimed, Period service relates to, Trip Details this claim relates to, Reason for trip, Clients Name, etc. If left blank, the expense will be bounced back to the team member to complete this portion.\n- The maximum monthly limit to be reimbursed is $10K USD (or local currency equivalent). Once this limit has been reached, all expense items will need to be approved by the A/P team in Navan.  This limit may be increased for Team Members whose positions require more spend (eg. Field Marketing), but the increase request needs to be submitted via an issue for approval by the VP or higher in the Accounting Organization. Due to the nature of their roles, E-Group members have a maximum monthly limit to be reimbursed of $20K USD before additional approvals are required.\n- Expenditures related to client entertainment or marketing must be necessary, prudent, and job-related.\n- Expenses that span longer than a month must be submitted on a monthly basis (eg. Although you paid for a year upfront for the internet, you must divide the total by 12 months and submit the cost monthly).\n- Personal credits and gift cards: GitLab will reimburse only the actual out-of-pocket amount paid by the employee. If personal credits, gift cards, rewards points, or other discounts are applied to a business purchase, reimbursement will be limited to the net amount charged to the employee's personal payment method.\nExample: An employee purchases a $100 monitor and applies a $50 gift card. GitLab will reimburse $50 (the amount actually paid), not the pre-discount price of $100."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1068,
+    "output_tokens": 36,
+    "cost_usd_estimate": 0.0024240000000000004
+  }
+}

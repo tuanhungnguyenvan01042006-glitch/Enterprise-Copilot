@@ -1,0 +1,78 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "bereavement exceeding 25 calendar days"
+      ],
+      "user_input": "Who should I contact if my bereavement leave exceeds 25 calendar days?",
+      "reference": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+          "contribution": "This quote provides the necessary contacts for bereavement leave exceeding 25 calendar days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies the contacts needed for bereavement leave that exceeds 25 calendar days."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "bereavement exceeding 25 calendar days"
+      ],
+      "user_input": "Who should I contact if my bereavement leave exceeds 25 calendar days?",
+      "reference": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+          "contribution": "This quote provides the necessary contacts for bereavement leave exceeding 25 calendar days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies the contacts needed for bereavement leave that exceeds 25 calendar days.",
+      "id": "final-29",
+      "question_type": "single_hop",
+      "planned_focus": "Who to contact for bereavement exceeding 25 calendar days.",
+      "reference_contexts": [
+        "### Leave Extensions\n\n### Leave Extensions\n\nIf your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension."
+      ],
+      "reference_context_ids": [
+        "e62b2f22-4f8d-5fcb-8a51-af451b5da31f"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "e62b2f22-4f8d-5fcb-8a51-af451b5da31f",
+          "chunk_index": 31,
+          "block_type": "text",
+          "token_count": 48,
+          "section_path": "Bereavement > Leave Extensions",
+          "source_start": 23804,
+          "source_end": 24029,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

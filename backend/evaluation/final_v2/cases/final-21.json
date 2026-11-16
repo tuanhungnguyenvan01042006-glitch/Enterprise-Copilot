@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "50 percent split disbursement",
+        "excluded travel, hotel and meal costs"
+      ],
+      "user_input": "What are the conditions for using the 50 percent split disbursement option and which expenses are excluded from it?",
+      "reference": "All requests may use the split disbursement option when applicable: 50% of the approved opportunity cost can be reimbursed after payment; the remaining 50% can be reimbursed upon completion. This option does not apply to travel, hotel, or meal expenses.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "All requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses.",
+          "contribution": "Defines the timing of the 50% split disbursement and specifies excluded expenses"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the timing for the 50% split disbursement and the excluded expense categories."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "50 percent split disbursement",
+        "excluded travel, hotel and meal costs"
+      ],
+      "user_input": "What are the conditions for using the 50 percent split disbursement option and which expenses are excluded from it?",
+      "reference": "All requests may use the split disbursement option when applicable: 50% of the approved opportunity cost can be reimbursed after payment; the remaining 50% can be reimbursed upon completion. This option does not apply to travel, hotel, or meal expenses.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "All requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses.",
+          "contribution": "Defines the timing of the 50% split disbursement and specifies excluded expenses"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote explicitly states the timing for the 50% split disbursement and the excluded expense categories.",
+      "id": "final-21",
+      "question_type": "single_hop",
+      "planned_focus": "50 percent split disbursement timing and excluded travel, hotel and meal costs.",
+      "reference_contexts": [
+        "#### 50% upfront reimbursement\n\nAll requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses."
+      ],
+      "reference_context_ids": [
+        "1c4b27a9-518c-56a2-a7d5-b0bd703fd0b8"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "1c4b27a9-518c-56a2-a7d5-b0bd703fd0b8",
+          "chunk_index": 9,
+          "block_type": "text",
+          "token_count": 65,
+          "section_path": "Process > Step 5 - Submit for reimbursement in Navan > 50% upfront reimbursement",
+          "source_start": 4386,
+          "source_end": 4675,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-33",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "27ea6ecd-ce6d-5ff7-b77c-52a375c72bd4"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "mentorship end",
+      "stay connected with mentor"
+    ],
+    "user_input": "Does mentorship have to end after goals are accomplished, and what options exist for staying connected with a mentor?",
+    "reference": "Mentorships end or change over time. It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work. Thank each other for dedicating time for the mentorship.\nMentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+        "contribution": "This explains that mentorship may end if goals are accomplished but also that it can continue with regular meetings or async communication."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote directly states the conditions under which mentorship may end and the options for staying connected."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1313,
+    "output_tokens": 304,
+    "cost_usd_estimate": 0.000666
+  },
+  "judge": {
+    "source_conditions": [
+      "Mentorships can end if goals are accomplished or if the pair isn't a good fit.",
+      "Mentorship does not have to end after goals are accomplished.",
+      "Options for staying connected include: establishing a meeting cadence, meeting 1x per month for a coffee chat, connecting asynchronously via Slack, or continuing with 2x monthly sessions."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 958,
+    "output_tokens": 114,
+    "cost_usd_estimate": 0.002828
+  }
+}

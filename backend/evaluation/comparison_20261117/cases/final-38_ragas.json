@@ -1,0 +1,66 @@
+{
+  "plan_id": "final-38",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "9b6a41c2-c3d6-5c9f-b96b-4120ab5a324a",
+    "dae4f1d2-1bac-5317-966d-3168164fa2cf"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1997,
+    "output_tokens": 149,
+    "cost_usd_estimate": 0.0010372
+  },
+  "candidate": {
+    "user_input": "What are the reimbursement limits and claim frequency differences between business-travel internet and standard monthly home internet for a US team member?",
+    "reference": "Business-travel internet is reimbursable up to $50 USD per day, while standard monthly home internet is reimbursable up to $100 USD per month. Business-travel internet claims are made daily with trip details required, whereas home internet claims should be expensed monthly reflecting current charges only.",
+    "reference_contexts": [
+      "#### Internet - Travelling\n\n- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.\n- Please provide trip details on the description box.",
+      "### Internet\n\n- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges.\n- Please expense internet costs monthly, reflecting current charges only (even if you pay by a different cadence).\n- For Team Members in the Netherlands:\n  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected.\n  - If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.\n- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use.\n- Policy is set at $100 - claims above this amount will not be reimbursed. The limit has been reviewed and set to cover standard costs across all markets; individual exceptions are no longer assessed at the claim stage.\n- Itemized Receipt required.\n- If an itemized bill is not available, costs will only be reimbursed for the element relating to Internet Access, i.e. if you pay for tv, internet and phone, the invoice should be divided by 3/# of services and we will pay this value only.\n- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc.\n- If co-working space is used together with a combination of working from home, we will allow the reimbursement of the internet cost for where you spend most of your time. i.e. if you expense a co-working space for a full month then internet for home cannot be expensed. If you expense co-work for a few days in a month then home internet can be expensed in full.\n- Team members for GitLab GmbH (Germany) should refer to this [page](/handbook/finance/payroll/) for their country's specific guidelines of this expense."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Business-travel internet: reimbursable up to $50 USD (or local equivalent) per day.",
+      "Business-travel internet: trip details must be provided in the description box.",
+      "Standard monthly home internet: monthly service charges reimbursable, but not initial setup, equipment, change fees, or monthly insurance charges.",
+      "Standard monthly home internet: expense costs monthly, reflecting current charges only.",
+      "Standard monthly home internet: reimbursement limit is $100 per month; claims above this amount will not be reimbursed.",
+      "Standard monthly home internet: itemized receipt required.",
+      "Standard monthly home internet: if itemized bill not available, only internet access portion reimbursed.",
+      "Standard monthly home internet: no hardware costs reclaimable.",
+      "Standard monthly home internet: if co-working space is expensed for a full month, home internet cannot be expensed for that month."
+    ],
+    "missing_conditions": [
+      "Standard monthly home internet: not reimbursable for initial setup, equipment, change fees, or monthly insurance charges (not mentioned in answer).",
+      "Standard monthly home internet: itemized receipt required (not mentioned in answer).",
+      "Standard monthly home internet: if itemized bill not available, only internet access portion reimbursed (not mentioned in answer).",
+      "Standard monthly home internet: no hardware costs reclaimable (not mentioned in answer).",
+      "Standard monthly home internet: if co-working space is expensed for a full month, home internet cannot be expensed for that month (not mentioned in answer)."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits several relevant conditions for standard monthly home internet reimbursement: exclusions for setup/equipment/fees/insurance, itemized receipt requirement, partial reimbursement if bill is not itemized, hardware cost exclusion, and the co-working space exception. These omissions make the answer incomplete and not fully grounded."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1209,
+    "output_tokens": 396,
+    "cost_usd_estimate": 0.005586000000000001
+  }
+}

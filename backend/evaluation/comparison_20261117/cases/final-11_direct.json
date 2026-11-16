@@ -1,0 +1,60 @@
+{
+  "plan_id": "final-11",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "498c72df-0ca5-5de3-a24f-fc46becdaaf7"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Business-need exception process",
+      "external storage on company devices",
+      "encryption"
+    ],
+    "user_input": "What is the process for obtaining an exception to use external storage devices on company-managed devices, and how is encryption handled?",
+    "reference": "The use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is not allowed and is blocked by default. An exception request may be opened here if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "The use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is not allowed and is blocked by default. An exception request may be opened [here](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=usb_exception) if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+        "contribution": "Explains the exception request process and encryption handling."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the exception request process and encryption coordination for external storage use on company devices."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1195,
+    "output_tokens": 285,
+    "cost_usd_estimate": 0.000934
+  },
+  "judge": {
+    "source_conditions": [
+      "Use of removable and external storage devices (USB flash drives, external backup drives) on company-managed devices is not allowed and is blocked by default.",
+      "An exception request may be opened if there is a business need for the use of an external storage device.",
+      "Exception requests are submitted via a specific link (https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=usb_exception).",
+      "Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device.",
+      "Corporate Security will configure encryption and password protection."
+    ],
+    "missing_conditions": [
+      "The answer does not include the explicit submission method (the specific link) for the exception request."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the explicit submission method (the specific link) for the exception request, which is a relevant process detail."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 833,
+    "output_tokens": 206,
+    "cost_usd_estimate": 0.003314
+  }
+}

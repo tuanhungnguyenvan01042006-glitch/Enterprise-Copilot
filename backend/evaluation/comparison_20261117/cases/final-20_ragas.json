@@ -1,0 +1,48 @@
+{
+  "plan_id": "final-20",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "b0c45505-5adc-5855-899c-82ac2dd27213"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1860,
+    "output_tokens": 111,
+    "cost_usd_estimate": 0.0009216000000000001
+  },
+  "candidate": {
+    "user_input": "How far in advance should I submit a Growth & Development Fund request in Compass?",
+    "reference": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+    "reference_contexts": [
+      "### Step 2 - Submit your request in Compass\n\nCreate a new Growth & Development Fund request in Compass using the appropriate request path for your opportunity type.\n\nYour request should be submitted at least 30 days in advance of the beginning of your experience when possible.\n\nBe prepared to provide information such as:\n\n- the type of opportunity\n- provider or vendor details\n- program or event name\n- relevant dates\n- total cost\n- whether the request includes any travel considerations\n- how the opportunity supports your development goals"
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Request should be submitted at least 30 days in advance of the beginning of the experience when possible."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 703,
+    "output_tokens": 68,
+    "cost_usd_estimate": 0.00195
+  }
+}

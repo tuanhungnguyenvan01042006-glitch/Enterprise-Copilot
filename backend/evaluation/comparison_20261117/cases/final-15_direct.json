@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-15",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e694ad19-6e12-5b9a-9852-d1faf9688895"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Checking off onboarding tasks that do not apply"
+    ],
+    "user_input": "Can I check off onboarding tasks that do not apply to me during the onboarding process?",
+    "reference": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following: I have completed this task or I have checked and this task is not applicable to me",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "To ensure a successful completion of the onboarding issue, it is important that all tasks are checked off, whether the task is applicable to the onboarding team member or not. Checking the box indicates one of the following: I have completed this task or I have checked and this task is not applicable to me",
+        "contribution": "This explains the rule about checking off tasks that do not apply."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the rule about checking off tasks that do not apply, directly answering the question."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1117,
+    "output_tokens": 218,
+    "cost_usd_estimate": 0.0007956
+  },
+  "judge": {
+    "source_conditions": [
+      "All tasks must be checked off for successful completion of the onboarding issue.",
+      "Checking the box can mean either: the task is completed, or the task is not applicable to the team member."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 733,
+    "output_tokens": 85,
+    "cost_usd_estimate": 0.0021460000000000003
+  }
+}

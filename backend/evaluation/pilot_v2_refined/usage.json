@@ -1,0 +1,75 @@
+{
+  "started_at_utc": "2026-11-12T09:51:18.682941+00:00",
+  "finished_at_utc": "2026-11-12T09:51:55.682376+00:00",
+  "openai_model": "gpt-4o-mini",
+  "openai_successful_requests": 45,
+  "openai_input_tokens": 25775,
+  "openai_output_tokens": 1852,
+  "openai_cost_usd_callback_estimate": 0.004977449999999998,
+  "voyage_requests": 0,
+  "source_chunk_count": 15,
+  "prompt_instruction": "Generate one useful, self-contained English employee question and a reference answer.\nUse the supplied context as evidence. The selected keyphrase MUST be the primary\nsubject of the question: ask about a specific stated fact or rule concerning it,\nnot an unrelated action elsewhere in the context. Do not invent a role,\nplatform, rule or relationship just to use a word.\nAsk about one concrete action, requirement, exception, permission or condition an\nemployee might need to know. Name the specific object (e.g. an integration, not\nthe entire product). Avoid vague questions such as 'What is the role of GitLab?'\nand 'What does GitLab have to do with ...?'. Use natural, grammatical English,\nnot slang, deliberate misspellings, or a list of keywords. Prefer a focused\nquestion over 'What are all the best practices?'.\nBefore returning the pair, verify each answer claim against the exact context\nand correct any changed modality or missing exception. The answer must directly answer the question using only explicit information\nin the context. Preserve EVERY relevant qualifier: if, may, should, must, only,\nunless, exceptions, actor and approval authority. Conditional contact or approval\nmust not become guaranteed. Recommendations must not become obligations.\nDo not invent details behind links. Keep the answer concise (usually 1-3 sentences)\nand omit unrelated policy points. Make different keyphrases lead to different\ninformation needs, not superficial paraphrases of the same question.\n",
+  "source_selection": [
+    [
+      "Ask Me Anything",
+      1
+    ],
+    [
+      "Ask Me Anything",
+      2
+    ],
+    [
+      "Ask Me Anything",
+      3
+    ],
+    [
+      "GitLab Internal Acceptable Use Policy",
+      8
+    ],
+    [
+      "GitLab Internal Acceptable Use Policy",
+      13
+    ],
+    [
+      "GitLab Internal Acceptable Use Policy",
+      20
+    ],
+    [
+      "Global Travel and Expense Policy",
+      6
+    ],
+    [
+      "Global Travel and Expense Policy",
+      11
+    ],
+    [
+      "Global Travel and Expense Policy",
+      27
+    ],
+    [
+      "The complete guide to remote onboarding for new-hires",
+      7
+    ],
+    [
+      "The complete guide to remote onboarding for new-hires",
+      8
+    ],
+    [
+      "The complete guide to remote onboarding for new-hires",
+      18
+    ],
+    [
+      "Leave Types",
+      9
+    ],
+    [
+      "Leave Types",
+      6
+    ],
+    [
+      "Leave Types",
+      12
+    ]
+  ],
+  "note": "Single-hop keyphrase generation does not need similarity embeddings. Usage is callback-observed, not an invoice."
+}

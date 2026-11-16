@@ -1,0 +1,16 @@
+{
+  "plan_id": "final-39",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "17aa7554-c9ad-5af3-9a32-0c304d8abf25",
+    "85f8f149-d254-5b8e-b502-c8373b72c74d"
+  ],
+  "error": "ValidationError: 3 validation errors for Candidate\nevidence.0.contribution\n  Field required [type=missing, input_value={'context_index': 0, 'quo...space is reimbursable.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nevidence.1.contribution\n  Field required [type=missing, input_value={'context_index': 0, 'quo...raveling for business.\"}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nevidence.2.contribution\n  Field required [type=missing, input_value={'context_index': 1, 'quo...same as monthly above.'}, input_type=d",
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1584,
+    "output_tokens": 352,
+    "cost_usd_estimate": 0.0011968
+  }
+}

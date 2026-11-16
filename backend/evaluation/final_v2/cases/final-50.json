@@ -1,0 +1,134 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "RACI mapping",
+        "Accountable role",
+        "mentorship session"
+      ],
+      "user_input": "In a RACI mapping, who should occupy the Accountable role for a mentorship session, linking mentee session DRI to GitLab DRI/RACI mapping?",
+      "reference": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+      "evidence": [
+        {
+          "context_index": 1,
+          "quote": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+          "contribution": "This explains how the DRI relates to the Accountable role in RACI mapping."
+        },
+        {
+          "context_index": 0,
+          "quote": "The mentee should be the DRI for each session and use the agenda to set meeting goals and ask questions.",
+          "contribution": "This states the mentee is the DRI for each mentorship session."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 identifies the mentee as the DRI for the mentorship session, and Context 1 explains that the DRI for a project or workstream occupies the Accountable role in RACI mapping, linking the mentee session DRI to the Accountable role."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "RACI mapping",
+        "Accountable role",
+        "mentorship session"
+      ],
+      "user_input": "In a RACI mapping, who should occupy the Accountable role for a mentorship session, linking mentee session DRI to GitLab DRI/RACI mapping?",
+      "reference": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+      "evidence": [
+        {
+          "context_index": 1,
+          "quote": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+          "contribution": "This explains how the DRI relates to the Accountable role in RACI mapping."
+        },
+        {
+          "context_index": 0,
+          "quote": "The mentee should be the DRI for each session and use the agenda to set meeting goals and ask questions.",
+          "contribution": "This states the mentee is the DRI for each mentorship session."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 identifies the mentee as the DRI for the mentorship session, and Context 1 explains that the DRI for a project or workstream occupies the Accountable role in RACI mapping, linking the mentee session DRI to the Accountable role."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "RACI mapping",
+        "Accountable role",
+        "mentorship session"
+      ],
+      "user_input": "In a RACI mapping, who should occupy the Accountable role for a mentorship session, linking mentee session DRI to GitLab DRI/RACI mapping?",
+      "reference": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+      "evidence": [
+        {
+          "context_index": 1,
+          "quote": "GitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.",
+          "contribution": "This explains how the DRI relates to the Accountable role in RACI mapping."
+        },
+        {
+          "context_index": 0,
+          "quote": "The mentee should be the DRI for each session and use the agenda to set meeting goals and ask questions.",
+          "contribution": "This states the mentee is the DRI for each mentorship session."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 identifies the mentee as the DRI for the mentorship session, and Context 1 explains that the DRI for a project or workstream occupies the Accountable role in RACI mapping, linking the mentee session DRI to the Accountable role.",
+      "id": "final-50",
+      "question_type": "multi_hop",
+      "planned_focus": "In a RACI mapping, who should occupy the Accountable role for a mentorship session, linking mentee session DRI to GitLab DRI/RACI mapping? Do not reveal DRI or mentee role in the question.",
+      "reference_contexts": [
+        "### Sample sync meeting agendas\n\nMentorship agendas are important for resources documentation and future planning. The mentee should be the DRI for each session and use the agenda to set meeting goals and ask questions. Use and customize the following meeting agenda templates as a baseline for each session. Please make a copy of these templates and save to your own Google Drive.\n\n1. [Initial Meeting Agenda Template](https://docs.google.com/document/d/1p1jVyE6S2qvCiNwjdwhREj4ge1AGneb0pFxfC3T2rPY/edit?usp=sharing)\n1. [Regular Meeting Agenda Template](https://docs.google.com/document/d/1ufU9Hjcuf2-psASdXS_B7zX64C-5eBuvOR-P7pbSULM/edit?usp=sharing)\n1. [Final Meeting Agenda Template](https://docs.google.com/document/d/1IVwilfvUN-XE6FE1kjKLLmou4YUQYDD8ba57kM7dyGY/edit?usp=sharing)\n\n*Sample agendas below are inspired by resources from [Arizona State University](https://wms.arizona.edu/sites/default/files/Sample%20Meeting%20Agendas%20and%20Emails%20for%20Mentors.pdf) and [People Grove](https://support.peoplegrove.com/hc/en-us/articles/360001265792-Structure-Goals-and-Agendas).*",
+        "## Responsible, Accountable, Consulted, Informed (RACI)\n\nDifferent organizations use different methods of assigning responsibility; one of the most popular is the [RACI Matrix](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix), which outlines who the Responsible, Accountable, Consulted, Informed people should be on a decision or project.\n\nGitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.\n\nRACI: A framework for clarifying roles and responsibilities\n\n- Responsible: This is the person or people ultimately responsible for the successful completion of a specific task, decision, or project. They are needed for the planning, execution, and completion of a given task.\n- Accountable: The person who is ultimately accountable for the completion and success of the task. There should be only one person accountable for each task and it’s often the same as the DRI.\n- Consulted: These are individuals whose opinions and expertise are sought and valued before a decision or action is taken. They provide input and feedback, but they are not ultimately responsible for the outcome.\n- Informed: These individuals are kept in the loop about the progress and decisions related to a task or project, but they don't necessarily need to be actively involved in the decision-making process. They are kept informed of the progress and outcome.\n\nThis framework helps avoid confusion and ensures that everyone understands their role and level of involvement. It's a way to distribute responsibility and keep the project moving forward efficiently."
+      ],
+      "reference_context_ids": [
+        "03b0d45f-1d80-58cf-8fc7-125dc25f196a",
+        "3c7ef074-a8f7-59f6-a333-2bd8918bfd62"
+      ],
+      "reference_document_ids": [
+        "4bb3fc75-d6ae-511a-981f-d98df33744c1",
+        "ba62c39f-e509-5d22-90e6-2624fc059a64"
+      ],
+      "sources": [
+        {
+          "document_id": "4bb3fc75-d6ae-511a-981f-d98df33744c1",
+          "chunk_id": "03b0d45f-1d80-58cf-8fc7-125dc25f196a",
+          "chunk_index": 27,
+          "block_type": "text",
+          "token_count": 328,
+          "section_path": "Mentee: Set a Meeting Schedule > Sample sync meeting agendas",
+          "source_start": 11386,
+          "source_end": 12472,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Mentoring at GitLab",
+          "category": "GUIDE"
+        },
+        {
+          "document_id": "ba62c39f-e509-5d22-90e6-2624fc059a64",
+          "chunk_id": "3c7ef074-a8f7-59f6-a333-2bd8918bfd62",
+          "chunk_index": 5,
+          "block_type": "text",
+          "token_count": 334,
+          "section_path": "Responsible, Accountable, Consulted, Informed (RACI)",
+          "source_start": 3290,
+          "source_end": 5004,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Directly Responsible Individuals (DRI)",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

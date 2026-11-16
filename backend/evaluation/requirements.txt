@@ -1,0 +1,13 @@
+# Keep benchmark-only dependencies out of the application image.
+# Cài các thư viện, chỉ cần dùng trong Benchmark, ko dùng cho toàn bộ BE 
+-r ../requirements.txt   
+# Tham số -r có nghĩa là sẽ cài thêm cả các thư viện từ 1 địa chỉ khác : chính là địa chỉ backend/requirement.txt
+ragas==0.4.3
+rapidfuzz==3.14.3
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-openai==0.3.35
+instructor==1.3.2
+openai==1.109.1
+
+#  --> .venv chứa cả thư viện trong backend và depenedecy bổ xung cho Ragas (evaluation) 

@@ -1,0 +1,23 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Permitted pre-approved individual-use software",
+        "Notes and Restrictions"
+      ],
+      "user_input": "What are the conditions for using pre-approved individual-use software?",
+      "reference": "The conditions for using pre-approved individual-use software include adhering to any \"Notes and Restrictions\" for each respective Pre-Approved software offering.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Authorized Google Workspace Integrations and other approved Individual Use Software can be found on the [Pre-Approved Individual-Use Software] list and are permitted for use subject to any \"Notes and Restrictions\" for each respective Pre-Approved software offering.",
+          "contribution": "This quote specifies that pre-approved individual-use software is permitted for use with conditions."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The answer directly addresses the conditions for using pre-approved individual-use software as stated in the context."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "plan_id": "final-38",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "9b6a41c2-c3d6-5c9f-b96b-4120ab5a324a",
+    "dae4f1d2-1bac-5317-966d-3168164fa2cf"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Internet - Travelling reimbursement",
+      "Monthly home internet reimbursement",
+      "reimbursement limits",
+      "claim frequency",
+      "US team member"
+    ],
+    "user_input": "Compare reimbursement limits and claim frequency for business-travel internet versus standard monthly home internet for a US team member; do not mix daily and monthly caps.",
+    "reference": "Internet - Travelling reimbursement is up to $50 USD per day, while monthly home internet reimbursement is capped at $100 per month with claims to be made monthly.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.",
+        "contribution": "States the daily reimbursement limit for internet while traveling."
+      },
+      {
+        "context_index": 1,
+        "quote": "- Policy is set at $100 - claims above this amount will not be reimbursed. The limit has been reviewed and set to cover standard costs across all markets; individual exceptions are no longer assessed at the claim stage.\n- Please expense internet costs monthly, reflecting current charges only (even if you pay by a different cadence).",
+        "contribution": "States the monthly reimbursement limit for home internet and the claim frequency."
+      }
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 provides the daily reimbursement limit for travel internet, while Context 1 provides the monthly reimbursement limit and claim frequency for home internet, allowing a direct comparison."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1595,
+    "output_tokens": 278,
+    "cost_usd_estimate": 0.0010828
+  },
+  "judge": {
+    "source_conditions": [
+      "Internet while traveling is reimbursable for up to $50 USD per day.",
+      "Monthly service charges for the internet are reimbursable, but not initial setup, equipment, change fees, or monthly insurance charges.",
+      "Internet costs must be expensed monthly, reflecting current charges only.",
+      "Policy is set at $100 - claims above this amount will not be reimbursed.",
+      "Itemized Receipt required for home internet reimbursement."
+    ],
+    "missing_conditions": [],
+    "question_issues": [
+      "Question includes an instruction intended for the generator."
+    ],
+    "grounded": true,
+    "complete": true,
+    "clear": false,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1187,
+    "output_tokens": 129,
+    "cost_usd_estimate": 0.003406
+  }
+}

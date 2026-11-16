@@ -1,0 +1,92 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Navan hotel stay",
+        "expense report",
+        "business incidentals"
+      ],
+      "user_input": "When does a Navan hotel stay require an expense report for business incidentals?",
+      "reference": "A Navan hotel stay does not require an expense report if you do not incur any additional hotel charges. However, incidental expenses that are business-related and within policy must still be submitted through an expense report.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.",
+          "contribution": "Clarifies when an expense report is not needed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+          "contribution": "Indicates that business-related incidentals require an expense report."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clarifies the conditions under which an expense report is required for hotel stays and business incidentals."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Navan hotel stay",
+        "expense report",
+        "business incidentals"
+      ],
+      "user_input": "When does a Navan hotel stay require an expense report for business incidentals?",
+      "reference": "A Navan hotel stay does not require an expense report if you do not incur any additional hotel charges. However, incidental expenses that are business-related and within policy must still be submitted through an expense report.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.",
+          "contribution": "Clarifies when an expense report is not needed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+          "contribution": "Indicates that business-related incidentals require an expense report."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clarifies the conditions under which an expense report is required for hotel stays and business incidentals.",
+      "id": "final-03",
+      "question_type": "single_hop",
+      "planned_focus": "When a Navan hotel stay does or does not require an expense report; business incidentals.",
+      "reference_contexts": [
+        "### Hotels\n\n- When you book Hotels through Navan Travel, hotel room charges and the applicable taxes will be paid directly by GitLab through a central virtual card - the same way the company handles flights and train travel. The virtual card details will appear in Navan, our travel and expense platform, 24 hours before check-in and the hotel will automatically charge your room and taxes to this card.\n- If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.\n- You will still be required to provide a personal credit card at check-in for any potential charges, such as room service, parking, minibar, or other extras.\n- Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.\n- Further information can be found on [Navan Help Centre](https://app.navan.com/app/helpcenter/articles/travel/myself/booking-hotels/virtual-cards-for-pay-at-hotel-bookings)\n- When hotel rooms are booked outside Navan - approval required by Manager and AP Admin.\n- Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms, with a 7 day booking lead time.\n- However, the lodging policy in Navan is set up as a “Dynamic Policy” which calculates a fair market price for every search based on travel dates and destinations. This allows for some room in price in case the $300 USD limit is really not applicable to that area. And similar to airfare, any purchases that are over 20% of the Dynamic Policy will be flagged for further review by your manager.\n- Always choose the refundable room booking unless the only available option is a non refundable room.\n- The exception is the Corporate Events hotel room blocks organized by the internal team or if the conference hotel room block has better pricing than Navan.\n- The hotel room block's pricing is generally within the bounds of the $300USD/night and in the event it is over that amount, please contact the AP team for an exception to be granted.\n- Conference hotel room blocks or Corporate Events organized blocks will still need to be charged to a personal credit card and then submitted for reimbursement via Navan Expense.\n- Always bring a credit card with you when traveling for company business if you have one. Hotels will generally expect you to have a physical credit card to present upon check-in. This credit card will be kept on file for the duration of your stay. Even if your lodging was pre-paid by the company or by using a company credit card, the Hotel may still require a card to be on file for \"incidentals\"."
+      ],
+      "reference_context_ids": [
+        "544f0cc9-a879-5010-88eb-cab5c851f149"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "544f0cc9-a879-5010-88eb-cab5c851f149",
+          "chunk_index": 22,
+          "block_type": "text",
+          "token_count": 555,
+          "section_path": "4. PROCEDURES > Hotels",
+          "source_start": 18974,
+          "source_end": 21624,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

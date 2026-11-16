@@ -1,0 +1,67 @@
+{
+  "plan_id": "final-42",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "57828948-7920-570b-af63-7e8347698791",
+    "94108e32-18c2-5c39-af0b-98b31684f48b"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "academic courses eligibility",
+      "academic courses completion evidence",
+      "non-academic professional-development courses eligibility",
+      "non-academic professional-development courses completion evidence"
+    ],
+    "user_input": "Compare the eligibility and completion evidence requirements for academic courses versus shorter non-academic professional-development courses reimbursed through G&D.",
+    "reference": "Academic courses must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher, with a final grade report or transcript required for reimbursement. Shorter non-academic professional-development courses require a final grade report or satisfactory certificate of completion for reimbursement.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nA final grade report or transcript is required for reimbursement.",
+        "contribution": "This context specifies eligibility criteria and completion evidence for academic courses."
+      },
+      {
+        "context_index": 1,
+        "quote": "Certifications, licenses, and shorter non-academic courses that are relevant to your development may be reimbursed through the G&D Fund.\n\nA final grade report or satisfactory certificate of completion is required for reimbursement.",
+        "contribution": "This context specifies eligibility and completion evidence for shorter non-academic professional-development courses."
+      }
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Both contexts specify eligibility and completion evidence requirements for different types of courses reimbursed through G&D."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1187,
+    "output_tokens": 319,
+    "cost_usd_estimate": 0.0009852
+  },
+  "judge": {
+    "source_conditions": [
+      "Academic courses must be from an accredited college or university.",
+      "Academic courses must result in a final grade equivalent to a \"B\" or higher.",
+      "A final grade report or transcript is required for reimbursement of academic courses.",
+      "Shorter non-academic professional-development courses must be relevant to your development.",
+      "A final grade report or satisfactory certificate of completion is required for reimbursement of non-academic courses."
+    ],
+    "missing_conditions": [
+      "Shorter non-academic professional-development courses must be relevant to your development (this eligibility condition is omitted in the answer)."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the eligibility requirement that shorter non-academic professional-development courses must be relevant to the employee's development. This is a required condition stated in the source."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 797,
+    "output_tokens": 184,
+    "cost_usd_estimate": 0.003066
+  }
+}

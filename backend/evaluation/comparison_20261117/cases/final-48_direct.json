@@ -1,0 +1,58 @@
+{
+  "plan_id": "final-48",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "8a1e3d10-e143-54c7-ac25-f64df89bdb70",
+    "93e34685-fd0d-5aea-875f-ae9af6dfb64a"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "domestic partner child aged 22 eligibility",
+      "adult family member coaching and therapy allocation"
+    ],
+    "user_input": "Is a domestic partner's child aged 22 eligible for benefits, and what coaching and therapy session allocations do they receive as an adult family member?",
+    "reference": "A domestic partner's child up to age 27 is eligible, and adult family members (18+) receive 6 coaching and 6 therapy sessions each.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Eligible family members including:\n  - Spouse or legal/domestic partner\n  - Children up to age 27\n  - Partner's children up to age 27",
+        "contribution": "Defines eligibility of domestic partner's children up to age 27."
+      },
+      {
+        "context_index": 1,
+        "quote": "Adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions",
+        "contribution": "Specifies coaching and therapy session allocations for adult family members aged 18 and over."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 establishes eligibility of domestic partner's children up to age 27, and Context 1 details the coaching and therapy allocations for adult family members aged 18 and over."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1227,
+    "output_tokens": 248,
+    "cost_usd_estimate": 0.0008876000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Eligible family members include partner's children up to age 27",
+      "Adult family members (18+) get their own full access with 6 coaching and 6 therapy sessions"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 817,
+    "output_tokens": 82,
+    "cost_usd_estimate": 0.00229
+  }
+}

@@ -12,6 +12,7 @@ import { TeamPage } from "./features/team/TeamPage";
 import { WorkspacePage } from "./features/workspace/WorkspacePage";
 import { KnowledgePage } from "./features/knowledge/KnowledgePage";
 import { DocumentDetailPage } from "./features/knowledge/DocumentDetailPage";
+import { ChatPage } from "./features/chat/ChatPage";
 import { DashboardPage } from "./features/dashboard/DashboardPage";
 import { AnnouncementsPage } from "./features/announcements/AnnouncementsPage";
 import { AdminOverviewPage } from "./features/admin/AdminOverviewPage";
@@ -48,6 +49,7 @@ function AppRoutes() {
             <Route index element={<Navigate to="dashboard" replace />} />
             <Route path="dashboard" element={<DashboardPage />} />
             <Route path="workspace" element={<WorkspacePage />} />
+            <Route path="chatbot" element={<ChatPage />} />
             <Route path="knowledge" element={<KnowledgePage />} />
             <Route path="knowledge/:documentId" element={<DocumentDetailPage />} />
             <Route path="profile" element={<ProfilePage />} />

@@ -1,0 +1,152 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "daily cap",
+        "manager approval requirement",
+        "parking reimbursement"
+      ],
+      "user_input": "For four coworking day passes during business travel away from primary residence, determine the daily cap, manager/Finance approval requirement, and whether parking is reimbursable; apply inherited monthly rules and travel-location exception.",
+      "reference": "For four coworking day passes during business travel, the daily cap is $100.00, Manager and Finance approval is not required since it is within the limit of 5 one-off days, and parking is not reimbursable.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Co-working space is reimbursable for monthly space and one-off days during business travel.",
+          "contribution": "Confirms reimbursement for one-off days during business travel."
+        },
+        {
+          "context_index": 1,
+          "quote": "Up to 5 One-off Days in a calendar month related to co-working space do not require Manager or Finance approval.",
+          "contribution": "Specifies that Manager and Finance approval is not needed for up to 5 one-off days."
+        },
+        {
+          "context_index": 0,
+          "quote": "Travel to and from the co-working space, parking, meals, beverages, access cards, insurance and other additional expenses in a co-working facility are not reimbursable.",
+          "contribution": "Clarifies that parking is not reimbursable."
+        },
+        {
+          "context_index": 1,
+          "quote": "$100.00 Limit per day",
+          "contribution": "Establishes the daily cap for co-working day passes."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The first context establishes the reimbursement rules for co-working spaces, while the second context specifies the daily cap and approval requirements for one-off days."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "daily cap",
+        "manager approval requirement",
+        "parking reimbursement"
+      ],
+      "user_input": "For four coworking day passes during business travel away from primary residence, determine the daily cap, manager/Finance approval requirement, and whether parking is reimbursable; apply inherited monthly rules and travel-location exception.",
+      "reference": "For four coworking day passes during business travel away from primary residence, the daily cap is $100.00, manager and Finance approval is not required, and parking is not reimbursable.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- Travel to and from the co-working space, parking, meals, beverages, access cards, insurance and other additional expenses in a co-working facility are not reimbursable. Only the rent for the space is reimbursable.",
+          "contribution": "Parking is not reimbursable."
+        },
+        {
+          "context_index": 1,
+          "quote": "- Up to 5 One-off Days in a calendar month related to co-working space do not require Manager or Finance approval.",
+          "contribution": "Manager and Finance approval is not required."
+        },
+        {
+          "context_index": 1,
+          "quote": "- $100.00 Limit per day",
+          "contribution": "The daily cap is $100.00."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context provides information about reimbursement rules for coworking spaces, while the second context specifies the daily limits and approval requirements for one-off day passes."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's answer does not clearly state that the daily cap applies specifically to the four coworking day passes, which is a key aspect of the question. It should explicitly mention that the daily cap of $100.00 applies to each of the four passes, not just as a general statement.",
+        "The candidate's answer does not address the 'inherited monthly rules' aspect in detail, which is part of the focus of the question. While it mentions the daily cap and approval requirements, it does not clarify how these relate to the monthly rules, which could lead to ambiguity.",
+        "The candidate's answer does not explicitly mention the travel-location exception, which is part of the focus of the question. Although it implies that the rules apply during business travel, it does not directly address this exception as requested."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate's answer does not clearly state that the daily cap applies specifically to the four coworking day passes, which is a key aspect of the question. It should explicitly mention that the daily cap of $100.00 applies to each of the four passes, not just as a general statement.; The candidate's answer does not address the 'inherited monthly rules' aspect in detail, which is part of the focus of the question. While it mentions the daily cap and approval requirements, it does not clarify how these relate to the monthly rules, which could lead to ambiguity.; The candidate's answer does not explicitly mention the travel-location exception, which is part of the focus of the question. Although it implies that the rules apply during business travel, it does not directly address this exception as requested."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "daily cap",
+        "manager/Finance approval requirement",
+        "parking reimbursement"
+      ],
+      "user_input": "For four coworking day passes during business travel away from primary residence, determine the daily cap, manager/Finance approval requirement, and whether parking is reimbursable; apply inherited monthly rules and travel-location exception.",
+      "reference": "The daily cap for coworking day passes is $100.00 per day, and since you are requesting four passes, this cap applies to each of those days. Manager and Finance approval is not required for up to 5 one-off days in a calendar month, so you do not need approval for these four passes. However, parking is not reimbursable as GitLab does not cover additional expenses related to co-working facilities, including parking.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "- $100.00 Limit per day",
+          "contribution": "This specifies the daily cap for coworking day passes."
+        },
+        {
+          "context_index": 1,
+          "quote": "- Up to 5 One-off Days in a calendar month related to co-working space do not require Manager or Finance approval.",
+          "contribution": "This indicates that approval is not needed for the four passes."
+        },
+        {
+          "context_index": 0,
+          "quote": "- Travel to and from the co-working space, parking, meals, beverages, access cards, insurance and other additional expenses in a co-working facility are not reimbursable.",
+          "contribution": "This clarifies that parking is not reimbursable."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The first context provides the daily cap and reimbursement rules, while the second context clarifies the approval requirement for coworking day passes."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "daily cap",
+        "manager approval requirement",
+        "parking reimbursement"
+      ],
+      "user_input": "For four coworking day passes during business travel away from primary residence, determine the daily cap, manager/Finance approval requirement, and whether parking is reimbursable; apply inherited monthly rules and travel-location exception.",
+      "reference": "For four coworking day passes during business travel away from primary residence, the daily cap is $100.00, manager and Finance approval is not required, and parking is not reimbursable.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Travel to and from the co-working space, parking, meals, beverages, access cards, insurance and other additional expenses in a co-working facility are not reimbursable. Only the rent for the space is reimbursable.",
+          "contribution": "Parking is not reimbursable."
+        },
+        {
+          "context_index": 1,
+          "quote": "$100.00 Limit per day",
+          "contribution": "The daily cap is $100.00."
+        },
+        {
+          "context_index": 1,
+          "quote": "Up to 5 One-off Days in a calendar month related to co-working space do not require Manager or Finance approval.",
+          "contribution": "Manager and Finance approval is not required."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The daily cap is established in context 1, while the approval requirement and reimbursement rules are clarified in both contexts."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question is multi-hop, but the contexts do not require both to answer the question. Context 1 alone is sufficient to determine the daily cap and the manager/Finance approval requirement, while context 0 alone is sufficient to determine the parking reimbursement policy. This violates the requirement that both contexts must be necessary for a multi-hop question.",
+        "The candidate's reference does not clearly indicate that both contexts are necessary for the answer, which is a requirement for multi-hop questions."
+      ],
+      "all_contexts_necessary": false
+    },
+    "feedback": "The question is multi-hop, but the contexts do not require both to answer the question. Context 1 alone is sufficient to determine the daily cap and the manager/Finance approval requirement, while context 0 alone is sufficient to determine the parking reimbursement policy. This violates the requirement that both contexts must be necessary for a multi-hop question.; The candidate's reference does not clearly indicate that both contexts are necessary for the answer, which is a requirement for multi-hop questions."
+  }
+]

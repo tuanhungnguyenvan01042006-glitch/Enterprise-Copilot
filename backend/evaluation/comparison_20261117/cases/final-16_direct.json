@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-16",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "fa84bb4d-9505-54be-a8b7-b5eae785ed1e"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Temporary Service Provider Onboarding",
+      "People team",
+      "Procurement team"
+    ],
+    "user_input": "Which team handles temporary service-provider onboarding instead of the People team?",
+    "reference": "The People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers. You can work with the Procurement team on these onboardings.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "The People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers. You can work with the Procurement team on these onboardings",
+        "contribution": "Identifies the team responsible for temporary service-provider onboarding instead of People"
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states that the People team is not involved and that the Procurement team handles temporary service-provider onboarding."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1100,
+    "output_tokens": 166,
+    "cost_usd_estimate": 0.0007056
+  },
+  "judge": {
+    "source_conditions": [
+      "The People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers.",
+      "You can work with the Procurement team on these onboardings."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 686,
+    "output_tokens": 81,
+    "cost_usd_estimate": 0.00202
+  }
+}

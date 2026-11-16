@@ -1,0 +1,121 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility requirements for academic courses to qualify for reimbursement?",
+      "reference": "To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher",
+          "contribution": "Eligibility requirements for academic courses."
+        },
+        {
+          "context_index": 0,
+          "quote": "Additional fees related to books, travel, and supplies are not covered under this category.",
+          "contribution": "Excluded ancillary fees."
+        },
+        {
+          "context_index": 0,
+          "quote": "A final grade report or transcript is required for reimbursement.",
+          "contribution": "Evidence required for reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The answer directly addresses the eligibility requirements for academic courses and the evidence needed for reimbursement."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's reference does not fully answer the question regarding evidence required for reimbursement, as it only mentions the eligibility requirements and does not explicitly state that a final grade report or transcript is required for reimbursement. The connection made in the reasoning is misleading because it implies that the reference fully addresses all aspects of the question when it does not."
+      ],
+      "all_contexts_necessary": false
+    },
+    "feedback": "The candidate's reference does not fully answer the question regarding evidence required for reimbursement, as it only mentions the eligibility requirements and does not explicitly state that a final grade report or transcript is required for reimbursement. The connection made in the reasoning is misleading because it implies that the reference fully addresses all aspects of the question when it does not."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What evidence is required for reimbursement of academic courses under the G&D Fund?",
+      "reference": "A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "A final grade report or transcript is required for reimbursement.",
+          "contribution": "This directly answers the question about the evidence needed for reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence specifies the requirement for reimbursement."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What evidence is required for reimbursement of academic courses under the G&D Fund?",
+      "reference": "A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "A final grade report or transcript is required for reimbursement.",
+          "contribution": "This directly answers the question about the evidence needed for reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence specifies the requirement for reimbursement.",
+      "id": "final-22",
+      "question_type": "single_hop",
+      "planned_focus": "Academic-course eligibility and evidence required for reimbursement; excluded ancillary fees.",
+      "reference_contexts": [
+        "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement."
+      ],
+      "reference_context_ids": [
+        "57828948-7920-570b-af63-7e8347698791"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "57828948-7920-570b-af63-7e8347698791",
+          "chunk_index": 13,
+          "block_type": "text",
+          "token_count": 89,
+          "section_path": "Types of Growth and Development reimbursements > Academic study",
+          "source_start": 5204,
+          "source_end": 5649,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

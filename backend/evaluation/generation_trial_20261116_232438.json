@@ -1,0 +1,644 @@
+{
+  "model": "gpt-4o-mini",
+  "top_k": 5,
+  "results": [
+    {
+      "id": "final-01",
+      "question_type": "single_hop",
+      "question": "What is the condition under which expense claims older than 90 days can be reimbursed?",
+      "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+      "reference_context_ids": [
+        "5df2232f-e75d-5033-bb89-d1b624e00ba1"
+      ],
+      "retrieved_chunk_ids": [
+        "ed88c3cc-54bf-5b19-8446-9b1fffc3a14a",
+        "5df2232f-e75d-5033-bb89-d1b624e00ba1",
+        "43cb0087-7cf4-5007-9a37-d4bb7aa01688",
+        "ffd2f262-45f8-592c-8bc4-a5fbb01c38d8",
+        "cfe3d66e-fd47-53d8-aec6-8f28a8119a44"
+      ],
+      "retrieved_texts": [
+        "## Guidelines\n\n1. As a public company, GitLab has an obligation to act in the best interests of the corporation and its shareholders. This obligation is shared by all team members and is the basis of our global travel and expense policy as a public company; team members must be thoughtful in spending the Company's money.\n1. Spending Company money includes travel and expenses.\n1. You may privately use GitLab property, a MacBook for example, to check your private e-mails or watch a movie as long as it does not violate the law, harm GitLab, or interfere with Intellectual Property. More details can be found in the [Internal Acceptable Use Policy](/handbook/people-group/acceptable-use-policy).\n1. File your expense report in a timely manner, as expense claims over 90 days from purchase date will not be reimbursed unless approved by your Manager.  The sooner it is submitted, the sooner you will get reimbursement.\n1. If team members knowingly submit expenses for reimbursement for personal purchases that are not covered in the expense policy, this is a violation of our [Code of Business Conduct & Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf).",
+        "- Team members should submit receipts for every business expense. For Non-US Team Members, receipts are required for all expenses. US Team Members are required to only submit receipts for any expenses over $50 USD.  Receipts must contain vendor name, date of purchase, listing of what was purchased, and contains a full breakout of the subtotal and tax amounts. Snapshot from phone/computer screen of Applications, Card/Bank Statements are not an acceptable form of receipt.\n- Team Members are not allowed to expense items on behalf of their managers.\n- Expenses for gifts and entertainment must be incurred and reimbursed in accordance with GitLab's [Gifts & Entertainment Policy](/handbook/legal/policies/gifts-contributions/#gifts-and-entertainment-policy) and [Antibribery Policy](/handbook/legal/anti-corruption-policy/).\n- Expense claims for a single item up to $5,000 can be expensed via Navan. >$5,000 needs to go through the procurement process in Zip.\n- Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.\n- Navan Description box: Expense items must have a description filled out. This box is showing as optional but we require this to be filled in. This helps to correctly record the transaction and assist any reporting purposes downstream.\n  - When filling in the description box , we ask for you to enter details of the expense so anyone looking at the line on a report can tell immediately (without the need of looking at the receipt) what the expense relates to and why it is claimed.\n  - Please fill in the description box with details like : Items Purchased/Claimed, Period service relates to, Trip Details this claim relates to, Reason for trip, Clients Name, etc. If left blank, the expense will be bounced back to the team member to complete this portion.\n- The maximum monthly limit to be reimbursed is $10K USD (or local currency equivalent). Once this limit has been reached, all expense items will need to be approved by the A/P team in Navan.  This limit may be increased for Team Members whose positions require more spend (eg. Field Marketing), but the increase request needs to be submitted via an issue for approval by the VP or higher in the Accounting Organization. Due to the nature of their roles, E-Group members have a maximum monthly limit to be reimbursed of $20K USD before additional approvals are required.\n- Expenditures related to client entertainment or marketing must be necessary, prudent, and job-related.\n- Expenses that span longer than a month must be submitted on a monthly basis (eg. Although you paid for a year upfront for the internet, you must divide the total by 12 months and submit the cost monthly).\n- Personal credits and gift cards: GitLab will reimburse only the actual out-of-pocket amount paid by the employee. If personal credits, gift cards, rewards points, or other discounts are applied to a business purchase, reimbursement will be limited to the net amount charged to the employee's personal payment method.\nExample: An employee purchases a $100 monitor and applies a $50 gift card. GitLab will reimburse $50 (the amount actually paid), not the pre-discount price of $100.",
+        "### FSA Period to Submit Claims\n\nYou have 90 days after the plan year ends to submit claims (known as the runout period).",
+        "### 3.1 Out of Policy Transactions\n\n- Expenses flagged as \"Out of Policy\" in Navan may mean that the expense requires additional review due to requiring certain attachments (e.g., an approved issue) and approvals. Upon review, if more clarification is needed for a certain expense, the AP team will contact the team member via Navan to ask for justification of the transaction before approving or rejecting the expense.\n- Any exception to the policy is granted or denied at the discretion of the AP Admins. If the Admins determine that additional input is required, they will escalate the request to the team member's manager to make a final decision. Exception approvals can be granted within the Navan tool or via a Compass ticket.\n- There will be occasions where if you have claimed an item and it needs to be reimbursed back to GitLab, you will need to follow the repayment process in Navan for submission of the funds.\n- If you have any questions regarding a rejected expense due to being out of policy, submit a request under the `Expenses -> General Expenses` tile  [Compass](/handbook/eta/corporate-it/compass/compass-guide/), ensuring that you tag your Manager , and adding any other additional documentation so this can be reviewed.",
+        "### When do I submit my final reimbursable expenses?\n\nPlease create your final expense report in Navan (for employees), OR, please file any outstanding expenses with your final invoice (for contractors), so these can be reimbursed to you in a timely manner. We ask that you submit these at least one week before your departure date."
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "Expense claims that are older than 90 days can be reimbursed only if they are approved by the employee's Manager. This means that while the standard rule is not to reimburse claims over 90 days, there is an exception that allows for reimbursement if the Manager provides approval for the late submission.[1][2]",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "4971998a-c836-5df7-b980-579fad2513f2",
+            "chunk_id": "ed88c3cc-54bf-5b19-8446-9b1fffc3a14a",
+            "title": "Spending Company Money",
+            "section_path": "Guidelines"
+          },
+          {
+            "number": 2,
+            "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+            "chunk_id": "5df2232f-e75d-5033-bb89-d1b624e00ba1",
+            "title": "Global Travel and Expense Policy",
+            "section_path": "3. General Guidelines"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 12.09
+    },
+    {
+      "id": "final-05",
+      "question_type": "single_hop",
+      "question": "How should Netherlands team members claim their home internet costs, and what should they do if their address or the amount changes?",
+      "reference": "For Team Members in the Netherlands: If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the Regeling Internet Thuis form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected. If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+      "reference_context_ids": [
+        "dae4f1d2-1bac-5317-966d-3168164fa2cf"
+      ],
+      "retrieved_chunk_ids": [
+        "dae4f1d2-1bac-5317-966d-3168164fa2cf",
+        "043c1d9d-e275-53bd-99a9-a07c77f7f7c4",
+        "d54d9a41-8444-515f-af8b-418277948202",
+        "fc3ccddb-3f83-5d75-81f7-7edea538117b",
+        "16ef741d-a0d9-5098-98ff-52ed6ef70cdf"
+      ],
+      "retrieved_texts": [
+        "### Internet\n\n- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges.\n- Please expense internet costs monthly, reflecting current charges only (even if you pay by a different cadence).\n- For Team Members in the Netherlands:\n  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected.\n  - If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.\n- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use.\n- Policy is set at $100 - claims above this amount will not be reimbursed. The limit has been reviewed and set to cover standard costs across all markets; individual exceptions are no longer assessed at the claim stage.\n- Itemized Receipt required.\n- If an itemized bill is not available, costs will only be reimbursed for the element relating to Internet Access, i.e. if you pay for tv, internet and phone, the invoice should be divided by 3/# of services and we will pay this value only.\n- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc.\n- If co-working space is used together with a combination of working from home, we will allow the reimbursement of the internet cost for where you spend most of your time. i.e. if you expense a co-working space for a full month then internet for home cannot be expensed. If you expense co-work for a few days in a month then home internet can be expensed in full.\n- Team members for GitLab GmbH (Germany) should refer to this [page](/handbook/finance/payroll/) for their country's specific guidelines of this expense.",
+        "### Internet Support\n\nSupport for your home internet costs as part of our remote work setup.",
+        "#### 7. INSURANCES\n\nIf the team member uses their domicile to work remotely, they undertake to inform their insurer of the fact that they are working at their domicile with equipment belonging to the Company and to provide the latter with a \"multi-risk\" home insurance certificate covering their domicile.\nThe Company shall bear the resulting additional insurance costs – if there are any – under the conditions indicated in article 9 of the Charter.",
+        "#### 9. REMOTE WORK EXPENSES AND PROFESSIONAL EXPENSES\n\nThe expenses incurred by the use of the team member's domicile for remote work purposes (wifi, heating, electricity, etc) will be covered by the Company in accordance with the local regulations applicable at the time of expense.\n\nThis means that you shall receive a minimum payment of €57.20 per month, up to the limits set out in our [expenses policy](/handbook/finance/expenses/) and provided that your remote work expenses actually incurred monthly reach at least this amount.\n\nCurrently, this is incorporated into our general approach to managing expenses and reimbursement via our expensing tool (Navan).\n\nAny remote work expense must, for traceability purposes, be substantiated by the appropriate receipts and justification.\n\nIndependently of the expenses related to remote work, the expenses incurred by the team member for professional purposes will be paid by the Company according to the applicable legal rules and internal policies.\n\nIn addition to the costs related to remote work, the team member will receive a monthly occupational allowance (indemnité de sujétion) of €50 gross corresponding to the constraint of using part of his private home for professional purposes. This allowance is an integral part of the fixed remuneration agreed in the employment contract.",
+        "## Addresses\n\n- For the mailing addresses, see our [visiting](https://about.gitlab.com/company/visiting/) page.\n- For the NL office, we use [addpost](https://www.addpost.nl) to scan our mail and send it to a physical address upon request."
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "Team members in the Netherlands should claim their home internet costs by completing and signing the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form, which must be sent to the HRSavvy team at payroll@savvy-group.eu. It's important not to expense internet costs via Navan, as those claims will be rejected. \n\nIf their address or the amount of internet charges changes, they must fill out and submit a new form to the HRSavvy team, accompanied by the corresponding invoice or letter for processing.\n\nSources: [1]",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+            "chunk_id": "dae4f1d2-1bac-5317-966d-3168164fa2cf",
+            "title": "Global Travel and Expense Policy",
+            "section_path": "Approved WFH Equipment List > Internet"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 9.31
+    },
+    {
+      "id": "final-09",
+      "question_type": "single_hop",
+      "question": "What are the rules regarding forwarding confidential work emails to personal addresses and automated forwarding of emails?",
+      "reference": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+      "reference_context_ids": [
+        "7e60e325-bd1a-5c09-8d70-832d5a625df5"
+      ],
+      "retrieved_chunk_ids": [
+        "9915e5d2-ef40-5d27-a659-8b082e56c0b7",
+        "7e60e325-bd1a-5c09-8d70-832d5a625df5",
+        "110f62f5-06ec-599f-a272-36b9274e1750",
+        "1dee1760-56cb-5535-a125-54aa1a80ab57",
+        "f1dc8115-43d1-56d8-9bb8-ed81bbcf6c61"
+      ],
+      "retrieved_texts": [
+        "1. Send one email per subject as multiple items in one email will cause delays (have to respond to everything) or misses (forgot one of the items).\n1. Always reply to emails by replying to all, even when no action is needed. This lets the other person know that you received it. A thread is done when there is a single word reply, such as OK, thanks, or done.\n1. If you're sending an email to a large group of people (or a distribution list), put those recipients in BCC (rather than in the \"To\" field) so that a reply all won't ping hundreds of people.\n1. If you forward an email without other comments please add FYI (for your information), FYA (for your action), or FYC (for your consideration). If you forward an external request with FYC it just means the person who forwarded it will not follow up on the request and expects you to decide if you should follow up or not, the terms comes from [movie promotion to voters](<https://en.wikipedia.org/wiki/For_Your_Consideration_(advertising)>).\n1. Email forwarding rules are specified in the shared [*Email, Slack, and GitLab Groups and Aliases*](https://docs.google.com/document/d/1rrVgD2QVixuAf07roYws7Z8rUF2gJKrrmTE4Z3vtENo/) Google Doc accessible only to people in the company. If you want to be added or removed from an internal alias, change a rule, or add a forwarding email alias, please [suggest an edit](https://support.google.com/docs/answer/6033474?hl=en) in the doc and [submit a new access request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request).\n1. Only Google Workspace domain admins are allowed to provision Google Groups and email distributions.\n1. Emails are asynchronous, for example, if your manager emails you on a weekend it is fine to reply during the workweek.\n1. If an email is or has become **urgent** feel free to ping people via chat referencing the subject of the email.\n1. If you or your team needs to send an email to a group of team members, not grouped in a current [Google email group](https://gitlab.com/gitlab-com/security-tools/report-gsuite-group-members), and specifically related to personally identifiable information (location, state, country, etc.) please contact a Total Rewards Analyst at total-rewards@gitlab.com who can create an email list from Workday data, with approval.\n1. Where appropriate, consider using professional salutations including Hi or Hello and avoid colloquial expressions such as Hey, Oh, or Sup. Sometimes only the person's name is suitable. The level of formality should often mirror the formality from previous messages when communicating with internal team members as well as external persons.\n1. Try to always use a person's name when starting or responding to a message, especially if there are multiple persons cc'd, so that the addressee knows you are addressing them.",
+        "#### Unacceptable Email and Communications Activities\n\nForwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.\n\n> Note: GitLab may retrieve messages from archives and servers without prior notice if GitLab has sufficient reason to do so. If deemed necessary, this investigation will be conducted with the knowledge and approval of the Security, People Business Partners, and Legal Departments.\n\nIn addition to following the [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/), when utilizing social media think about the effects of statements that you make. Keep in mind that these transmissions are permanent and easily transferable, and can affect our company's reputation and relationships with Team Members and customers. When using social media tools like blogs, Facebook, Twitter or wikis, ensure that you do not make comments on behalf of GitLab without proper authorization. Also, you must not disclose our company's confidential or proprietary information about our business, our suppliers, or our customers.",
+        "## Workplace Conduct\n\n### Confidentiality\n\nAs stated in the **Confidentiality and Corporate Assets and Corporate Opportunities** section of the [Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf), team members are, on occasion, entrusted with confidential GitLab information and with the confidential information of GitLab suppliers, customers, or other business partners. This information may include:\n\n1. technical or scientific information about current and future services or research;\n1. business or marketing plans or projections;\n1. earnings and other internal financial data;\n1. personnel information;\n1. supply and customer lists; and\n1. other non-public information\n\nThis information, if disclosed, might be of use to competitors, or harmful to GitLab's suppliers, customers or other business partners. This information is the property of GitLab, or the property of its suppliers, customers, or business partners, and in many cases was developed at great expense. All team members, upon commencement of their role with GitLab, shall sign offer letters or contractor agreements that contain confidentiality provisions (the \"Confidentiality Agreement\") provided by GitLab. Strict adherence to the Confidentiality Agreement is required of each team member.\n\nTeam members shall not take for themselves, or for family members, or any other entities with which they are affiliated, any opportunity of which they become aware through the use of GitLab property or information, or through their position with GitLab, and shall not use GitLab property or information, or their position with GitLab, for personal gain other than actions taken for the overall advancement of the interests of GitLab.\n\nTeam members also have obligations to protect the personal and sensitive information of our fellow team members. Therefore, you may not access and/or disseminate any team member's personal information (i.e. address, personal phone number, salary, etc.) that the team member has not made publicly available, unless the team member has provided written permission to share this information. An exception to this restriction would be when access is a necessary function of your job duties. A violation of this obligation is considered severe and could result in disciplinary action, up to and including termination.\n\n**Exceptions**\n\nExceptions to the above procedures will be tracked as per the [Information Security Policy Exception Management Process](/handbook/security/controlled-document-procedure/#exceptions).",
+        "### 6. Recommended behaviours favouring the exercise of the right to disconnect\n\nIt is not the Company's intention to strictly dictate when and how team members should communicate with or respond to one another because that is simply not practical.\n\nHowever, we do expect that everyone will comply with this Charter and be mindful of their communications (including the tone and timing) when it is outside of their, or the recipient's regular working hours.\n\nHere are some suggested considerations for team members to promote the right to disconnect, prevent information workload and stress related to the use of professional digital tools:\n\n(a) Is the use of professional email appropriate vs. other available communication tools (i.e. slack message)?\n\n(b) Must the communication really be sent at this moment or can it be delayed until regular working hours?\n\n(c) Is the deadline for the required response necessary or justified?\n\n(d) Does the recipient (client, customer, supplier) to whom the communication is being sent have any expectations regarding when they wish to receive communications?\n\n(e) Is the recipient known to be on vacation, on leave, dealing with other urgent matters, and if so, can the communication be delayed until the recipient is available or can the communication be redirected to someone else?\n\n(f) Does the subject line appropriately identify the content of the message and whether it must be dealt with immediately or whether it can wait?\n\n(g) Is the \"cc\" and \"cci\" functions used sparingly?\n\n(h) Is each attachment relevant?\n\n(i) If you are regularly communicating or collaborating with team members working in a different time zone than you, or who otherwise has different working hours than you, do your communications include a note that the recipient may respond during their regular working hours and not during their daily or weekly rest periods?  (for example  \"I am currently working flexibly so while it suits me to send this email now, I do not expect a response or action outside your own working hours\")\n\n(j) Have you updated your electronic out of office notifications to ensure that those who have sent a message are aware when you will be responding to them or to whom they may direct their inquiry in your absence?",
+        "1. Try to always use a person's name when starting or responding to a message, especially if there are multiple persons cc'd, so that the addressee knows you are addressing them.\n1. Make sure all relevant letters and words that need capitalization are capitalized, such as the start of sentences or the word \"I\".\n1. Proofread your messages so that sentences are punctuated correctly, typos are fixed, and grammar is corrected. Consider using the really helpful [Grammarly](https://www.grammarly.com/) tool - this tool is great for both native English speakers and for those who use English as an additional language.\n1. All messages and replies are signed with a professional send-off (ex. Best regards), your name, and your signature block.\n1. If you're sending an email that asks team members to take an action (click a link, log in, submit something), also post a short note in the relevant Slack channel referencing the sender and subject. Recipients are rightly cautious about phishing and will otherwise ask, and the Slack post gives them a quick way to confirm the email is genuine. We want to encourage the security best practice of verifying the sender of emails before clicking - proactively doing that helps us all establish good security culture."
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "The rules regarding forwarding confidential work emails and automated forwarding are quite strict. Forwarding confidential business emails or documents to personal external email addresses is prohibited. Additionally, automated forwarding of emails from a team member's account is also forbidden. These restrictions are in place to protect confidential information and prevent unauthorized access to sensitive data [2].",
+        "sources": [
+          {
+            "number": 2,
+            "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+            "chunk_id": "7e60e325-bd1a-5c09-8d70-832d5a625df5",
+            "title": "GitLab Internal Acceptable Use Policy",
+            "section_path": "Procedure > Unacceptable Use > Unacceptable Email and Communications Activities"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 7.19
+    },
+    {
+      "id": "final-12",
+      "question_type": "single_hop",
+      "question": "What immediate action should a GitLab team member take if they lose a device containing their credentials or GitLab-sensitive data?",
+      "reference": "If a team member loses a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to panic@gitlab.com right away.",
+      "reference_context_ids": [
+        "22af0f11-8853-5ace-82bc-b67beaa25963"
+      ],
+      "retrieved_chunk_ids": [
+        "22af0f11-8853-5ace-82bc-b67beaa25963",
+        "470e0c4b-e84e-5d70-b3d8-30c4f2768920",
+        "db424adb-4371-50c2-beab-bede35cf863f",
+        "b28889bd-1832-5acb-b331-06c68a4901ed",
+        "0f0764fd-973d-5a3a-bdc9-d30ceae31b19"
+      ],
+      "retrieved_texts": [
+        "### Lost or Stolen Procedures\n\nGitLab provides a `panic@gitlab.com` email address and a [lost or stolen procedure](/handbook/security#reporting-an-incident) for team members to use in situations that require an immediate security response. Should a team member lose a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away. When the production and security teams receive an email sent to this address it will be handled immediately. Using this address provides an excellent way to limit the damage caused by a loss of one of these devices.\n\nGitLab reserves the right to request documentation of the theft and/or a related police report in the case of a stolen laptop.",
+        "### Secure your data during travels\n\nDuring your working travel your restricted data could be exposed. If you feel that your travel frequency may expose your data please keep in mind the following points to ensure that sensitive data contained in your devices will not be compromised:\n\n- VPN - If you are connecting from an untrusted network you should use a VPN connection to avoid [MITM Attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) or similar.\n- Devices in public places - If you are using your device in a public place someone could read restricted data from your screen, you should protect your screen with a special film that ensure your privacy, [here you can find some samples](https://www.amazon.com/s?k=privacy+screen+filter).\n- Speaking in crowded places - Ensure that when you are talking about restricted data you are in a secure place and no-one can hear you.\n- 1Password travel mode - If you are approaching travel in a risky country or you have to leave your devices in an insecure place, please use [Travel Mode](https://support.1password.com/travel-mode/) in 1Password to ensure that your vaults will be safe if your device is compromised.\n\nWhen traveling, there is the possibility that customs, border control, or other law enforcement agents demand that you provide the password to your laptop or mobile device. If this happens to you in regards to a company-owned account or device, GitLab recommends that you comply with any such requests without protesting. If you do end up providing a password to any device or account that has access to GitLab resources (including your personal devices), you should follow the process to engage Security on-call as soon as you can safely do so. Even if you do not provide a password, if any of your devices are permanently seized or even temporarily removed from sight, you should also engage the Security on-call.\n\nFor additional security specifically when traveling through an airport, the following advice is provided:\n\n- Completely power-off laptops and mobile devices before any security checkpoints. This reduces the risk of attacks that may be conducted against machines in a sleep mode, where the disk encryption is not being actively enforced.\n- Prior to the trip, remove any sensitive data from your local machine that is not absolutely required. Refer to the [Data Classification Standards](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-standards) for more information.\n- If you are aware of any circumstances with your travel that may present a unique security risk (such as traveling to specialty conferences like Defcon), you may request advice in the [#security-division](https://gitlab.slack.com/archives/CM74JMLTU) Slack channel.",
+        "#### Personal Mobile Phone and Tablet Usage\n\nAll personal mobile computing devices used to access GitLab-managed data, including but not limited to email and GitLab.com, must be passcode-enabled. 2FA will be enforced by the Security team for all employee and contractor GitLab.com and Google Workspace accounts. Mobile computing best practices dictate that these devices should be running the latest version of the operating system available, and all new patches applied. For assistance with determining the suitability of your mobile device, please contact the Security Team.",
+        "### How to Access\n\n* Notify manager and [leaves@gitlab.com](mailto:leaves@gitlab.com) as soon as possible",
+        "### How to Access\n\n* Notify manager and [leaves@gitlab.com](mailto:leaves@gitlab.com) as soon as possible"
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "If a GitLab team member loses a device containing their credentials or GitLab-sensitive data, they should send an email to `panic@gitlab.com` immediately. This action is crucial for limiting any potential damage caused by the loss of the device, and it ensures that the production and security teams can respond quickly to the situation. It is important to use this email address as it is designated for situations that require an immediate security response [1].",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+            "chunk_id": "22af0f11-8853-5ace-82bc-b67beaa25963",
+            "title": "GitLab Internal Acceptable Use Policy",
+            "section_path": "Procedure > Lost or Stolen Procedures"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 8.05
+    },
+    {
+      "id": "final-16",
+      "question_type": "single_hop",
+      "question": "Which team handles temporary service-provider onboarding rather than People?",
+      "reference": "The People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers. You can work with the Procurement team on these onboardings.",
+      "reference_context_ids": [
+        "fa84bb4d-9505-54be-a8b7-b5eae785ed1e"
+      ],
+      "retrieved_chunk_ids": [
+        "fa84bb4d-9505-54be-a8b7-b5eae785ed1e",
+        "96f19bf9-80f3-5238-80c7-7af46b247309",
+        "d0a6dac3-2954-5664-a663-3647a66549f4",
+        "a9a826b8-3d5f-5d8c-9b89-9de9d5509097",
+        "e80be3b6-b04f-598a-8f70-3423e9630aa1"
+      ],
+      "retrieved_texts": [
+        "### Temporary Service Provider (Contractor/Consultant) Onboarding\n\nThe People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers. You can work with the Procurement team on these onboardings and review the [temporary service provider internal handbook page](https://internal.gitlab.com/handbook/it/end-user-services/access-request/temporary-service-providers/) for templates and other helpful information.",
+        "### People Operations Team",
+        "## Employment Solutions Team",
+        "## Meet the People Operations team\n\nThe People Operations team will be your primary guide throughout onboarding and your journey at GitLab. A team member from the People Operations team will be assigned to your Onboarding Issue to provide guidance as you begin.",
+        "Other listed processes for the People Operations Team can be found [here](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/)"
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "The Procurement team handles temporary service-provider onboarding rather than the People team. The People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers [1].",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "569a518d-4d3b-5741-971c-3a60d26044ef",
+            "chunk_id": "fa84bb4d-9505-54be-a8b7-b5eae785ed1e",
+            "title": "GitLab Onboarding",
+            "section_path": "Managers of New Team Members > Temporary Service Provider (Contractor/Consultant) Onboarding"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 8.64
+    },
+    {
+      "id": "final-20",
+      "question_type": "single_hop",
+      "question": "What is the recommended lead time for submitting a Growth & Development Fund request in Compass?",
+      "reference": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+      "reference_context_ids": [
+        "b0c45505-5adc-5855-899c-82ac2dd27213"
+      ],
+      "retrieved_chunk_ids": [
+        "b0c45505-5adc-5855-899c-82ac2dd27213",
+        "aa8fb337-0101-57dc-b7bb-b80463769054",
+        "4d0f473e-e105-56e2-9390-a8b6d85afc13",
+        "ebe903f2-ff68-51cd-8ccc-6105c0fb37da",
+        "56459ca5-7950-532b-b764-01055d146722"
+      ],
+      "retrieved_texts": [
+        "### Step 2 - Submit your request in Compass\n\nCreate a new Growth & Development Fund request in Compass using the appropriate request path for your opportunity type.\n\nYour request should be submitted at least 30 days in advance of the beginning of your experience when possible.\n\nBe prepared to provide information such as:\n\n- the type of opportunity\n- provider or vendor details\n- program or event name\n- relevant dates\n- total cost\n- whether the request includes any travel considerations\n- how the opportunity supports your development goals",
+        "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.\n\nWe've recently updated the G&D process, and are moving away from using issues for G&D submissions, all requests going forward should be submitted via Compass.\n\nHere's a quick summary of the changes:\n\n- All new G&D requests must be submitted through Compass.\n- If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.\n- The fund, budget, eligible uses, and core reimbursement rules are not changing. Reimbursement still goes through Navan.\n- Compass gives team members clearer tracking and gives leaders better visibility into how G&D funds are being used across their teams.\n- Easier tracking means easier to know how much money you have left!\n\nProcessing requests via Compass allows for better tracking of requests, a clearer structure for submissions, and significantly improves the administration of the Fund.\n\nIf you already have a G&D GitLab issue open and it is already in progress or moving through approval, there is no need to resubmit it. Existing GitLab issue-based requests can continue through completion under the prior process.\n\nReach out to the Talent Development team if you require any assistance with submitting your request.",
+        "## Process\n\nHere is the step-by-step process for submitting and completing a G&D request using Compass.",
+        "## Links and resources\n\n- Submit a new G&D request in Compass\n- [Tax Impacts of Different Growth & Development Benefits](/handbook/people-group/learning-and-development/growth-and-development/tax/)",
+        "### Growth and Development Fund details\n\n**Eligibility:** All team members, subject to tenure, performance, and available budget\n\n**Coverage Period:** January 1st - December 31st (with grace period until end of January for December courses)\n\n**How to Apply:** Visit the [Growth and Development handbook](/handbook/people-group/learning-and-development/growth-and-development/) page for application process and eligible expenses."
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "The recommended lead time for submitting a Growth & Development Fund request in Compass is at least 30 days in advance of the beginning of your experience when possible [1].",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+            "chunk_id": "b0c45505-5adc-5855-899c-82ac2dd27213",
+            "title": "Growth and Development Fund",
+            "section_path": "Process > Step 2 - Submit your request in Compass"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 6.95
+    },
+    {
+      "id": "final-24",
+      "question_type": "single_hop",
+      "question": "Does the unused annual G&D budget roll over to the next year?",
+      "reference": "No. Unspent G&D budgets do not roll over from one year to the next.",
+      "reference_context_ids": [
+        "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+      ],
+      "retrieved_chunk_ids": [
+        "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb",
+        "87c52697-60ab-5720-bb71-1edfcd47e64d",
+        "ab98fb60-386f-500a-aee9-15d406890554",
+        "3c4c617a-5b79-5068-b853-f3463203c3b9",
+        "21c87643-3b82-5126-b9e3-45cb6af4ccd6"
+      ],
+      "retrieved_texts": [
+        "### Does budget rollover?\n\nNo. Unspent G&D budgets do not roll over from one year to the next.",
+        "### Budget Impact (see below)\n\nFP&A tracks budget impact by Department/Division twice per year.",
+        "### Can spare budget be shared with other team members?\n\nNo. G&D budgets are individual and cannot be shared across team members.",
+        "### Rollover Details for Medical and Limited Purpose FSA\n\nRollover funds from prior year won't be available until 5-15 business days after March 31 of the current tax year (no later than April 22).\n\n**Contribution and Rollover Limits:**\n\n- **2026:** $3,400 max contribution, $680 max rollover\n\n**Important Notes:**\n\n- Minimum $5 required for rollover; amounts $5 or less are forfeited\n- You can use rollover funds the following year, even if you don't enroll in FSA again",
+        "### How can I track my G&D spend?\n\nIf you want to know how much of your G&D Fund remains for the calendar year, reach out through the #learninganddevelopment slack channel."
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "No, the unused annual Growth and Development (G&D) budget does not roll over to the next year. Unspent G&D budgets are not carried over from one year to the next, as stated in the provided document.\n\nSources: [1]",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+            "chunk_id": "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb",
+            "title": "Growth and Development Fund",
+            "section_path": "FAQ > Does budget rollover?"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 7.09
+    },
+    {
+      "id": "final-27",
+      "question_type": "single_hop",
+      "question": "What is GitLab's policy on bereavement leave eligibility for the loss of a pet, and how should the duration and coordination with managers be handled?",
+      "reference": "There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently. We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets. As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+      "reference_context_ids": [
+        "ca14fec7-6b79-51fb-b151-be9bdea65bc3"
+      ],
+      "retrieved_chunk_ids": [
+        "ca14fec7-6b79-51fb-b151-be9bdea65bc3",
+        "64bc697c-be58-5fed-a3b2-480ba8fa2e64",
+        "e62b2f22-4f8d-5fcb-8a51-af451b5da31f",
+        "4a0d45fb-29d2-5f90-b97f-48df2b9f5398",
+        "41889d4f-c7d2-59b8-8b55-f3051f7a023b"
+      ],
+      "retrieved_texts": [
+        "### Key Principles\n\n- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.\n- **Confidentiality**: Details shared about a loss will be treated with strict confidentiality and respect.",
+        "### Request Process\n\n### Request Process\n\nWe realize that advance notice may not always be possible in these circumstances. You should notify your manager as soon as you're able and enter dates in Workday when you can.\n\n1. **Notify Your Manager**: Inform your manager about your need for bereavement leave as soon as possible. You only need to share details you're comfortable discussing. You can also work directly with the Absence Management team if you prefer (email leaves@gitlab.com).\n1. **Document in Workday**: Enter your bereavement leave request through the Workday app or Slack integration:\n      - Select the day(s) you need > Click \"Time-Off\" > Click \"Bereavement\" > *Optional*: add a comment > Click \"Submit\"\n      - Review your country's reporting requirements to ensure compliance with local regulations\n1. **Create a Coverage Plan**: Arrange appropriate coverage for your responsibilities, set expectations around communication during your absence, and plan for your return to work.\n\n**No Documentation Required:**\nAt GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law). This approach builds trust and supports team members during vulnerable times.",
+        "### Leave Extensions\n\n### Leave Extensions\n\nIf your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+        "### Overview\n\nAt GitLab, we understand that losing a loved one is one of life's most challenging experiences. This policy establishes guidelines for bereavement leave while maintaining our commitment to flexibility and support for team members during difficult times.\n\nBereavement leave at GitLab falls under our Flexible PTO framework, allowing team members to take the time they need when faced with a loss. This benefit is available to all team members on their first day of work.",
+        "### How to Apply\n\n- If leave begins within 8 weeks of the bereavement, notice may be given orally\n- If leave begins after 8 weeks, one week's written notice is required\n- Contact leaves@gitlab.com as soon as reasonably practicable"
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "GitLab's bereavement leave policy includes an inclusive approach that recognizes the loss of pets as eligible for bereavement leave. The duration of leave is flexible, with no set limit, allowing team members to take bereavement leave either continuously or intermittently based on their individual needs. It's important for team members to coordinate with their manager regarding their needs and to create a coverage plan to manage responsibilities during their absence. Team members should notify their manager as soon as possible about their need for leave and document their request through the designated channels like Workday. No formal documentation is required to take bereavement leave unless mandated by local laws [1][2].",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+            "chunk_id": "ca14fec7-6b79-51fb-b151-be9bdea65bc3",
+            "title": "Time Off Types",
+            "section_path": "Bereavement > Key Principles"
+          },
+          {
+            "number": 2,
+            "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+            "chunk_id": "64bc697c-be58-5fed-a3b2-480ba8fa2e64",
+            "title": "Time Off Types",
+            "section_path": "Bereavement > Request Process"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 7.77
+    },
+    {
+      "id": "final-31",
+      "question_type": "single_hop",
+      "question": "When do Modern Health session benefits reset, and do unused sessions roll over?",
+      "reference": "Modern Health benefits reset annually on March 20. Unused sessions do not roll over.",
+      "reference_context_ids": [
+        "dacd98da-2565-59fe-9279-ca545a45c318"
+      ],
+      "retrieved_chunk_ids": [
+        "dacd98da-2565-59fe-9279-ca545a45c318",
+        "ec4ea9e6-ca9a-5bbe-a013-8ec1489d2e50",
+        "3c4c617a-5b79-5068-b853-f3463203c3b9",
+        "01f236d5-2b6b-5884-9f61-13197434a7f8",
+        "4c6d4bc9-aa15-5f89-a58b-9f1f34aa6949"
+      ],
+      "retrieved_texts": [
+        "## Important Details\n\n### Benefit Reset & Usage\n\n- Benefits reset annually on March 20\n- Unused sessions do not roll over\n- Sessions can be shared with family members (each counts toward your total)\n- 24-hour cancellation policy applies\n- Remember: GitLab PTO policy and non-linear workday structure support you in making time for mental health appointments",
+        "## Key Features\n\n**Professional Support That Fits Your Needs**\n\n- 6 complimentary coaching sessions per year for personal and professional growth\n- 6 complimentary therapy sessions per year with licensed mental health professionals\n- Unlimited digital wellness programs including guided meditations and self-paced courses\n- Live group sessions (Circles) led by Modern Health professionals\n- 24/7 access to curated content and resources\n\n**Comprehensive Coverage Areas** Modern Health supports you through work performance, relationships, stress and anxiety management, healthy lifestyles, financial wellbeing, diversity and inclusion, life challenges, and mindfulness practices.",
+        "### Rollover Details for Medical and Limited Purpose FSA\n\nRollover funds from prior year won't be available until 5-15 business days after March 31 of the current tax year (no later than April 22).\n\n**Contribution and Rollover Limits:**\n\n- **2026:** $3,400 max contribution, $680 max rollover\n\n**Important Notes:**\n\n- Minimum $5 required for rollover; amounts $5 or less are forfeited\n- You can use rollover funds the following year, even if you don't enroll in FSA again",
+        "### Important Dates\n\n- Annual renewal: November 1  \n- New hires can enroll from hire date  \n- Policy auto-renews annually",
+        "### Commuter Benefits\n\nTax-advantaged transportation benefits through [WEX (Discovery Benefits)](https://drive.google.com/file/d/0B4eFM43gu7VPek1Ia0ZqYjhuT25zYjdYTUpiS1NFSXFXc0Vn/view?usp=sharing):\n\n- Up to $340/month for parking\n- Up to $340/month for transit\n- Funds roll over month to month\n- **Mid-year Changes:** Available through Qualifying Life Event process\n\n**Claims Periods**\n\n- Active employees: 180 days after plan year\n- Terminated employees: 90 days after termination"
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "Modern Health session benefits reset annually on March 20, and unused sessions do not roll over [1].",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "597c3d99-9bf0-53b7-bf38-ede42e5f4065",
+            "chunk_id": "dacd98da-2565-59fe-9279-ca545a45c318",
+            "title": "Modern Health",
+            "section_path": "Important Details > Benefit Reset & Usage"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 6.61
+    },
+    {
+      "id": "final-35",
+      "question_type": "single_hop",
+      "question": "What are the confidentiality requirements for including customer-identifying details in GitLab issues?",
+      "reference": "If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential.",
+      "reference_context_ids": [
+        "a3b5d8cb-68a7-505b-bace-d40e1de7adbd"
+      ],
+      "retrieved_chunk_ids": [
+        "a3b5d8cb-68a7-505b-bace-d40e1de7adbd",
+        "83bdfe9a-73d9-59cf-846a-2055c13b8a6f",
+        "39f6b793-3211-5a5d-9ccb-e06c4807548b",
+        "2d81d83e-818c-5022-ae69-a1b5936592c6",
+        "6c30074c-70ec-5c9b-90a5-fd4c0dfb1230"
+      ],
+      "retrieved_texts": [
+        "### Limited access\n\nThe items below are not shared with all team members. Limited access is a more severe restriction than [internal](#internal).\n\n1. Deals with external parties like contracts and [approving and paying invoices](/handbook/finance/accounting/#procure-to-pay).\n1. Content that would violate confidentiality for a GitLab team-member, customer, or user.\n1. Customer information is generally not public due to confidentiality obligations and the problematic use of such information by our competitors. If an issue needs to contain *any* specific information about a customer, including but not limited to company name, employee names, or number of users, then the issue should be made confidential. When we discuss a customer by name or describe a customer in terms that could make them identifiable, this should only occur in private projects or by linking to the SFDC account in an internal GitLab issue.\n1. Plans for reorganizations. Reorganizations may cause disruption and reorganization plans tend to change a lot before being finalized. We will keep relevant team members informed whenever possible.\n1. Planned pricing changes. Much like reorganizations, plans around pricing changes are subject to modifications before being finalized. Thus, pricing changes are limited access while in development. Applicable team members will be consulted before any pricing changes are rolled out.\n1. Certain discussions that relate to company policy or process changes. Some organizational policies are sensitive in nature and require thoughtful consideration before any communications are made. Relevant team members and leaders will be informed whenever possible.\n1. Legal discussions are restricted to the purpose of Attorney-Client Privilege and some may be limited access instead of internal.\n1. Some information is kept confidential by the People Group to protect the privacy, safety, and security of team members and applicants, including: job applications, background check reports, reference checks, compensation, terminations details, demographic information (age and date of birth, family or marital status, national identification such as passport details or tax ID, required accommodations), and home address. Whistleblower identity is likewise confidential. Performance improvement plans, disciplinary actions, and individual feedback are restricted, as they may contain negative feedback and [negative feedback is 1-1](/handbook/values/#collaboration) between you and your manager. However, People Group policies and processes are public (for example, [Job Description Library](/handbook/hiring/job-description-library/), along with limited information that team members choose to share on the [Team](/handbook/company/team/) page.\n1. Acquisition offers by or of GitLab.\n1. Compensation Changes: GitLab will communicate and train team members on the output of iterations to the Total Rewards offerings (Compensation, Equity, Benefits), but team members will not have visibility into the inputs and decision making of compensation changes.\n1. Security Incident Investigation: In order to avoid exposing team members to MNPI, the Security Incident Response Team (SIRT) will restrict access to only those necessary to assess the materiality of incidents. Once an incident is determined to not have MNPI the access may be changed to [internal](/handbook/communication/confidentiality-levels/#internal).",
+        "### Examples of Potentially GitLab Sensitive Topics\n\n1. Team member data (individual performance, start dates, departures)\n1. Violations, or potential violations, of policies and/or local rules and regulations\n1. Customer or partner information (logos, trademarks, spend)\n1. Material nonpublic information\n\nThe above examples overlap with the [GitLab's SAFE Framework](/handbook/legal/safe-framework/) examples. We recommend you to further review that page for more information and context.",
+        "### What are the risks?\n\n1. **Legal risk:** These are the risks that arise from regulations and laws that govern GitLab or the market in which it operates. This includes, but is not limited to, content that would compromise a GitLab team member, customer, or user's personal data and/or privacy.\n1. **Morale risk:** Raising GitLab sensitive topics that may be misinterpreted without the opportunity to ask clarifying questions can create risk to team culture and/or morale.\n1. **PR risk:** Remember that anything you document could ultimately be shared/viewed externally. Consider that a discussion in a public MR or issue is a demonstration of our [values](/handbook/values/) to those outside of GitLab who are looking to learn more about how we collaborate.\n\nWe encourage communicating risks to GitLab, its team members, or customers in a synchronous 1:1 setting.",
+        "### Internal\n\nSome things are **internal** to GitLab team only. In instances where a topic should only be accessible to team members, but otherwise the content would be in the public handbook, then this information should instead be added to GitLab's [Internal Handbook](https://internal.gitlab.com/). [Background on the internal handbook](/handbook/about/handbook-usage/#the-internal-handbook) can be found in the public handbook. It is okay to refer to the public handbook or the internal and public handbooks in aggregate as \"the handbook.\" The Internal Handbook should always be referred to as the \"Internal Handbook.\"\n\nThe following items are internal:\n\n1. Security and abuse vulnerabilities are not public since they would allow attackers to compromise GitLab installations. We do make them public after we remediated a vulnerability. Issues that discuss how to improve upon the security posture of an implementation that is working as intended can be made public, and are often labeled as feature proposals. Security and abuse implementations that detect malicious activities cannot be made public because doing so would undermine our operations.\n1. Financial information, including revenue and costs for the company, is confidential because we are a public company and, as such, need to limit both the timing and content of financial information as investors will use and rely on it as they trade in GitLab stock. Anything that is a first step to constructing a profit should be kept confidential. Examples include:\n   - The specific [IACV](/handbook/sales/sales-term-glossary/arr-in-practice/) of an opportunity\n   - Total monthly cash inflow/outflow for GitLab.com\n   - Spend of more than 10%\n   - A department's cost\n   - Team member retention (analysts may make business assumptions based on this)\n   - The Sales pipeline\n   - Net and gross retention KPIs. Only the actual numbers can't be public. Other details, such as the goal and their calculation, may be public.\n1. All external communications about any financial information should be in line with the company's [SAFE Guidelines](/handbook/legal/safe-framework/) and [Social Media Policy](/handbook/marketing/team-member-social-media-policy/). If you have any questions please reach out via the [#Safe](https://gitlab.slack.com/archives/C01UZQ63WFQ) Slack channel.\n1. Deals with external parties like contracts and [approving and paying invoices](/handbook/finance/accounting/#procure-to-pay).\n1. Content that would compromise a GitLab team member, customer, or user's personal data, as defined in our [Privacy Terms](/handbook/legal/privacy/#privacy-terms). Examples of compromising content include personal (not GitLab assigned) contact information, location data, online identifiers, employment information, government IDs, financial information, or sensitive data elements related to health, religion, race/ethnicity, political status, or sexual orientation.\n1. Legal discussions are not public due to the purpose of Attorney-Client Privilege.",
+        "### Confidentiality\n\nInfectious disease-related diagnostic information about team members will be treated as confidential, privileged information. All information about a team member's illness will be treated as a confidential medical record in compliance with federal or state law. GitLab will adhere to all federal, state and local public health reporting requirements."
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "The confidentiality requirements for including customer-identifying details in GitLab issues are stringent. Customer information should generally remain confidential, and if any specific information about a customer is included (such as the company name, employee names, or number of users), the issue must be marked as confidential. Moreover, discussions that mention a customer by name or make them identifiable should only occur in private projects or by linking to the SFDC account in an internal GitLab issue. This reflects GitLab's obligation to protect customer confidentiality and to prevent misrepresentation of sensitive data to competitors or unauthorized personnel [1].",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "6852f26f-1da0-5160-a770-05a573e1797d",
+            "chunk_id": "a3b5d8cb-68a7-505b-bace-d40e1de7adbd",
+            "title": "Confidentiality levels",
+            "section_path": "Not public > Limited access"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 7.86
+    },
+    {
+      "id": "final-36",
+      "question_type": "multi_hop",
+      "question": "How do cabin-upgrade rules differ between domestic and international flights, including the international business-class exception?",
+      "reference": "For domestic and international flights over five hours of consecutive flight time, the next class above standard economy is authorized only if it is below business class; the policy specifies that each segment must be 5+ hours. For international flights exceeding eight hours of consecutive flight time, business class is permitted for frequent travelers, defined as three or more international trips per quarter on 8+ hour continuous flights with a minimum of six flight segments of 8+ hours each. That business-class permission applies when meeting customers, attending a speaking engagement, or representing GitLab at a conference.",
+      "reference_context_ids": [
+        "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+        "8399e9de-37b8-57a2-b8aa-ac010b7908b7"
+      ],
+      "retrieved_chunk_ids": [
+        "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+        "8399e9de-37b8-57a2-b8aa-ac010b7908b7",
+        "f4b27f26-5d00-55a7-b7f8-faa86e7c095f",
+        "a4f2c7fa-9562-5152-91e9-7fb53e350ae9",
+        "86ecfb95-5e47-5ed0-8ed9-eb874e819e78"
+      ],
+      "retrieved_texts": [
+        "#### Domestic Flights\n\n- **Flights over 5 hours of consecutive flight time** - For domestic flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.",
+        "#### International Flights\n\n- **Flights greater than 5 hours of consecutive flight time** - For international flights with a duration greater than 5 hours of consecutive flight time (each segment must be 5+ hours), team members are authorized to book the next class up from standard economy as long as it is below business class.\n- **Flights exceeding 8 hours of consecutive flight time** - For those who travel frequently, defined as 3 or more trips per quarter internationally on flights of 8 hrs+ continuous flight time (minimum 6 flight segments with 8+ hours per segment), business class is permitted when traveling for any of the following reasons:\n  - Meeting with customers\n  - Speaking engagement\n  - Representing GitLab at a conference",
+        "#### Frequent Flyer Programs\n\n- Participation in frequent flyer programs must not influence airfare selection if it results in an out-of-policy option.\n- Team Members may use personal frequent flyer miles or points for upgrades on business travel, however, Team Members will not be reimbursed for any respective charges.",
+        "#### Class of Service\n\n- One class of upgrade is permitted with Manager approval for team members over 6'5\"/2m in height.",
+        "#### Advance Purchase\n\n- Team Members should make air reservations as early as possible, in order to take advantage of discounted fares. Travelers will ideally book:\n  - Domestic: At least 14 days in advance\n  - International: At least 21 days in advance\n\nThe airfare policy in Navan is set up as a \"Dynamic Policy\" which calculates a fair market price for every search based on travel dates and destinations. Any purchases that are over 20% of the Dynamic Policy will be flagged for further review by your manager. Also note that anything booked outside of Navan will flag as \"Out of Policy\", and will need to be reviewed by your manager and the AP team."
+      ],
+      "reference_chunks_found": 2,
+      "result": {
+        "answer": "Cabin-upgrade rules differ between domestic and international flights primarily in terms of their duration limits for authorization and the circumstances under which business class can be booked:\n\n1. **Domestic Flights**: For domestic flights longer than 5 hours of consecutive flight time, team members can book the next class up from standard economy, provided it is below business class [1].\n\n2. **International Flights**: Similar to domestic flights, international flights over 5 hours also allow team members to book the next class up from standard economy, but there is an additional allowance: for frequent travelers (defined as making 3 or more trips per quarter internationally on flights of 8 hours or more), business class is permitted for specific purposes such as meeting customers, speaking engagements, or representing GitLab at a conference [2].\n\nIn summary, while both domestic and international flights allow upgrades to the next class below business from standard economy for flights over 5 hours, the international policy has more exceptions, allowing for business class on longer flights under certain conditions.",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+            "chunk_id": "4870e7b3-590f-5ba1-a51a-e8fe2f76ace2",
+            "title": "Global Travel and Expense Policy",
+            "section_path": "4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > Domestic Flights"
+          },
+          {
+            "number": 2,
+            "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+            "chunk_id": "8399e9de-37b8-57a2-b8aa-ac010b7908b7",
+            "title": "Global Travel and Expense Policy",
+            "section_path": "4. PROCEDURES > 4.1 TRAVEL RELATED EXPENSES > International Flights"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 8.38
+    },
+    {
+      "id": "final-40",
+      "question_type": "multi_hop",
+      "question": "Which budget funds meals during workshop travel, and what daily meal and tip limits apply?",
+      "reference": "Meals related to workshop travel must be expensed separately from the G&D claim and funded from the requester's department Travel & Expense budget. Business-travel meals are reimbursable up to $120 USD, or local equivalent, per day. Tips up to 20% are acceptable and must be included within that daily limit.",
+      "reference_context_ids": [
+        "0ad36f5c-5a0c-5d24-9492-edd927b91285",
+        "a641249f-3a44-5834-b634-579923ffa485"
+      ],
+      "retrieved_chunk_ids": [
+        "a641249f-3a44-5834-b634-579923ffa485",
+        "529e6237-222b-562d-9153-465691e79469",
+        "0ad36f5c-5a0c-5d24-9492-edd927b91285",
+        "947ff0ad-4b22-5668-926a-a97fcf330c03",
+        "44985366-4f78-54c3-a0f3-7c4e613db417"
+      ],
+      "retrieved_texts": [
+        "### Meals: Company Provided while Traveling\n\n- Meals while traveling on Company business  are reimbursable, up to $120 USD (or local equivalent currency) per day.\n- Each Team Member must submit their own receipts for reimbursement, so ensure to separate billing when going to meals with groups of Team Members. If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.\n- To be used for team activities and food/beverages associated with travel on Company business. Refer to our Travel Handbook Page.\n- Tips are acceptable up to 20% and should be detailed accordingly in the description box. This should be included in the final price to stay within the Policy limits. For US team members, cash tips under $50 do not need a receipt.\n- Please also add a description for the trip/reason for travel.",
+        "### Traveling: Team Events and Meals\n\n- To be used for team activities and food/beverages.\n- Each Team Member must submit their own receipts for reimbursement, so ensure to separate billing when going to meals with groups of Team Members. If this is not practicable to do due to the group size, then the most senior Team Member present should pay the bill and submit for reimbursement.\n- $80 limit per person per meal.\n- Tips are acceptable up to 20% and should be detailed accordingly in the description box. This should be included in the final price to stay within the Policy limits. For US team members, cash tips under $50 do not need a receipt.\n- Please also add a description for the trip/reason for travel.",
+        "#### Travel expenses\n\nTravel, lodging, and meals related to conferences or workshops must be expensed separately from the G&D claim and should follow GitLab's Travel and Expense policy.\n\nThese expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+        "### Meals and Incidental Expenses (M&IE)\n\nUnless specifically requested by the customer in the SoW, travelers on billable travel are reimbursed the per diem rate for travel-related meal expenses for their travel destination. Receipts are not required (under any circumstances) for reimbursement of travel meals using per diem rates.\n\nThe M&IE rates include:\n\n- Meals, drinks, tax & tip\n- Incidentals – e.g., baggage carriers, bellhops and hotel staff\n\nTravelers may put in a separate expense request for meals that are not billable such as a GitLab-sponsored customer lunch or dinner.\n\n**First & Last Day of Travel**\n\nFirst and last day of travel will be reimbursed.\nDeparture day – the day you leave your home or office.\nReturn day – the day you return to your home or office.\n\n**Incidentals**\n\nTravelers may include the daily incidental amount when determining the maximum M&IE rates. Gratuities for baggage carriers, porters, hotel staff (bellhops and house cleaners), and staff on ships, as well as ATM fees, bank fees, and check cashing fees are included in the daily incidental amount. Laundry expenses are included in the daily incidental amount for international travelers. Travelers should not request reimbursement for any of these items.\n\nTravelers may request reimbursement for laundry for domestic travel lasting seven (7) or more consecutive days.\n\n**Meal breakdown for International M&IE rates**\n\nRates can be found on the [U.S. Department of State M&IE Rates web page](https://allowances.state.gov/content.asp?content_id=114&menu_id&menu_id=81&menu_id=81).",
+        "## How It Works\n\n- **Coordination:** EBAs (or other designated DRI) manage logistics; the DIB team provides templates, context, and tracking support.\n- **Timing:** \"Existing travel through FY27\"  \n- **Format:** 10 min arrival  |  40 min conversation  |  5 min wrap-up  \n- **Budget:** Funded through Diversity, Inclusion and Belonging team\n- **Attendance:** Open to all team members in the area  \n- **Travel reimbursement:** Up to $25 in local currency (e.g., Uber, rail, or local transport) — may vary slightly by location  \n\n---"
+      ],
+      "reference_chunks_found": 2,
+      "result": {
+        "answer": "The budget that funds meals during workshop travel is the department's Travel & Expense budget. Expenses related to meals for workshops must be expensed separately from the Growth & Development (G&D) allocation and must follow GitLab's Travel and Expense policy [3]. \n\nThe daily meal reimbursement limit while traveling on Company business is up to $120 USD (or local equivalent currency) [1]. Additionally, for team events and meals, there is an $80 limit per person per meal [2]. Tips are acceptable up to 20% and should be included in the final price [1][2].",
+        "sources": [
+          {
+            "number": 3,
+            "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+            "chunk_id": "0ad36f5c-5a0c-5d24-9492-edd927b91285",
+            "title": "Growth and Development Fund",
+            "section_path": "Process > Step 5 - Submit for reimbursement in Navan > Travel expenses"
+          },
+          {
+            "number": 1,
+            "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+            "chunk_id": "a641249f-3a44-5834-b634-579923ffa485",
+            "title": "Global Travel and Expense Policy",
+            "section_path": "4. PROCEDURES > Meals: Company Provided while Traveling"
+          },
+          {
+            "number": 2,
+            "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+            "chunk_id": "529e6237-222b-562d-9153-465691e79469",
+            "title": "Global Travel and Expense Policy",
+            "section_path": "4. PROCEDURES > Traveling: Team Events and Meals"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 9.91
+    },
+    {
+      "id": "final-43",
+      "question_type": "multi_hop",
+      "question": "If I remain eligible and leave $4,000 of my G&D budget unspent this year, what maximum amount is available next calendar year?",
+      "reference": "Up to $10,000 is available for eligible growth experiences next calendar year. The unspent $4,000 does not roll over or increase that annual maximum.",
+      "reference_context_ids": [
+        "aa8fb337-0101-57dc-b7bb-b80463769054",
+        "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+      ],
+      "retrieved_chunk_ids": [
+        "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb",
+        "21c87643-3b82-5126-b9e3-45cb6af4ccd6",
+        "3c4c617a-5b79-5068-b853-f3463203c3b9",
+        "ab98fb60-386f-500a-aee9-15d406890554",
+        "5aad63c5-ddf2-59e1-b078-0e56a8dc5c4e"
+      ],
+      "retrieved_texts": [
+        "### Does budget rollover?\n\nNo. Unspent G&D budgets do not roll over from one year to the next.",
+        "### How can I track my G&D spend?\n\nIf you want to know how much of your G&D Fund remains for the calendar year, reach out through the #learninganddevelopment slack channel.",
+        "### Rollover Details for Medical and Limited Purpose FSA\n\nRollover funds from prior year won't be available until 5-15 business days after March 31 of the current tax year (no later than April 22).\n\n**Contribution and Rollover Limits:**\n\n- **2026:** $3,400 max contribution, $680 max rollover\n\n**Important Notes:**\n\n- Minimum $5 required for rollover; amounts $5 or less are forfeited\n- You can use rollover funds the following year, even if you don't enroll in FSA again",
+        "### Can spare budget be shared with other team members?\n\nNo. G&D budgets are individual and cannot be shared across team members.",
+        "### Key Features\n\n- Up to £3,000 for bike and accessories\n- Tax and National Insurance savings\n- Available once every 4 tax years\n- Access via [GitLab Travel Hub](https://gitlab.biketowork.co.uk/)"
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "If you leave $4,000 unspent from your G&D budget this year, that amount will not roll over to the next calendar year. Therefore, the maximum amount available next calendar year would be the amount you are allocated for that year, not including the unspent funds from this year.\n\nSources: [1]",
+        "sources": [
+          {
+            "number": 1,
+            "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+            "chunk_id": "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb",
+            "title": "Growth and Development Fund",
+            "section_path": "FAQ > Does budget rollover?"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 7.55
+    },
+    {
+      "id": "final-46",
+      "question_type": "multi_hop",
+      "question": "For a non-US team member, how do reporting and documentation steps differ for three versus seven consecutive days of caregiver sick leave?",
+      "reference": "For three days, notify your manager and enter Caregiver Sick Time in Workday, which automatically updates in Time Off by Deel; no documentation is needed for an absence of less than five days unless statutory rules require it. Seven days is a leave of absence: notify the Absence Management Team via Compass and enter Caregiver Sick Time in Workday, which that team may edit or replace with a Leave Type. Provide evidence required locally to support caregiver leave and submit it to the Absence Management Team through the Compass ticket.",
+      "reference_context_ids": [
+        "73e65c08-69af-5919-90e2-f374d954ebf2",
+        "16961fda-fc9c-5650-bbdc-55e7a9121f1c"
+      ],
+      "retrieved_chunk_ids": [
+        "16961fda-fc9c-5650-bbdc-55e7a9121f1c",
+        "73e65c08-69af-5919-90e2-f374d954ebf2",
+        "d91c921e-3032-58d4-8fb6-f2f9bc3f2b7b",
+        "b404939a-bc2f-52d8-bb4a-ee02eb23b547",
+        "538ef766-60d7-535e-b00c-2e9a8bab2dfc"
+      ],
+      "retrieved_texts": [
+        "### For Caregiver Sick Absences 6+ Consecutive Days\n\n### For Caregiver Sick Absences 6+ Consecutive Days\n\nCaregiver sick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta).\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Caregiver Sick Time Policy, review statutory benefits you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf\n1. Eligibility for a leave of absence under GitLab's Caregiver Sick policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Caregiver Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor's note, fit note, etc.).\n   - Team Members should submit the documentation to the Absence Management team (Compass ticket).",
+        "### For Caregiver Sick Absences 1-5 Consecutive Days\n\n### For Caregiver Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence.\n1. Enter the time away in Workday by selecting the label \"Caregiver Sick Time\"\n1. Your caregiver sick time will automatically update in Time Off by Deel\n1. If your absence is less than 5 consecutive days, then you do not need to provide documentation (unless your statutory reporting requirements state otherwise)",
+        "### For Sick Absences that Exceed 6+ Consecutive Days\n\n### For Sick Absences that Exceed 6+ Consecutive Days\n\nSick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta). Once your request is submitted, it takes 2-5 business days to build your personalized leave plan. You will receive a notification when it is ready.\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Sick Time Policy, review [statutory benefits](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Out Sick\".\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf.\n1. Eligibility for GitLab’s Sick Time policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Sick Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.). Please review your employment contract or your country’s Sick Time policy to determine what documentation may be needed.",
+        "### How to Report\n\n- 4-7 days absence: Complete [self-certification form](https://docs.google.com/document/d/1Cy-xUgWwNKroUEEJ0ut80HGVA0d3RJV5mQO-amLjoCs/edit?usp=sharing)\n- 7+ days absence: Provide fit note to leaves@gitlab.com\n- Select \"Out Sick\" in Workday",
+        "### How to Report Sick Leave\n\n1. Notify GitLab within 48 hours via \"Out Sick\" in Workday\n2. Send sheet no. 3 from physician to leaves@gitlab.com\n3. Submit sheets no. 1 & 2 to social security organization\n4. For extensions: Notify within 48 hours with updated sheet no. 3"
+      ],
+      "reference_chunks_found": 2,
+      "result": {
+        "answer": "For caregiver sick leave, the reporting and documentation steps differ between three days and seven consecutive days as follows:\n\n1. **For 1-5 Consecutive Days**: Team members must notify their manager of the absence and enter the time away in Workday by selecting the label \"Caregiver Sick Time\". No documentation is required unless statutory reporting requires otherwise [2].\n\n2. **For 6+ Consecutive Days**: These absences are considered a leave of absence. The steps include notifying the Absence Management Team by submitting a Compass ticket, entering the time away in Workday (label \"Out Sick\"), and providing evidence to support the need for leave in accordance with local requirements. Documentation may vary by location and can include items like a medical certificate or doctor's note. This is necessary for the eligibility under GitLab's Caregiver Sick policy [1] [3]. \n\nFor some countries like the UK, specific forms are required based on the length of the absence, such as a self-certification form for 4-7 days and a fit note for 7+ days [4]. Similar protocols may exist in France, where team members must notify GitLab within 48 hours and submit documentation from their physician [5].",
+        "sources": [
+          {
+            "number": 2,
+            "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+            "chunk_id": "73e65c08-69af-5919-90e2-f374d954ebf2",
+            "title": "Time Off Types",
+            "section_path": "Caregiver Sick Time > For Caregiver Sick Absences 1-5 Consecutive Days"
+          },
+          {
+            "number": 1,
+            "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+            "chunk_id": "16961fda-fc9c-5650-bbdc-55e7a9121f1c",
+            "title": "Time Off Types",
+            "section_path": "Caregiver Sick Time > For Caregiver Sick Absences 6+ Consecutive Days"
+          },
+          {
+            "number": 3,
+            "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+            "chunk_id": "d91c921e-3032-58d4-8fb6-f2f9bc3f2b7b",
+            "title": "Time Off Types",
+            "section_path": "Sick Time > For Sick Absences that Exceed 6+ Consecutive Days"
+          },
+          {
+            "number": 4,
+            "document_id": "7c0831de-0214-5b0b-9ab6-f5dbbedab5b0",
+            "chunk_id": "b404939a-bc2f-52d8-bb4a-ee02eb23b547",
+            "title": "GitLab LTD (UK) Benefits",
+            "section_path": "Time Off Policies > How to Report"
+          },
+          {
+            "number": 5,
+            "document_id": "1a3cbdd8-601f-56d9-ad69-09a9842b741e",
+            "chunk_id": "538ef766-60d7-535e-b00c-2e9a8bab2dfc",
+            "title": "GitLab France S.A.S.",
+            "section_path": "Time Off Policies > How to Report Sick Leave"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 8.72
+    },
+    {
+      "id": "final-50",
+      "question_type": "multi_hop",
+      "question": "Who should occupy the Accountable role in a RACI mapping for a mentorship session at GitLab?",
+      "reference": "The mentee should occupy the Accountable role: the mentee should be the DRI for each mentorship session, and GitLab maps the project or workstream DRI to the Accountable role in RACI.",
+      "reference_context_ids": [
+        "03b0d45f-1d80-58cf-8fc7-125dc25f196a",
+        "3c7ef074-a8f7-59f6-a333-2bd8918bfd62"
+      ],
+      "retrieved_chunk_ids": [
+        "7af39185-33bf-532e-8004-d64b62e11878",
+        "3c7ef074-a8f7-59f6-a333-2bd8918bfd62",
+        "e541250f-f51a-556b-9632-2b0fbd19a13f",
+        "da34a394-991c-5efc-9fd3-294bb94b70cd",
+        "fc47a489-a7f9-5380-b314-0695e459bcfe"
+      ],
+      "retrieved_texts": [
+        "Section: Roles and Responsibilities\n\n| Role | Responsibilities |\n| -------- | --------------- |\n| Team Member Owned | - Take charge of your own development and career;  - Close the skill gap for current and future positions ;  - Seize development and stretch opportunities ;  - Remember there are no promises or guarantees of a promotion |\n| Manager Facilitated| - Take time with team members to discuss their career aspirations ;  - Listen and provide feedback, ideas and contacts ;  - Make choices to support their development |\n| GitLab Supported | - Communicate future direction and skills requirements ;  - Provide information and tools when applicable ;  - Communicate internal opportunities |",
+        "## Responsible, Accountable, Consulted, Informed (RACI)\n\nDifferent organizations use different methods of assigning responsibility; one of the most popular is the [RACI Matrix](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix), which outlines who the Responsible, Accountable, Consulted, Informed people should be on a decision or project.\n\nGitLab's implementation of a DRI (Directly Responsible Individual) for decision-making adds some complexity when using the RACI model given the DRI for a given project or workstream would sit the A - Accountable role.\n\nRACI: A framework for clarifying roles and responsibilities\n\n- Responsible: This is the person or people ultimately responsible for the successful completion of a specific task, decision, or project. They are needed for the planning, execution, and completion of a given task.\n- Accountable: The person who is ultimately accountable for the completion and success of the task. There should be only one person accountable for each task and it’s often the same as the DRI.\n- Consulted: These are individuals whose opinions and expertise are sought and valued before a decision or action is taken. They provide input and feedback, but they are not ultimately responsible for the outcome.\n- Informed: These individuals are kept in the loop about the progress and decisions related to a task or project, but they don't necessarily need to be actively involved in the decision-making process. They are kept informed of the progress and outcome.\n\nThis framework helps avoid confusion and ensures that everyone understands their role and level of involvement. It's a way to distribute responsibility and keep the project moving forward efficiently.",
+        "## Become a mentor\n\n1. Indicate your mentorship availability on the GitLab team page by setting the `mentor` status to `true`. This will appear on the team page with a line that reads `Available as a mentor`. [Example MR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/75890)",
+        "## How to get started\n\nTeam members have multiple options to participate in mentorship at GitLab.\n\n1. **Identify and self-select a mentor** from your professional network or the [list of available mentors below](#find-a-mentor).\n1. **Make yourself available as a mentor** by following [these steps](#become-a-mentor).\n1. **Participate in an [organized mentorship program](#organized-mentorship-programs)** where mentors and mentees are paired based on an application process.",
+        "Section: Roles & Responsibilities\n\n| Role  | Responsibility |\n|-----------|-----------|\n| GitLab Team Members | Responsible for following the requirements in this document |\n| People Operations | Responsible for implementing and executing this document |\n| People Operations (Code Owners) | Responsible for approving significant changes and exceptions to this document |"
+      ],
+      "reference_chunks_found": 1,
+      "result": {
+        "answer": "In a RACI mapping for a mentorship session at GitLab, the Accountable role should typically be occupied by the Directly Responsible Individual (DRI) for that mentorship session. As outlined in the RACI framework, there should be only one person accountable for each task, and this person is often the DRI [2]. Therefore, the specific individual designated as the DRI for the mentorship session would be the one to hold the Accountable role.",
+        "sources": [
+          {
+            "number": 2,
+            "document_id": "ba62c39f-e509-5d22-90e6-2624fc059a64",
+            "chunk_id": "3c7ef074-a8f7-59f6-a333-2bd8918bfd62",
+            "title": "Directly Responsible Individuals (DRI)",
+            "section_path": "Responsible, Accountable, Consulted, Informed (RACI)"
+          }
+        ]
+      },
+      "status": "ok",
+      "seconds": 7.19
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "temporary service-provider onboarding",
+        "People team",
+        "Procurement team"
+      ],
+      "user_input": "Which team handles temporary service-provider onboarding rather than People?",
+      "reference": "The Procurement team handles temporary service-provider onboarding rather than the People team.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "You can work with the Procurement team on these onboardings",
+          "contribution": "identifies the team responsible for onboarding"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies that the Procurement team is responsible for onboarding temporary service providers, while the People team is not involved."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "temporary service-provider onboarding",
+        "People team",
+        "Procurement team"
+      ],
+      "user_input": "Which team handles temporary service-provider onboarding rather than People?",
+      "reference": "The Procurement team handles temporary service-provider onboarding rather than the People team.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "You can work with the Procurement team on these onboardings",
+          "contribution": "identifies the team responsible for onboarding"
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies that the Procurement team is responsible for onboarding temporary service providers, while the People team is not involved.",
+      "id": "final-16",
+      "question_type": "single_hop",
+      "planned_focus": "Which team handles temporary service-provider onboarding rather than People.",
+      "reference_contexts": [
+        "### Temporary Service Provider (Contractor/Consultant) Onboarding\n\nThe People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers. You can work with the Procurement team on these onboardings and review the [temporary service provider internal handbook page](https://internal.gitlab.com/handbook/it/end-user-services/access-request/temporary-service-providers/) for templates and other helpful information."
+      ],
+      "reference_context_ids": [
+        "fa84bb4d-9505-54be-a8b7-b5eae785ed1e"
+      ],
+      "reference_document_ids": [
+        "569a518d-4d3b-5741-971c-3a60d26044ef"
+      ],
+      "sources": [
+        {
+          "document_id": "569a518d-4d3b-5741-971c-3a60d26044ef",
+          "chunk_id": "fa84bb4d-9505-54be-a8b7-b5eae785ed1e",
+          "chunk_index": 11,
+          "block_type": "text",
+          "token_count": 88,
+          "section_path": "Managers of New Team Members > Temporary Service Provider (Contractor/Consultant) Onboarding",
+          "source_start": 9201,
+          "source_end": 9657,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Onboarding",
+          "category": "REFERENCE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

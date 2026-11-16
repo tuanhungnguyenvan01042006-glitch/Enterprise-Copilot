@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-27",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "ca14fec7-6b79-51fb-b151-be9bdea65bc3"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Bereavement eligibility for loss of a pet",
+      "flexible duration",
+      "manager coordination"
+    ],
+    "user_input": "What are the rules for bereavement leave eligibility and duration when an employee experiences the loss of a pet, and how should they coordinate this leave?",
+    "reference": "There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently. We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets. As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.",
+        "contribution": "This explains bereavement leave eligibility for loss of a pet, the flexible duration allowed, and the need for manager coordination."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states bereavement leave applies to loss of pets with no set duration limit and requires manager coordination."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1160,
+    "output_tokens": 345,
+    "cost_usd_estimate": 0.001016
+  },
+  "judge": {
+    "source_conditions": [
+      "No set limit on bereavement days (flexible duration)",
+      "Bereavement can be taken continuously or intermittently",
+      "No restriction or tiering of leave based on relationship to the deceased (includes pets)",
+      "Team members must coordinate with their manager about needs and coverage plans"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 825,
+    "output_tokens": 104,
+    "cost_usd_estimate": 0.002482
+  }
+}

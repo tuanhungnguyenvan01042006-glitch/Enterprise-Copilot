@@ -1,0 +1,65 @@
+{
+  "plan_id": "final-47",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "18017fef-b96d-5c66-8a3f-564f21b9aea5",
+    "35334b86-b438-5787-b501-afae2118d655"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "medical, dental and vision benefits end on departure",
+      "US-based team member benefits end",
+      "Canada-based team member benefits end"
+    ],
+    "user_input": "Compare when medical, dental and vision benefits end on departure for US versus Canada-based team members; do not extrapolate beyond these benefits.",
+    "reference": "US-based team members' medical, dental, and vision benefits end on the last day of the month of departure, while Canada-based team members' benefits end on their last day of work.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "If you are a US-based team member, your medical, dental, and vision benefits will cease on last day of the month of your departure, all other benefits will cease on your last day.",
+        "contribution": "States when medical, dental, and vision benefits end for US-based team members."
+      },
+      {
+        "context_index": 1,
+        "quote": "If you are a Canada-based team member, your benefits will cease on your last day of work.",
+        "contribution": "States when benefits end for Canada-based team members."
+      }
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 specifies the end date for US-based team members' medical, dental, and vision benefits, while Context 1 specifies the end date for Canada-based team members' benefits, allowing a direct comparison."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1478,
+    "output_tokens": 263,
+    "cost_usd_estimate": 0.001012
+  },
+  "judge": {
+    "source_conditions": [
+      "US-based team members: medical, dental, and vision benefits cease on last day of the month of departure",
+      "Canada-based team members: benefits cease on last day of work"
+    ],
+    "missing_conditions": [
+      "Canada: answer should specify medical, dental, and vision benefits, not just 'benefits'"
+    ],
+    "question_issues": [
+      "Question includes an instruction intended for the generator."
+    ],
+    "grounded": false,
+    "complete": false,
+    "clear": false,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer does not explicitly state that for Canada-based team members, it is the medical, dental, and vision benefits that end on the last day of work; it just says 'benefits', which could be broader than requested. This omits a relevant condition and fails to precisely match the information need."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1072,
+    "output_tokens": 165,
+    "cost_usd_estimate": 0.003464
+  }
+}

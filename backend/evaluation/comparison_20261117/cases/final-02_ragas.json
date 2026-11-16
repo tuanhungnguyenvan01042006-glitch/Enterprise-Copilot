@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-02",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "81cde5d2-312c-5c76-b550-6077be4c8fce"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1857,
+    "output_tokens": 97,
+    "cost_usd_estimate": 0.0008979999999999999
+  },
+  "candidate": {
+    "user_input": "What documents must I attach to my expense claim when submitting a car rental reimbursement?",
+    "reference": "You must attach the Navan Confirmation along with the Car Rental Receipt to your claim.",
+    "reference_contexts": [
+      "### Car Rental\n\n- Rental Cars are reimbursable and should be booked through Navan, up to the intermediate car class, with a 7 day booking lead time.\n- Please note that anything booked outside of Navan will flag as \"Out of Policy\", and will need to be reviewed by your manager and the AP team.\n- Navan Confirmation should be attached to the claim along with the Car Rental Receipt.\n- Team Members can claim gas expenses but not mileage, when renting a car.\n- Fuel at $300 limit per day."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Rental Cars are reimbursable and should be booked through Navan.",
+      "Navan Confirmation should be attached to the claim along with the Car Rental Receipt."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 698,
+    "output_tokens": 78,
+    "cost_usd_estimate": 0.00202
+  }
+}

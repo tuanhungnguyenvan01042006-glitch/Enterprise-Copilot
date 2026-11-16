@@ -1,0 +1,11 @@
+{
+  "started_at_utc": "2026-11-12T09:49:07.123166+00:00",
+  "finished_at_utc": "2026-11-12T09:49:32.314722+00:00",
+  "openai_model": "gpt-4o-mini",
+  "openai_successful_requests": 25,
+  "openai_input_tokens": 17338,
+  "openai_output_tokens": 1389,
+  "openai_cost_usd_callback_estimate": 0.003434099999999999,
+  "voyage_requests": 0,
+  "note": "Single-hop keyphrase generation does not need similarity embeddings. Usage is callback-observed, not an invoice."
+}

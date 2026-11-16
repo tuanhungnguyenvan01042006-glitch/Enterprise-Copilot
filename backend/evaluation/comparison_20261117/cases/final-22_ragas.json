@@ -1,0 +1,21 @@
+{
+  "plan_id": "final-22",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "57828948-7920-570b-af63-7e8347698791"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 711,
+    "output_tokens": 42,
+    "cost_usd_estimate": 0.0003516
+  },
+  "error": "ValueError: ValueError: Ragas produced 0 samples",
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  }
+}

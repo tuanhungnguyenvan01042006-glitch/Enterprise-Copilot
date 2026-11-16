@@ -1,0 +1,68 @@
+{
+  "plan_id": "final-41",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "81cde5d2-312c-5c76-b550-6077be4c8fce",
+    "b9489555-a69f-5abd-b9ae-f22a333a6171"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1643,
+    "output_tokens": 142,
+    "cost_usd_estimate": 0.0008843999999999999
+  },
+  "candidate": {
+    "user_input": "Can I claim mileage or fuel expenses when using a rental car for business travel, and how does this differ from using my personal vehicle?",
+    "reference": "When renting a car, team members can claim gas expenses up to a $300 limit per day but cannot claim mileage. For personal vehicles, mileage is reimbursed according to local law and must be entered in Navan with start and end points; however, electric vehicle charging fees cannot be claimed along with mileage.",
+    "reference_contexts": [
+      "### Mileage\n\n- Based on Mileage driven and calculated by Navan. Team Members are prompted by Navan to enter their start and end locations.\n- Mileage is reimbursed according to local law, e.g.  US rate per mile, rate per km in the Netherlands, or rate in Belgium. Refer to \"How Mileage Rates are Based\" section below.\n- Should Show Start and End point of trip in Navan.\n- Please include a reason for the trip in the description box.\n- Team Members cannot claim both mileage and Electric Vehicle charging fees.",
+      "### Car Rental\n\n- Rental Cars are reimbursable and should be booked through Navan, up to the intermediate car class, with a 7 day booking lead time.\n- Please note that anything booked outside of Navan will flag as \"Out of Policy\", and will need to be reviewed by your manager and the AP team.\n- Navan Confirmation should be attached to the claim along with the Car Rental Receipt.\n- Team Members can claim gas expenses but not mileage, when renting a car.\n- Fuel at $300 limit per day."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Rental cars must be booked through Navan, up to intermediate class, with 7 day lead time.",
+      "Anything booked outside Navan is 'Out of Policy' and needs manager/AP review.",
+      "Navan confirmation and car rental receipt must be attached to claim.",
+      "Team members can claim gas expenses but not mileage for rental cars.",
+      "Fuel for rental cars is limited to $300 per day.",
+      "Mileage for personal vehicles is based on distance driven and calculated by Navan.",
+      "Team members must enter start and end locations in Navan for mileage claims.",
+      "Mileage is reimbursed according to local law (e.g., US rate per mile, Netherlands rate per km, Belgium rate).",
+      "Start and end point of trip must be shown in Navan for mileage claims.",
+      "A reason for the trip must be included in the description box for mileage claims.",
+      "Team members cannot claim both mileage and electric vehicle charging fees."
+    ],
+    "missing_conditions": [
+      "Rental car booking requirements (through Navan, intermediate class, 7 day lead time) not mentioned in answer.",
+      "Requirement to attach Navan confirmation and car rental receipt for rental car claims not mentioned.",
+      "Requirement to show start and end points and include reason for trip in Navan for mileage claims not mentioned."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "Answer omits booking requirements and documentation for rental car claims.",
+      "Answer omits documentation and description requirements for mileage claims.",
+      "Otherwise, the answer correctly distinguishes between fuel and mileage claims for rental vs. personal vehicles."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 881,
+    "output_tokens": 327,
+    "cost_usd_estimate": 0.004378
+  }
+}

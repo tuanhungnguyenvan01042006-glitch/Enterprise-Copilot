@@ -1,0 +1,126 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "cabin upgrades",
+        "international business-class exception"
+      ],
+      "user_input": "What are the differences in permitted cabin upgrades for domestic and international flights, particularly regarding the conditions for the international business-class exception?",
+      "reference": "The permitted cabin upgrades for domestic flights allow team members to book the next class up from standard economy for flights over 5 hours of consecutive flight time. For international flights, the same rule applies for flights over 5 hours, but there is an additional exception that permits business class for frequent travelers on flights exceeding 8 hours when traveling for specific purposes.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights allow upgrades below business class."
+        },
+        {
+          "context_index": 1,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "International flights allow upgrades below business class."
+        },
+        {
+          "context_index": 1,
+          "quote": "business class is permitted when traveling for any of the following reasons: Meeting with customers, Speaking engagement, Representing GitLab at a conference",
+          "contribution": "International business-class exception conditions."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Domestic flights allow upgrades below business class for flights over 5 hours, while international flights have the same rule but also allow business class for frequent travelers on flights over 8 hours for specific purposes."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "cabin upgrades",
+        "international business-class exception"
+      ],
+      "user_input": "What are the differences in permitted cabin upgrades for domestic and international flights, particularly regarding the conditions for the international business-class exception?",
+      "reference": "Domestic flights allow upgrades to the next class up from standard economy for flights over 5 hours of consecutive flight time. International flights have similar rules for flights over 5 hours, but also allow business class for frequent travelers on flights exceeding 8 hours under specific conditions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights allow upgrades to the next class up from standard economy for flights over 5 hours."
+        },
+        {
+          "context_index": 1,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "International flights have similar rules for flights over 5 hours."
+        },
+        {
+          "context_index": 1,
+          "quote": "business class is permitted when traveling for any of the following reasons: Meeting with customers, Speaking engagement, Representing GitLab at a conference",
+          "contribution": "International business class is permitted for frequent travelers on flights exceeding 8 hours under specific conditions."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Domestic flights allow upgrades for flights over 5 hours, while international flights have the same rule but also permit business class for frequent travelers on longer flights under certain conditions."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "cabin upgrades",
+        "international business-class exception"
+      ],
+      "user_input": "What are the differences in permitted cabin upgrades for domestic and international flights, particularly regarding the conditions for the international business-class exception?",
+      "reference": "Domestic flights allow upgrades to the next class up from standard economy for flights over 5 hours of consecutive flight time. International flights have similar rules for flights over 5 hours, but also allow business class for frequent travelers on flights exceeding 8 hours under specific conditions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights allow upgrades to the next class up from standard economy."
+        },
+        {
+          "context_index": 1,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "International flights allow upgrades to the next class up from standard economy."
+        },
+        {
+          "context_index": 1,
+          "quote": "business class is permitted when traveling for any of the following reasons: Meeting with customers, Speaking engagement, Representing GitLab at a conference",
+          "contribution": "International business-class exception conditions."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Domestic flights allow upgrades for flights over 5 hours, while international flights have similar rules but also permit business class for frequent travelers on longer flights under specific conditions."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "cabin upgrades",
+        "international business-class exception"
+      ],
+      "user_input": "What are the differences in permitted cabin upgrades for domestic versus international flights, particularly regarding the conditions for the international business-class exception?",
+      "reference": "Domestic flights allow upgrades to the next class up from standard economy for flights over 5 hours of consecutive flight time. International flights have similar rules for flights over 5 hours, but also allow business class for frequent travelers on flights exceeding 8 hours if traveling for specific purposes.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "Domestic flights allow upgrades to the next class up from standard economy."
+        },
+        {
+          "context_index": 1,
+          "quote": "team members are authorized to book the next class up from standard economy as long as it is below business class.",
+          "contribution": "International flights allow upgrades to the next class up from standard economy."
+        },
+        {
+          "context_index": 1,
+          "quote": "business class is permitted when traveling for any of the following reasons: Meeting with customers, Speaking engagement, Representing GitLab at a conference",
+          "contribution": "International business-class exception conditions."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Domestic flights allow upgrades for flights over 5 hours, while international flights have similar rules but also permit business class for frequent travelers on longer flights under specific conditions."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

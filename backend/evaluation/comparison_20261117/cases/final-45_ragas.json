@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-45",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "f0c8d9d0-f2a4-527c-8349-7dc4180f405a",
+    "d91c921e-3032-58d4-8fb6-f2f9bc3f2b7b"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1929,
+    "output_tokens": 212,
+    "cost_usd_estimate": 0.0011108000000000001
+  },
+  "candidate": {
+    "user_input": "What are the required steps for a non-US team member to report a sick absence of three consecutive days compared to seven consecutive days?",
+    "reference": "For a sick absence of 1-5 consecutive days, a non-US team member must notify their manager without disclosing medical information, enter the time away in Workday by selecting \"Out Sick,\" and no sick note is required unless local law states otherwise. For absences of 6 or more consecutive days, they must notify the Absence Management Team by submitting a Compass ticket, enter the time away in Workday labeled \"Out Sick\" (which may be adjusted by Absence Management), and provide evidence supporting the need for sick leave as required by local law or their employment contract.",
+    "reference_contexts": [
+      "### For Sick Absences 1-5 Consecutive Days\n\n### For Sick Absences 1-5 Consecutive Days\n\n1. Notify your manager of your absence. Please note that you do not need to disclose any medical information (more information on [communicating illness-related absence](/handbook/people-group/time-off-and-absence/time-off-types/#communicating-illness-related-leave) below).\n1. Enter the time away in Workday by selecting the label \"Out Sick\"\n1. Your sick time will automatically update in Time Off by Deel\n1. If your absence is less than 6 consecutive days, then you do not need to provide a sick note (unless your statutory reporting requirements state otherwise)",
+      "### For Sick Absences that Exceed 6+ Consecutive Days\n\n### For Sick Absences that Exceed 6+ Consecutive Days\n\nSick absences that are 6 days or longer are considered a **leave of absence**.\n\n**USA:** Please submit your Leave request to Tilt (accessed through Okta). Once your request is submitted, it takes 2-5 business days to build your personalized leave plan. You will receive a notification when it is ready.\n\n**All other Locations:** Follow the instructions below.\n\n1. Notify the Absence Management Team by submitting a Compass ticket. This allows us to share more about the GitLab Sick Time Policy, review [statutory benefits](/handbook/total-rewards/benefits/general-and-entity-benefits/#entity-specific-benefits) you may be eligible for, and walk you through any other next steps.\n1. Enter the time away in Workday by selecting the label \"Out Sick\".\n   - *Note*: the Absence Management team may need to edit your entries or replace the entry with a Leave Type on your behalf.\n1. Eligibility for GitLab’s Sick Time policy will require team members to provide evidence, in accordance with local requirements, supporting the need for Sick Leave. Please be aware that the exact documentation required may vary by location (i.e. medical certificate, doctor’s note, fit note, etc.). Please review your employment contract or your country’s Sick Time policy to determine what documentation may be needed."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "For 1-5 consecutive sick days: notify manager (no medical info required), enter time away in Workday as 'Out Sick', no sick note required unless statutory/local law requires it.",
+      "For 6+ consecutive sick days (non-US): notify Absence Management Team via Compass ticket, enter time away in Workday as 'Out Sick' (Absence Management may edit/replace entry), provide evidence (documentation) as required by local law/employment contract."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1192,
+    "output_tokens": 142,
+    "cost_usd_estimate": 0.0035199999999999997
+  }
+}

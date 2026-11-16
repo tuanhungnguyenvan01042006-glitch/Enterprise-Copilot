@@ -1,0 +1,56 @@
+{
+  "plan_id": "final-23",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "350a96f6-e44f-526a-967e-bb8dd7c7ad33"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "G&D academic reimbursement recoupment",
+      "voluntary termination",
+      "twelve consecutive months",
+      "academic study or tuition expenses"
+    ],
+    "user_input": "What are the exact conditions under which a GitLab team member must refund academic study or tuition expenses?",
+    "reference": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab.",
+        "contribution": "Specifies the condition and scope of recoupment for academic reimbursements."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote directly states the conditions and scope for recoupment of academic reimbursements."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1086,
+    "output_tokens": 188,
+    "cost_usd_estimate": 0.0007352000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Team member voluntarily terminates employment",
+      "Termination occurs before completing twelve consecutive months of active employment",
+      "Applies to academic study or tuition expenses of $1,000 USD and over",
+      "Policy applies to academic study reimbursements only"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 683,
+    "output_tokens": 92,
+    "cost_usd_estimate": 0.002102
+  }
+}

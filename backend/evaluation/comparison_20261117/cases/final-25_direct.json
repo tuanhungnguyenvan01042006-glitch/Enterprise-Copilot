@@ -1,0 +1,52 @@
+{
+  "plan_id": "final-25",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "5231c81a-9875-50d5-a9a2-ce6f42145a40"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Notice expected for three days of planned PTO",
+      "discussing with manager first"
+    ],
+    "user_input": "What notice is expected for an employee planning three days of PTO, and what should they do before submitting the request?",
+    "reference": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).",
+        "contribution": "This quote specifies the notice period and the requirement to discuss PTO with the manager first."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote directly states the notice period and the need to discuss PTO with the manager before submitting the request."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1173,
+    "output_tokens": 204,
+    "cost_usd_estimate": 0.0007956
+  },
+  "judge": {
+    "source_conditions": [
+      "Discuss planned time off with your manager first.",
+      "Provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off)."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 779,
+    "output_tokens": 92,
+    "cost_usd_estimate": 0.002294
+  }
+}

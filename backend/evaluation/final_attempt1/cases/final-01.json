@@ -1,0 +1,102 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Manager approval exception for expense claims older than 90 days"
+      ],
+      "user_input": "What is the requirement for manager approval regarding expense claims that are older than 90 days?",
+      "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+          "contribution": "This states the requirement for manager approval for older expense claims."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly addresses the requirement for manager approval for expense claims older than 90 days."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Manager approval exception for expense claims older than 90 days"
+      ],
+      "user_input": "What is the requirement for manager approval regarding expense claims that are older than 90 days?",
+      "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+          "contribution": "This quote directly states the requirement for manager approval for expense claims older than 90 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides a clear rule regarding the necessity of manager approval for expense claims that exceed 90 days."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Manager approval exception for expense claims older than 90 days"
+      ],
+      "user_input": "What is the requirement for manager approval regarding expense claims that are older than 90 days?",
+      "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+          "contribution": "This quote directly states the requirement for manager approval for expense claims older than 90 days."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides a clear rule regarding the necessity of manager approval for expense claims that exceed 90 days."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Manager approval exception for expense claims older than 90 days"
+      ],
+      "user_input": "What is the requirement for manager approval regarding expense claims that are older than 90 days?",
+      "reference": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Expense claims over 90 days from purchase date will not be reimbursed unless approved by the Manager.",
+          "contribution": "This states the requirement for manager approval for older expense claims."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly addresses the requirement for manager approval for expense claims older than 90 days."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

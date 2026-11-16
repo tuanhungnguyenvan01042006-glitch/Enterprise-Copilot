@@ -1,0 +1,177 @@
+{
+  "method": "Assistant review against the exact source chunks. The same rubric is applied to raw cases from both pilots. This is not domain-expert approval or a measured retrieval score.",
+  "rubric": {
+    "accept": "Question is clear and answerable; reference answers it faithfully, including material conditions. No duplicate intent within the set.",
+    "revise": "A useful case exists, but question scope or reference facts/conditions need a specific correction.",
+    "reject": "Question is vague, answer fundamentally mismatches the question, or case duplicates an existing information need. Grammar alone is not a rejection reason."
+  },
+  "pilot": [
+    {
+      "status": "reject",
+      "reason": "Câu hỏi về vai trò GitLab mơ hồ; đáp án gọi GitLab là nền tảng dù nguồn không nói vậy."
+    },
+    {
+      "status": "accept",
+      "reason": "Câu hỏi về cách tổ chức AMA có thể trả lời được. Đáp án dùng 'beneficial' khi giải thích mục đích và giữ các điều kiện về nhiều người trả lời, nền tảng hỏi đáp. Nhãn 'revise' trong đánh giá cũ là quá nghiêm; được sửa khi chấm lại cùng rubric."
+    },
+    {
+      "status": "revise",
+      "reason": "Câu hỏi dùng Google Workspace quá rộng so với Google Workspace Integrations; đáp án cũng cần tách quy định được phép khỏi điều kiện gỡ khi không an toàn."
+    },
+    {
+      "status": "accept",
+      "reason": "Đáp án về phần mềm được phê duyệt có căn cứ trong nguồn; câu hỏi có ý nghĩa, dù mức khó thấp."
+    },
+    {
+      "status": "reject",
+      "reason": "Câu hỏi về chi phí ngoài chính sách quá chung; đáp án chỉ chọn việc trả tiền lại cho GitLab, không khớp nhu cầu thông tin rõ ràng."
+    },
+    {
+      "status": "revise",
+      "reason": "Nguồn chỉ nói AP liên hệ nếu cần làm rõ thêm; đáp án chuyển thành sẽ liên hệ vô điều kiện."
+    }
+  ],
+  "pilot_v2": [
+    {
+      "status": "revise",
+      "reason": "Đáp án gộp việc giải thích mục đích và thêm ngữ cảnh vào agenda thành lời khuyên chung, làm mất điều kiện trong nguồn."
+    },
+    {
+      "status": "reject",
+      "reason": "Gần như cùng một ý định và đáp án với câu 01, chỉ đổi successful session thành successful engagement.",
+      "duplicate_of": "v2-01"
+    },
+    {
+      "status": "accept",
+      "reason": "Câu hỏi cụ thể về việc mở đầu AMA; đáp án khớp nội dung giới thiệu bản thân và vai trò."
+    },
+    {
+      "status": "accept",
+      "reason": "Nguồn chỉ dẫn đến quy trình xin duyệt; đáp án giữ đúng giới hạn đó và không bịa các bước sau liên kết."
+    },
+    {
+      "status": "reject",
+      "reason": "Đổi tên phần mềm thành plugin nhưng vẫn hỏi cùng quy trình phê duyệt như câu 04.",
+      "duplicate_of": "v2-04"
+    },
+    {
+      "status": "reject",
+      "reason": "Trùng câu hỏi và đáp án với câu 04.",
+      "duplicate_of": "v2-04"
+    },
+    {
+      "status": "revise",
+      "reason": "Đáp án bỏ điều kiện 'if more clarification is needed' khi nói AP sẽ liên hệ."
+    },
+    {
+      "status": "reject",
+      "reason": "Câu hỏi trùng nguyên văn câu 07; dùng để chẩn đoán sự không ổn định đáp án, không giữ như câu benchmark độc lập.",
+      "duplicate_of": "v2-07"
+    },
+    {
+      "status": "reject",
+      "reason": "Trùng câu hỏi với 07 và 08, đáp án gần giống 08.",
+      "duplicate_of": "v2-07"
+    },
+    {
+      "status": "accept",
+      "reason": "Đáp án về sử dụng công cụ sớm để tạo tự tin được nguồn hỗ trợ."
+    },
+    {
+      "status": "accept",
+      "reason": "Câu hỏi rõ về mục đích onboarding issue template; đáp án được nguồn hỗ trợ."
+    },
+    {
+      "status": "reject",
+      "reason": "Trùng câu hỏi và đáp án với 11.",
+      "duplicate_of": "v2-11"
+    },
+    {
+      "status": "accept",
+      "reason": "Các bước yêu cầu nghỉ khẩn cấp trong Workday khớp nguồn và giữ comment là tùy chọn."
+    },
+    {
+      "status": "revise",
+      "reason": "Câu hỏi chọn làm việc với Absence Management nhưng đáp án vẫn diễn đạt thông báo quản lý như yêu cầu chung, cần làm rõ lựa chọn thay thế."
+    },
+    {
+      "status": "accept",
+      "reason": "Đáp án ngắn về thông báo và ghi ngày nghỉ có căn cứ; không đặt thêm thời hạn tuyệt đối."
+    }
+  ],
+  "pilot_v2_refined": [
+    {
+      "status": "accept",
+      "reason": "Giữ đúng phân biệt bất kỳ ai có thể tổ chức AMA với các nhóm thường tổ chức."
+    },
+    {
+      "status": "revise",
+      "reason": "Câu hỏi rõ nhưng đáp án bỏ điều kiện khi thêm lời giải thích mục đích và ngữ cảnh bổ sung vào agenda.",
+      "corrected_reference": "The agenda should list the people answering questions and explain how and where the audience can ask questions. If explaining why the AMA is being hosted would help the audience, add that context as the first agenda item and explain it after introductions. If there is additional context or supporting documentation the audience needs, highlight it up front in the agenda."
+    },
+    {
+      "status": "accept",
+      "reason": "Nêu đúng Zoom chat là phương án khi agenda document quá tải và người có quyền truy cập sẽ sao chép câu hỏi."
+    },
+    {
+      "status": "accept",
+      "reason": "Hỏi đúng phạm vi Individual Use Software, giữ ngoại lệ về tích hợp/extension chưa được cho phép như nguồn."
+    },
+    {
+      "status": "revise",
+      "reason": "Nguồn yêu cầu trả computing resources khi nghỉ việc; đáp án gắn điều kiện 'if specifically requested' vào cả yêu cầu này.",
+      "corrected_reference": "All GitLab-owned computing resources must be returned upon separation from the company. Team members must also return any GitLab-owned assets, regardless of valuation, whenever specifically requested during their tenure or upon offboarding."
+    },
+    {
+      "status": "accept",
+      "reason": "Giữ đúng điều kiện thiết bị có credentials/dữ liệu nhạy cảm và hành động gửi email ngay."
+    },
+    {
+      "status": "revise",
+      "reason": "Câu hỏi suy diễn AP là bên gắn cờ và đáp án vẫn nói AP sẽ liên hệ vô điều kiện.",
+      "corrected_question": "When will the AP team contact a team member about an expense flagged as 'Out of Policy' in Navan?",
+      "corrected_reference": "If, upon review, more clarification is needed, the AP team will contact the team member via Navan to ask for justification before approving or rejecting the expense."
+    },
+    {
+      "status": "revise",
+      "reason": "Nguồn nói thời điểm đặt vé nội địa lý tưởng; câu hỏi gọi đó là requirement nên mạnh hơn nguồn.",
+      "corrected_question": "How far in advance should team members ideally book domestic flights?",
+      "corrected_reference": "Team members should ideally book domestic flights at least 14 days in advance to take advantage of discounted fares."
+    },
+    {
+      "status": "accept",
+      "reason": "Giữ đúng giới hạn 120 USD hoặc tương đương mỗi ngày khi đi công tác."
+    },
+    {
+      "status": "accept",
+      "reason": "Mục đích issue template và nhiệm vụ mỗi ngày có trong nguồn."
+    },
+    {
+      "status": "accept",
+      "reason": "Câu hỏi tập trung vào lý do có onboarding buddy và đáp án khớp nguồn."
+    },
+    {
+      "status": "accept",
+      "reason": "Các cuộc gọi video/screen share là lựa chọn phù hợp với high-touch/visual learning; không biến thành yêu cầu cho mọi người."
+    },
+    {
+      "status": "accept",
+      "reason": "Giữ hướng dẫn thông báo sớm và lựa chọn làm trực tiếp với Absence Management; không tự đặt thời hạn nhập Workday."
+    },
+    {
+      "status": "accept",
+      "reason": "Giữ đúng khoảng hai đến bốn tuần là guideline và có thể điều chỉnh theo cá nhân."
+    },
+    {
+      "status": "revise",
+      "reason": "Câu hỏi hỏi về điều kiện nhưng đáp án chỉ nhắc lại quyền lợi, chưa xác định bối cảnh military leave hơn 31 ngày.",
+      "corrected_question": "Is there a waiting period for reinstating benefits when returning to work after military leave lasting more than 31 days?",
+      "corrected_reference": "No. Team members are eligible for immediate reinstatement of benefits upon returning to work, with no waiting period."
+    }
+  ],
+  "source_raw_sha256": {
+    "pilot": "17cb86bdca6604ef645a1eeaa0820225e797c7b0490ccf1b911f00c3858afd22",
+    "pilot_v2": "11d028efcc75f0de7281c185826b84390e10309f9bb33b77f3a3ad5936a6d633",
+    "pilot_v2_refined": "bf37dd0e15ee15d920694d2016a79244accf5f07eb56974788d881fa60d540ff"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "plan_id": "final-41",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "81cde5d2-312c-5c76-b550-6077be4c8fce",
+    "b9489555-a69f-5abd-b9ae-f22a333a6171"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "fuel claim for rental cars",
+      "mileage claim for rental cars",
+      "mileage claim for personal vehicles"
+    ],
+    "user_input": "Compare whether fuel or mileage can be claimed for rental cars versus personal vehicles used for business travel.",
+    "reference": "Rental cars allow claiming gas expenses but not mileage, with a $300 daily fuel limit; personal vehicles allow mileage reimbursement based on distance driven but not fuel costs.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Team Members can claim gas expenses but not mileage, when renting a car.\n- Fuel at $300 limit per day.",
+        "contribution": "Rental cars allow claiming fuel but not mileage, with a daily fuel limit."
+      },
+      {
+        "context_index": 1,
+        "quote": "Mileage\n\n- Based on Mileage driven and calculated by Navan.\n- Mileage is reimbursed according to local law, e.g. US rate per mile.\n- Team Members cannot claim both mileage and Electric Vehicle charging fees.",
+        "contribution": "Personal vehicles allow mileage reimbursement based on distance driven but not fuel costs."
+      }
+    ],
+    "reasoning_type": "comparison",
+    "connection": "Context 0 explains fuel and mileage claims for rental cars; Context 1 explains mileage claims for personal vehicles, allowing a direct comparison."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1263,
+    "output_tokens": 246,
+    "cost_usd_estimate": 0.0008988000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Rental cars: reimbursable if booked through Navan, up to intermediate class, 7 day lead time.",
+      "Rental cars: gas expenses can be claimed, not mileage.",
+      "Rental cars: fuel at $300 limit per day.",
+      "Personal vehicles: mileage reimbursed based on distance driven and calculated by Navan.",
+      "Personal vehicles: must enter start and end locations in Navan.",
+      "Personal vehicles: mileage reimbursed according to local law (rate per mile/km).",
+      "Personal vehicles: cannot claim both mileage and EV charging fees."
+    ],
+    "missing_conditions": [
+      "Rental cars: must be booked through Navan to be in policy (not mentioned in answer).",
+      "Rental cars: intermediate class and 7 day lead time requirements (not mentioned in answer).",
+      "Personal vehicles: must enter start and end locations in Navan (not mentioned in answer).",
+      "Personal vehicles: must include reason for trip in description box (not mentioned in answer).",
+      "Personal vehicles: cannot claim both mileage and EV charging fees (not mentioned in answer)."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "Answer omits that rental cars must be booked through Navan, up to intermediate class, with 7 day lead time.",
+      "Answer omits that personal vehicle mileage claims require entering start/end locations and reason for trip in Navan.",
+      "Answer omits that personal vehicle claims cannot include both mileage and EV charging fees."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 843,
+    "output_tokens": 309,
+    "cost_usd_estimate": 0.004158
+  }
+}

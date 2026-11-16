@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Notice expected for three days of planned PTO",
+        "discussing with manager first"
+      ],
+      "user_input": "What notice is expected for an employee planning three days of PTO, and what is the initial step they should take?",
+      "reference": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).",
+          "contribution": "This quote specifies the notice period and the requirement to discuss PTO with the manager first."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the notice period required for three days of PTO and the need to discuss with the manager first."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Notice expected for three days of planned PTO",
+        "discussing with manager first"
+      ],
+      "user_input": "What notice is expected for an employee planning three days of PTO, and what is the initial step they should take?",
+      "reference": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).",
+          "contribution": "This quote specifies the notice period and the requirement to discuss PTO with the manager first."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the notice period required for three days of PTO and the need to discuss with the manager first.",
+      "id": "final-25",
+      "question_type": "single_hop",
+      "planned_focus": "Notice expected for three days of planned PTO, and discussing with manager first.",
+      "reference_contexts": [
+        "### PTO Protocols (Planning and Coordination)\n\n- Discuss planned time off with your manager first and provide as much notice as possible, but at least twice as many days as your planned time off (e.g., 6 business days notice for 3 days off).\n- Coordinate with your team and stakeholders, especially during popular holiday periods.\n- Managers will evaluate PTO requests against team deliverables and business needs.\n  - If a manager needs to request changes to your PTO plans, they will do so within 48 hours and specify which goal or result may be impacted.\n  - If no compromise can be reached, escalate to your manager's manager.\n- Some departments have specific windows when team presence is critical - check your department handbook page if applicable."
+      ],
+      "reference_context_ids": [
+        "5231c81a-9875-50d5-a9a2-ce6f42145a40"
+      ],
+      "reference_document_ids": [
+        "b4c8792f-7697-5710-933e-606cd02f151d"
+      ],
+      "sources": [
+        {
+          "document_id": "b4c8792f-7697-5710-933e-606cd02f151d",
+          "chunk_id": "5231c81a-9875-50d5-a9a2-ce6f42145a40",
+          "chunk_index": 3,
+          "block_type": "text",
+          "token_count": 154,
+          "section_path": "Flexible Paid Time Off (PTO) > PTO Protocols (Planning and Coordination)",
+          "source_start": 2086,
+          "source_end": 2841,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Time Off Types",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

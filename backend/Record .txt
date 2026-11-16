@@ -1,38 +1,41 @@
-#### THẮC MẮC #### 
-
-#### Record thời gian làm ####
-1. Cbi dataset 
-- git clone tài liệu về  : Chọn theo thư mục liên quan Company Knowledge --> 235 file markdown
-- Nhưng ko phải file nào cũng liên quan --> cần lọc ra nhx file thật sự liên quan đến CK 
---> tránh phải embed, lưu trữ, tìm kiếm trong ko gian có quá nhiều tài liệu rác 
-
-* NOTE : hiện tại, chỉ lấy khoảng 77 document cho Company Knowledge, đây là số lượng nhỏ 
-+ Nếu số lượng Doc nhỏ : Thì bài toán sẽ trở nên quá dễ ( do quá ít tài liệu cùng 1 chủ đề, nên việc tìm kiếm Document phù hợp là rất dễ)
-               Ngoài ra, nếu số lượng Docs quá nhỏ, thì cũng sẽ ko phát huy được kiến trúc RAG phức tạp 
-
-* Vấn đề : tài liệu gốc ko có trường category (cần phải thêm vào để sau filter theo metadata)
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Chưa hiểu ###
 + Chưa hiểu vai trò của Migration (Alembic), Migration Database
++ Chưa thật sự hiểu image chạy thế nào : chưa hiểu file compose.yaml và docker.file, đặc biệt là Image Seed, Migrate, nó sẽ được chạy thế nào, kích hoạt file .py thế nào (thông qua command trong image ?), tìm hiểu về Image worker
+* Có cần nâng cấp chunking ko : 
++ hiện tại đang sử dụng RecursiveCharacterTextSplitter, bởi vẫn có xác suất pp này sẽ split 1 theo space, hoặc theo kí tự --> gây mất ngữ nghĩa chunk
++ 1 điểm quan trọng nữa là dùng pp này ,ta sẽ phải mất thgian xử lý đặc biệt với table, mermaid
++ trong khi đó nếu ta dùng sematic chunking, thì Embeding model sẽ tự nhận diện table, mermaid, và ko split giữa chừng 
+
 
 ### BUG ### : 
 
++ Tính năng upload Department Document hiện tại (với manager) đang bị lỗi, đáng lẽ 
+ra phải là Scope mặc định là Department (id = manager.department_id), nhưng ở đây, bởi 
+cách design UI, cũng như cách kiểm tra quyền của hàm Upload Document, Manager vẫn có thể 
+upload tài liệu Company mà ko raise lỗi, nhưng cuối cùng tài liệu được upload vẫn là Scope Department 
++ Nch là chức năng upload Department Knowledge còn cực kì nhiều bug.
 + Admin đang ko được sử dụng chức năng liên quan đến upload document lên, hoặc đọc documents
 + Chưa có chức năng xóa tài liệu 
 + Nghiêm trọng : KO có chức danh nào hiện có thể tài liệu liên quan đến Company (nên để cho admin )
 + chức năng tạo Staff của Admin, ko có phần set Department Id và rất nhiều trường khác của Staff; trong hệ thống hiện tại cũng chưa rõ ràng về Department 
 
-### Ý tưởng thêm :
-+ Có thể thêm trường subject cho từng document : dựa trên thư mục lưu nó , để sau có thể filter theo metadata 
+
+#### Cần làm thêm  : 
++  Hiện tại hệ thống chưa có cơ chế theo dõi trạng thái vIngestion của tài liệu  : Processed / Fail / Success 
++ Cũng chưa hề có chế in ra lỗi cụ thể trong quá trình Ingestion (có thể lỗi do cấu trúc Md sai : ko thể chunk...) 
++ Nêu quá trình Ingestion 1 file bị lỗi, thì hiện tại chỉ đơn giản là dừng lại , ko có thông báo hoặc audit record 
++ Cũng chưa có cơ chế Rollback ( ko bt nên thêm ko, nó liên quan đến db )
+### Nhận xét lúc học #### : 
++ Nếu trong cùng 1 phase (hoặc khác phase) : Code có thể xảy ra sự không nhất quán giữa
+FE và BE : Về quyền truy cập 1 chức năng API nào đấy
++ Nếu code đã được hoàn thành từ session rất lâu nào trc đó, mà ta đòi sửa lại (có thể do bug do chính AI tạo ra)
+thì có thể AI sẽ sửa lại code 1 cách rất máy móc, phức tạp theo yêu cầu của mình (tại lúc yêu cầu nó sửa), chứ ko phải là dựa trên suy luận ở src code hiện tại 
+
++ Thường thì Agent rất overengineering theo hướng thích code thủ công mọi thứ, dùng công nghệ cũ ,
+chứ ko dùng đúng công nghệ như ta muốn như langchain.
+        + Giải pháp: cần tìm hiểu kĩ trước đó, chia ra từng module, từng module cần dùng công nghệ j, sau đó mới bảo Agent làm theo 
+
++ ROLLBACK : Vx rất khó hiểu trường hợp : Chunk lỗi ,... sẽ in ra lỗi ko ( cho admin ?), lưu các chunk lỗi ở đâu , rollback thế nào ?
+
+*

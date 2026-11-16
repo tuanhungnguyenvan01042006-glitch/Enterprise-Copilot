@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-24",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "unused annual G&D budget",
+      "budget rollover"
+    ],
+    "user_input": "Does the unused annual G&D budget roll over to the next year?",
+    "reference": "No. Unspent G&D budgets do not roll over from one year to the next.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+        "contribution": "Directly states the policy on budget rollover."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states that unspent G&D budgets do not roll over to the next year, directly answering the question."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1036,
+    "output_tokens": 131,
+    "cost_usd_estimate": 0.0006240000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Unspent G&D budgets do not roll over from one year to the next."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 608,
+    "output_tokens": 64,
+    "cost_usd_estimate": 0.001728
+  }
+}

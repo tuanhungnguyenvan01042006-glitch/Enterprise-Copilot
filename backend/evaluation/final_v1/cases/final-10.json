@@ -1,0 +1,90 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Passcodes",
+        "patching for personal phones"
+      ],
+      "user_input": "What are the requirements for passcodes and patching for personal phones accessing GitLab-managed data?",
+      "reference": "All personal mobile computing devices used to access GitLab-managed data must be passcode-enabled, and these devices should be running the latest version of the operating system available, with all new patches applied.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "All personal mobile computing devices used to access GitLab-managed data, including but not limited to email and GitLab.com, must be passcode-enabled.",
+          "contribution": "Requirement for passcodes."
+        },
+        {
+          "context_index": 0,
+          "quote": "Mobile computing best practices dictate that these devices should be running the latest version of the operating system available, and all new patches applied.",
+          "contribution": "Requirement for patching."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies requirements for passcodes and patching for personal mobile devices."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Passcodes",
+        "patching for personal phones"
+      ],
+      "user_input": "What are the requirements for passcodes and patching for personal phones accessing GitLab-managed data?",
+      "reference": "All personal mobile computing devices used to access GitLab-managed data must be passcode-enabled, and these devices should be running the latest version of the operating system available, with all new patches applied.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "All personal mobile computing devices used to access GitLab-managed data, including but not limited to email and GitLab.com, must be passcode-enabled.",
+          "contribution": "Requirement for passcodes."
+        },
+        {
+          "context_index": 0,
+          "quote": "Mobile computing best practices dictate that these devices should be running the latest version of the operating system available, and all new patches applied.",
+          "contribution": "Requirement for patching."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context specifies requirements for passcodes and patching for personal mobile devices.",
+      "id": "final-10",
+      "question_type": "single_hop",
+      "planned_focus": "Passcodes and recommended patching for personal phones accessing GitLab-managed data.",
+      "reference_contexts": [
+        "#### Personal Mobile Phone and Tablet Usage\n\nAll personal mobile computing devices used to access GitLab-managed data, including but not limited to email and GitLab.com, must be passcode-enabled. 2FA will be enforced by the Security team for all employee and contractor GitLab.com and Google Workspace accounts. Mobile computing best practices dictate that these devices should be running the latest version of the operating system available, and all new patches applied. For assistance with determining the suitability of your mobile device, please contact the Security Team."
+      ],
+      "reference_context_ids": [
+        "db424adb-4371-50c2-beab-bede35cf863f"
+      ],
+      "reference_document_ids": [
+        "e5917802-99a3-5bc2-b599-1c51702ef7d8"
+      ],
+      "sources": [
+        {
+          "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+          "chunk_id": "db424adb-4371-50c2-beab-bede35cf863f",
+          "chunk_index": 15,
+          "block_type": "text",
+          "token_count": 105,
+          "section_path": "Procedure > Bring-Your-Own-Device (BYOD) > Personal Mobile Phone and Tablet Usage",
+          "source_start": 14341,
+          "source_end": 14917,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Internal Acceptable Use Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

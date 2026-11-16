@@ -1,0 +1,152 @@
+[
+  {
+    "user_input": "What is the role of GitLab in the context of an AMA?",
+    "reference_contexts": [
+      "### AMA Kick off (best practices when starting an AMA)\n\nThis guidance is primarily for the person or people who will be answering questions at a given AMA.\n\nAdding context to the AMA agenda and using the first 1-2 minutes of an AMA to ensure the audience understands how the time will be used has shown to lead to more engaging AMAs.\n\nEnsure the following items are added to the AMA agenda and follow these steps to set your AMA up for success:\n\n- The person or people responsible for answering questions should be listed in the AMA agenda and start the AMA by introducing themselves and their roles at GitLab.\n- If a brief explanation about *why* this AMA is being hosted may help the audience understand the purpose for the session, add a first agenda item that adds context and verbalize that point after introducing yourself.\n  - If multiple people will be responding to questions, identify one person to speak about *why* this AMA is being hosted by adding their name to the agenda item.\n- Information about how and where questions can be asked by the audience should be captured in the AMA agenda.\n  - For most AMAs, questions will be asked in an agenda doc, if this is the case please share that questions can also be asked in the Zoom chat if the agenda doc cannot be accessed.\n  - If sli.do or another platform is being used to ask questions, this should be noted.\n- If there is additional context the audience should be aware of to fully participate in the AMA or any documents that provide additional information that the audience should know about, it's a good practice to highlight these things up front by adding them as agenda items.\n- After that, onto the first question!"
+    ],
+    "reference": "In the context of an AMA, GitLab is referenced as the platform where the person or people responsible for answering questions should introduce themselves and their roles. It is also important to provide information about how and where questions can be asked by the audience, which may include using an agenda document or the Zoom chat.",
+    "persona_name": "Expense Management Coordinator",
+    "query_style": "MISSPELLED",
+    "query_length": "MEDIUM",
+    "synthesizer_name": "single_hop_specific_query_synthesizer",
+    "id": "pilot-01",
+    "reference_document_ids": [
+      "580d0cb3-fad5-5f9e-bdc1-32e2ffedd4ec"
+    ],
+    "reference_context_ids": [
+      "7f394015-87a3-5419-9e2c-5053e5d144a6"
+    ],
+    "source_title": "Ask Me Anything",
+    "section_path": "Purpose > AMA Kick off (best practices when starting an AMA)",
+    "review_status": "reject",
+    "review_reason": "Câu hỏi về vai trò GitLab mơ hồ; đáp án gọi GitLab là nền tảng dù nguồn không nói vậy.",
+    "duplicate_of": null,
+    "human_approved": false,
+    "reviewer": "Codex assistant, source-grounded review"
+  },
+  {
+    "user_input": "What are the best practices for organizing an AMA at GitLab to enhance audience engagement?",
+    "reference_contexts": [
+      "### AMA Kick off (best practices when starting an AMA)\n\nThis guidance is primarily for the person or people who will be answering questions at a given AMA.\n\nAdding context to the AMA agenda and using the first 1-2 minutes of an AMA to ensure the audience understands how the time will be used has shown to lead to more engaging AMAs.\n\nEnsure the following items are added to the AMA agenda and follow these steps to set your AMA up for success:\n\n- The person or people responsible for answering questions should be listed in the AMA agenda and start the AMA by introducing themselves and their roles at GitLab.\n- If a brief explanation about *why* this AMA is being hosted may help the audience understand the purpose for the session, add a first agenda item that adds context and verbalize that point after introducing yourself.\n  - If multiple people will be responding to questions, identify one person to speak about *why* this AMA is being hosted by adding their name to the agenda item.\n- Information about how and where questions can be asked by the audience should be captured in the AMA agenda.\n  - For most AMAs, questions will be asked in an agenda doc, if this is the case please share that questions can also be asked in the Zoom chat if the agenda doc cannot be accessed.\n  - If sli.do or another platform is being used to ask questions, this should be noted.\n- If there is additional context the audience should be aware of to fully participate in the AMA or any documents that provide additional information that the audience should know about, it's a good practice to highlight these things up front by adding them as agenda items.\n- After that, onto the first question!"
+    ],
+    "reference": "To enhance audience engagement during an AMA at GitLab, it is essential to follow several best practices. First, ensure that the person or people responsible for answering questions are listed in the AMA agenda and begin the session by introducing themselves and their roles at GitLab. It is beneficial to include a brief explanation of why the AMA is being hosted as the first agenda item, which helps the audience understand the purpose of the session. If multiple individuals will be responding, designate one person to articulate this point. Additionally, provide clear information on how and where the audience can ask questions, noting that questions may be submitted in an agenda document or via the Zoom chat if the document is inaccessible. If using a platform like sli.do for questions, this should also be mentioned. Lastly, highlight any additional context or documents that the audience should be aware of to fully participate in the AMA, ensuring these are included as agenda items before moving on to the first question.",
+    "persona_name": "Community Engagement Coordinator",
+    "query_style": "PERFECT_GRAMMAR",
+    "query_length": "LONG",
+    "synthesizer_name": "single_hop_specific_query_synthesizer",
+    "id": "pilot-02",
+    "reference_document_ids": [
+      "580d0cb3-fad5-5f9e-bdc1-32e2ffedd4ec"
+    ],
+    "reference_context_ids": [
+      "7f394015-87a3-5419-9e2c-5053e5d144a6"
+    ],
+    "source_title": "Ask Me Anything",
+    "section_path": "Purpose > AMA Kick off (best practices when starting an AMA)",
+    "review_status": "accept",
+    "review_reason": "Câu hỏi về cách tổ chức AMA có thể trả lời được. Đáp án dùng 'beneficial' khi giải thích mục đích và giữ các điều kiện về nhiều người trả lời, nền tảng hỏi đáp. Nhãn 'revise' trong đánh giá cũ là quá nghiêm; được sửa khi chấm lại cùng rubric.",
+    "duplicate_of": null,
+    "human_approved": false,
+    "reviewer": "Codex assistant, source-grounded review"
+  },
+  {
+    "user_input": "What kinda rules is there for using Google Workspace and what happen if I use it without permission?",
+    "reference_contexts": [
+      "### Freeware, Browser Extensions, Add-ons, and Plugins\n\nIndividual Use Software (freeware, add-ons and plugins) is permitted, with the exception of unauthorized Google Workspace Integrations and Chrome Extensions. Individual Use Software is subject to retroactive removal at any time by IT, Legal and Security when it is deemed unsafe or insecure.\n\nAuthorized Google Workspace Integrations and other approved Individual Use Software can be found on the [Pre-Approved Individual-Use Software](https://internal.gitlab.com/handbook/finance/procurement/pre-approved-individual-use-software/) list and are permitted for use subject to any \"Notes and Restrictions\" for each respective Pre-Approved software offering.\n\nTo request approval for new Individual Use Software, please follow the [Individual Use Software](/handbook/finance/procurement/individual-use-software/) request process."
+    ],
+    "reference": "Individual Use Software like Google Workspace Integrations is not allowed unless it's authorized. If you use unauthorized Google Workspace Integrations or Chrome Extensions, IT, Legal, and Security can remove it anytime if they think it's unsafe or insecure.",
+    "persona_name": "IT Compliance Officer",
+    "query_style": "POOR_GRAMMAR",
+    "query_length": "LONG",
+    "synthesizer_name": "single_hop_specific_query_synthesizer",
+    "id": "pilot-03",
+    "reference_document_ids": [
+      "e5917802-99a3-5bc2-b599-1c51702ef7d8"
+    ],
+    "reference_context_ids": [
+      "8db8450f-8b9f-5ae0-91db-cdede0202f12"
+    ],
+    "source_title": "GitLab Internal Acceptable Use Policy",
+    "section_path": "Procedure > Freeware, Browser Extensions, Add-ons, and Plugins",
+    "review_status": "revise",
+    "review_reason": "Câu hỏi dùng Google Workspace quá rộng so với Google Workspace Integrations; đáp án cũng cần tách quy định được phép khỏi điều kiện gỡ khi không an toàn.",
+    "duplicate_of": null,
+    "human_approved": false,
+    "reviewer": "Codex assistant, source-grounded review"
+  },
+  {
+    "user_input": "What guidelines should be followed regarding Pre-Approved Individual-Use Software?",
+    "reference_contexts": [
+      "### Freeware, Browser Extensions, Add-ons, and Plugins\n\nIndividual Use Software (freeware, add-ons and plugins) is permitted, with the exception of unauthorized Google Workspace Integrations and Chrome Extensions. Individual Use Software is subject to retroactive removal at any time by IT, Legal and Security when it is deemed unsafe or insecure.\n\nAuthorized Google Workspace Integrations and other approved Individual Use Software can be found on the [Pre-Approved Individual-Use Software](https://internal.gitlab.com/handbook/finance/procurement/pre-approved-individual-use-software/) list and are permitted for use subject to any \"Notes and Restrictions\" for each respective Pre-Approved software offering.\n\nTo request approval for new Individual Use Software, please follow the [Individual Use Software](/handbook/finance/procurement/individual-use-software/) request process."
+    ],
+    "reference": "Pre-Approved Individual-Use Software is permitted, with the exception of unauthorized Google Workspace Integrations and Chrome Extensions. Authorized software can be found on the Pre-Approved Individual-Use Software list and is subject to any 'Notes and Restrictions' for each respective offering. Additionally, Individual Use Software is subject to retroactive removal by IT, Legal, and Security if deemed unsafe or insecure.",
+    "persona_name": "Expense Management Coordinator",
+    "query_style": "WEB_SEARCH_LIKE",
+    "query_length": "MEDIUM",
+    "synthesizer_name": "single_hop_specific_query_synthesizer",
+    "id": "pilot-04",
+    "reference_document_ids": [
+      "e5917802-99a3-5bc2-b599-1c51702ef7d8"
+    ],
+    "reference_context_ids": [
+      "8db8450f-8b9f-5ae0-91db-cdede0202f12"
+    ],
+    "source_title": "GitLab Internal Acceptable Use Policy",
+    "section_path": "Procedure > Freeware, Browser Extensions, Add-ons, and Plugins",
+    "review_status": "accept",
+    "review_reason": "Đáp án về phần mềm được phê duyệt có căn cứ trong nguồn; câu hỏi có ý nghĩa, dù mức khó thấp.",
+    "duplicate_of": null,
+    "human_approved": false,
+    "reviewer": "Codex assistant, source-grounded review"
+  },
+  {
+    "user_input": "What GitLab gotta do with out of policy expenses?",
+    "reference_contexts": [
+      "### 3.1 Out of Policy Transactions\n\n- Expenses flagged as \"Out of Policy\" in Navan may mean that the expense requires additional review due to requiring certain attachments (e.g., an approved issue) and approvals. Upon review, if more clarification is needed for a certain expense, the AP team will contact the team member via Navan to ask for justification of the transaction before approving or rejecting the expense.\n- Any exception to the policy is granted or denied at the discretion of the AP Admins. If the Admins determine that additional input is required, they will escalate the request to the team member's manager to make a final decision. Exception approvals can be granted within the Navan tool or via a Compass ticket.\n- There will be occasions where if you have claimed an item and it needs to be reimbursed back to GitLab, you will need to follow the repayment process in Navan for submission of the funds.\n- If you have any questions regarding a rejected expense due to being out of policy, submit a request under the `Expenses -> General Expenses` tile  [Compass](/handbook/eta/corporate-it/compass/compass-guide/), ensuring that you tag your Manager , and adding any other additional documentation so this can be reviewed."
+    ],
+    "reference": "If you have claimed an item and it needs to be reimbursed back to GitLab, you will need to follow the repayment process in Navan for submission of the funds.",
+    "persona_name": "IT Compliance Officer",
+    "query_style": "POOR_GRAMMAR",
+    "query_length": "SHORT",
+    "synthesizer_name": "single_hop_specific_query_synthesizer",
+    "id": "pilot-05",
+    "reference_document_ids": [
+      "4fcfed36-64f6-5383-86f7-00a8601778f7"
+    ],
+    "reference_context_ids": [
+      "ffd2f262-45f8-592c-8bc4-a5fbb01c38d8"
+    ],
+    "source_title": "Global Travel and Expense Policy",
+    "section_path": "3. General Guidelines > 3.1 Out of Policy Transactions",
+    "review_status": "reject",
+    "review_reason": "Câu hỏi về chi phí ngoài chính sách quá chung; đáp án chỉ chọn việc trả tiền lại cho GitLab, không khớp nhu cầu thông tin rõ ràng.",
+    "duplicate_of": null,
+    "human_approved": false,
+    "reviewer": "Codex assistant, source-grounded review"
+  },
+  {
+    "user_input": "What procedures should be followed in Navan for expenses flagged as 'Out of Policy'?",
+    "reference_contexts": [
+      "### 3.1 Out of Policy Transactions\n\n- Expenses flagged as \"Out of Policy\" in Navan may mean that the expense requires additional review due to requiring certain attachments (e.g., an approved issue) and approvals. Upon review, if more clarification is needed for a certain expense, the AP team will contact the team member via Navan to ask for justification of the transaction before approving or rejecting the expense.\n- Any exception to the policy is granted or denied at the discretion of the AP Admins. If the Admins determine that additional input is required, they will escalate the request to the team member's manager to make a final decision. Exception approvals can be granted within the Navan tool or via a Compass ticket.\n- There will be occasions where if you have claimed an item and it needs to be reimbursed back to GitLab, you will need to follow the repayment process in Navan for submission of the funds.\n- If you have any questions regarding a rejected expense due to being out of policy, submit a request under the `Expenses -> General Expenses` tile  [Compass](/handbook/eta/corporate-it/compass/compass-guide/), ensuring that you tag your Manager , and adding any other additional documentation so this can be reviewed."
+    ],
+    "reference": "Expenses flagged as 'Out of Policy' in Navan may require additional review due to the need for certain attachments and approvals. The Accounts Payable (AP) team will contact the team member via Navan to request justification for the transaction before making a decision to approve or reject the expense. Any exceptions to the policy are granted or denied at the discretion of the AP Admins, who may escalate the request to the team member's manager for a final decision if additional input is needed. Exception approvals can be processed within the Navan tool or through a Compass ticket. Additionally, if an item claimed needs to be reimbursed back to GitLab, the repayment process in Navan must be followed for submission of the funds. For questions regarding a rejected expense due to being out of policy, a request should be submitted under the 'Expenses -> General Expenses' tile in Compass, tagging the Manager and including any additional documentation for review.",
+    "persona_name": "IT Compliance Officer",
+    "query_style": "PERFECT_GRAMMAR",
+    "query_length": "LONG",
+    "synthesizer_name": "single_hop_specific_query_synthesizer",
+    "id": "pilot-06",
+    "reference_document_ids": [
+      "4fcfed36-64f6-5383-86f7-00a8601778f7"
+    ],
+    "reference_context_ids": [
+      "ffd2f262-45f8-592c-8bc4-a5fbb01c38d8"
+    ],
+    "source_title": "Global Travel and Expense Policy",
+    "section_path": "3. General Guidelines > 3.1 Out of Policy Transactions",
+    "review_status": "revise",
+    "review_reason": "Nguồn chỉ nói AP liên hệ nếu cần làm rõ thêm; đáp án chuyển thành sẽ liên hệ vô điều kiện.",
+    "duplicate_of": null,
+    "human_approved": false,
+    "reviewer": "Codex assistant, source-grounded review"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-30",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "ca74d569-898f-5343-8671-a5f538c8b4d5"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1909,
+    "output_tokens": 152,
+    "cost_usd_estimate": 0.0010068
+  },
+  "candidate": {
+    "user_input": "What steps must I follow to connect with a coach or therapist through Modern Health?",
+    "reference": "To connect with a coach or therapist, you must first download the app or visit my.joinmodernhealth.com, register with your GitLab email and your system name, complete the wellbeing assessment, and then you will be matched with appropriate resources based on your assessment results.",
+    "reference_contexts": [
+      "## How to Get Started\n\n### Registration Process\n\n1. Download the app from [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.modernhealth.modernhealth) or [App Store (iOS)](https://apps.apple.com/us/app/modern-health/id1445843859?ls=1), or visit [my.joinmodernhealth.com](https://my.joinmodernhealth.com)\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources\n4. Connect with a coach or therapist based on your assessment results"
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com",
+      "Register with your GitLab email using your name as it appears in our system",
+      "Take the wellbeing assessment to get matched with appropriate resources",
+      "Connect with a coach or therapist based on your assessment results"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 757,
+    "output_tokens": 112,
+    "cost_usd_estimate": 0.00241
+  }
+}

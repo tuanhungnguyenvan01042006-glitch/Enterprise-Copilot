@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-29",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "e62b2f22-4f8d-5fcb-8a51-af451b5da31f"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "bereavement leave exceeding 25 calendar days",
+      "contact for bereavement leave extension"
+    ],
+    "user_input": "Who should I contact if my bereavement leave exceeds 25 calendar days?",
+    "reference": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "If your bereavement leave exceeds 25 calendar days, please reach out to your manager, People Business Partner, and the Absence Management Team at leaves@gitlab.com for an extension.",
+        "contribution": "This sentence directly answers who to contact for bereavement leave exceeding 25 calendar days."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the contacts for bereavement leave exceeding 25 calendar days."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1064,
+    "output_tokens": 186,
+    "cost_usd_estimate": 0.0007232
+  },
+  "judge": {
+    "source_conditions": [
+      "Bereavement leave exceeds 25 calendar days",
+      "Contact your manager",
+      "Contact People Business Partner",
+      "Contact Absence Management Team at leaves@gitlab.com",
+      "Purpose: for an extension"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 659,
+    "output_tokens": 85,
+    "cost_usd_estimate": 0.001998
+  }
+}

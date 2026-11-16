@@ -1,0 +1,60 @@
+{
+  "plan_id": "final-28",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "64bc697c-be58-5fed-a3b2-480ba8fa2e64"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 2170,
+    "output_tokens": 159,
+    "cost_usd_estimate": 0.0011224
+  },
+  "candidate": {
+    "user_input": "What steps must I follow to document a bereavement leave request in Workday?",
+    "reference": "To document a bereavement leave request in Workday, you should select the day(s) you need off, click \"Time-Off,\" then \"Bereavement,\" optionally add a comment, and click \"Submit.\" You should also review your country's reporting requirements to ensure compliance with local regulations.",
+    "reference_contexts": [
+      "### Request Process\n\n### Request Process\n\nWe realize that advance notice may not always be possible in these circumstances. You should notify your manager as soon as you're able and enter dates in Workday when you can.\n\n1. **Notify Your Manager**: Inform your manager about your need for bereavement leave as soon as possible. You only need to share details you're comfortable discussing. You can also work directly with the Absence Management team if you prefer (email leaves@gitlab.com).\n1. **Document in Workday**: Enter your bereavement leave request through the Workday app or Slack integration:\n      - Select the day(s) you need > Click \"Time-Off\" > Click \"Bereavement\" > *Optional*: add a comment > Click \"Submit\"\n      - Review your country's reporting requirements to ensure compliance with local regulations\n1. **Create a Coverage Plan**: Arrange appropriate coverage for your responsibilities, set expectations around communication during your absence, and plan for your return to work.\n\n**No Documentation Required:**\nAt GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law). This approach builds trust and supports team members during vulnerable times."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "Notify your manager about your need for bereavement leave as soon as possible.",
+      "You only need to share details you're comfortable discussing.",
+      "You can work directly with the Absence Management team if you prefer.",
+      "Enter your bereavement leave request through the Workday app or Slack integration.",
+      "Select the day(s) you need > Click \"Time-Off\" > Click \"Bereavement\" > Optional: add a comment > Click \"Submit\".",
+      "Review your country's reporting requirements to ensure compliance with local regulations.",
+      "No documentation or proof of loss is required unless required by local/statutory law."
+    ],
+    "missing_conditions": [
+      "Notify your manager about your need for bereavement leave as soon as possible (the answer omits this step, which is listed as part of the process in the source).",
+      "You can work directly with the Absence Management team if you prefer (the answer does not mention this alternative)."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the explicit instruction to notify your manager as soon as possible, which is a required step in the process per the source.",
+      "The answer does not mention the alternative option to work directly with the Absence Management team, which is also stated in the source as part of the process."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 897,
+    "output_tokens": 284,
+    "cost_usd_estimate": 0.004066
+  }
+}

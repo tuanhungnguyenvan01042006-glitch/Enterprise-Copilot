@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-12",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "22af0f11-8853-5ace-82bc-b67beaa25963"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Lost or Stolen Procedures",
+      "panic@gitlab.com",
+      "device containing credentials or GitLab-sensitive data"
+    ],
+    "user_input": "What should a GitLab team member do immediately if they lose a device that contains their credentials or other GitLab-sensitive data?",
+    "reference": "If a team member loses a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Should a team member lose a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away.",
+        "contribution": "This states the immediate action required for lost devices containing credentials or sensitive data."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states the immediate action required for a lost device containing credentials or GitLab-sensitive data is to email panic@gitlab.com right away."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1190,
+    "output_tokens": 236,
+    "cost_usd_estimate": 0.0008536
+  },
+  "judge": {
+    "source_conditions": [
+      "Team member loses a device (thumb drive, Yubikey, mobile phone, tablet, laptop, etc.) containing credentials or GitLab-sensitive data",
+      "Immediate action required: send an email to panic@gitlab.com right away"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 808,
+    "output_tokens": 94,
+    "cost_usd_estimate": 0.0023680000000000003
+  }
+}

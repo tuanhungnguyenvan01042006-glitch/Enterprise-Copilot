@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "academic courses",
+        "non-academic professional-development courses"
+      ],
+      "user_input": "What are the differences in eligibility and completion evidence required for academic courses compared to shorter non-academic professional-development courses reimbursed through G&D?",
+      "reference": "The eligibility and completion evidence for academic courses and shorter non-academic professional-development courses differ in several ways. For academic courses, the course must be from an accredited college or university and result in a final grade of \"B\" or higher, with a final grade report or transcript required for reimbursement. In contrast, for non-academic professional-development courses, a satisfactory certificate of completion is sufficient, and there is no requirement for the course to be from an accredited institution.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "Eligibility and completion evidence for academic courses."
+        },
+        {
+          "context_index": 1,
+          "quote": "A final grade report or satisfactory certificate of completion is required for reimbursement.",
+          "contribution": "Completion evidence for non-academic professional-development courses."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The contexts outline the eligibility and completion requirements for academic courses and non-academic professional-development courses."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "academic courses",
+        "non-academic professional-development courses"
+      ],
+      "user_input": "What are the differences in eligibility and completion evidence required for academic courses compared to shorter non-academic professional-development courses reimbursed through the G&D Fund?",
+      "reference": "The eligibility and completion evidence for academic courses and shorter non-academic professional-development courses differ in several ways. Academic courses must be from an accredited institution and require a final grade of \"B\" or higher for reimbursement, along with a final grade report or transcript. In contrast, non-academic professional-development courses require a satisfactory certificate of completion for reimbursement, without the need for a specific grade.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "Eligibility criteria and completion evidence for academic courses."
+        },
+        {
+          "context_index": 1,
+          "quote": "A final grade report or satisfactory certificate of completion is required for reimbursement.",
+          "contribution": "Completion evidence for non-academic professional-development courses."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The eligibility and completion evidence for academic courses and non-academic professional-development courses differ in requirements."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "academic courses",
+        "non-academic professional-development courses"
+      ],
+      "user_input": "What are the differences in eligibility and completion evidence required for academic courses compared to shorter non-academic professional-development courses reimbursed through G&D?",
+      "reference": "The eligibility and completion evidence for academic courses and shorter non-academic professional-development courses differ in several ways. Academic courses must be from an accredited institution and require a final grade of \"B\" or higher for reimbursement, along with a final grade report or transcript. In contrast, non-academic professional-development courses require a satisfactory certificate of completion for reimbursement, without the need for a specific grade.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "Eligibility and completion evidence for academic courses."
+        },
+        {
+          "context_index": 1,
+          "quote": "A final grade report or satisfactory certificate of completion is required for reimbursement.",
+          "contribution": "Completion evidence for non-academic professional-development courses."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The eligibility and completion evidence for academic courses and non-academic professional-development courses differ in requirements."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

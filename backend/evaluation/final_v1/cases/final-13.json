@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Recommended initial onboarding duration",
+        "team-specific training"
+      ],
+      "user_input": "What is the recommended initial onboarding duration and when does team-specific training start?",
+      "reference": "We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training.",
+          "contribution": "This quote provides the recommended duration for onboarding and the timing for team-specific training."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The answer directly addresses the recommended onboarding duration and the start of team-specific training."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Recommended initial onboarding duration",
+        "team-specific training"
+      ],
+      "user_input": "What is the recommended initial onboarding duration and when does team-specific training start?",
+      "reference": "We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training.",
+          "contribution": "This quote provides the recommended duration for onboarding and the timing for team-specific training."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The answer directly addresses the recommended onboarding duration and the start of team-specific training.",
+      "id": "final-13",
+      "question_type": "single_hop",
+      "planned_focus": "Recommended initial onboarding duration and when team-specific training starts; recommendation not mandate.",
+      "reference_contexts": [
+        "Onboarding is [incredibly important](/handbook/company/culture/all-remote/onboarding/) at GitLab. We don't expect you to hit the ground running from day one.\n\nWe highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training. Please feel free to participate in your team's work in your first two weeks, but don't feel like you have to contribute heavily.\n\nAll onboarding steps are in the [onboarding issue template](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) which is owned by the People Operations team. The onboarding process for the new team member is [self-driven and self-learning](/handbook/values/#self-service-and-self-learning), whilst also remaining as [asynchronous](/handbook/communication/), where possible, settling into the remote life at GitLab.\n\nAt GitLab we take great pride in using our own product, that is why all onboarding tasks are completed in a GitLab issue. First of all, what is an issue? You can learn more about what an issue is [here](https://docs.gitlab.com/ee/user/project/issues/).\n\nThe People Operations Specialist assigned to the team members specific onboarding will [open](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/#onboarding-issue-creation) the onboarding issue at least 4 days prior to the hire date.\n\nEach onboarding issue has a main section that contains tasks relevant to all GitLab team-members and a due date of 30 days. Below the main section are department and role-specific tasks. Some roles and departments have tasks that link to a supplemental issue template or an additional onboarding page.  Reach out to your [onboarding buddy](/handbook/people-group/general-onboarding/onboarding-buddies) or other GitLab team members if you need help understanding or completing any of your tasks.\n\nThrough onboarding issues, you should gain access to our team member [baseline entitlements](/handbook/security#baseline-role-based-entitlements-access-runbooks--issue-templates). On Day 2 of onboarding an [Access Request](/handbook/people-group/) will be generated, if a template has been created for the role. Access requests are owned by the IT team. If you have any access requests related questions, please reach out to `#it-help` in Slack.\n\nIn certain instances, the People Operations team may not be able to assist with onboardings due to a national holiday or Family and Friends Day. These specific dates are documented in the People Operations team [availability](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/#people-operations-availability)."
+      ],
+      "reference_context_ids": [
+        "f8f85975-634f-52cb-b225-fdbf4665fa38"
+      ],
+      "reference_document_ids": [
+        "569a518d-4d3b-5741-971c-3a60d26044ef"
+      ],
+      "sources": [
+        {
+          "document_id": "569a518d-4d3b-5741-971c-3a60d26044ef",
+          "chunk_id": "f8f85975-634f-52cb-b225-fdbf4665fa38",
+          "chunk_index": 0,
+          "block_type": "text",
+          "token_count": 589,
+          "section_path": "",
+          "source_start": 0,
+          "source_end": 2782,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Onboarding",
+          "category": "REFERENCE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

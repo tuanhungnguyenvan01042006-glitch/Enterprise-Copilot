@@ -14,6 +14,7 @@
 
 FROM python:3.12-slim   
 #lấy base image Python :  chọn version 3.12, bản slim --> Giúp Docker bt phải chạy Backend với Python j  
+# giải thích : ở đây python 3.12-slim thực chất là 1 image có sẵn của Docker, tức là máy chủ của ta thực tế ko cần cài python 3.12
 
 # thiết lập biến môi trường cho Container (chứ ko phải môi trường của src code): nch là cx đ hiểu vai trò lắm
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -30,7 +31,7 @@ COPY requirements.txt ./requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt  # install thư viện trong file requirement
 
-COPY app ./app
+COPY app ./app 
 COPY migrations ./migrations
 COPY alembic.ini ./alembic.ini
 

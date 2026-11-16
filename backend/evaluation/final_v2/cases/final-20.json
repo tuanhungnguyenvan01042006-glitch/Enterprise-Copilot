@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Recommended lead time",
+        "Compass G&D request"
+      ],
+      "user_input": "What is the recommended lead time for submitting a Growth & Development Fund request in Compass?",
+      "reference": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+          "contribution": "This states the recommended lead time for submitting a Compass G&D request."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the recommended lead time for submitting a Compass G&D request."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Recommended lead time",
+        "Compass G&D request"
+      ],
+      "user_input": "What is the recommended lead time for submitting a Growth & Development Fund request in Compass?",
+      "reference": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Your request should be submitted at least 30 days in advance of the beginning of your experience when possible.",
+          "contribution": "This states the recommended lead time for submitting a Compass G&D request."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the recommended lead time for submitting a Compass G&D request.",
+      "id": "final-20",
+      "question_type": "single_hop",
+      "planned_focus": "Recommended lead time for a Compass G&D request, preserving when possible.",
+      "reference_contexts": [
+        "### Step 2 - Submit your request in Compass\n\nCreate a new Growth & Development Fund request in Compass using the appropriate request path for your opportunity type.\n\nYour request should be submitted at least 30 days in advance of the beginning of your experience when possible.\n\nBe prepared to provide information such as:\n\n- the type of opportunity\n- provider or vendor details\n- program or event name\n- relevant dates\n- total cost\n- whether the request includes any travel considerations\n- how the opportunity supports your development goals"
+      ],
+      "reference_context_ids": [
+        "b0c45505-5adc-5855-899c-82ac2dd27213"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "b0c45505-5adc-5855-899c-82ac2dd27213",
+          "chunk_index": 4,
+          "block_type": "text",
+          "token_count": 104,
+          "section_path": "Process > Step 2 - Submit your request in Compass",
+          "source_start": 2376,
+          "source_end": 2919,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

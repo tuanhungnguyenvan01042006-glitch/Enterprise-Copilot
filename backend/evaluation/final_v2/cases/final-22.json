@@ -1,0 +1,234 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 5,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 6,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 7,
+    "candidate_raw": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Academic-course eligibility",
+        "evidence required for reimbursement",
+        "excluded ancillary fees"
+      ],
+      "user_input": "What are the eligibility criteria and required evidence for reimbursement of academic courses, and which ancillary fees are excluded?",
+      "reference": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must be from an accredited college or university and result in a final grade equivalent to a \"B\" or higher. Additional fees related to books, travel, and supplies are not covered under this category. A final grade report or transcript is required for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "This quote specifies the eligibility criteria, required evidence, and excluded ancillary fees for academic course reimbursement."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The quote directly states the eligibility criteria, required evidence, and excluded fees for academic course reimbursement.",
+      "id": "final-22",
+      "question_type": "single_hop",
+      "planned_focus": "Academic-course eligibility and evidence required for reimbursement; excluded ancillary fees.",
+      "reference_contexts": [
+        "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement."
+      ],
+      "reference_context_ids": [
+        "57828948-7920-570b-af63-7e8347698791"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "57828948-7920-570b-af63-7e8347698791",
+          "chunk_index": 13,
+          "block_type": "text",
+          "token_count": 89,
+          "section_path": "Types of Growth and Development reimbursements > Academic study",
+          "source_start": 5204,
+          "source_end": 5649,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

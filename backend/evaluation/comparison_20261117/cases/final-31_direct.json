@@ -1,0 +1,52 @@
+{
+  "plan_id": "final-31",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "dacd98da-2565-59fe-9279-ca545a45c318"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Annual session reset date",
+      "unused-session rollover"
+    ],
+    "user_input": "What is the annual session reset date and does unused session time roll over?",
+    "reference": "Benefits reset annually on March 20 and unused sessions do not roll over.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Benefits reset annually on March 20\n- Unused sessions do not roll over",
+        "contribution": "This quote directly states the reset date and the policy on unused sessions."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the annual reset date and that unused sessions do not roll over."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1087,
+    "output_tokens": 126,
+    "cost_usd_estimate": 0.0006364000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Benefits reset annually on March 20",
+      "Unused sessions do not roll over"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 657,
+    "output_tokens": 63,
+    "cost_usd_estimate": 0.0018180000000000002
+  }
+}

@@ -47,6 +47,40 @@ npm run test:run
 npm run build
 ```
 
+## Thử RAG nội bộ
+
+Sau khi đã index tài liệu vào Qdrant, cấu hình `VOYAGE_API_KEY` và
+`OPENAI_API_KEY` trong `.env`. Model trả lời mặc định là `gpt-4o-mini`, có thể
+đổi qua `OPENAI_GENERATION_MODEL`. Từ thư mục gốc, chạy:
+
+```powershell
+docker compose exec api python -m app.scripts.answer_question "Chính sách nghỉ phép là gì?" --top-k 5
+```
+
+Lệnh gửi câu hỏi và nội dung các chunk tìm được tới OpenAI và trả về câu trả lời
+cùng nguồn. Đây là công cụ nội bộ, chưa kiểm tra quyền truy cập tài liệu.
+
+## Chatbot
+
+Chatbot dành cho nhân viên tại `/app/chatbot`. Mỗi câu hỏi được xử lý độc lập;
+lịch sử hội thoại được lưu trong PostgreSQL. Tạo hội thoại, gửi câu hỏi, sau đó
+chọn nguồn tham khảo để mở tài liệu trong kho kiến thức.
+
+Để chạy tính năng, cấu hình `VOYAGE_API_KEY`, `OPENAI_API_KEY`, Qdrant và
+index tài liệu như hướng dẫn RAG ở trên. Sau khi cập nhật mã nguồn, xây dựng lại
+và khởi động stack bằng `docker compose up --build -d`; service `migrate` chạy
+`alembic upgrade head` để tạo bảng chat. Nếu chạy backend ngoài Compose, thực
+hiện `alembic upgrade head` trong thư mục `backend` trước khi khởi động API.
+
+Kiểm tra thủ công: đăng nhập bằng tài khoản nhân viên, mở Chatbot, tạo hội thoại,
+đặt câu hỏi có trong tài liệu đã index, kiểm tra câu trả lời và nguồn, rồi tải lại
+trang và mở lại hội thoại. Thử câu hỏi không có dữ liệu và xác nhận thông báo phù hợp.
+Nếu dịch vụ RAG không sẵn sàng, giao diện cho phép gửi lại câu hỏi.
+
+Chatbot truy xuất toàn bộ tập dữ liệu RAG, không lọc theo quyền tài liệu. Chỉ index
+tài liệu có thể chia sẻ với mọi nhân viên; cần bổ sung phân quyền RAG trước khi
+index tài liệu phòng ban hoặc tài liệu hạn chế.
+
 ## E2E
 
 E2E chạy trên stack đã khởi động và dữ liệu seed:

@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Missing Receipt Affidavit",
+        "required attachment format"
+      ],
+      "user_input": "What is the required format for attaching a Missing Receipt Affidavit when a receipt is missing?",
+      "reference": "If a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted. Missing Receipt Affidavit located here (please ensure to make a copy). When attaching the receipt affidavit, the Team Member should attach the document as a PDF.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted. Missing Receipt Affidavit located [here](https://docs.google.com/spreadsheets/d/179q0Wos-CemLCe1uxgMpZ80JukSC4KYx8JICFgHzN0I/edit?usp=sharing) (please ensure to make a copy). When attaching the receipt affidavit, the Team Member should attach the document as a PDF.",
+          "contribution": "This explains the requirement to complete and attach the Missing Receipt Affidavit and specifies the attachment format as PDF."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the requirement to attach the Missing Receipt Affidavit as a PDF when a receipt is missing."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Missing Receipt Affidavit",
+        "required attachment format"
+      ],
+      "user_input": "What is the required format for attaching a Missing Receipt Affidavit when a receipt is missing?",
+      "reference": "If a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted. Missing Receipt Affidavit located here (please ensure to make a copy). When attaching the receipt affidavit, the Team Member should attach the document as a PDF.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted. Missing Receipt Affidavit located [here](https://docs.google.com/spreadsheets/d/179q0Wos-CemLCe1uxgMpZ80JukSC4KYx8JICFgHzN0I/edit?usp=sharing) (please ensure to make a copy). When attaching the receipt affidavit, the Team Member should attach the document as a PDF.",
+          "contribution": "This explains the requirement to complete and attach the Missing Receipt Affidavit and specifies the attachment format as PDF."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the requirement to attach the Missing Receipt Affidavit as a PDF when a receipt is missing.",
+      "id": "final-07",
+      "question_type": "single_hop",
+      "planned_focus": "Missing receipt affidavit and required attachment format.",
+      "reference_contexts": [
+        "### 4.3 Missing Receipt Affidavit\n\nIf a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted. Missing Receipt Affidavit located [here](https://docs.google.com/spreadsheets/d/179q0Wos-CemLCe1uxgMpZ80JukSC4KYx8JICFgHzN0I/edit?usp=sharing) (please ensure to make a copy). When attaching the receipt affidavit, the Team Member should attach the document as a PDF."
+      ],
+      "reference_context_ids": [
+        "f441bbc5-f29c-5f1e-a60e-fb1dd35abc70"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "f441bbc5-f29c-5f1e-a60e-fb1dd35abc70",
+          "chunk_index": 92,
+          "block_type": "text",
+          "token_count": 122,
+          "section_path": "Approved Office Supplies List > 4.3 Missing Receipt Affidavit",
+          "source_start": 52871,
+          "source_end": 53308,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

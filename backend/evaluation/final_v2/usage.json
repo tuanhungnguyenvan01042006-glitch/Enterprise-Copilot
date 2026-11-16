@@ -1,0 +1,10 @@
+[
+  {
+    "successful_requests": 60,
+    "input_tokens": 82216,
+    "output_tokens": 13006,
+    "cost_usd_callback_estimate": 0.04689919999999998,
+    "sources_sha256": "162cd33c2bece4e67eb5f20ed045033863d89f4062a6c22f1dcb0cf546f17beb",
+    "note": "Same-model automated review; not domain-expert approval. No embedding requests."
+  }
+]

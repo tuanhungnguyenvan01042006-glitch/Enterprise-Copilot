@@ -1,0 +1,106 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Missing receipt affidavit",
+        "required attachment format"
+      ],
+      "user_input": "What format should the Missing Receipt Affidavit be attached in when submitted?",
+      "reference": "The Missing Receipt Affidavit should be attached as a PDF when submitted.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "the Team Member should attach the document as a PDF.",
+          "contribution": "specifies the required attachment format for the Missing Receipt Affidavit."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the required format for attaching the Missing Receipt Affidavit."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Missing receipt affidavit",
+        "required attachment format"
+      ],
+      "user_input": "What format should the Missing Receipt Affidavit be attached in when submitted?",
+      "reference": "The Missing Receipt Affidavit should be attached as a PDF when submitted.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "the Team Member should attach the document as a PDF.",
+          "contribution": "specifies the required attachment format for the Missing Receipt Affidavit."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the required attachment format for the Missing Receipt Affidavit."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Missing receipt affidavit",
+        "required attachment format"
+      ],
+      "user_input": "What format should the Missing Receipt Affidavit be attached in when submitted?",
+      "reference": "The Missing Receipt Affidavit should be attached as a PDF when submitted.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "the Team Member should attach the document as a PDF.",
+          "contribution": "specifies the required attachment format for the Missing Receipt Affidavit."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the required attachment format for the Missing Receipt Affidavit."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Missing receipt affidavit",
+        "required attachment format"
+      ],
+      "user_input": "What format should the Missing Receipt Affidavit be attached in when submitted?",
+      "reference": "The Missing Receipt Affidavit should be attached as a PDF when submitted.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "the Team Member should attach the document as a PDF.",
+          "contribution": "specifies the required attachment format for the Missing Receipt Affidavit."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly states the required attachment format for the Missing Receipt Affidavit."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

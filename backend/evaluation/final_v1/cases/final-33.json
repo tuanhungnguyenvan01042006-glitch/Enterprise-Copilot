@@ -1,0 +1,130 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "mentorship must end",
+        "options for staying connected"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what are the options for staying connected?",
+      "reference": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit.",
+          "contribution": "Mentorship can end after goals are accomplished."
+        },
+        {
+          "context_index": 0,
+          "quote": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+          "contribution": "Options for staying connected after mentorship."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context provides information on both the conditions under which mentorship may end and the options available for maintaining a connection."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's question is natural and useful, but the reference does not fully answer it. While it mentions that mentorship can end after goals are accomplished, it does not explicitly state that mentorship must end after goals are accomplished, which is a key part of the question. Additionally, the evidence provided does not support the claim that mentorship must end after goals are accomplished, as it only states that it is okay for mentorship to end under certain conditions. Therefore, the answer is incomplete and does not fully address the question."
+      ],
+      "all_contexts_necessary": false
+    },
+    "feedback": "The candidate's question is natural and useful, but the reference does not fully answer it. While it mentions that mentorship can end after goals are accomplished, it does not explicitly state that mentorship must end after goals are accomplished, which is a key part of the question. Additionally, the evidence provided does not support the claim that mentorship must end after goals are accomplished, as it only states that it is okay for mentorship to end under certain conditions. Therefore, the answer is incomplete and does not fully address the question."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "mentorship must end",
+        "options for staying connected"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what are the options for staying connected?",
+      "reference": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit.",
+          "contribution": "Mentorship can end after goals are accomplished."
+        },
+        {
+          "context_index": 0,
+          "quote": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor.",
+          "contribution": "Options for staying connected."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence indicates that mentorship can end after goals are accomplished, but it also states that mentorship doesn't have to end, providing options for staying connected."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's reference does not fully answer the question about whether mentorship must end after goals are accomplished. While it states that mentorship can end, it does not clarify that it is not mandatory for it to end, which is a key aspect of the question.",
+        "The quote about establishing a meeting cadence to stay connected does not provide a comprehensive view of the options for staying connected, as it only mentions one method without elaborating on other potential options.",
+        "The phrasing of the question is somewhat ambiguous, as it could imply a binary choice rather than acknowledging the flexibility of mentorship relationships."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate's reference does not fully answer the question about whether mentorship must end after goals are accomplished. While it states that mentorship can end, it does not clarify that it is not mandatory for it to end, which is a key aspect of the question.; The quote about establishing a meeting cadence to stay connected does not provide a comprehensive view of the options for staying connected, as it only mentions one method without elaborating on other potential options.; The phrasing of the question is somewhat ambiguous, as it could imply a binary choice rather than acknowledging the flexibility of mentorship relationships."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "mentorship must end",
+        "options for staying connected"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what are the options for staying connected?",
+      "reference": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It's OK for a mentorship to end if the mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit. Consider having a coffee chat with your mentor/mentee to discuss what was accomplished or what didn't work.",
+          "contribution": "Mentorship can end if goals are accomplished."
+        },
+        {
+          "context_index": 0,
+          "quote": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor. You might meet 1x per month for a coffee chat, connect async via Slack, or continue with your 2x monthly sessions.",
+          "contribution": "Mentorship can continue with various options for staying connected."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The first quote clarifies that mentorship can end after goals are accomplished, while the second quote provides options for maintaining the mentorship relationship."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "mentorship must end",
+        "options for staying connected"
+      ],
+      "user_input": "Does mentorship have to end after goals are accomplished, and what are the options for staying connected?",
+      "reference": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "It's OK for a mentorship to end if the mentor and mentor and mentee feel they've accomplished a goal or if the pair isn't a good fit.",
+          "contribution": "Mentorship can end after goals are accomplished."
+        },
+        {
+          "context_index": 0,
+          "quote": "Mentorship doesn't have to end, either! Establish a meeting cadence to stay connected with your mentor.",
+          "contribution": "Options for staying connected after mentorship."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context provides information on both the conditions under which mentorship may end and the options for maintaining a connection."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate's reference does not fully answer the question regarding whether mentorship must end after goals are accomplished. While it states that mentorship can end, it does not clarify that it is acceptable for mentorship to continue after goals are achieved, which is a key aspect of the question.",
+        "The quote provided as evidence for options for staying connected is relevant, but the overall answer lacks a comprehensive explanation of the conditions under which mentorship can end and the options for staying connected, leading to ambiguity in the response."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The candidate's reference does not fully answer the question regarding whether mentorship must end after goals are accomplished. While it states that mentorship can end, it does not clarify that it is acceptable for mentorship to continue after goals are achieved, which is a key aspect of the question.; The quote provided as evidence for options for staying connected is relevant, but the overall answer lacks a comprehensive explanation of the conditions under which mentorship can end and the options for staying connected, leading to ambiguity in the response."
+  }
+]

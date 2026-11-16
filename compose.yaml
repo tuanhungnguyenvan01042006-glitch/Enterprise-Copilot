@@ -6,6 +6,13 @@
 
 # Image cho PostgreSQL 
 services:
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    ports:
+      - "127.0.0.1:6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
   db:       # Mặc định trong Docker, db là Database
     image: postgres:17-alpine
     environment:
@@ -74,6 +81,11 @@ services:
     environment:
       APP_ENV: ${APP_ENV:-development}
       APP_NAME: ${APP_NAME:-Enterprise Copilot}
+      VOYAGE_API_KEY: ${VOYAGE_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_GENERATION_MODEL: ${OPENAI_GENERATION_MODEL:-gpt-4o-mini}
+      QDRANT_URL: ${QDRANT_URL:-http://qdrant:6333}
+      QDRANT_COLLECTION: ${QDRANT_COLLECTION:-rag_documents}
       BUSINESS_TIMEZONE: ${BUSINESS_TIMEZONE:-Asia/Ho_Chi_Minh}
       DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg://enterprise_copilot:${POSTGRES_PASSWORD:-enterprise_copilot}@db:5432/enterprise_copilot}
       MIGRATION_DATABASE_URL: ${MIGRATION_DATABASE_URL:-postgresql+psycopg://enterprise_copilot:${POSTGRES_PASSWORD:-enterprise_copilot}@db:5432/enterprise_copilot}
@@ -86,7 +98,10 @@ services:
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
     volumes:
       - uploads_data:/app/storage/uploads
+      - ./backend/storage/processed:/app/storage/processed
     depends_on:
+      qdrant:
+        condition: service_started
       migrate:
         condition: service_completed_successfully
       seed:
@@ -119,3 +134,4 @@ services:
 volumes:
   postgres_data:
   uploads_data:
+  qdrant_data:

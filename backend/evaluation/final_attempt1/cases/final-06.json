@@ -1,0 +1,101 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Software subscription reimbursement",
+        "Procurement process"
+      ],
+      "user_input": "What is the process for purchasing software subscriptions at GitLab?",
+      "reference": "Team Members that would like to purchase software will need to go through the Procurement process.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "No software subscriptions are reimbursable.",
+          "contribution": "Clarifies that software subscriptions cannot be reimbursed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Team Members that would like to purchase software will need to go through the Procurement process.",
+          "contribution": "Indicates the required process for purchasing software."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence specifies that software subscriptions are not reimbursable and outlines the need to follow the Procurement process for purchases."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question asks for the process for purchasing software subscriptions, but the reference only states that software subscriptions are not reimbursable and mentions the Procurement process without detailing it. The answer does not fully address the user's question about the purchasing process specifically for software subscriptions."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The question asks for the process for purchasing software subscriptions, but the reference only states that software subscriptions are not reimbursable and mentions the Procurement process without detailing it. The answer does not fully address the user's question about the purchasing process specifically for software subscriptions."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Software subscription reimbursement",
+        "Procurement process"
+      ],
+      "user_input": "What is the process for purchasing software subscriptions at GitLab?",
+      "reference": "Team Members that would like to purchase software will need to go through the Procurement process.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members that would like to purchase software will need to go through the Procurement process.",
+          "contribution": "This states the requirement for purchasing software."
+        },
+        {
+          "context_index": 0,
+          "quote": "No software subscriptions are reimbursable.",
+          "contribution": "This clarifies that software subscriptions cannot be reimbursed."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence specifies that software subscriptions are not reimbursable and that the Procurement process must be followed for purchasing."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question asks about the process for purchasing software subscriptions, but the reference only states that team members must go through the Procurement process without detailing what that process entails. Therefore, the answer is incomplete and does not fully address the user's question."
+      ],
+      "all_contexts_necessary": false
+    },
+    "feedback": "The question asks about the process for purchasing software subscriptions, but the reference only states that team members must go through the Procurement process without detailing what that process entails. Therefore, the answer is incomplete and does not fully address the user's question."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Software subscription reimbursement",
+        "Procurement process"
+      ],
+      "user_input": "What is the process for purchasing software subscriptions at GitLab?",
+      "reference": "Team Members that would like to purchase software will need to go through the Procurement process.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team Members that would like to purchase software will need to go through the Procurement process.",
+          "contribution": "This states the requirement for purchasing software."
+        },
+        {
+          "context_index": 0,
+          "quote": "Please follow the Guidance from the [Individual Use Software Handbook Page](/handbook/finance/procurement/individual-use-software/).",
+          "contribution": "This indicates that there is additional guidance available for the procurement process."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence specifies that team members must go through the Procurement process to purchase software."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The candidate does not fully answer the question regarding the process for purchasing software subscriptions. While it mentions the need to go through the Procurement process, it lacks details about what that process entails. Additionally, the quote about following guidance from the Individual Use Software Handbook Page does not provide specific information about the procurement process itself, making the answer incomplete."
+      ],
+      "all_contexts_necessary": false
+    },
+    "feedback": "The candidate does not fully answer the question regarding the process for purchasing software subscriptions. While it mentions the need to go through the Procurement process, it lacks details about what that process entails. Additionally, the quote about following guidance from the Individual Use Software Handbook Page does not provide specific information about the procurement process itself, making the answer incomplete."
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "G&D academic reimbursement recoupment"
+      ],
+      "user_input": "What are the exact conditions and scope of G&D academic reimbursement recoupment?",
+      "reference": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab. This policy applies to academic study reimbursements only.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab.",
+          "contribution": "This outlines the conditions for recoupment."
+        },
+        {
+          "context_index": 0,
+          "quote": "This policy applies to academic study reimbursements only.",
+          "contribution": "This specifies the scope of the policy."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The answer directly addresses the conditions and scope of the G&D academic reimbursement recoupment policy."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "G&D academic reimbursement recoupment"
+      ],
+      "user_input": "What are the exact conditions and scope of G&D academic reimbursement recoupment?",
+      "reference": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab. This policy applies to academic study reimbursements only.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab.",
+          "contribution": "This outlines the conditions for recoupment."
+        },
+        {
+          "context_index": 0,
+          "quote": "This policy applies to academic study reimbursements only.",
+          "contribution": "This specifies the scope of the policy."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The answer directly addresses the conditions and scope of the G&D academic reimbursement recoupment policy.",
+      "id": "final-23",
+      "question_type": "single_hop",
+      "planned_focus": "Exact conditions and scope of G&D academic reimbursement recoupment.",
+      "reference_contexts": [
+        "## Recoupment policy\n\nIf a team member voluntarily terminates employment before completing twelve consecutive months of active employment, academic study or tuition expenses of $1,000 USD and over must be refunded to GitLab.\n\nThis policy applies to academic study reimbursements only. Team members should review this requirement before submitting requests that fall under this category."
+      ],
+      "reference_context_ids": [
+        "350a96f6-e44f-526a-967e-bb8dd7c7ad33"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "350a96f6-e44f-526a-967e-bb8dd7c7ad33",
+          "chunk_index": 25,
+          "block_type": "text",
+          "token_count": 69,
+          "section_path": "Recoupment policy",
+          "source_start": 9848,
+          "source_end": 10234,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

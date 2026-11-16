@@ -1,0 +1,137 @@
+[
+  {
+    "attempt": 1,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['medical, dental and vis...nada-based team member'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 2,
+    "candidate_raw": {
+      "keyphrases": [
+        "medical, dental and vision benefits",
+        "US-based team member",
+        "Canada-based team member"
+      ],
+      "user_input": "Compare when medical, dental and vision benefits end on departure for US versus Canada-based team members; do not extrapolate beyond these benefits.",
+      "reference": "US-based team members' medical, dental, and vision benefits end on the last day of the month of departure, while Canada-based team members' benefits end on their last day of work.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you are a US-based team member, your medical, dental, and vision benefits will cease on last day of the month of your departure",
+          "contribution": "States when US-based team members' medical, dental, and vision benefits end."
+        },
+        {
+          "context_index": 1,
+          "quote": "If you are a Canada-based team member, your benefits will cease on your last day of work.",
+          "contribution": "States when Canada-based team members' benefits end."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context specifies the end date for US-based team members' medical, dental, and vision benefits, while the second context specifies the end date for Canada-based team members' benefits, allowing a direct comparison."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "medical, dental and vision benefits",
+        "US-based team member",
+        "Canada-based team member"
+      ],
+      "user_input": "Compare when medical, dental and vision benefits end on departure for US versus Canada-based team members; do not extrapolate beyond these benefits.",
+      "reference": "US-based team members' medical, dental, and vision benefits end on the last day of the month of departure, while Canada-based team members' benefits end on their last day of work.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you are a US-based team member, your medical, dental, and vision benefits will cease on last day of the month of your departure",
+          "contribution": "States when US-based team members' medical, dental, and vision benefits end."
+        },
+        {
+          "context_index": 1,
+          "quote": "If you are a Canada-based team member, your benefits will cease on your last day of work.",
+          "contribution": "States when Canada-based team members' benefits end."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context specifies the end date for US-based team members' medical, dental, and vision benefits, while the second context specifies the end date for Canada-based team members' benefits, allowing a direct comparison."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "medical, dental and vision benefits",
+        "US-based team member",
+        "Canada-based team member"
+      ],
+      "user_input": "Compare when medical, dental and vision benefits end on departure for US versus Canada-based team members; do not extrapolate beyond these benefits.",
+      "reference": "US-based team members' medical, dental, and vision benefits end on the last day of the month of departure, while Canada-based team members' benefits end on their last day of work.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you are a US-based team member, your medical, dental, and vision benefits will cease on last day of the month of your departure",
+          "contribution": "States when US-based team members' medical, dental, and vision benefits end."
+        },
+        {
+          "context_index": 1,
+          "quote": "If you are a Canada-based team member, your benefits will cease on your last day of work.",
+          "contribution": "States when Canada-based team members' benefits end."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "The first context specifies the end date for US-based team members' medical, dental, and vision benefits, while the second context specifies the end date for Canada-based team members' benefits, allowing a direct comparison.",
+      "id": "final-47",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare when medical, dental and vision benefits end on departure for US versus Canada-based team members; do not extrapolate beyond these benefits.",
+      "reference_contexts": [
+        "## USA\n\nIf you are a US-based team member, your medical, dental, and vision benefits will cease on last day of the month of your departure, all other benefits will cease on your last day. You are eligible for [Consolidated Omnibus Budget Reconciliation Act (\"COBRA\")](https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-coverage.pdf), the COBRA administrator has been notified and will send out the paperwork to your home address on file. You will have 60 days from the time you receive the COBRA packet to enroll either through the mail or online, your COBRA coverage date will be backdated to the first day you are without cover. More information on timelines and contact information for our COBRA administrator can be found in the [COBRA section](/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/#cobra-continuation-coverage).\n\nYou may also be eligible under the Patient Protection and Affordable Care Act (\"PPACA\") for subsidized health care options via the marketplace. If you are interested it is important that you sign up with the market place well before the 15th of the month to have coverage for the following month.\n\nUnder the Health Insurance Portability and Accountability Act of 1996 (HIPAA), if you need a certificate of credible coverage please download it from your current carrier's online portal or request it from the Compensation & Benefits team by emailing `total-rewards@ gitlab.com`. If you move, please email `people_operations@ gitlab.com` so that we can keep your address up to date in Workday.",
+        "## Canada\n\nIf you are a Canada-based team member, your benefits will cease on your last day of work.  There may be options to convert elements of your benefit plan to individual coverage, without medical questions. Please see the [Canada Benefits Handbook](/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/) page for more information."
+      ],
+      "reference_context_ids": [
+        "18017fef-b96d-5c66-8a3f-564f21b9aea5",
+        "35334b86-b438-5787-b501-afae2118d655"
+      ],
+      "reference_document_ids": [
+        "9398a149-1536-5635-b7a3-7cdea3e61331"
+      ],
+      "sources": [
+        {
+          "document_id": "9398a149-1536-5635-b7a3-7cdea3e61331",
+          "chunk_id": "18017fef-b96d-5c66-8a3f-564f21b9aea5",
+          "chunk_index": 23,
+          "block_type": "text",
+          "token_count": 360,
+          "section_path": "USA",
+          "source_start": 10407,
+          "source_end": 12015,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Offboarding FAQ",
+          "category": "GUIDE"
+        },
+        {
+          "document_id": "9398a149-1536-5635-b7a3-7cdea3e61331",
+          "chunk_id": "35334b86-b438-5787-b501-afae2118d655",
+          "chunk_index": 27,
+          "block_type": "text",
+          "token_count": 81,
+          "section_path": "Canada",
+          "source_start": 13355,
+          "source_end": 13722,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Offboarding FAQ",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

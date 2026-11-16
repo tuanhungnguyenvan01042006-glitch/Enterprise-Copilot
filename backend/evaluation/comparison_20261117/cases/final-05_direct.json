@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-05",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "dae4f1d2-1bac-5317-966d-3168164fa2cf"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Netherlands team members",
+      "claim home internet costs",
+      "address or amount changes"
+    ],
+    "user_input": "How should Netherlands team members claim their home internet costs, and what should they do if their address or the amount changes?",
+    "reference": "For Team Members in the Netherlands: If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the Regeling Internet Thuis form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected. If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "For Team Members in the Netherlands: If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected. If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.",
+        "contribution": "Explains the process for claiming internet costs and handling address or amount changes for Netherlands team members."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the procedure for Netherlands team members to claim internet costs and what to do if address or amount changes."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1526,
+    "output_tokens": 384,
+    "cost_usd_estimate": 0.0012248000000000003
+  },
+  "judge": {
+    "source_conditions": [
+      "Team Members in the Netherlands must fill in and sign the Regeling Internet Thuis form if not already completed during onboarding with the Netherlands payroll provider.",
+      "The completed form must be sent to the HRSavvy team at payroll@savvy-group.eu.",
+      "Internet costs should NOT be expensed via Navan; such claims will be rejected.",
+      "If the team member's address changes or the amount changes, a new form must be sent to the HRSavvy team, along with the invoice/letter for processing."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1191,
+    "output_tokens": 150,
+    "cost_usd_estimate": 0.003582
+  }
+}

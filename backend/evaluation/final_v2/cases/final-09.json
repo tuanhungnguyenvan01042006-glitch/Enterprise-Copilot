@@ -1,0 +1,80 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Forwarding confidential work emails to personal addresses",
+        "automated forwarding"
+      ],
+      "user_input": "What are the rules regarding forwarding confidential work emails to personal addresses and automated forwarding of emails?",
+      "reference": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+          "contribution": "This quote explicitly states the prohibitions on forwarding confidential emails and automated forwarding."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the prohibitions on forwarding confidential emails to personal addresses and automated forwarding, directly answering the question."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Forwarding confidential work emails to personal addresses",
+        "automated forwarding"
+      ],
+      "user_input": "What are the rules regarding forwarding confidential work emails to personal addresses and automated forwarding of emails?",
+      "reference": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Forwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.",
+          "contribution": "This quote explicitly states the prohibitions on forwarding confidential emails and automated forwarding."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states the prohibitions on forwarding confidential emails to personal addresses and automated forwarding, directly answering the question.",
+      "id": "final-09",
+      "question_type": "single_hop",
+      "planned_focus": "Forwarding confidential work emails to personal addresses and automated forwarding.",
+      "reference_contexts": [
+        "#### Unacceptable Email and Communications Activities\n\nForwarding of confidential business emails or documents to personal external email addresses is prohibited. Automated forwarding of emails from a team member account is also prohibited.\n\n> Note: GitLab may retrieve messages from archives and servers without prior notice if GitLab has sufficient reason to do so. If deemed necessary, this investigation will be conducted with the knowledge and approval of the Security, People Business Partners, and Legal Departments.\n\nIn addition to following the [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/), when utilizing social media think about the effects of statements that you make. Keep in mind that these transmissions are permanent and easily transferable, and can affect our company's reputation and relationships with Team Members and customers. When using social media tools like blogs, Facebook, Twitter or wikis, ensure that you do not make comments on behalf of GitLab without proper authorization. Also, you must not disclose our company's confidential or proprietary information about our business, our suppliers, or our customers."
+      ],
+      "reference_context_ids": [
+        "7e60e325-bd1a-5c09-8d70-832d5a625df5"
+      ],
+      "reference_document_ids": [
+        "e5917802-99a3-5bc2-b599-1c51702ef7d8"
+      ],
+      "sources": [
+        {
+          "document_id": "e5917802-99a3-5bc2-b599-1c51702ef7d8",
+          "chunk_id": "7e60e325-bd1a-5c09-8d70-832d5a625df5",
+          "chunk_index": 12,
+          "block_type": "text",
+          "token_count": 209,
+          "section_path": "Procedure > Unacceptable Use > Unacceptable Email and Communications Activities",
+          "source_start": 11858,
+          "source_end": 13041,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Internal Acceptable Use Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-27",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "ca14fec7-6b79-51fb-b151-be9bdea65bc3"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1918,
+    "output_tokens": 131,
+    "cost_usd_estimate": 0.0009768
+  },
+  "candidate": {
+    "user_input": "What types of relationships to the deceased are covered under GitLab's Inclusive Approach to bereavement leave?",
+    "reference": "GitLab's Inclusive Approach to bereavement leave does not restrict or tier leave based on relationship to the deceased and includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.",
+    "reference_contexts": [
+      "### Key Principles\n\n- **Flexible Duration**: There is no set limit on bereavement days. We recognize that grief is unique to each person and situation. You can take bereavement continuously or intermittently.\n- **Inclusive Approach**: We don't restrict or tier leave based on relationship to the deceased. This includes loss of pregnancy (birthing and non-birthing parents), family members, friends, colleagues, and pets.\n- **Manager Coordination**: As with all time off at GitLab, team members should coordinate with their manager about their needs and coverage plans.\n- **Confidentiality**: Details shared about a loss will be treated with strict confidentiality and respect."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "No restriction or tiering of leave based on relationship to the deceased.",
+      "Inclusive of loss of pregnancy (birthing and non-birthing parents).",
+      "Inclusive of family members.",
+      "Inclusive of friends.",
+      "Inclusive of colleagues.",
+      "Inclusive of pets."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 768,
+    "output_tokens": 95,
+    "cost_usd_estimate": 0.0022960000000000003
+  }
+}

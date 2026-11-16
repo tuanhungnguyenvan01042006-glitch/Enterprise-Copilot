@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-43",
+  "method": "ragas",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "aa8fb337-0101-57dc-b7bb-b80463769054",
+    "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+  ],
+  "worker_usage": {
+    "successful_requests": 2,
+    "input_tokens": 1804,
+    "output_tokens": 141,
+    "cost_usd_estimate": 0.0009471999999999999
+  },
+  "candidate": {
+    "user_input": "If I have $4000 unspent in my Growth and Development fund this year, how much will I be able to use for G&D expenses next calendar year?",
+    "reference": "Unspent G&D budgets do not roll over from one year to the next, so your next calendar year allowance will be the full annual cap regardless of any unspent amount this year.",
+    "reference_contexts": [
+      "The Growth and Development (G&D) Fund supports GitLab team members in pursuing approved learning experiences that strengthen their skills, support career growth, and contribute to high performing teams. Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.\n\nWe've recently updated the G&D process, and are moving away from using issues for G&D submissions, all requests going forward should be submitted via Compass.\n\nHere's a quick summary of the changes:\n\n- All new G&D requests must be submitted through Compass.\n- If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.\n- The fund, budget, eligible uses, and core reimbursement rules are not changing. Reimbursement still goes through Navan.\n- Compass gives team members clearer tracking and gives leaders better visibility into how G&D funds are being used across their teams.\n- Easier tracking means easier to know how much money you have left!\n\nProcessing requests via Compass allows for better tracking of requests, a clearer structure for submissions, and significantly improves the administration of the Fund.\n\nIf you already have a G&D GitLab issue open and it is already in progress or moving through approval, there is no need to resubmit it. Existing GitLab issue-based requests can continue through completion under the prior process.\n\nReach out to the Talent Development team if you require any assistance with submitting your request.",
+      "### Does budget rollover?\n\nNo. Unspent G&D budgets do not roll over from one year to the next."
+    ],
+    "synthesizer_name": "multi_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "G&D Fund reimburses up to $10,000 per calendar year for eligible growth experiences, provided all eligibility requirements are met.",
+      "Unspent G&D budgets do not roll over from one year to the next."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 987,
+    "output_tokens": 90,
+    "cost_usd_estimate": 0.002694
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "plan_id": "final-18",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "aa8fb337-0101-57dc-b7bb-b80463769054"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Compass transition",
+      "GitLab-issue G&D request",
+      "resubmission"
+    ],
+    "user_input": "Do I need to resubmit a Growth and Development (G&D) request that I already submitted as a GitLab issue now that the process is transitioning to Compass?",
+    "reference": "If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "- If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.\n\nIf you already have a G&D GitLab issue open and it is already in progress or moving through approval, there is no need to resubmit it. Existing GitLab issue-based requests can continue through completion under the prior process.",
+        "contribution": "This states that ongoing GitLab issue G&D requests do not require resubmission during the Compass transition."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context explicitly states that ongoing GitLab issue G&D requests do not need to be resubmitted during the Compass transition."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1335,
+    "output_tokens": 240,
+    "cost_usd_estimate": 0.0005724
+  },
+  "judge": {
+    "source_conditions": [
+      "All new G&D requests must be submitted through Compass.",
+      "If you already have a GitLab issue open and it is in progress or already moving through approval, you do not need to resubmit it.",
+      "Existing GitLab issue-based requests can continue through completion under the prior process."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 937,
+    "output_tokens": 103,
+    "cost_usd_estimate": 0.0026980000000000003
+  }
+}

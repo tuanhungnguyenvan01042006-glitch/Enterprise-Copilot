@@ -1,0 +1,60 @@
+{
+  "plan_id": "final-43",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "aa8fb337-0101-57dc-b7bb-b80463769054",
+    "cfb69f4c-9c1c-5830-b4a3-5f7b3cc5dbdb"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "G&D allowance",
+      "unspent budget",
+      "budget rollover",
+      "annual cap"
+    ],
+    "user_input": "What will be the Growth and Development (G&D) allowance for an otherwise eligible employee next calendar year if they have $4000 unspent this year?",
+    "reference": "Unspent G&D budgets do not roll over from one year to the next, and the annual cap is $10,000 per calendar year.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.",
+        "contribution": "States the annual cap for G&D allowance."
+      },
+      {
+        "context_index": 1,
+        "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+        "contribution": "Clarifies that unspent budget does not carry over to next year."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 provides the annual cap for G&D allowance, while Context 1 clarifies that unspent budget does not roll over, so the next year's allowance resets to the full cap regardless of unspent funds."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1388,
+    "output_tokens": 234,
+    "cost_usd_estimate": 0.0009296
+  },
+  "judge": {
+    "source_conditions": [
+      "G&D allowance is up to $10,000 per calendar year for eligible growth experiences, provided all eligibility requirements are met.",
+      "Unspent G&D budgets do not roll over from one year to the next."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 977,
+    "output_tokens": 89,
+    "cost_usd_estimate": 0.002666
+  }
+}

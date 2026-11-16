@@ -1,0 +1,133 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "academic courses",
+        "shorter non-academic professional-development courses",
+        "G&D Fund reimbursement"
+      ],
+      "user_input": "How do the eligibility requirements and completion evidence differ between academic courses and shorter non-academic professional-development courses reimbursed through the G&D Fund?",
+      "reference": "Academic courses must be from an accredited college or university and result in a final grade of \"B\" or higher, with a final grade report or transcript required for reimbursement. Shorter non-academic professional-development courses require a final grade report or satisfactory certificate of completion for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "For academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment. To be eligible, the course must: be from an accredited college or university; result in a final grade equivalent to a \"B\" or higher. A final grade report or transcript is required for reimbursement.",
+          "contribution": "Defines eligibility and evidence requirements for academic courses reimbursed through G&D Fund."
+        },
+        {
+          "context_index": 1,
+          "quote": "Certifications, licenses, and shorter non-academic courses that are relevant to your development may be reimbursed through the G&D Fund. A final grade report or satisfactory certificate of completion is required for reimbursement.",
+          "contribution": "Defines eligibility and evidence requirements for shorter non-academic professional-development courses reimbursed through G&D Fund."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Both contexts specify eligibility and completion evidence requirements for different types of courses reimbursed through the G&D Fund, allowing a direct comparison."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "academic courses",
+        "shorter non-academic professional-development courses",
+        "G&D Fund reimbursement"
+      ],
+      "user_input": "How do the eligibility requirements and completion evidence differ between academic courses and shorter non-academic professional-development courses reimbursed through the G&D Fund?",
+      "reference": "Academic courses must be from an accredited college or university and result in a final grade of \"B\" or higher, with a final grade report or transcript required for reimbursement. Shorter non-academic professional-development courses require a final grade report or satisfactory certificate of completion for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "Defines eligibility and evidence requirements for academic courses reimbursed through G&D Fund."
+        },
+        {
+          "context_index": 1,
+          "quote": "### Professional development, certifications, and courses\n\nCertifications, licenses, and shorter non-academic courses that are relevant to your development may be reimbursed through the G&D Fund.\n\nA final grade report or satisfactory certificate of completion is required for reimbursement.",
+          "contribution": "Defines eligibility and evidence requirements for shorter non-academic professional-development courses reimbursed through G&D Fund."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Both contexts specify eligibility and completion evidence requirements for different types of courses reimbursed through the G&D Fund, allowing a direct comparison."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "academic courses",
+        "shorter non-academic professional-development courses",
+        "G&D Fund reimbursement"
+      ],
+      "user_input": "How do the eligibility requirements and completion evidence differ between academic courses and shorter non-academic professional-development courses reimbursed through the G&D Fund?",
+      "reference": "Academic courses must be from an accredited college or university and result in a final grade of \"B\" or higher, with a final grade report or transcript required for reimbursement. Shorter non-academic professional-development courses require a final grade report or satisfactory certificate of completion for reimbursement.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement.",
+          "contribution": "Defines eligibility and evidence requirements for academic courses reimbursed through G&D Fund."
+        },
+        {
+          "context_index": 1,
+          "quote": "### Professional development, certifications, and courses\n\nCertifications, licenses, and shorter non-academic courses that are relevant to your development may be reimbursed through the G&D Fund.\n\nA final grade report or satisfactory certificate of completion is required for reimbursement.",
+          "contribution": "Defines eligibility and evidence requirements for shorter non-academic professional-development courses reimbursed through G&D Fund."
+        }
+      ],
+      "reasoning_type": "comparison",
+      "connection": "Both contexts specify eligibility and completion evidence requirements for different types of courses reimbursed through the G&D Fund, allowing a direct comparison.",
+      "id": "final-42",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare the eligibility/completion evidence for academic courses versus shorter non-academic professional-development courses reimbursed through G&D.",
+      "reference_contexts": [
+        "### Academic study\n\nFor academic courses relevant to your GitLab career development goals, the G&D Fund can be used to cover tuition and enrollment.\n\nTo be eligible, the course must:\n\n- be from an accredited college or university\n- result in a final grade equivalent to a \"B\" or higher\n\nAdditional fees related to books, travel, and supplies are not covered under this category.\n\nA final grade report or transcript is required for reimbursement.",
+        "### Professional development, certifications, and courses\n\nCertifications, licenses, and shorter non-academic courses that are relevant to your development may be reimbursed through the G&D Fund.\n\nA final grade report or satisfactory certificate of completion is required for reimbursement."
+      ],
+      "reference_context_ids": [
+        "57828948-7920-570b-af63-7e8347698791",
+        "94108e32-18c2-5c39-af0b-98b31684f48b"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "57828948-7920-570b-af63-7e8347698791",
+          "chunk_index": 13,
+          "block_type": "text",
+          "token_count": 89,
+          "section_path": "Types of Growth and Development reimbursements > Academic study",
+          "source_start": 5204,
+          "source_end": 5649,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        },
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "94108e32-18c2-5c39-af0b-98b31684f48b",
+          "chunk_index": 14,
+          "block_type": "text",
+          "token_count": 50,
+          "section_path": "Types of Growth and Development reimbursements > Professional development, certifications, and courses",
+          "source_start": 5651,
+          "source_end": 5941,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

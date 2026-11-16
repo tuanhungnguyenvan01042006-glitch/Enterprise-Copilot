@@ -1,0 +1,10 @@
+* trước khi cho vào embed, cần phải thực hiện Embeding cleaner 1 lần nữa 
+* mặc dù Document đã dược clean, nhưng vẫn còn 1 vài vấn đề cần giải quyết để Embeding tốt hơn (ko xóa khỏi tài liệu, nma ko nên Embed phần đó): 
+1. placeholder : Embedded or dynamic content unavailable in source
+2. Đường dẫn địa chỉ nội bộ 
+3. Link html 
+4 Bảng và Mermaid chunking thế nào 
+5. Icon 
+6. Normalize các chi tiết của file markdown , ví dụ ## ** 
+
+* Record của Module Embeding này viết trong Docs 

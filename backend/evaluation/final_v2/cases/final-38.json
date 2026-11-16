@@ -1,0 +1,137 @@
+[
+  {
+    "attempt": 1,
+    "feedback": "1 validation error for Candidate\nkeyphrases\n  List should have at most 3 items after validation, not 4 [type=too_long, input_value=['Internet - Travelling r...its', 'claim frequency'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/too_long"
+  },
+  {
+    "attempt": 2,
+    "candidate_raw": {
+      "keyphrases": [
+        "Internet - Travelling reimbursement limits",
+        "standard monthly home internet reimbursement",
+        "claim frequency"
+      ],
+      "user_input": "Compare reimbursement limits and claim frequency for business-travel internet versus standard monthly home internet for a US team member; do not mix daily and monthly caps.",
+      "reference": "Internet while traveling is reimbursable for up to $50 USD per day. Monthly service charges for the internet are reimbursable up to $100 per month, with claims above this amount not reimbursed. Internet travel reimbursement is daily, while standard home internet reimbursement is monthly.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily reimbursement limit for internet while traveling."
+        },
+        {
+          "context_index": 1,
+          "quote": "Policy is set at $100 - claims above this amount will not be reimbursed.",
+          "contribution": "States the monthly reimbursement limit for standard home internet."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the daily reimbursement limit for travel internet, while Context 1 provides the monthly reimbursement limit for standard home internet, allowing a comparison without mixing daily and monthly caps."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "Internet - Travelling reimbursement limits",
+        "standard monthly home internet reimbursement",
+        "claim frequency"
+      ],
+      "user_input": "Compare reimbursement limits and claim frequency for business-travel internet versus standard monthly home internet for a US team member; do not mix daily and monthly caps.",
+      "reference": "Internet while traveling is reimbursable for up to $50 USD per day. Monthly service charges for the internet are reimbursable up to $100 per month, with claims above this amount not reimbursed. Internet travel reimbursement is daily, while standard home internet reimbursement is monthly.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily reimbursement limit for internet while traveling."
+        },
+        {
+          "context_index": 1,
+          "quote": "Policy is set at $100 - claims above this amount will not be reimbursed.",
+          "contribution": "States the monthly reimbursement limit for standard home internet."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the daily reimbursement limit for travel internet, while Context 1 provides the monthly reimbursement limit for standard home internet, allowing a comparison without mixing daily and monthly caps."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Internet - Travelling reimbursement limits",
+        "standard monthly home internet reimbursement",
+        "claim frequency"
+      ],
+      "user_input": "Compare reimbursement limits and claim frequency for business-travel internet versus standard monthly home internet for a US team member; do not mix daily and monthly caps.",
+      "reference": "Internet while traveling is reimbursable for up to $50 USD per day. Monthly service charges for the internet are reimbursable up to $100 per month, with claims above this amount not reimbursed. Internet travel reimbursement is daily, while standard home internet reimbursement is monthly.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily reimbursement limit for internet while traveling."
+        },
+        {
+          "context_index": 1,
+          "quote": "Policy is set at $100 - claims above this amount will not be reimbursed.",
+          "contribution": "States the monthly reimbursement limit for standard home internet."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the daily reimbursement limit for travel internet, while Context 1 provides the monthly reimbursement limit for standard home internet, allowing a comparison without mixing daily and monthly caps.",
+      "id": "final-38",
+      "question_type": "multi_hop",
+      "planned_focus": "Compare reimbursement limits and claim frequency for business-travel internet versus standard monthly home internet for a US team member; do not mix daily and monthly caps.",
+      "reference_contexts": [
+        "#### Internet - Travelling\n\n- Internet while traveling is reimbursable for up to $50 USD (or local equivalent currency) per day.\n- Please provide trip details on the description box.",
+        "### Internet\n\n- Monthly service charges for the internet are reimbursable, but GitLab will not reimburse for any initial setup, equipment, change fees, or monthly insurance charges.\n- Please expense internet costs monthly, reflecting current charges only (even if you pay by a different cadence).\n- For Team Members in the Netherlands:\n  - If you have not already completed the form as part of onboarding with our Netherlands payroll provider, fill in and sign the [Regeling Internet Thuis](https://docs.google.com/a/gitlab.com/document/d/1J70geARMCjRt_SfxIY6spdfpTbv_1v_KDeJtGRQ6JmM/edit#heading=h.5x5ssjstqpkq) form and send it to the HRSavvy team at payroll@savvy-group.eu. Please do not expense your Internet costs via Navan - these will be rejected.\n  - If your address changes or the amount changes, please send a new form to the HRSavvy team, along with the invoice/letter for processing.\n- This is a taxable expense for GitLab Ltd. United Kingdom Team Members assuming that the internet connection is used partially for personal use as well as business use.\n- Policy is set at $100 - claims above this amount will not be reimbursed. The limit has been reviewed and set to cover standard costs across all markets; individual exceptions are no longer assessed at the claim stage.\n- Itemized Receipt required.\n- If an itemized bill is not available, costs will only be reimbursed for the element relating to Internet Access, i.e. if you pay for tv, internet and phone, the invoice should be divided by 3/# of services and we will pay this value only.\n- No hardware costs for internet service is reclaimable. This includes routers, extenders/boosters, etc.\n- If co-working space is used together with a combination of working from home, we will allow the reimbursement of the internet cost for where you spend most of your time. i.e. if you expense a co-working space for a full month then internet for home cannot be expensed. If you expense co-work for a few days in a month then home internet can be expensed in full.\n- Team members for GitLab GmbH (Germany) should refer to this [page](/handbook/finance/payroll/) for their country's specific guidelines of this expense."
+      ],
+      "reference_context_ids": [
+        "9b6a41c2-c3d6-5c9f-b96b-4120ab5a324a",
+        "dae4f1d2-1bac-5317-966d-3168164fa2cf"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "9b6a41c2-c3d6-5c9f-b96b-4120ab5a324a",
+          "chunk_index": 40,
+          "block_type": "text",
+          "token_count": 40,
+          "section_path": "4. PROCEDURES > Travel (Other) > Internet - Travelling",
+          "source_start": 27783,
+          "source_end": 27965,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        },
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "dae4f1d2-1bac-5317-966d-3168164fa2cf",
+          "chunk_index": 65,
+          "block_type": "text",
+          "token_count": 504,
+          "section_path": "Approved WFH Equipment List > Internet",
+          "source_start": 40954,
+          "source_end": 43132,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

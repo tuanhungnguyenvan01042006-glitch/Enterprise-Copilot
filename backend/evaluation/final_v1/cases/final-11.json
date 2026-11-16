@@ -1,0 +1,82 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Business-need exception process for external storage on company devices and encryption"
+      ],
+      "user_input": "What is the process for requesting a business-need exception for external storage on company devices?",
+      "reference": "The process for requesting a business-need exception for external storage on company devices involves opening an exception request if there is a business need. Corporate Security will then coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "An exception request may be opened here if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+          "contribution": "Describes the process for requesting an exception and the role of Corporate Security."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly outlines the process for requesting a business-need exception for external storage."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Business-need exception process for external storage on company devices and encryption"
+      ],
+      "user_input": "What is the process for requesting a business-need exception for external storage on company devices?",
+      "reference": "The process for requesting a business-need exception for external storage on company devices involves opening an exception request if there is a business need for the use of an external storage device. Corporate Security will then coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "An exception request may be opened here if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+          "contribution": "Describes the process for requesting an exception and the role of Corporate Security."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly outlines the process for requesting a business-need exception for external storage."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Business-need exception process for external storage on company devices and encryption"
+      ],
+      "user_input": "What is the process for requesting a business-need exception for external storage on company devices?",
+      "reference": "The process for requesting a business-need exception for external storage on company devices involves opening an exception request if there is a business need. Corporate Security will then coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "An exception request may be opened here if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+          "contribution": "Describes the process for requesting an exception and the role of Corporate Security."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly outlines the process for requesting a business-need exception for external storage."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Business-need exception process for external storage on company devices and encryption"
+      ],
+      "user_input": "What is the process for requesting a business-need exception for external storage on company devices?",
+      "reference": "The process for requesting a business-need exception for external storage on company devices involves opening an exception request if there is a business need for the use of an external storage device. Corporate Security will then coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "An exception request may be opened here if there is a business need for the use of an external storage device. Corporate Security will coordinate with requestors to determine the most suitable encryption-enabled device and configure encryption and password protection.",
+          "contribution": "Describes the process for requesting an exception and the role of Corporate Security."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence directly outlines the process for requesting a business-need exception for external storage."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

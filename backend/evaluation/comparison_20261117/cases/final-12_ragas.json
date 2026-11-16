@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-12",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "22af0f11-8853-5ace-82bc-b67beaa25963"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1991,
+    "output_tokens": 137,
+    "cost_usd_estimate": 0.0010156
+  },
+  "candidate": {
+    "user_input": "What should a GitLab team member do immediately if they lose a device containing their credentials or other GitLab-sensitive data?",
+    "reference": "They should send an email to panic@gitlab.com right away, as this triggers an immediate security response from the production and security teams to limit potential damage.",
+    "reference_contexts": [
+      "### Lost or Stolen Procedures\n\nGitLab provides a `panic@gitlab.com` email address and a [lost or stolen procedure](/handbook/security#reporting-an-incident) for team members to use in situations that require an immediate security response. Should a team member lose a device such as a thumb drive, Yubikey, mobile phone, tablet, laptop, etc. that contains their credentials or other GitLab-sensitive data, they should send an email to `panic@gitlab.com` right away. When the production and security teams receive an email sent to this address it will be handled immediately. Using this address provides an excellent way to limit the damage caused by a loss of one of these devices.\n\nGitLab reserves the right to request documentation of the theft and/or a related police report in the case of a stolen laptop."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "GitLab team member loses a device (thumb drive, Yubikey, mobile phone, tablet, laptop, etc.) containing credentials or GitLab-sensitive data",
+      "Immediate action required: send an email to panic@gitlab.com right away",
+      "Production and security teams will handle the incident immediately upon receiving the email",
+      "GitLab may request documentation or a police report if the device is a stolen laptop"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 786,
+    "output_tokens": 127,
+    "cost_usd_estimate": 0.002588
+  }
+}

@@ -1,0 +1,8 @@
+Triển khai model lite + thường : sau đó xây dựng eval đánh giá kết quả, nếu ko đủ tốt, hoặc muốn xem kết quả xem có tăng lên ko 
+thì có thể nâng cấp model thường lên large 
+
++ Sau khi kết nối xong voyage , thì ta tạo test để kiểm tra luồng toàn bộ bước Embedin
+ đã hoạt động ổn chưa , đồng thời là test xem API Voyage đã hoạt động chưa 
+
++ Sau khi test xong và thấy toàn bộ pipeline chạy ổn, API Voyage hoạt động, thì ta tạo
+Qdrant, và lưu vector vào qdrant 

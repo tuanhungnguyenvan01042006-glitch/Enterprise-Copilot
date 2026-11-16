@@ -1,0 +1,130 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "Growth and Development Fund eligibility",
+        "coaching seniority restriction"
+      ],
+      "user_input": "Who is eligible for coaching through the Growth and Development Fund considering both the general eligibility criteria and the coaching seniority restriction?",
+      "reference": "Applicants must be full-time GitLab employees who meet performance expectations and are not on leave status; coaching is available to team members at Manager level and above.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+          "contribution": "Provides general eligibility criteria for the Growth and Development Fund."
+        },
+        {
+          "context_index": 1,
+          "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above.",
+          "contribution": "Specifies the seniority restriction for coaching eligibility through the G&D Fund."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the general eligibility requirements for the G&D Fund, while Context 1 adds the coaching-specific seniority restriction, together defining who is eligible for coaching through the fund."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "Growth and Development Fund eligibility",
+        "coaching seniority restriction"
+      ],
+      "user_input": "Who is eligible for coaching through the Growth and Development Fund considering both the general eligibility criteria and the coaching seniority restriction?",
+      "reference": "Applicants must be full-time GitLab employees who meet performance expectations and are not on leave status; coaching is available to team members at Manager level and above.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+          "contribution": "Provides general eligibility criteria for the Growth and Development Fund."
+        },
+        {
+          "context_index": 1,
+          "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above.",
+          "contribution": "Specifies the seniority restriction for coaching eligibility through the G&D Fund."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the general eligibility requirements for the G&D Fund, while Context 1 adds the coaching-specific seniority restriction, together defining who is eligible for coaching through the fund."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "Growth and Development Fund eligibility",
+        "coaching seniority restriction"
+      ],
+      "user_input": "Who is eligible for coaching through the Growth and Development Fund considering both the general eligibility criteria and the coaching seniority restriction?",
+      "reference": "Applicants must be full-time GitLab employees who meet performance expectations and are not on leave status; coaching is available to team members at Manager level and above.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "To use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+          "contribution": "Provides general eligibility criteria for the Growth and Development Fund."
+        },
+        {
+          "context_index": 1,
+          "quote": "Coaching through the G&D Fund is available to team members at the Manager level and above.",
+          "contribution": "Specifies the seniority restriction for coaching eligibility through the G&D Fund."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the general eligibility requirements for the G&D Fund, while Context 1 adds the coaching-specific seniority restriction, together defining who is eligible for coaching through the fund.",
+      "id": "final-44",
+      "question_type": "multi_hop",
+      "planned_focus": "Who is eligible for coaching through the G&D Fund, combining general fund employment/performance/leave eligibility with the coaching seniority restriction? Do not state eligibility rules in the question.",
+      "reference_contexts": [
+        "## Eligibility\n\nTo use the Growth and Development Fund, applicants must be full-time GitLab employees who meet performance expectations in their role and are not on leave status.",
+        "### Coaching\n\nGitLab is currently contracted with SoundingBoard Coaching and we have a direct relationship with the vendor.\n\nCoaching through the G&D Fund is available to team members at the Manager level and above.\n\nIf you are seeking coaching, we strongly encourage you to use SoundingBoard Coaching. Because GitLab has a direct relationship with SoundingBoard, you will not need to put the cost on your personal credit card. The charge can be routed directly to the appropriate cost center.\n\nIf you would prefer to use a different coaching vendor, please note that in your request so the team can review it as part of the approval process.\n\nCoaching requests should still follow the current eligibility requirements and any program-specific guidance documented on this page."
+      ],
+      "reference_context_ids": [
+        "0c48e867-12bf-5df2-a084-c6d4d91d4008",
+        "b67e486b-fbc5-5bb9-b9e8-3a069eeccca5"
+      ],
+      "reference_document_ids": [
+        "4edcbe27-c756-5beb-a254-1fa73cc1988c"
+      ],
+      "sources": [
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "0c48e867-12bf-5df2-a084-c6d4d91d4008",
+          "chunk_index": 1,
+          "block_type": "text",
+          "token_count": 34,
+          "section_path": "Eligibility",
+          "source_start": 1572,
+          "source_end": 1750,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        },
+        {
+          "document_id": "4edcbe27-c756-5beb-a254-1fa73cc1988c",
+          "chunk_id": "b67e486b-fbc5-5bb9-b9e8-3a069eeccca5",
+          "chunk_index": 19,
+          "block_type": "text",
+          "token_count": 147,
+          "section_path": "Types of Growth and Development reimbursements > Coaching",
+          "source_start": 6586,
+          "source_end": 7363,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Growth and Development Fund",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

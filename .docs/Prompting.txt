@@ -1,0 +1,9 @@
+Khi thực hiện yêu cầu, hãy tuân thủ các nguyên tắc sau:
+
+1. **Chính xác:** Đảm bảo code hoạt động đúng yêu cầu, xử lý lỗi hợp lý và không gây ảnh hưởng đến các chức năng hiện có.
+2. **Tương thích:** Trước khi triển khai, tìm hiểu kiến trúc, dependencies và coding conventions của project. Ưu tiên tái sử dụng các thành phần sẵn có, đảm bảo tích hợp nhất quán với toàn bộ hệ thống.
+3. **Không Overengineering:** Tuân thủ KISS và YAGNI. Chọn giải pháp đơn giản, dễ hiểu, dễ bảo trì; tránh abstraction, design pattern hoặc refactor không cần thiết.
+4. **Ưu tiên thư viện/framework:** Sử dụng các thư viện, framework hiện đại, phổ biến, ổn định và tương thích với project thay vì tự triển khai thủ công những chức năng đã có giải pháp chuẩn. Hạn chế thêm dependency không cần thiết.
+5. **Kiểm chứng:** Chạy các test phù hợp để xác nhận tính chính xác và khả năng tương thích sau khi triển khai.
+
+**Mục tiêu:** Code đúng, đơn giản, nhất quán với kiến trúc hiện tại và dễ bảo trì. Không phức tạp hóa những vấn đề đơn giản.

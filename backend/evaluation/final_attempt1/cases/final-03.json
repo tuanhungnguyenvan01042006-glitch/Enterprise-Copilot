@@ -1,0 +1,130 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "Navan hotel stay",
+        "expense report",
+        "business incidentals"
+      ],
+      "user_input": "When does a Navan hotel stay require an expense report for business incidentals?",
+      "reference": "A Navan hotel stay does not require an expense report if you do not incur any additional hotel charges. However, incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.",
+          "contribution": "Clarifies when an expense report is not needed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+          "contribution": "Specifies that business-related incidentals require an expense report."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clarifies the conditions under which an expense report is required for hotel stays booked through Navan."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "Navan hotel stay",
+        "expense report",
+        "business incidentals"
+      ],
+      "user_input": "When does a Navan hotel stay require an expense report for business incidentals?",
+      "reference": "A Navan hotel stay does not require an expense report if you do not incur any additional hotel charges. However, incidental expenses that are business-related and within policy must still be submitted through an expense report.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.",
+          "contribution": "Clarifies when an expense report is not needed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+          "contribution": "Specifies that business-related incidentals require an expense report."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clarifies the conditions under which an expense report is required for Navan hotel stays."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "Navan hotel stay",
+        "expense report",
+        "business incidentals"
+      ],
+      "user_input": "When does a Navan hotel stay require an expense report for business incidentals?",
+      "reference": "A Navan hotel stay does not require an expense report if you do not incur any additional hotel charges. However, incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.",
+          "contribution": "Clarifies when an expense report is not needed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+          "contribution": "Specifies that business-related incidentals must be reported."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clarifies the conditions under which an expense report is required for hotel stays booked through Navan."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "Navan hotel stay",
+        "expense report",
+        "business incidentals"
+      ],
+      "user_input": "When does a Navan hotel stay require an expense report for business incidentals?",
+      "reference": "A Navan hotel stay does not require an expense report if you do not incur any additional hotel charges. However, incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.",
+          "contribution": "Clarifies when an expense report is not needed."
+        },
+        {
+          "context_index": 0,
+          "quote": "Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+          "contribution": "Specifies that business-related incidentals require an expense report."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence clarifies the conditions under which an expense report is required for hotel stays booked through Navan."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

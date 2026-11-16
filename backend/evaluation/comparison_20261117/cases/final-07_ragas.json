@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-07",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "f441bbc5-f29c-5f1e-a60e-fb1dd35abc70"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1870,
+    "output_tokens": 109,
+    "cost_usd_estimate": 0.0009224
+  },
+  "candidate": {
+    "user_input": "What must a Team Member do if they are missing a receipt when submitting an expense?",
+    "reference": "If a Team Member is missing a receipt, they must complete a Missing Receipt Affidavit and attach it as a PDF to the expense when submitting.",
+    "reference_contexts": [
+      "### 4.3 Missing Receipt Affidavit\n\nIf a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted. Missing Receipt Affidavit located [here](https://docs.google.com/spreadsheets/d/179q0Wos-CemLCe1uxgMpZ80JukSC4KYx8JICFgHzN0I/edit?usp=sharing) (please ensure to make a copy). When attaching the receipt affidavit, the Team Member should attach the document as a PDF."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "If a Team Member is missing a receipt, a Missing Receipt Affidavit will need to be completed and attached to the expense when submitted.",
+      "The Missing Receipt Affidavit should be attached as a PDF."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 716,
+    "output_tokens": 89,
+    "cost_usd_estimate": 0.002144
+  }
+}

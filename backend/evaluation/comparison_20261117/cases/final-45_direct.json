@@ -1,0 +1,16 @@
+{
+  "plan_id": "final-45",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "f0c8d9d0-f2a4-527c-8349-7dc4180f405a",
+    "d91c921e-3032-58d4-8fb6-f2f9bc3f2b7b"
+  ],
+  "error": "ValidationError: 3 validation errors for Candidate\nevidence.0.contribution\n  Field required [type=missing, input_value={'context_index': 0, 'quo...ments state otherwise)'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nreasoning_type\n  Field required [type=missing, input_value={'keyphrases': ['non-US t...conditional sick note.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\nconnection\n  Field required [type=missing, input_value={'keyphrases': ['non-US t...conditional sick note.'}, input_type=dict]\n    For further i",
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1519,
+    "output_tokens": 332,
+    "cost_usd_estimate": 0.0011388000000000001
+  }
+}

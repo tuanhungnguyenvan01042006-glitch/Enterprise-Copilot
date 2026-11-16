@@ -1,0 +1,49 @@
+{
+  "plan_id": "final-16",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "fa84bb4d-9505-54be-a8b7-b5eae785ed1e"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1815,
+    "output_tokens": 129,
+    "cost_usd_estimate": 0.0009324000000000001
+  },
+  "candidate": {
+    "user_input": "Who is responsible for handling the onboarding of temporary service providers according to the temporary service provider internal handbook page?",
+    "reference": "The Procurement team is responsible for handling the onboarding of temporary service providers, as the People team is not involved in this process.",
+    "reference_contexts": [
+      "### Temporary Service Provider (Contractor/Consultant) Onboarding\n\nThe People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers. You can work with the Procurement team on these onboardings and review the [temporary service provider internal handbook page](https://internal.gitlab.com/handbook/it/end-user-services/access-request/temporary-service-providers/) for templates and other helpful information."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "The People team is not involved in the process for hiring, onboarding, or offboarding temporary service providers.",
+      "The Procurement team handles onboarding of temporary service providers."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 686,
+    "output_tokens": 79,
+    "cost_usd_estimate": 0.002004
+  }
+}

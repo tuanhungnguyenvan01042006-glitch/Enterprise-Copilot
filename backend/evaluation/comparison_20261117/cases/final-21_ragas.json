@@ -1,0 +1,51 @@
+{
+  "plan_id": "final-21",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "1c4b27a9-518c-56a2-a7d5-b0bd703fd0b8"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1775,
+    "output_tokens": 147,
+    "cost_usd_estimate": 0.0009452
+  },
+  "candidate": {
+    "user_input": "Under what conditions can an employee request reimbursement for an approved opportunity cost using the 50% upfront reimbursement option?",
+    "reference": "An employee may request reimbursement for 50% of the approved opportunity cost after payment and the remaining 50% upon completion, but this split disbursement option does not apply to travel, hotel, or meal expenses.",
+    "reference_contexts": [
+      "#### 50% upfront reimbursement\n\nAll requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "All requests may use the split disbursement option when applicable.",
+      "50% of the approved opportunity cost can be reimbursed after payment.",
+      "The remaining 50% can be reimbursed upon completion.",
+      "This option does not apply to travel, hotel, or meal expenses."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 691,
+    "output_tokens": 101,
+    "cost_usd_estimate": 0.00219
+  }
+}

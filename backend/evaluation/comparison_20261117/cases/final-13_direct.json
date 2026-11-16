@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-13",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "f8f85975-634f-52cb-b225-fdbf4665fa38"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "initial onboarding duration",
+      "team-specific training start",
+      "recommendation not mandate"
+    ],
+    "user_input": "What is the recommended initial onboarding duration at GitLab and when does team-specific training typically begin?",
+    "reference": "We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "We highly recommend taking at least two full weeks for onboarding and only in week three starting with team specific onboarding and training.",
+        "contribution": "This quote directly states the recommended onboarding duration and when team-specific training starts."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly provides the recommended onboarding duration and timing for team-specific training, matching the question focus."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1616,
+    "output_tokens": 155,
+    "cost_usd_estimate": 0.0008944000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Onboarding is highly recommended to last at least two full weeks.",
+      "Team-specific onboarding and training is recommended to start only in week three.",
+      "Participation in team work during the first two weeks is allowed but heavy contribution is not expected.",
+      "The recommendation is not a mandate."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1199,
+    "output_tokens": 100,
+    "cost_usd_estimate": 0.0031980000000000003
+  }
+}

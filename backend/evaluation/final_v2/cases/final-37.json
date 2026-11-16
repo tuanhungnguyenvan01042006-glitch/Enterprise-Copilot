@@ -1,0 +1,148 @@
+[
+  {
+    "attempt": 1,
+    "candidate_raw": {
+      "keyphrases": [
+        "hotel stays reimbursable up to $300 USD",
+        "Airbnb booking cheaper than hotel",
+        "Airbnb booking and reimbursement"
+      ],
+      "user_input": "What is the nightly amount restriction for Airbnb stays compared to the hotel cap, and what conditions apply for booking and reimbursing Airbnb accommodations?",
+      "reference": "Hotel stays are reimbursable up to $300 USD per night, and Airbnb bookings must be cheaper than hotel stays with the same amount restrictions applying. Airbnb bookings require manual expense submission in Navan.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "Defines the hotel nightly reimbursement cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "States the condition for Airbnb booking eligibility."
+        },
+        {
+          "context_index": 1,
+          "quote": "To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense. Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice.",
+          "contribution": "Explains the booking platform and reimbursement process for Airbnb stays."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the hotel nightly reimbursement cap and conditions, while Context 1 explains Airbnb booking conditions and reimbursement process referencing the same amount restrictions as hotels."
+    },
+    "evidence_quote_expanded_to_source": true,
+    "candidate": {
+      "keyphrases": [
+        "hotel stays reimbursable up to $300 USD",
+        "Airbnb booking cheaper than hotel",
+        "Airbnb booking and reimbursement"
+      ],
+      "user_input": "What is the nightly amount restriction for Airbnb stays compared to the hotel cap, and what conditions apply for booking and reimbursing Airbnb accommodations?",
+      "reference": "Hotel stays are reimbursable up to $300 USD per night, and Airbnb bookings must be cheaper than hotel stays with the same amount restrictions applying. Airbnb bookings require manual expense submission in Navan.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "Defines the hotel nightly reimbursement cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "States the condition for Airbnb booking eligibility."
+        },
+        {
+          "context_index": 1,
+          "quote": "#### Booking accommodations through Airbnb\n\n- To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense.\n- Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip\n- Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice.",
+          "contribution": "Explains the booking platform and reimbursement process for Airbnb stays."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the hotel nightly reimbursement cap and conditions, while Context 1 explains Airbnb booking conditions and reimbursement process referencing the same amount restrictions as hotels."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "hotel stays reimbursable up to $300 USD",
+        "Airbnb booking cheaper than hotel",
+        "Airbnb booking and reimbursement"
+      ],
+      "user_input": "What is the nightly amount restriction for Airbnb stays compared to the hotel cap, and what conditions apply for booking and reimbursing Airbnb accommodations?",
+      "reference": "Hotel stays are reimbursable up to $300 USD per night, and Airbnb bookings must be cheaper than hotel stays with the same amount restrictions applying. Airbnb bookings require manual expense submission in Navan.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms",
+          "contribution": "Defines the hotel nightly reimbursement cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip",
+          "contribution": "States the condition for Airbnb booking eligibility."
+        },
+        {
+          "context_index": 1,
+          "quote": "#### Booking accommodations through Airbnb\n\n- To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense.\n- Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip\n- Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice.",
+          "contribution": "Explains the booking platform and reimbursement process for Airbnb stays."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 provides the hotel nightly reimbursement cap and conditions, while Context 1 explains Airbnb booking conditions and reimbursement process referencing the same amount restrictions as hotels.",
+      "id": "final-37",
+      "question_type": "multi_hop",
+      "planned_focus": "Determine Airbnb nightly amount restriction from the hotel cap, cheaper-than-hotel condition, and Airbnb booking/reimbursement route. Both hotel amount and Airbnb conditions are needed.",
+      "reference_contexts": [
+        "### Hotels\n\n- When you book Hotels through Navan Travel, hotel room charges and the applicable taxes will be paid directly by GitLab through a central virtual card - the same way the company handles flights and train travel. The virtual card details will appear in Navan, our travel and expense platform, 24 hours before check-in and the hotel will automatically charge your room and taxes to this card.\n- If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay.\n- You will still be required to provide a personal credit card at check-in for any potential charges, such as room service, parking, minibar, or other extras.\n- Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.\n- Further information can be found on [Navan Help Centre](https://app.navan.com/app/helpcenter/articles/travel/myself/booking-hotels/virtual-cards-for-pay-at-hotel-bookings)\n- When hotel rooms are booked outside Navan - approval required by Manager and AP Admin.\n- Hotel stays are reimbursable up to $300 USD (or equivalent local currency) inclusive of tax per night for standard rooms, with a 7 day booking lead time.\n- However, the lodging policy in Navan is set up as a “Dynamic Policy” which calculates a fair market price for every search based on travel dates and destinations. This allows for some room in price in case the $300 USD limit is really not applicable to that area. And similar to airfare, any purchases that are over 20% of the Dynamic Policy will be flagged for further review by your manager.\n- Always choose the refundable room booking unless the only available option is a non refundable room.\n- The exception is the Corporate Events hotel room blocks organized by the internal team or if the conference hotel room block has better pricing than Navan.\n- The hotel room block's pricing is generally within the bounds of the $300USD/night and in the event it is over that amount, please contact the AP team for an exception to be granted.\n- Conference hotel room blocks or Corporate Events organized blocks will still need to be charged to a personal credit card and then submitted for reimbursement via Navan Expense.\n- Always bring a credit card with you when traveling for company business if you have one. Hotels will generally expect you to have a physical credit card to present upon check-in. This credit card will be kept on file for the duration of your stay. Even if your lodging was pre-paid by the company or by using a company credit card, the Hotel may still require a card to be on file for \"incidentals\".",
+        "#### Booking accommodations through Airbnb\n\n- To be booked on the AIRBNB platform. Same restrictions in amount applies as the hotel expense.\n- Booking through Airbnb is permitted if it is cheaper than a hotel stay for your trip\n- Team Member to submit a manual expense in Navan using expense type \"Lodging\" and attach the receipt/invoice."
+      ],
+      "reference_context_ids": [
+        "544f0cc9-a879-5010-88eb-cab5c851f149",
+        "b5195be5-55e4-5dbf-8983-f60cb66feb4c"
+      ],
+      "reference_document_ids": [
+        "4fcfed36-64f6-5383-86f7-00a8601778f7"
+      ],
+      "sources": [
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "544f0cc9-a879-5010-88eb-cab5c851f149",
+          "chunk_index": 22,
+          "block_type": "text",
+          "token_count": 555,
+          "section_path": "4. PROCEDURES > Hotels",
+          "source_start": 18974,
+          "source_end": 21624,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        },
+        {
+          "document_id": "4fcfed36-64f6-5383-86f7-00a8601778f7",
+          "chunk_id": "b5195be5-55e4-5dbf-8983-f60cb66feb4c",
+          "chunk_index": 24,
+          "block_type": "text",
+          "token_count": 71,
+          "section_path": "4. PROCEDURES > Hotels > Booking accommodations through Airbnb",
+          "source_start": 21999,
+          "source_end": 22337,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Global Travel and Expense Policy",
+          "category": "POLICY"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": true
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

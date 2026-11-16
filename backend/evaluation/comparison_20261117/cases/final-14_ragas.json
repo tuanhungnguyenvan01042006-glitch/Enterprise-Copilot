@@ -1,0 +1,61 @@
+{
+  "plan_id": "final-14",
+  "method": "ragas",
+  "question_type": "single_hop",
+  "source_ids": [
+    "55d1767d-2a5f-541f-a9ce-9bfac979e3c2"
+  ],
+  "worker_usage": {
+    "successful_requests": 3,
+    "input_tokens": 1900,
+    "output_tokens": 122,
+    "cost_usd_estimate": 0.0009552
+  },
+  "candidate": {
+    "user_input": "What is the responsibility of the People Operations Specialist regarding company compliance during onboarding?",
+    "reference": "The People Operations Specialist is responsible for closing onboarding issues and ensuring compliance by following up on outstanding tasks; if issues remain open after 60 days, the employment bot will automatically close them.",
+    "reference_contexts": [
+      "### Compliance\n\nThe Senior People Operations Specialist completes a monthly audit of all open onboarding issues to ensure that the new team member, manager and People Operations team tasks are completed. More importantly, there are certain tasks which need to be completed in line with our company compliance (security, payroll, etc).\n\nIf any tasks are still outstanding, the People Operations Specialist will ping the relevant members on the issue requesting action on the items or checking whether the issue can be closed.\n\n*It remains the responsibility of the People Operations Specialist to close the issue and remain compliant.*\n\nThe employment bot will automatically close any onboarding issues still open after 60 days."
+    ],
+    "synthesizer_name": "single_hop_specific_query_synthesizer"
+  },
+  "usage": {
+    "successful_requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd_estimate": 0.0
+  },
+  "judge": {
+    "source_conditions": [
+      "The Senior People Operations Specialist completes a monthly audit of all open onboarding issues.",
+      "The audit ensures that new team member, manager, and People Operations team tasks are completed.",
+      "Certain tasks must be completed in line with company compliance (security, payroll, etc).",
+      "If tasks are outstanding, the People Operations Specialist pings relevant members for action or to check if the issue can be closed.",
+      "It remains the responsibility of the People Operations Specialist to close the issue and remain compliant.",
+      "The employment bot will automatically close any onboarding issues still open after 60 days."
+    ],
+    "missing_conditions": [
+      "The answer omits that the Senior People Operations Specialist completes a monthly audit of all open onboarding issues.",
+      "The answer omits that the audit ensures that new team member, manager, and People Operations team tasks are completed.",
+      "The answer omits that the People Operations Specialist pings relevant members for action or to check if the issue can be closed."
+    ],
+    "question_issues": [],
+    "grounded": false,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer does not mention the monthly audit performed by the Senior People Operations Specialist.",
+      "The answer does not specify that the audit ensures completion of tasks by the new team member, manager, and People Operations team.",
+      "The answer omits the step where the People Operations Specialist pings relevant members for action or closure before closing the issue."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 741,
+    "output_tokens": 291,
+    "cost_usd_estimate": 0.00381
+  }
+}

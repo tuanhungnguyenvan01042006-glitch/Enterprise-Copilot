@@ -1,0 +1,55 @@
+{
+  "plan_id": "final-03",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "544f0cc9-a879-5010-88eb-cab5c851f149"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Navan hotel stay",
+      "expense report",
+      "business incidentals"
+    ],
+    "user_input": "When does a Navan hotel stay require submitting an expense report, and how are business incidentals handled?",
+    "reference": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay. Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "If you do not incur any additional hotel charges, there will be no need to submit an expense report for your stay. Incidental expenses that are business-related and within policy still are required to be submitted through an expense report.",
+        "contribution": "This explains when an expense report is needed for Navan hotel stays and how business incidentals are handled."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote directly states the conditions for submitting an expense report for Navan hotel stays and business incidentals."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1577,
+    "output_tokens": 204,
+    "cost_usd_estimate": 0.0009572000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Hotel room charges and applicable taxes for Navan bookings are paid directly by GitLab via a central virtual card.",
+      "If no additional hotel charges are incurred, no expense report is needed for the stay.",
+      "A personal credit card must be provided at check-in for potential charges such as room service, parking, minibar, or other extras.",
+      "Business-related incidental expenses within policy must be submitted through an expense report."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1183,
+    "output_tokens": 127,
+    "cost_usd_estimate": 0.003382
+  }
+}

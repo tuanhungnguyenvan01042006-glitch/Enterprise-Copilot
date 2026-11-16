@@ -1,0 +1,111 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "volunteer as an onboarding buddy",
+        "who assigns buddies"
+      ],
+      "user_input": "How can I volunteer as an onboarding buddy and who assigns buddies?",
+      "reference": "To volunteer as an onboarding buddy, you must have been at GitLab for 3 or more months and should express your interest to your manager. The assignment of buddies is the responsibility of the new team member's manager, as outlined in the onboarding issue.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Buddy assignation is the new team member's manager's responsibility... If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager.",
+          "contribution": "This explains how to volunteer and who assigns buddies."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context provides specific details on how to volunteer and the assignment responsibility."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "volunteer as an onboarding buddy",
+        "who assigns buddies"
+      ],
+      "user_input": "How can I volunteer as an onboarding buddy and who assigns buddies?",
+      "reference": "To volunteer as an onboarding buddy, you should express your interest to your manager if you have been at GitLab for 3 or more months. The assignment of buddies is the responsibility of the new team member's manager, as outlined in the onboarding issue.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager.",
+          "contribution": "This explains how to volunteer as an onboarding buddy."
+        },
+        {
+          "context_index": 0,
+          "quote": "Buddy assignation is the new team member's manager's responsibility",
+          "contribution": "This specifies who assigns buddies."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides direct answers to both parts of the question regarding volunteering and buddy assignment."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": false
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "volunteer as an onboarding buddy",
+        "who assigns buddies"
+      ],
+      "user_input": "How can I volunteer as an onboarding buddy and who assigns buddies?",
+      "reference": "To volunteer as an onboarding buddy, you should express your interest to your manager if you have been at GitLab for 3 or more months. The assignment of buddies is the responsibility of the new team member's manager, as outlined in the onboarding issue.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager.",
+          "contribution": "This explains how to volunteer as an onboarding buddy."
+        },
+        {
+          "context_index": 0,
+          "quote": "Buddy assignation is the new team member's manager's responsibility",
+          "contribution": "This specifies who assigns buddies."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The evidence provides direct answers to both parts of the question regarding volunteering and buddy assignment.",
+      "id": "final-17",
+      "question_type": "single_hop",
+      "planned_focus": "How to volunteer as an onboarding buddy and who assigns buddies.",
+      "reference_contexts": [
+        "## How Can I Become An Onboarding Buddy?\n\nBuddy assignation is the new team member's manager's responsibility as outlined in the [onboarding issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) as the very first `Before Starting at GitLab` manager task. If you have been at GitLab 3+ months and are interested in participating in the Onboarding Buddy Program, please express your interest to your manager."
+      ],
+      "reference_context_ids": [
+        "e8a3e4dd-caf5-5a12-8bce-006cebe45682"
+      ],
+      "reference_document_ids": [
+        "ec1a5d77-71f0-5f00-8a0a-e593d2326dee"
+      ],
+      "sources": [
+        {
+          "document_id": "ec1a5d77-71f0-5f00-8a0a-e593d2326dee",
+          "chunk_id": "e8a3e4dd-caf5-5a12-8bce-006cebe45682",
+          "chunk_index": 4,
+          "block_type": "text",
+          "token_count": 108,
+          "section_path": "How Can I Become An Onboarding Buddy?",
+          "source_start": 6520,
+          "source_end": 7012,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "GitLab Onboarding Buddies",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": false
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

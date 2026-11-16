@@ -1,0 +1,15 @@
+tạo .venv riêng để cài và chạy các thư viện phục vụ benchmark mà không thay đổi môi trường backend đang chạy. Đây là một lựa chọn để quản lý dependency, không phải yêu cầu bắt buộc của Ragas.
+Ragas cần thêm các thư viện như ragas, langchain-openai và OpenAI SDK. 
+Các thư viện này có dependency riêng và có thể yêu cầu phiên bản khác với backend. 
+Tách môi trường giúp mình thử và chốt các phiên bản cho evaluation mà không phải 
+cập nhật backend/requirements.txt hoặc build lại image API chỉ để chạy benchmark.
+
+
+* Giải thích kĩ hơn vai trò thư mục .venv : 
+
++ .venv là MÔI TRƯỜNG lưu python và các thư viện python, vai trò của nó là muốn tạo ra 1 môi trường
+Python tách biệt , tránh việc cài đặt thẳng vào môi trường của toàn máy : môi trường dùng chung với backend
+  + Với backend, ta thực tế chỉ cần khai báo các thư viện cần tải trong file requirement.txt, sau đó cài đặt thông qua lệnh pip instal
+
++ Nhưng với 1 tác vụ đặc biệt, cần cấu hình khác với cấu hình chung của backend (như eval) thì 
+ta tải trực tiếp nó vào thư mục .venv của tác vụ Evaluation

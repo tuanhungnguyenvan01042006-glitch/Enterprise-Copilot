@@ -1,0 +1,71 @@
+{
+  "plan_id": "final-49",
+  "method": "direct",
+  "question_type": "multi_hop",
+  "source_ids": [
+    "f8f85975-634f-52cb-b225-fdbf4665fa38",
+    "604e52bd-5c78-5ba9-a72a-9c012aa2e000"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "recommended helper",
+      "ideal timezone",
+      "availability criteria"
+    ],
+    "user_input": "Identify the recommended helper when a new hire is stuck on onboarding tasks and explain ideal timezone and availability criteria for selecting that helper. Do not name the helper role in the question.",
+    "reference": "Managers should pick a helper who has been at GitLab longer than 3 months, shares the same department or division, shares a similar timezone, and is available during the first two weeks without major PTO or leave.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "Reach out to your onboarding buddy or other GitLab team members if you need help understanding or completing any of your tasks.",
+        "contribution": "Identifies the recommended helper to contact when stuck on onboarding tasks."
+      },
+      {
+        "context_index": 1,
+        "quote": "Ideally an onboarding buddy: has been at GitLab longer than 3 months shares the same department or division with the onboarding team member shares a similar timezone available during the first two weeks (no major PTO events or leave)",
+        "contribution": "Specifies the ideal timezone and availability criteria for selecting the helper."
+      }
+    ],
+    "reasoning_type": "bridge",
+    "connection": "Context 0 identifies the recommended helper to contact when stuck on onboarding tasks, while Context 1 details the ideal timezone and availability criteria for selecting that helper."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1792,
+    "output_tokens": 261,
+    "cost_usd_estimate": 0.0011344
+  },
+  "judge": {
+    "source_conditions": [
+      "Helper has been at GitLab longer than 3 months",
+      "Helper shares the same department or division with the onboarding team member",
+      "Helper shares a similar timezone",
+      "Helper is available during the first two weeks (no major PTO events or leave)",
+      "Helper can support adjustment to GitLab and knows about relevant applications/tools",
+      "It is not always possible to achieve all guidelines depending on team or location"
+    ],
+    "missing_conditions": [
+      "Helper can support adjustment to GitLab and knows about relevant applications/tools",
+      "It is not always possible to achieve all guidelines depending on team or location"
+    ],
+    "question_issues": [
+      "Question includes an instruction intended for the generator."
+    ],
+    "grounded": false,
+    "complete": false,
+    "clear": false,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": [
+      "The answer omits the condition that the helper should be able to support adjustment to GitLab and know about relevant applications/tools.",
+      "The answer omits the caveat that it is not always possible to achieve all guidelines depending on team or location."
+    ]
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 1400,
+    "output_tokens": 203,
+    "cost_usd_estimate": 0.004424
+  }
+}

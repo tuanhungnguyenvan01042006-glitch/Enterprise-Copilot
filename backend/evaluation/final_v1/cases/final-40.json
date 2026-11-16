@@ -1,0 +1,129 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "budget funds",
+        "daily meal cap",
+        "tips"
+      ],
+      "user_input": "For meals while traveling to a workshop, determine which budget funds them and the daily meal cap including tips; do not charge meals to G&D.",
+      "reference": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day, including tips up to 20%. These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+          "contribution": "Identifies the budget that funds meals."
+        },
+        {
+          "context_index": 1,
+          "quote": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily meal cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Tips are acceptable up to 20% and should be detailed accordingly in the description box.",
+          "contribution": "Specifies the conditions for tips."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 specifies the budget source for meals, while Context 1 provides the daily meal cap and details about tips."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "budget funds",
+        "daily meal cap",
+        "tips"
+      ],
+      "user_input": "For meals while traveling to a workshop, determine which budget funds them and the daily meal cap including tips; do not charge meals to G&D.",
+      "reference": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day, including tips up to 20%. These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+          "contribution": "Identifies the budget funding meals."
+        },
+        {
+          "context_index": 1,
+          "quote": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily meal cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Tips are acceptable up to 20% and should be detailed accordingly in the description box.",
+          "contribution": "Specifies the conditions for tips."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 explains the funding source for meals, while Context 1 provides the daily meal cap and details about tips."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 3,
+    "candidate": {
+      "keyphrases": [
+        "budget funds",
+        "daily meal cap",
+        "tips"
+      ],
+      "user_input": "For meals while traveling to a workshop, determine which budget funds them and the daily meal cap including tips; do not charge meals to G&D.",
+      "reference": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day, including tips up to 20%. These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+          "contribution": "Identifies the budget that funds meals."
+        },
+        {
+          "context_index": 1,
+          "quote": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily meal cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Tips are acceptable up to 20% and should be detailed accordingly in the description box.",
+          "contribution": "Specifies the conditions for tips."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 specifies the budget source for meals, while Context 1 provides the daily meal cap and details about tips."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  },
+  {
+    "attempt": 4,
+    "candidate": {
+      "keyphrases": [
+        "budget funds",
+        "daily meal cap including tips"
+      ],
+      "user_input": "For meals while traveling to a workshop, determine which budget funds them and the daily meal cap including tips; do not charge meals to G&D.",
+      "reference": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day, including tips up to 20%. These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "These expenses are funded from the requestor's department Travel & Expense budget, not from the G&D allocation.",
+          "contribution": "Identifies the budget funding meals."
+        },
+        {
+          "context_index": 1,
+          "quote": "Meals while traveling on Company business are reimbursable, up to $120 USD (or local equivalent currency) per day.",
+          "contribution": "States the daily meal cap."
+        },
+        {
+          "context_index": 1,
+          "quote": "Tips are acceptable up to 20% and should be detailed accordingly in the description box.",
+          "contribution": "Specifies the allowance for tips."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "Context 0 explains the funding source for meals, while Context 1 provides the daily meal cap and details about tips."
+    },
+    "feedback": "Evidence quote does not exactly match its source"
+  }
+]

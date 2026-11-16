@@ -1,0 +1,74 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "G&D allowance",
+        "unspent budget",
+        "no rollover"
+      ],
+      "user_input": "What will be the G&D allowance for an employee who has $4000 unspent this year?",
+      "reference": "An otherwise eligible employee with $4000 unspent this year will have a G&D allowance of $10,000 for the next calendar year, as unspent budgets do not roll over.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.",
+          "contribution": "This states the annual cap for G&D allowance."
+        },
+        {
+          "context_index": 1,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "This clarifies that unspent budgets do not carry over."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The first context establishes the annual cap for the G&D allowance, while the second context clarifies that unspent budgets do not roll over, confirming that the employee will still have the full allowance next year."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question is ambiguous as it does not specify whether the employee is eligible for the full allowance or if there are other conditions that might affect it. The phrase 'otherwise eligible' is vague without further context on eligibility criteria.",
+        "The candidate answer states that the employee will have a G&D allowance of $10,000 next year, but it does not clarify that this is contingent on meeting all eligibility requirements, which is a critical aspect mentioned in the first context.",
+        "The connection made in the reasoning does not adequately bridge the two contexts, as it fails to address the importance of eligibility in determining the allowance."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The question is ambiguous as it does not specify whether the employee is eligible for the full allowance or if there are other conditions that might affect it. The phrase 'otherwise eligible' is vague without further context on eligibility criteria.; The candidate answer states that the employee will have a G&D allowance of $10,000 next year, but it does not clarify that this is contingent on meeting all eligibility requirements, which is a critical aspect mentioned in the first context.; The connection made in the reasoning does not adequately bridge the two contexts, as it fails to address the importance of eligibility in determining the allowance."
+  },
+  {
+    "attempt": 2,
+    "candidate": {
+      "keyphrases": [
+        "G&D allowance",
+        "unspent budget",
+        "no rollover"
+      ],
+      "user_input": "What will be the next calendar year G&D allowance for an otherwise eligible employee who has $4000 unspent this year, considering the annual cap and the no rollover rule?",
+      "reference": "An otherwise eligible employee will have a G&D allowance of $10,000 next year, as unspent budgets do not roll over from one year to the next.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "Team members can be reimbursed for up to $10,000 per calendar year for eligible growth experiences, provided they meet all eligibility requirements.",
+          "contribution": "This states the annual cap for G&D allowance."
+        },
+        {
+          "context_index": 1,
+          "quote": "No. Unspent G&D budgets do not roll over from one year to the next.",
+          "contribution": "This confirms that unspent budgets do not carry over."
+        }
+      ],
+      "reasoning_type": "bridge",
+      "connection": "The first context establishes the annual cap for the G&D allowance, while the second context clarifies that unspent budgets do not roll over, confirming that the employee will have the full allowance next year."
+    },
+    "review": {
+      "accepted": false,
+      "issues": [
+        "The question is ambiguous as it asks for the next year's G&D allowance while explicitly mentioning the unspent amount, which could imply a need for a calculation or consideration of the unspent funds. However, the answer provided does not address the unspent amount in relation to the allowance, leading to potential confusion.",
+        "The candidate's answer does not clarify that the $10,000 allowance is independent of the unspent $4000, which could mislead the reader into thinking the unspent amount affects the next year's allowance.",
+        "The connection made in the reasoning does not adequately bridge the two contexts in a meaningful way, as it does not explain how the unspent budget interacts with the allowance for the next year."
+      ],
+      "all_contexts_necessary": true
+    },
+    "feedback": "The question is ambiguous as it asks for the next year's G&D allowance while explicitly mentioning the unspent amount, which could imply a need for a calculation or consideration of the unspent funds. However, the answer provided does not address the unspent amount in relation to the allowance, leading to potential confusion.; The candidate's answer does not clarify that the $10,000 allowance is independent of the unspent $4000, which could mislead the reader into thinking the unspent amount affects the next year's allowance.; The connection made in the reasoning does not adequately bridge the two contexts in a meaningful way, as it does not explain how the unspent budget interacts with the allowance for the next year."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "plan_id": "final-28",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "64bc697c-be58-5fed-a3b2-480ba8fa2e64"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "Proof-of-loss requirements",
+      "local-law exception",
+      "bereavement"
+    ],
+    "user_input": "What are the proof-of-loss requirements for bereavement leave at GitLab, and is there any exception based on local law?",
+    "reference": "At GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law).",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "At GitLab, we trust our team members. We do not require documentation or proof of loss to access bereavement leave (unless required by local/statutory law).",
+        "contribution": "This quote directly states the proof-of-loss requirements and the local-law exception for bereavement leave."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote explicitly states the proof-of-loss requirements and the local-law exception for bereavement leave at GitLab, fully answering the question."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1281,
+    "output_tokens": 198,
+    "cost_usd_estimate": 0.0008292
+  },
+  "judge": {
+    "source_conditions": [
+      "No documentation or proof of loss is required to access bereavement leave at GitLab.",
+      "Exception: Documentation may be required if mandated by local/statutory law."
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 882,
+    "output_tokens": 81,
+    "cost_usd_estimate": 0.002412
+  }
+}

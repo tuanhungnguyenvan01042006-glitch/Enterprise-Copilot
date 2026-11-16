@@ -1,0 +1,56 @@
+{
+  "plan_id": "final-30",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "ca74d569-898f-5343-8671-a5f538c8b4d5"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "register for Modern Health",
+      "matched with appropriate resources"
+    ],
+    "user_input": "How does a team member register for Modern Health and get matched with resources?",
+    "reference": "To register for Modern Health, a team member must download the app or visit the website, register with their GitLab email and name as in the system, then take the wellbeing assessment to get matched with appropriate resources.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "1. Download the app from Google Play Store (Android) or App Store (iOS), or visit my.joinmodernhealth.com\n2. Register with your GitLab email using your name as it appears in our system\n3. Take the wellbeing assessment to get matched with appropriate resources",
+        "contribution": "This explains the registration steps and how the matching is done through the wellbeing assessment."
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The context directly explains the registration process and matching method for Modern Health."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1148,
+    "output_tokens": 195,
+    "cost_usd_estimate": 0.0007712000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "Team member must download the Modern Health app from Google Play Store or App Store, or visit my.joinmodernhealth.com",
+      "Register using GitLab email and name as it appears in the system",
+      "Take the wellbeing assessment",
+      "Matching with appropriate resources is based on assessment results"
+    ],
+    "missing_conditions": [
+      "None"
+    ],
+    "question_issues": [],
+    "grounded": true,
+    "complete": false,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 746,
+    "output_tokens": 103,
+    "cost_usd_estimate": 0.002316
+  }
+}

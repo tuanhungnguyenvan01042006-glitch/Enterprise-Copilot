@@ -1,0 +1,120 @@
+[
+  {
+    "attempt": 1,
+    "candidate": {
+      "keyphrases": [
+        "DRI autonomy",
+        "consult relevant stakeholders"
+      ],
+      "user_input": "Does DRI autonomy remove the requirement for DRIs to consult relevant stakeholders before making decisions?",
+      "reference": "DRIs must consult with all relevant teams and stakeholders before making decisions, even though they are empowered to decide.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "DRIs must consult with all relevant teams and stakeholders\nThey should gather context, input, and feedback before making decisions\nWhile empowered to decide, they should leverage team expertise and judgment",
+          "contribution": "This states that DRIs must consult relevant stakeholders despite their decision-making autonomy."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states that DRIs must consult relevant stakeholders even though they have decision-making autonomy."
+    },
+    "feedback": "Evidence quote does not exactly match its source: index=0, quote='DRIs must consult with all relevant teams and stakeholders\\nThey should gather context, input, and feedback before making decisions\\nWhile empowered to decide, they should leverage team expertise and judgment'. Copy a shorter unchanged span from a supplied context."
+  },
+  {
+    "attempt": 2,
+    "candidate_raw": {
+      "keyphrases": [
+        "DRI autonomy",
+        "consult relevant stakeholders"
+      ],
+      "user_input": "Does DRI autonomy remove the requirement for DRIs to consult relevant stakeholders before making decisions?",
+      "reference": "DRIs must consult with all relevant teams and stakeholders before making decisions, even though they are empowered to decide.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "DRIs must consult with all relevant teams and stakeholders",
+          "contribution": "This states that DRIs must consult relevant stakeholders despite their decision-making autonomy."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states that DRIs must consult relevant stakeholders even though they have decision-making autonomy."
+    },
+    "evidence_quote_expanded_to_source": false,
+    "candidate": {
+      "keyphrases": [
+        "DRI autonomy",
+        "consult relevant stakeholders"
+      ],
+      "user_input": "Does DRI autonomy remove the requirement for DRIs to consult relevant stakeholders before making decisions?",
+      "reference": "DRIs must consult with all relevant teams and stakeholders before making decisions, even though they are empowered to decide.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "DRIs must consult with all relevant teams and stakeholders",
+          "contribution": "This states that DRIs must consult relevant stakeholders despite their decision-making autonomy."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states that DRIs must consult relevant stakeholders even though they have decision-making autonomy."
+    },
+    "review": {
+      "accepted": true,
+      "issues": [],
+      "all_contexts_necessary": true
+    },
+    "accepted_row": {
+      "keyphrases": [
+        "DRI autonomy",
+        "consult relevant stakeholders"
+      ],
+      "user_input": "Does DRI autonomy remove the requirement for DRIs to consult relevant stakeholders before making decisions?",
+      "reference": "DRIs must consult with all relevant teams and stakeholders before making decisions, even though they are empowered to decide.",
+      "evidence": [
+        {
+          "context_index": 0,
+          "quote": "DRIs must consult with all relevant teams and stakeholders",
+          "contribution": "This states that DRIs must consult relevant stakeholders despite their decision-making autonomy."
+        }
+      ],
+      "reasoning_type": "single_hop",
+      "connection": "The context explicitly states that DRIs must consult relevant stakeholders even though they have decision-making autonomy.",
+      "id": "final-34",
+      "question_type": "single_hop",
+      "planned_focus": "Whether DRI autonomy removes the requirement to consult relevant stakeholders.",
+      "reference_contexts": [
+        "## Empowering DRIs\n\n1. DRIs do not owe explanations for their decisions to avoid analysis paralysis\n1. They should welcome input from others but are not required to convince or justify their choices\n1. This prevents projects from \"flying under the radar\" due to fear of endless explanation cycles\n\nCollaboration\n\n1. DRIs must consult with all relevant teams and stakeholders\n1. They should gather context, input, and feedback before making decisions\n1. While empowered to decide, they should leverage team expertise and judgment"
+      ],
+      "reference_context_ids": [
+        "50dd4b48-76cf-502d-a66f-ae2ced5bb132"
+      ],
+      "reference_document_ids": [
+        "ba62c39f-e509-5d22-90e6-2624fc059a64"
+      ],
+      "sources": [
+        {
+          "document_id": "ba62c39f-e509-5d22-90e6-2624fc059a64",
+          "chunk_id": "50dd4b48-76cf-502d-a66f-ae2ced5bb132",
+          "chunk_index": 1,
+          "block_type": "text",
+          "token_count": 108,
+          "section_path": "Empowering DRIs",
+          "source_start": 593,
+          "source_end": 1121,
+          "knowledge_scope": "COMPANY",
+          "department_id": null,
+          "title": "Directly Responsible Individuals (DRI)",
+          "category": "GUIDE"
+        }
+      ],
+      "automated_review": {
+        "accepted": true,
+        "issues": [],
+        "all_contexts_necessary": true
+      },
+      "review_status": "automated_review_passed",
+      "human_approved": false,
+      "evidence_quote_expanded_to_source": false
+    },
+    "feedback": "Ensure both sources are necessary."
+  }
+]

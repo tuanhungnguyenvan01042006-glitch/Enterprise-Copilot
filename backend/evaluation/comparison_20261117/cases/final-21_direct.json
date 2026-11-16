@@ -1,0 +1,54 @@
+{
+  "plan_id": "final-21",
+  "method": "direct",
+  "question_type": "single_hop",
+  "source_ids": [
+    "1c4b27a9-518c-56a2-a7d5-b0bd703fd0b8"
+  ],
+  "candidate": {
+    "keyphrases": [
+      "50 percent split disbursement",
+      "travel, hotel and meal costs"
+    ],
+    "user_input": "When can an employee use the 50 percent split disbursement option, and which expenses are excluded from this option?",
+    "reference": "All requests may use the split disbursement option when applicable: 50% of the approved opportunity cost can be reimbursed after payment; the remaining 50% can be reimbursed upon completion. This option does not apply to travel, hotel, or meal expenses.",
+    "evidence": [
+      {
+        "context_index": 0,
+        "quote": "All requests may use the split disbursement option when applicable:\n\n- 50% of the approved opportunity cost can be reimbursed after payment\n- the remaining 50% can be reimbursed upon completion\n\nThis option does not apply to travel, hotel, or meal expenses.",
+        "contribution": "Defines the timing of the 50% split disbursement and specifies excluded expenses"
+      }
+    ],
+    "reasoning_type": "single_hop",
+    "connection": "The quote directly states the timing for the 50% split disbursement and the exclusions for travel, hotel, and meal costs."
+  },
+  "usage": {
+    "successful_requests": 1,
+    "input_tokens": 1085,
+    "output_tokens": 233,
+    "cost_usd_estimate": 0.0008068000000000001
+  },
+  "judge": {
+    "source_conditions": [
+      "All requests may use the split disbursement option when applicable",
+      "50% of the approved opportunity cost can be reimbursed after payment",
+      "the remaining 50% can be reimbursed upon completion",
+      "This option does not apply to travel, hotel, or meal expenses"
+    ],
+    "missing_conditions": [],
+    "question_issues": [],
+    "grounded": true,
+    "complete": true,
+    "clear": true,
+    "useful": true,
+    "matches_focus": true,
+    "all_contexts_necessary": true,
+    "issues": []
+  },
+  "judge_usage": {
+    "successful_requests": 1,
+    "input_tokens": 703,
+    "output_tokens": 101,
+    "cost_usd_estimate": 0.002214
+  }
+}
